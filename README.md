@@ -1,14 +1,21 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jane Yugtan | Project Manager &amp; Executive Assistant</title>
+  <title>Jane Yugtan | Project Manager & Executive Assistant</title>
   <style>
     /* Clients section with dark background */
     .clients-section {
       background: #1a1a2e;
       color: white;
+      padding: 2rem 1rem;
+    }
+    .clients-section .grid-two {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 2rem;
+      align-items: center;
+      justify-items: center;
     }
     .clients-section a {
       color: white;
@@ -18,11 +25,12 @@
       flex-direction: column;
       align-items: center;
     }
-    .clients-section .grid-two img {
-      max-width: 120px;
+    .clients-section img {
+      max-width: 100px;
       margin-bottom: 0.5rem;
       filter: brightness(1.2);
     }
+
     :root {
       --primary-color: #1a1a2e;
       --accent-color: #0f4c75;
@@ -35,8 +43,7 @@
       margin: 0;
       font-family: var(--body-font);
       color: var(--text-color);
-      background: var(--bg-color);
-      background-image: repeating-linear-gradient(
+      background: var(--bg-color) repeating-linear-gradient(
         45deg,
         rgba(15,76,117,0.1) 0,
         rgba(15,76,117,0.1) 1px,
@@ -102,10 +109,8 @@
     }
     .grid-two {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      align-items: center;
-      justify-items: center;
     }
     a.button {
       display: inline-block;
@@ -145,7 +150,7 @@
   <header>
     <img src="profile.jpg" alt="Jane Yugtan">
     <h1>Jane Yugtan</h1>
-    <p>Project Manager &amp; Executive Assistant</p>
+    <p>Project Manager & Executive Assistant</p>
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
@@ -168,7 +173,7 @@
     <h2>Experience</h2>
     <div class="grid-two">
       <div>
-        <h3>Project Manager &amp; Executive Assistant</h3>
+        <h3>Project Manager & Executive Assistant</h3>
         <p>Various Digital Agencies | 2021 – Present</p>
         <ul class="simple-list">
           <li>Supported CEOs with operations, calendar, and inbox management.</li>
@@ -177,11 +182,11 @@
         </ul>
       </div>
       <div>
-        <h3>SOP &amp; Workflow Automation</h3>
-        <p>Appointment Setter &amp; Content Processes</p>
+        <h3>SOP & Workflow Automation</h3>
+        <p>Appointment Setter & Content Processes</p>
         <ul class="simple-list">
           <li>Mapped existing processes, identified gaps, and led team training.</li>
-          <li>Managed content &amp; site builds to ensure timely delivery and quality.</li>
+          <li>Managed content & site builds to ensure timely delivery and quality.</li>
         </ul>
       </div>
     </div>
@@ -193,23 +198,54 @@
     <a class="button" href="https://docs.google.com/presentation/d/1gOUU-ii8Fq6I4NUGV_EubyUuxbNSogrXuWSaisqGsW0/edit?usp=sharing" target="_blank">View Portfolio</a>
   </section>
 
-  <section id="clients">
+  <section id="clients" class="clients-section">
     <h2>Clients I’ve Worked With</h2>
     <div class="grid-two">
-      <img src="ppcprofessorlogo.png" alt="PPC Professor Logo">
-      <img src="70klogo.png" alt="70K Affiliates Logo">
-      <img src="ealogo.png" alt="E&A Logo">
-      <img src="dreamindigitallogo.jpeg" alt="Dream In Digital Logo">
-      <img src="IAAlogo.png" alt="Investor Attraction Academy Logo">
-      <img src="threecoltslogo.png" alt="Threecolts Logo">
-      <img src="audaciouslyagencylogo.png" alt="Audaciously Agency Logo">
-      <img src="highlandfarmparklogo.jpg" alt="Highland Farm Park Logo">
-      <img src="servicethrivelogo.png" alt="Service Thrive Logo">
+      <a href="http://ppcprofessor.com/" target="_blank">
+        <img src="ppcprofessorlogo.png" alt="PPC Professor Logo">
+        <p>PPC Professor</p>
+      </a>
+      <a href="https://70kaffiliates.com/" target="_blank">
+        <img src="70klogo.png" alt="70K Affiliates Logo">
+        <p>70K Affiliates</p>
+      </a>
+      <a href="https://www.facebook.com/evolveacquisition" target="_blank">
+        <img src="ealogo.png" alt="Evolve Acquisition Logo">
+        <p>Evolve Acquisition</p>
+      </a>
+      <a href="https://dreamindigital.ca/" target="_blank">
+        <img src="dreamindigitallogo.jpeg" alt="Dream In Digital Logo">
+        <p>Dream In Digital</p>
+      </a>
+      <a href="https://linkedleads.us/" target="_blank">
+        <img src="IAAlogo.png" alt="Investor Attraction Academy Logo">
+        <p>Investor Attraction Academy</p>
+      </a>
+      <a href="https://threecolts.com" target="_blank">
+        <img src="threecoltslogo.png" alt="Threecolts Logo">
+        <p>Threecolts</p>
+      </a>
+      <a href="https://highlandfarmpark.com/" target="_blank">
+        <img src="highlandfarmparklogo.jpg" alt="Highland Farm Park Logo">
+        <p>Highland Farm Park</p>
+      </a>
+      <a href="https://servicethrive.com" target="_blank">
+        <img src="servicethrivelogo.png" alt="Service Thrive Logo">
+        <p>Service Thrive</p>
+      </a>
+      <a href="https://marketingmeca.com/" target="_blank">
+        <img src="marketingmeca.jpeg" alt="Marketing Meca Logo">
+        <p>Marketing Meca</p>
+      </a>
+      <a href="https://whiskeylibrary.com/?srsltid=AfmBOorjEr6KqXorNFIIqoi53PcXiMrp4yy6FJZIBswo5tVxFeE1_glv" target="_blank">
+        <img src="White_WL_Logo.avif" alt="Whiskey Library Logo">
+        <p>Whiskey Library</p>
+      </a>
     </div>
   </section>
 
   <section id="testimonials">
-    <h2>Testimonials &amp; Reviews</h2>
+    <h2>Testimonials & Reviews</h2>
     <p>Read client feedback and watch video testimonials:</p>
     <a class="button" href="https://docs.google.com/presentation/d/1YY61u3lTnuaCLhJeWyMjKbk0AFyr9VUXPIgbaGqKvm8/edit?usp=drive_link" target="_blank">View Reviews</a>
 
