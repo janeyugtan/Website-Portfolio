@@ -1,9 +1,28 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jane Yugtan | Project Manager &amp; Executive Assistant</title>
   <style>
+    /* Clients section with dark background */
+    .clients-section {
+      background: #1a1a2e;
+      color: white;
+    }
+    .clients-section a {
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .clients-section .grid-two img {
+      max-width: 120px;
+      margin-bottom: 0.5rem;
+      filter: brightness(1.2);
+    }
     :root {
       --primary-color: #1a1a2e;
       --accent-color: #0f4c75;
@@ -193,7 +212,6 @@
     <h2>Testimonials &amp; Reviews</h2>
     <p>Read client feedback and watch video testimonials:</p>
     <a class="button" href="https://docs.google.com/presentation/d/1YY61u3lTnuaCLhJeWyMjKbk0AFyr9VUXPIgbaGqKvm8/edit?usp=drive_link" target="_blank">View Reviews</a>
-    <ul class="simple-list">
 
   <section id="video-testimonials">
     <h2>Video Testimonials</h2>
