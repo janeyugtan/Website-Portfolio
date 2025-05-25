@@ -202,11 +202,11 @@
     <h2>Clients I’ve Worked With</h2>
     <div class="grid-two">
       <a href="http://ppcprofessor.com/" target="_blank">
-        <img src="ppcprofessorlogo.png" alt="PPC Professor Logo">
+        <img src="PPCLOGO.jpeg" alt="PPC Professor Logo">
         <p>PPC Professor</p>
       </a>
       <a href="https://70kaffiliates.com/" target="_blank">
-        <img src="70klogo.png" alt="70K Affiliates Logo">
+        <img src="70KLOGO.webp" alt="70K Affiliates Logo">
         <p>70K Affiliates</p>
       </a>
       <a href="https://www.facebook.com/evolveacquisition" target="_blank">
@@ -238,7 +238,7 @@
         <p>Marketing Meca</p>
       </a>
       <a href="https://whiskeylibrary.com/?srsltid=AfmBOorjEr6KqXorNFIIqoi53PcXiMrp4yy6FJZIBswo5tVxFeE1_glv" target="_blank">
-        <img src="White_WL_Logo.avif" alt="Whiskey Library Logo">
+        <img src="WL-LOGO.webp" alt="Whiskey Library Logo">
         <p>Whiskey Library</p>
       </a>
     </div>
@@ -248,6 +248,11 @@
     <h2>Testimonials & Reviews</h2>
     <p>Read client feedback and watch video testimonials:</p>
     <a class="button" href="https://docs.google.com/presentation/d/1YY61u3lTnuaCLhJeWyMjKbk0AFyr9VUXPIgbaGqKvm8/edit?usp=drive_link" target="_blank">View Reviews</a>
+    <ul class="simple-list">
+      <li><a href="https://drive.google.com/file/d/15GcY5u1YK97h18IgYifB6xjpVcLaNncp/view?usp=sharing" target="_blank">Sean Elias Testimonial (Threecolts / 70K)</a></li>
+      <li><a href="https://drive.google.com/file/d/1mUUSYrruckNWkc1_kduUAuaqAEb_7V8d/view?usp=drive_link" target="_blank">Joe Remington Testimonial (PPC Professor)</a></li>
+    </ul>
+  </section>
 
   <section id="video-testimonials">
     <h2>Video Testimonials</h2>
@@ -271,9 +276,10 @@
       <li><a href="https://morganwhitewindowcoverings.com/" target="_blank">morganwhitewindowcoverings.com</a></li>
       <li><a href="https://forgetmenotlessons.com/" target="_blank">forgetmenotlessons.com</a></li>
       <li><a href="https://sanbenitorealty.com/" target="_blank">sanbenitorealty.com</a></li>
+      <li><a href="https://marketingmeca.com/" target="_blank">marketingmeca.com</a></li>
       <li><a href="https://whiskeylibrary.com/" target="_blank">whiskeylibrary.com</a></li>
     </ul>
-    <p>Building SOPs, managing content, and overseeing website builds and requests.</p>
+    <p>Building SOPs and processes for Marketing Meca and Whiskey Library, managing content, and overseeing website builds and requests.</p>
   </section>
 
   <section id="contact">
