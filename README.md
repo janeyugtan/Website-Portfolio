@@ -194,10 +194,6 @@
     <p>Read client feedback and watch video testimonials:</p>
     <a class="button" href="https://docs.google.com/presentation/d/1YY61u3lTnuaCLhJeWyMjKbk0AFyr9VUXPIgbaGqKvm8/edit?usp=drive_link" target="_blank">View Reviews</a>
     <ul class="simple-list">
-      <li><a href="https://drive.google.com/file/d/15GcY5u1YK97h18IgYifB6xjpVcLaNncp/view?usp=sharing" target="_blank">Video Testimonial 1</a></li>
-      <li><a href="https://drive.google.com/file/d/1mUUSYrruckNWkc1_kduUAuaqAEb_7V8d/view?usp=drive_link" target="_blank">Video Testimonial 2</a></li>
-    </ul>
-  </section>
 
   <section id="video-testimonials">
     <h2>Video Testimonials</h2>
