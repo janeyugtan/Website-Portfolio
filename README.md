@@ -274,7 +274,10 @@
       <li><a href="https://marketingmeca.com/" target="_blank">marketingmeca.com</a></li>
       <li><a href="https://whiskeylibrary.com/" target="_blank">whiskeylibrary.com</a></li>
     </ul>
-    <p>Building SOPs and processes for Marketing Meca and Whiskey Library, managing content, and overseeing website builds and requests.</p>
+    <p>Clients
+Currently managing Marketing Meca and Whiskey Library — leading SOP development, content management, and coordinating website builds and requests.
+
+Previously supported a diverse range of brands by helping my client manage operations, content, and project workflows across multiple accounts.</p>
   </section>
 
   <section id="contact">
