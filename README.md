@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -50,6 +49,7 @@
     }
     nav {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
       margin-top: 1rem;
@@ -83,8 +83,10 @@
     }
     .grid-two {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 2rem;
+      align-items: center;
+      justify-items: center;
     }
     a.button {
       display: inline-block;
@@ -102,6 +104,9 @@
     ul.simple-list {
       list-style-type: disc;
       padding-left: 1.5rem;
+    }
+    .video-list > div {
+      margin-bottom: 2rem;
     }
     footer {
       background: var(--primary-color);
@@ -126,7 +131,9 @@
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#portfolio">Portfolio</a>
+      <a href="#clients">Clients</a>
       <a href="#testimonials">Testimonials</a>
+      <a href="#video-testimonials">Video Testimonials</a>
       <a href="#sites">Sites</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -135,8 +142,7 @@
   <section id="about">
     <h2>About Me</h2>
     <p>I’m Jane Yugtan, a results-driven Project Manager and Executive Assistant with over 3 years of experience supporting busy CEOs and leading teams in fast-paced digital marketing agencies. My approach is all about structure, clarity, and translating vision into systems that drive real business results.</p>
-    <!-- Updated resume link to match uploaded filename -->
-    <a class="button" href="Jane Yugtan-2025 (1).pdf" target="_blank">Download Resume</a>
+    <a class="button" href="https://drive.google.com/file/d/1snpiXCl140AhjD97o8E8u5ASQzdX_mAL/view?usp=drive_link" target="_blank">Download Resume</a>
   </section>
 
   <section id="experience">
@@ -168,14 +174,43 @@
     <a class="button" href="https://docs.google.com/presentation/d/1gOUU-ii8Fq6I4NUGV_EubyUuxbNSogrXuWSaisqGsW0/edit?usp=sharing" target="_blank">View Portfolio</a>
   </section>
 
+  <section id="clients">
+    <h2>Clients I’ve Worked With</h2>
+    <div class="grid-two">
+      <img src="ppcprofessorlogo.png" alt="PPC Professor Logo">
+      <img src="70klogo.png" alt="70K Affiliates Logo">
+      <img src="ealogo.png" alt="E&A Logo">
+      <img src="dreamindigitallogo.jpeg" alt="Dream In Digital Logo">
+      <img src="IAAlogo.png" alt="Investor Attraction Academy Logo">
+      <img src="threecoltslogo.png" alt="Threecolts Logo">
+      <img src="audaciouslyagencylogo.png" alt="Audaciously Agency Logo">
+      <img src="highlandfarmparklogo.jpg" alt="Highland Farm Park Logo">
+      <img src="servicethrivelogo.png" alt="Service Thrive Logo">
+    </div>
+  </section>
+
   <section id="testimonials">
     <h2>Testimonials &amp; Reviews</h2>
     <p>Read client feedback and watch video testimonials:</p>
-    <a class="button" href="https://docs.google.com/presentation/d/1YY61u3lTnuaCLhJeWyMjKbk0AFyr9VUXPIgbaGqKvm8/edit?usp=sharing" target="_blank">View Reviews</a>
+    <a class="button" href="https://docs.google.com/presentation/d/1YY61u3lTnuaCLhJeWyMjKbk0AFyr9VUXPIgbaGqKvm8/edit?usp=drive_link" target="_blank">View Reviews</a>
     <ul class="simple-list">
       <li><a href="https://drive.google.com/file/d/15GcY5u1YK97h18IgYifB6xjpVcLaNncp/view?usp=sharing" target="_blank">Video Testimonial 1</a></li>
-      <li><a href="https://drive.google.com/file/d/1mUUSYrruckNWkc1_kduUAuaqAEb_7V8d/view?usp=sharing" target="_blank">Video Testimonial 2</a></li>
+      <li><a href="https://drive.google.com/file/d/1mUUSYrruckNWkc1_kduUAuaqAEb_7V8d/view?usp=drive_link" target="_blank">Video Testimonial 2</a></li>
     </ul>
+  </section>
+
+  <section id="video-testimonials">
+    <h2>Video Testimonials</h2>
+    <div class="video-list">
+      <div>
+        <h3>Sean Elias - Threecolts / 70K Affiliates</h3>
+        <video controls width="320" src="Sean Elias-TestimonialVideo.mp4"></video>
+      </div>
+      <div>
+        <h3>Joe Remington - PPC Professor</h3>
+        <video controls width="320" src="Joe-Remington-TestimonialVideo.mp4"></video>
+      </div>
+    </div>
   </section>
 
   <section id="sites">
