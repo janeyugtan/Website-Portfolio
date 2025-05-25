@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jane Hernandez | Project Manager & Executive Assistant</title>
+  <title>Jane Yugtan | Project Manager &amp; Executive Assistant</title>
   <style>
     :root {
       --primary-color: #1a1a2e;
@@ -30,64 +30,73 @@
 </head>
 <body>
   <header>
-    <!-- Download your LinkedIn photo and place it at assets/profile.jpg -->
-    <img src="assets/profile.jpg" alt="Jane Hernandez">
-    <h1>Jane Hernandez</h1>
-    <p>Project Manager & Executive Assistant</p>
+    <!-- Place profile.jpg (from assets/profile.jpg) into assets/ -->
+    <img src="assets/profile.jpg" alt="Jane Yugtan">
+    <h1>Jane Yugtan</h1>
+    <p>Project Manager &amp; Executive Assistant</p>
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#sites">Sites Managed</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
+
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m Jane Hernandez, a results-driven Project Manager and Executive Assistant with over 3 years of experience supporting busy CEOs and leading teams in fast-paced digital marketing agencies. My approach is all about structure, clarity, and translating vision into systems that drive real business results.</p>
-    <a class="button" href="https://drive.google.com/file/d/1Ikut8YzrxuHyi2afnNaDf3ay9KKT2DBB/view" target="_blank">Download Resume</a>
+    <p>I’m Jane Yugtan, a results-driven Project Manager and Executive Assistant with over 3 years of experience supporting busy CEOs and leading teams in fast-paced digital marketing agencies. My approach is all about structure, clarity, and translating vision into systems that drive real business results.</p>
+    <a class="button" href="assets/Jane_Yugtan-Resume.pdf" target="_blank">Download Resume</a>
   </section>
+
   <section id="experience">
     <h2>Experience</h2>
     <div class="grid-two">
       <div>
-        <h3>Project Manager & Executive Assistant</h3>
+        <h3>Project Manager &amp; Executive Assistant</h3>
         <p>Various Digital Agencies | 2021 – Present</p>
         <ul>
           <li>Supported CEOs with operations, calendar, and inbox management.</li>
-          <li>Led website launches and campaign rollouts ahead of schedule.</li>
-          <li>Developed SOPs and automated workflows to increase efficiency by 20%.</li>
+          <li>Led website launches, campaign rollouts, and process improvements ahead of schedule.</li>
+          <li>Developed SOPs and automated workflows to increase team efficiency by up to 20%.</li>
         </ul>
       </div>
       <div>
-        <h3>SOP & Workflow Automation</h3>
-        <p>Appointment Setter Process</p>
+        <h3>SOP &amp; Workflow Automation</h3>
+        <p>Appointment Setter &amp; Content Processes</p>
         <ul>
-          <li>Mapped processes, identified gaps, and led training for teams.</li>
-          <li>Increased lead-to-booking conversion by 20% in 3 months.</li>
+          <li>Mapped existing processes, identified gaps, and led team training.</li>
+          <li>Managed content &amp; site builds to ensure timely delivery and quality.</li>
         </ul>
       </div>
     </div>
   </section>
-  <section id="portfolio">
-    <h2>Portfolio</h2>
+
+  <section id="sites">
+    <h2>Sites Managed</h2>
     <ul>
-      <li><strong>Website Relaunch for WhiskeyLibrary.com</strong> – Coordinated teams for a successful relaunch ahead of schedule.</li>
-      <li><strong>Portfolio Site Development</strong> – Built static site template on GitHub Pages using HTML/CSS.</li>
-      <!-- Add more projects here -->
+      <li><a href="http://aaroof.net/" target="_blank">aaroof.net</a></li>
+      <li><a href="https://fantisewerdrainpros.com/" target="_blank">fantisewerdrainpros.com</a></li>
+      <li><a href="https://morganwhitewindowcoverings.com/" target="_blank">morganwhitewindowcoverings.com</a></li>
+      <li><a href="https://forgetmenotlessons.com/" target="_blank">forgetmenotlessons.com</a></li>
+      <li><a href="https://sanbenitorealty.com/" target="_blank">sanbenitorealty.com</a></li>
+      <li><a href="https://whiskeylibrary.com/" target="_blank">whiskeylibrary.com</a></li>
     </ul>
+    <p>Building SOPs, managing content, and overseeing website builds and requests.</p>
   </section>
+
   <section id="contact">
     <h2>Contact</h2>
     <p>Let’s Connect:</p>
-    <p><a href="mailto:jane.hernandez@email.com">jane.hernandez@email.com</a></p>
+    <p><a href="mailto:yugtanlynette@gmail.com">yugtanlynette@gmail.com</a></p>
     <p>
       <a href="https://www.linkedin.com/in/janehernandez/" target="_blank">LinkedIn</a> |
       <a href="https://www.onlinejobs.ph/jobseekers/info/1937735" target="_blank">OnlineJobs.ph</a> |
       <a href="https://www.facebook.com/jane.hernandez.285545" target="_blank">Facebook</a>
     </p>
   </section>
+
   <footer>
-    &copy; 2025 Jane Hernandez | Designed for visionary CEOs in digital marketing
+    &copy; 2025 Jane Yugtan | Designed for visionary CEOs in digital marketing
   </footer>
 </body>
 </html>
