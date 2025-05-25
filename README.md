@@ -30,7 +30,7 @@
 </head>
 <body>
   <header>
-    <!-- Ensure your profile image is named profile.jpn and placed in assets/ -->
+    <!-- Ensure your profile image is named profile.jpg and placed in assets/ -->
     <img src="assets/profile.jpg" alt="Jane Yugtan">
     <h1>Jane Yugtan</h1>
     <p>Project Manager &amp; Executive Assistant</p>
