@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -29,7 +30,7 @@
 </head>
 <body>
   <header>
-    <!-- Place profile.jpg (from assets/profile.jpg) into assets/ -->
+    <!-- Ensure your profile image is named profile.jpn and placed in assets/ -->
     <img src="assets/profile.jpg" alt="Jane Yugtan">
     <h1>Jane Yugtan</h1>
     <p>Project Manager &amp; Executive Assistant</p>
