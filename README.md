@@ -274,16 +274,14 @@
       <li><a href="https://marketingmeca.com/" target="_blank">marketingmeca.com</a></li>
       <li><a href="https://whiskeylibrary.com/" target="_blank">whiskeylibrary.com</a></li>
     </ul>
-    <p>**Clients**
-    </ul>
-      Currently managing Marketing Meca and Whiskey Library — leading SOP development, content management, and coordinating website builds and requests.
-    </ul>
-Previously supported a diverse range of brands by helping my client manage operations, content, and project workflows across multiple accounts.</p>
+    <h2>Clients
+      
+      Currently managing Marketing Meca and Whiskey Library — leading SOP development, content management, and coordinating website builds and requests. Previously supported a diverse range of brands by helping my client manage operations, content, and project workflows across multiple accounts.</p>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>**Let’s Connect:**</p>
+    <h2>Let’s Connect:</p>
     <p><a href="mailto:yugtanlynette@gmail.com">yugtanlynette@gmail.com</a></p>
     <p>
       <a href="https://www.linkedin.com/in/janehernandez/" target="_blank">LinkedIn</a> |
