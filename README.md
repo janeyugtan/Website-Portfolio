@@ -294,5 +294,3 @@ Previously supported a diverse range of brands by helping my client manage opera
   <footer>
     &copy; 2025 Jane Yugtan | Designed for visionary CEOs in digital marketing
   </footer>
-</body>
-</html>
