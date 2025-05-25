@@ -283,7 +283,7 @@ Previously supported a diverse range of brands by helping my client manage opera
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Let’s Connect:</p>
+    <p>**Let’s Connect:**</p>
     <p><a href="mailto:yugtanlynette@gmail.com">yugtanlynette@gmail.com</a></p>
     <p>
       <a href="https://www.linkedin.com/in/janehernandez/" target="_blank">LinkedIn</a> |
@@ -293,5 +293,5 @@ Previously supported a diverse range of brands by helping my client manage opera
   </section>
 
   <footer>
-    &copy; 2025 Jane Yugtan | Designed for visionary CEOs in digital marketing
+    &copy; 2025 Jane Yugtan | Designed for Visionary CEOs in Digital Marketing
   </footer>
