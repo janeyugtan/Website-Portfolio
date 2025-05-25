@@ -1,3 +1,4 @@
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,29 +7,115 @@
     :root {
       --primary-color: #1a1a2e;
       --accent-color: #0f4c75;
-      --bg-color: #f5f5f5;
+      --bg-color: #E8F4F8; /* Light accent-based background */
       --text-color: #333333;
       --heading-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       --body-font: Arial, sans-serif;
     }
-    body { margin:0; font-family: var(--body-font); color: var(--text-color); background: var(--bg-color); }
-    header { background: var(--primary-color); color: white; padding: 2rem 1rem; text-align:center; }
-    header img { width: 150px; height:150px; border-radius:50%; object-fit:cover; border:4px solid var(--accent-color); }
-    header h1 { margin:0.5rem 0 0; font-family: var(--heading-font); font-size:2.5rem; }
-    header p { font-size:1.2rem; margin:0.5rem 0; }
-    nav { display:flex; justify-content:center; gap:1rem; margin-top:1rem; }
-    nav a { color:white; text-decoration:none; font-weight:bold; }
-    section { padding:4rem 1rem; max-width:800px; margin:0 auto; }
-    h2 { color: var(--primary-color); font-family: var(--heading-font); font-size:2rem; margin-bottom:1rem; }
-    .grid-two { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
-    a.button { display:inline-block; background: var(--accent-color); color:white; padding:0.75rem 1.5rem; text-decoration:none; border-radius:0.5rem; }
-    footer { background: var(--primary-color); color:white; text-align:center; padding:2rem 1rem; }
-    footer a { color: var(--accent-color); text-decoration:none; margin:0 0.5rem; }
+    /* Page Background with subtle pattern */
+    body {
+      margin: 0;
+      font-family: var(--body-font);
+      color: var(--text-color);
+      background: var(--bg-color);
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(15, 76, 117, 0.1) 0,
+        rgba(15, 76, 117, 0.1) 1px,
+        transparent 1px,
+        transparent 10px
+      );
+    }
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent-color);
+    }
+    header h1 {
+      margin: 0.5rem 0 0;
+      font-family: var(--heading-font);
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+    }
+    /* Section styling for professional card effect */
+    section {
+      background: white;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: var(--primary-color);
+      font-family: var(--heading-font);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.5rem;
+    }
+    .grid-two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    a.button {
+      display: inline-block;
+      background: var(--accent-color);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      transition: opacity 0.3s;
+    }
+    a.button:hover {
+      opacity: 0.85;
+    }
+    footer {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
   </style>
 </head>
 <body>
   <header>
-    <!-- Ensure profile.jpg is placed in the repo root beside index.html -->
+    <!-- Ensure profile.jpg is placed next to index.html -->
     <img src="profile.jpg" alt="Jane Yugtan">
     <h1>Jane Yugtan</h1>
     <p>Project Manager &amp; Executive Assistant</p>
@@ -39,11 +126,13 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
+
   <section id="about">
     <h2>About Me</h2>
     <p>I’m Jane Yugtan, a results-driven Project Manager and Executive Assistant with over 3 years of experience supporting busy CEOs and leading teams in fast-paced digital marketing agencies. My approach is all about structure, clarity, and translating vision into systems that drive real business results.</p>
     <a class="button" href="Jane_Yugtan-Resume.pdf" target="_blank">Download Resume</a>
   </section>
+
   <section id="experience">
     <h2>Experience</h2>
     <div class="grid-two">
@@ -66,6 +155,7 @@
       </div>
     </div>
   </section>
+
   <section id="sites">
     <h2>Sites Managed</h2>
     <ul>
@@ -78,6 +168,7 @@
     </ul>
     <p>Building SOPs, managing content, and overseeing website builds and requests.</p>
   </section>
+
   <section id="contact">
     <h2>Contact</h2>
     <p>Let’s Connect:</p>
@@ -88,6 +179,7 @@
       <a href="https://www.facebook.com/jane.hernandez.285545" target="_blank">Facebook</a>
     </p>
   </section>
+
   <footer>
     &copy; 2025 Jane Yugtan | Designed for visionary CEOs in digital marketing
   </footer>
