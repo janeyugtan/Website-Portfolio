@@ -30,8 +30,8 @@
 </head>
 <body>
   <header>
-    <!-- Ensure your profile image is named profile.jpg and placed in assets/ -->
-    <img src="assets/profile.jpg" alt="Jane Yugtan">
+    <!-- Ensure profile.jpg is placed in the repo root beside index.html -->
+    <img src="profile.jpg" alt="Jane Yugtan">
     <h1>Jane Yugtan</h1>
     <p>Project Manager &amp; Executive Assistant</p>
     <nav>
@@ -45,7 +45,7 @@
   <section id="about">
     <h2>About Me</h2>
     <p>I’m Jane Yugtan, a results-driven Project Manager and Executive Assistant with over 3 years of experience supporting busy CEOs and leading teams in fast-paced digital marketing agencies. My approach is all about structure, clarity, and translating vision into systems that drive real business results.</p>
-    <a class="button" href="assets/Jane_Yugtan-Resume.pdf" target="_blank">Download Resume</a>
+    <a class="button" href="Jane_Yugtan-Resume.pdf" target="_blank">Download Resume</a>
   </section>
 
   <section id="experience">
