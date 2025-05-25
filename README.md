@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,12 +8,11 @@
     :root {
       --primary-color: #1a1a2e;
       --accent-color: #0f4c75;
-      --bg-color: #E8F4F8; /* Light accent-based background */
+      --bg-color: #E8F4F8;
       --text-color: #333333;
       --heading-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       --body-font: Arial, sans-serif;
     }
-    /* Page Background with subtle pattern */
     body {
       margin: 0;
       font-family: var(--body-font);
@@ -20,8 +20,8 @@
       background: var(--bg-color);
       background-image: repeating-linear-gradient(
         45deg,
-        rgba(15, 76, 117, 0.1) 0,
-        rgba(15, 76, 117, 0.1) 1px,
+        rgba(15,76,117,0.1) 0,
+        rgba(15,76,117,0.1) 1px,
         transparent 1px,
         transparent 10px
       );
@@ -62,17 +62,16 @@
       transition: background 0.3s;
     }
     nav a:hover {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255,255,255,0.1);
       border-radius: 4px;
     }
-    /* Section styling for professional card effect */
     section {
       background: white;
       margin: 2rem auto;
       padding: 2rem;
       max-width: 800px;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     h2 {
       color: var(--primary-color);
@@ -95,9 +94,14 @@
       text-decoration: none;
       border-radius: 0.5rem;
       transition: opacity 0.3s;
+      margin-top: 1rem;
     }
     a.button:hover {
       opacity: 0.85;
+    }
+    ul.simple-list {
+      list-style-type: disc;
+      padding-left: 1.5rem;
     }
     footer {
       background: var(--primary-color);
@@ -115,14 +119,15 @@
 </head>
 <body>
   <header>
-    <!-- Ensure profile.jpg is placed next to index.html -->
     <img src="profile.jpg" alt="Jane Yugtan">
     <h1>Jane Yugtan</h1>
     <p>Project Manager &amp; Executive Assistant</p>
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
-      <a href="#sites">Sites Managed</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#sites">Sites</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -139,7 +144,7 @@
       <div>
         <h3>Project Manager &amp; Executive Assistant</h3>
         <p>Various Digital Agencies | 2021 – Present</p>
-        <ul>
+        <ul class="simple-list">
           <li>Supported CEOs with operations, calendar, and inbox management.</li>
           <li>Led website launches, campaign rollouts, and process improvements ahead of schedule.</li>
           <li>Developed SOPs and automated workflows to increase team efficiency by up to 20%.</li>
@@ -148,7 +153,7 @@
       <div>
         <h3>SOP &amp; Workflow Automation</h3>
         <p>Appointment Setter &amp; Content Processes</p>
-        <ul>
+        <ul class="simple-list">
           <li>Mapped existing processes, identified gaps, and led team training.</li>
           <li>Managed content &amp; site builds to ensure timely delivery and quality.</li>
         </ul>
@@ -156,9 +161,25 @@
     </div>
   </section>
 
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Explore my projects and case studies:</p>
+    <a class="button" href="https://docs.google.com/presentation/d/1gOUU-ii8Fq6I4NUGV_EubyUuxbNSogrXuWSaisqGsW0/edit?usp=sharing" target="_blank">View Portfolio</a>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials &amp; Reviews</h2>
+    <p>Read client feedback and watch video testimonials:</p>
+    <a class="button" href="https://docs.google.com/presentation/d/1YY61u3lTnuaCLhJeWyMjKbk0AFyr9VUXPIgbaGqKvm8/edit?usp=sharing" target="_blank">View Reviews</a>
+    <ul class="simple-list">
+      <li><a href="https://drive.google.com/file/d/15GcY5u1YK97h18IgYifB6xjpVcLaNncp/view?usp=sharing" target="_blank">Video Testimonial 1</a></li>
+      <li><a href="https://drive.google.com/file/d/1mUUSYrruckNWkc1_kduUAuaqAEb_7V8d/view?usp=sharing" target="_blank">Video Testimonial 2</a></li>
+    </ul>
+  </section>
+
   <section id="sites">
     <h2>Sites Managed</h2>
-    <ul>
+    <ul class="simple-list">
       <li><a href="http://aaroof.net/" target="_blank">aaroof.net</a></li>
       <li><a href="https://fantisewerdrainpros.com/" target="_blank">fantisewerdrainpros.com</a></li>
       <li><a href="https://morganwhitewindowcoverings.com/" target="_blank">morganwhitewindowcoverings.com</a></li>
