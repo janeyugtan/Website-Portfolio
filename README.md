@@ -39,13 +39,11 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
-
   <section id="about">
     <h2>About Me</h2>
     <p>I’m Jane Yugtan, a results-driven Project Manager and Executive Assistant with over 3 years of experience supporting busy CEOs and leading teams in fast-paced digital marketing agencies. My approach is all about structure, clarity, and translating vision into systems that drive real business results.</p>
     <a class="button" href="Jane_Yugtan-Resume.pdf" target="_blank">Download Resume</a>
   </section>
-
   <section id="experience">
     <h2>Experience</h2>
     <div class="grid-two">
@@ -68,7 +66,6 @@
       </div>
     </div>
   </section>
-
   <section id="sites">
     <h2>Sites Managed</h2>
     <ul>
@@ -81,7 +78,6 @@
     </ul>
     <p>Building SOPs, managing content, and overseeing website builds and requests.</p>
   </section>
-
   <section id="contact">
     <h2>Contact</h2>
     <p>Let’s Connect:</p>
@@ -92,7 +88,6 @@
       <a href="https://www.facebook.com/jane.hernandez.285545" target="_blank">Facebook</a>
     </p>
   </section>
-
   <footer>
     &copy; 2025 Jane Yugtan | Designed for visionary CEOs in digital marketing
   </footer>
