@@ -134,7 +134,7 @@
   <section id="about">
     <h2>About Me</h2>
     <p>I’m Jane Yugtan, a results-driven Project Manager and Executive Assistant with over 3 years of experience supporting busy CEOs and leading teams in fast-paced digital marketing agencies. My approach is all about structure, clarity, and translating vision into systems that drive real business results.</p>
-    <a class="button" href="Jane_Yugtan-Resume(1).pdf" target="_blank">Download Resume</a>
+    <a class="button" href="Jane Yugtan-2025 (1).pdf" target="_blank">Download Resume</a>
   </section>
 
   <section id="experience">
