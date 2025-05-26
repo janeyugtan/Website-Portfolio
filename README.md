@@ -292,7 +292,7 @@
         <p>HubSpot SEO Certification</p>
       </div>
       <div>
-        <img src="verified power user v3_1.png" alt="ClickUp Verified Power User Badge">
+        <img src="verified power user  v3_1.png" alt="ClickUp Verified Power User Badge">
         <p>ClickUp Verified Power User</p>
       </div>
     </div>
