@@ -249,18 +249,39 @@
     </div>
   </section>
 
-  <section id="sites">
+    <section id="sites">
     <h2>Sites Managed</h2>
-    <ul class="simple-list">
-      <li><a href="http://aaroof.net/" target="_blank">aaroof.net</a></li>
-      <li><a href="https://fantisewerdrainpros.com/" target="_blank">fantisewerdrainpros.com</a></li>
-      <li><a href="https://morganwhitewindowcoverings.com/" target="_blank">morganwhitewindowcoverings.com</a></li>
-      <li><a href="https://forgetmenotlessons.com/" target="_blank">forgetmenotlessons.com</a></li>
-      <li><a href="https://sanbenitorealty.com/" target="_blank">sanbenitorealty.com</a></li>
-      <li><a href="https://marketingmeca.com/" target="_blank">marketingmeca.com</a></li>
-      <li><a href="https://whiskeylibrary.com/" target="_blank">whiskeylibrary.com</a></li>
-    </ul>
-    <p>Building SOPs and processes for Marketing Meca and Whiskey Library, managing content, and overseeing website builds and requests.</p>
+    <div class="grid-two">
+      <a href="http://aaroof.net/" target="_blank">
+        <img src="AA-ROOFING-LOGO-02.png" alt="AA Roofing Logo">
+        <p>AA Roofing</p>
+      </a>
+      <a href="https://fantisewerdrainpros.com/" target="_blank">
+        <img src="Fanti-sewer-and-drain-pros-retina.png" alt="Fanti Sewer and Drain Pros Logo">
+        <p>Fanti Sewer & Drain Pros</p>
+      </a>
+      <a href="https://morganwhitewindowcoverings.com/" target="_blank">
+        <img src="MW-logo.png" alt="Morgan White Window Coverings Logo">
+        <p>Morgan White Window Coverings</p>
+      </a>
+      <a href="https://forgetmenotlessons.com/" target="_blank">
+        <img src="cropped-Forget-Me-Not-02.png" alt="Forget Me Not Lessons Logo">
+        <p>Forget Me Not Lessons</p>
+      </a>
+      <a href="https://sanbenitorealty.com/" target="_blank">
+        <img src="san-benito-realty-hollister-ca.webp" alt="San Benito Realty Logo">
+        <p>San Benito Realty</p>
+      </a>
+      <a href="https://marketingmeca.com/" target="_blank">
+        <img src="marketingmeca.jpeg" alt="Marketing Meca Logo">
+        <p>Marketing Meca</p>
+      </a>
+      <a href="https://whiskeylibrary.com/" target="_blank">
+        <img src="WL-LOGO.webp" alt="Whiskey Library Logo">
+        <p>Whiskey Library</p>
+      </a>
+    </div>
+    <p>Currently working with Marketing Meca and Whiskey Library as active clients — building SOPs and processes, managing content, and overseeing website builds and ongoing requests. I’ve also supported other client accounts through operations, content coordination, and project management roles, helping ensure smooth execution and delivery across multiple digital initiatives.</p>
   </section>
 
   <section id="contact">
