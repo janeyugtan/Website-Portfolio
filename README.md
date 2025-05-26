@@ -288,7 +288,7 @@
     <h2>Certifications & Badges</h2>
     <div class="grid-two">
       <div>
-        <img src="SEO HUBspot certification for HubSpot (1).png" alt="HubSpot SEO Certification Logo">
+        <img src="HubSpot (1).png" alt="HubSpot SEO Certification Logo">
         <p>HubSpot SEO Certification</p>
       </div>
       <div>
