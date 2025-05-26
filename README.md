@@ -284,6 +284,20 @@
     <p>Currently working with Marketing Meca and Whiskey Library as active clients — building SOPs and processes, managing content, and overseeing website builds and ongoing requests. I’ve also supported other client accounts through operations, content coordination, and project management roles, helping ensure smooth execution and delivery across multiple digital initiatives.</p>
   </section>
 
+    <section id="certifications">
+    <h2>Certifications & Badges</h2>
+    <div class="grid-two">
+      <div>
+        <img src="SEO HUBspot certification for HubSpot (1).png" alt="HubSpot SEO Certification Logo">
+        <p>HubSpot SEO Certification</p>
+      </div>
+      <div>
+        <img src="verified power user v3_1.png" alt="ClickUp Verified Power User Badge">
+        <p>ClickUp Verified Power User</p>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
     <h2>Contact</h2>
     <p>Let’s Connect:</p>
