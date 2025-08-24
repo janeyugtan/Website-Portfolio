@@ -59,7 +59,6 @@
 
 ## 🤝 Clients & Websites Managed
 <p align="left">
-  <img src="ppcprofessorlogo.png" height="36" alt="PPC Professor"/>
   <img src="70KLOGO.webp" height="36" alt="70K Affiliates"/>
   <img src="dreamindigitallogo.jpeg" height="36" alt="Dream in Digital"/>
   <img src="threecoltslogo.png" height="36" alt="Threecolts"/>
