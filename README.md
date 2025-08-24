@@ -78,7 +78,6 @@
   <img src="White_WL_Logo.avif" height="36" alt="Whiskey Library (alt)"/>
 </p>
 
-> If any logo doesn’t render, verify its filename above matches the repo exactly.
 
 ---
 
