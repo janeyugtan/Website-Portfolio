@@ -89,7 +89,7 @@
 
 ## 🏅 Certifications
 <p align="left">
-  <img src="verified power user v3_1.png" height="40" alt="ClickUp Verified Power User"/>
+  <img src="verified power user  v3_1.png" height="40" alt="ClickUp Verified Power User"/>
   <img src="HubSpot%20(1).png" height="40" alt="HubSpot SEO Certification"/>
 </p>
 
