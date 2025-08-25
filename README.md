@@ -91,9 +91,10 @@
       </div>
     </div>
   </a>
+---
 
-## 🗂 Experience (Selected)
-
+ ### 🗂 Experience (Selected)
+ 
 ### Project Manager — **Whiskey Library** *(2025)*
 - Launched data-driven affiliate engine: **$10K+ in 30 days**.
 - Automated outreach & tracking; onboarding time **-87%**.
@@ -112,7 +113,6 @@
 - Automated sequences; maintained SLAs & satisfaction.
 
 ---
-
 ## 🤝 Clients & Websites Managed
 
 <div align="left" style="display:flex; flex-wrap:wrap; gap:12px;">
@@ -174,7 +174,6 @@
 </div>
 
 ---
-
 ## 🎥 Testimonials
 
 <div style="display:flex; gap:12px; flex-wrap:wrap;">
@@ -208,7 +207,6 @@
 </div>
 
 ---
-
 ## 🏅 Certifications
 
 <div align="left" style="display:flex; flex-wrap:wrap; gap:12px;">
@@ -226,4 +224,5 @@
   <a href="https://calendly.com/jyugtan/discovery-call-with-jane" style="display:inline-block; padding:12px 16px; background:#1a1a2e; color:#fff; text-decoration:none; border-radius:12px; font-weight:700;">☕ Book a quick virtual coffee</a>
 </p>
 
+---
 <p align="center">© 2025 Jane Yugtan — Project Manager & Executive Assistant</p>
