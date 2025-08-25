@@ -135,7 +135,7 @@
   <!-- row 4 -->
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="PPCLOGO.jpeg" height="96" alt="PPC (alt logo)" /></span>
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="ealogo.png" height="96" alt="EA (brand asset)" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="White_WL_Logo.avif" height="96" alt="Whiskey Library (alt)" /></span>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
 </div>
 
 <hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
