@@ -6,6 +6,19 @@
 <p align="center"><b>Project Manager & Executive Assistant</b></p>
 
 <p align="center">
+  <a href="#about">About</a> ·
+  <a href="#results">🔎 Results at a Glance</a> ·
+  <a href="#demos">🎬 Demo Walkthroughs</a> ·
+  <a href="#testimonials">🎥 Testimonials</a> ·
+  <a href="#experience">🗂 Experience (Selected)</a> ·
+  <a href="#clients">🤝 Clients & Websites Managed</a> ·
+  <a href="#systems">🧭 Core Focus — PM &amp; EA</a> ·
+  <a href="#certifications">🏅 Certifications</a> ·
+  <a href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick virtual coffee</a> ·
+  <a href="#contact">💬 Contact</a>
+</p>
+
+<p align="center">
   <a href="https://www.linkedin.com/in/jyugtan/">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0f4c75?logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
@@ -18,6 +31,7 @@
 </p>
 
 <p align="center">
+  ## About
   <i>I translate founder vision into systems, sprints, and measurable outcomes across Marketing, Web, and Ops.
     Formal, metrics-driven, and results-focused.</i>
 </p>
@@ -43,7 +57,53 @@
 - Renewal hygiene, structured follow-ups, and executive-ready reporting cadence.
 
 ---
+## 🎬 Demo Walkthroughs
 
+<div style="display:flex; gap:12px; flex-wrap:wrap;">
+
+  <!-- AFFILIATE PROGRAM — Notion + GoHighLevel -->
+  <a href="https://www.loom.com/share/f883c45c953848fca179d3bc8724875f?sid=d8f6f443-d770-473d-b4ae-b3fe70d53e16" style="flex:1 1 340px; text-decoration:none; color:#0f172a;">
+    <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
+      <div style="position:relative; height:180px; background:linear-gradient(135deg,#1a1a2e,#0f4c75); display:flex; align-items:center; justify-content:center;">
+        <!-- play icon -->
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <span style="position:absolute; left:10px; bottom:10px; background:rgba(0,0,0,.55); color:#fff; padding:4px 8px; border-radius:8px; font-size:12px; font-weight:700;">
+          Affiliate Program — Notion &amp; GoHighLevel
+        </span>
+      </div>
+      <div style="padding:12px 14px;">
+        <div style="font-weight:800; font-size:16px; color:#1a1a2e; margin-bottom:6px;">Affiliate Program — Notion &amp; GoHighLevel (Loom)</div>
+        <div style="font-size:14px; color:#334155; margin-bottom:12px;">
+          Notion build + GoHighLevel pipeline that helped a busy founder focus on high-level creative strategy and scale revenue up to <b>$12K</b> with <b>$0 ad spend</b>.
+          Replaced disparate sheets and manual emails, added drip sequences, and shipped an <em>Affiliate Playbook</em> SOP in Notion. CEO time saved ≈ 2 hrs/week.
+        </div>
+        <span style="display:inline-block; padding:10px 14px; background:#0f4c75; color:#fff; border-radius:10px; font-weight:600;">▶ Watch Loom</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- TALENT & HIRING PIPELINE — Notion -->
+  <a href="https://www.loom.com/share/5aa9f903245a482dbbebb103931f1408?sid=c71648f4-3d88-49a5-bed6-65d787dd9dfe" style="flex:1 1 340px; text-decoration:none; color:#0f172a;">
+    <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
+      <div style="position:relative; height:180px; background:linear-gradient(135deg,#0f4c75,#1a1a2e); display:flex; align-items:center; justify-content:center;">
+        <!-- play icon -->
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <span style="position:absolute; left:10px; bottom:10px; background:rgba(0,0,0,.55); color:#fff; padding:4px 8px; border-radius:8px; font-size:12px; font-weight:700;">
+          Talent &amp; Hiring Pipeline — Notion
+        </span>
+      </div>
+      <div style="padding:12px 14px;">
+        <div style="font-weight:800; font-size:16px; color:#1a1a2e; margin-bottom:6px;">Talent &amp; Hiring Pipeline (Loom)</div>
+        <div style="font-size:14px; color:#334155; margin-bottom:12px;">
+          Rebuilt hiring from scattered docs to a Notion pipeline with stages, automations, and a <em>Hiring Playbook</em> (role-specific SOPs + contracts).
+          Cut onboarding/off-boarding from ~3 days to ~4 hours and removed last-minute CEO approvals.
+        </div>
+        <span style="display:inline-block; padding:10px 14px; background:#0f4c75; color:#fff; border-radius:10px; font-weight:600;">▶ Watch Loom</span>
+      </div>
+    </div>
+  </a>
+
+---
 ## 🗂 Experience (Selected)
 ### Project Manager — **Whiskey Library** *(2025)*
 - Launched data-driven affiliate engine: **$10K+ in 30 days**.
@@ -173,51 +233,6 @@
 
 ---
 
-## 🎬 Demo Walkthroughs
-
-<div style="display:flex; gap:12px; flex-wrap:wrap;">
-
-  <!-- AFFILIATE PROGRAM — Notion + GoHighLevel -->
-  <a href="https://www.loom.com/share/f883c45c953848fca179d3bc8724875f?sid=d8f6f443-d770-473d-b4ae-b3fe70d53e16" style="flex:1 1 340px; text-decoration:none; color:#0f172a;">
-    <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
-      <div style="position:relative; height:180px; background:linear-gradient(135deg,#1a1a2e,#0f4c75); display:flex; align-items:center; justify-content:center;">
-        <!-- play icon -->
-        <svg width="56" height="56" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-        <span style="position:absolute; left:10px; bottom:10px; background:rgba(0,0,0,.55); color:#fff; padding:4px 8px; border-radius:8px; font-size:12px; font-weight:700;">
-          Affiliate Program — Notion &amp; GoHighLevel
-        </span>
-      </div>
-      <div style="padding:12px 14px;">
-        <div style="font-weight:800; font-size:16px; color:#1a1a2e; margin-bottom:6px;">Affiliate Program — Notion &amp; GoHighLevel (Loom)</div>
-        <div style="font-size:14px; color:#334155; margin-bottom:12px;">
-          Notion build + GoHighLevel pipeline that helped a busy founder focus on high-level creative strategy and scale revenue up to <b>$12K</b> with <b>$0 ad spend</b>.
-          Replaced disparate sheets and manual emails, added drip sequences, and shipped an <em>Affiliate Playbook</em> SOP in Notion. CEO time saved ≈ 2 hrs/week.
-        </div>
-        <span style="display:inline-block; padding:10px 14px; background:#0f4c75; color:#fff; border-radius:10px; font-weight:600;">▶ Watch Loom</span>
-      </div>
-    </div>
-  </a>
-
-  <!-- TALENT & HIRING PIPELINE — Notion -->
-  <a href="https://www.loom.com/share/5aa9f903245a482dbbebb103931f1408?sid=c71648f4-3d88-49a5-bed6-65d787dd9dfe" style="flex:1 1 340px; text-decoration:none; color:#0f172a;">
-    <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
-      <div style="position:relative; height:180px; background:linear-gradient(135deg,#0f4c75,#1a1a2e); display:flex; align-items:center; justify-content:center;">
-        <!-- play icon -->
-        <svg width="56" height="56" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-        <span style="position:absolute; left:10px; bottom:10px; background:rgba(0,0,0,.55); color:#fff; padding:4px 8px; border-radius:8px; font-size:12px; font-weight:700;">
-          Talent &amp; Hiring Pipeline — Notion
-        </span>
-      </div>
-      <div style="padding:12px 14px;">
-        <div style="font-weight:800; font-size:16px; color:#1a1a2e; margin-bottom:6px;">Talent &amp; Hiring Pipeline (Loom)</div>
-        <div style="font-size:14px; color:#334155; margin-bottom:12px;">
-          Rebuilt hiring from scattered docs to a Notion pipeline with stages, automations, and a <em>Hiring Playbook</em> (role-specific SOPs + contracts).
-          Cut onboarding/off-boarding from ~3 days to ~4 hours and removed last-minute CEO approvals.
-        </div>
-        <span style="display:inline-block; padding:10px 14px; background:#0f4c75; color:#fff; border-radius:10px; font-weight:600;">▶ Watch Loom</span>
-      </div>
-    </div>
-  </a>
 
 </div>
 
@@ -239,3 +254,7 @@
 <a href="./RESUME.pdf">
   <img src="https://img.shields.io/badge/Resume-Download-0f4c75?logo=adobeacrobatreader&logoColor=white" alt="Resume" />
 </a>
+
+--
+
+<p align="center">© 2025 Jane Yugtan — Project Manager & Executive Assistant</p>
