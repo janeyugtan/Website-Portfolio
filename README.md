@@ -70,75 +70,93 @@
     <img src="70KLOGO.webp" height="96" alt="70K Affiliates" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="dreamindigitallogo.jpeg" height="96"" alt="Dream in Digital" style="display:block;"/>
+    <img src="dreamindigitallogo.jpeg" height="96" alt="Dream in Digital" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="threecoltslogo.png" height="96"" alt="Threecolts" style="display:block;"/>
+    <img src="threecoltslogo.png" height="96" alt="Threecolts" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="servicethrivelogo.png" height="96"" alt="ServiceThrive" style="display:block;"/>
+    <img src="servicethrivelogo.png" height="96" alt="ServiceThrive" style="display:block;"/>
   </span>
   <!-- row 2 -->
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="Fanti-sewer-and-drain-pros-retina.png" height="96"" alt="Fanti Sewer & Drain Pros" style="display:block;"/>
+    <img src="Fanti-sewer-and-drain-pros-retina.png" height="96" alt="Fanti Sewer & Drain Pros" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="MW-logo.png" height="96"" alt="Morgan White Window Coverings" style="display:block;"/>
+    <img src="MW-logo.png" height="96" alt="Morgan White Window Coverings" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="san-benito-realty-hollister-ca.webp" height="96"" alt="San Benito Realty" style="display:block;"/>
+    <img src="san-benito-realty-hollister-ca.webp" height="96" alt="San Benito Realty" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="WL-LOGO.webp" height="96"" alt="Whiskey Library" style="display:block;"/>
+    <img src="WL-LOGO.webp" height="96" alt="Whiskey Library" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="AA-ROOFING-LOGO-02.png" height="96"" alt="AA Roofing" style="display:block;"/>
+    <img src="AA-ROOFING-LOGO-02.png" height="96" alt="AA Roofing" style="display:block;"/>
   </span>
   <!-- row 3 -->
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="highlandfarmparklogo.jpg" height="96"" alt="Highland Farm Park" style="display:block;"/>
+    <img src="highlandfarmparklogo.jpg" height="96" alt="Highland Farm Park" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="audaciouslyagencylogo.png" height="96"" alt="Audaciously Agency" style="display:block;"/>
+    <img src="audaciouslyagencylogo.png" height="96" alt="Audaciously Agency" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="marketingmeca.jpeg" height="96"" alt="Marketing Meca" style="display:block;"/>
+    <img src="marketingmeca.jpeg" height="96" alt="Marketing Meca" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="cropped-Forget-Me-Not-02.png" height="96"" alt="Forget Me Not" style="display:block;"/>
+    <img src="cropped-Forget-Me-Not-02.png" height="96" alt="Forget Me Not" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="IAAlogo.png" height="96"" alt="Investor Attraction Academy" style="display:block;"/>
+    <img src="IAAlogo.png" height="96" alt="Investor Attraction Academy" style="display:block;"/>
   </span>
   <!-- row 4 -->
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="PPCLOGO.jpeg" height="96"" alt="PPC (alt logo)" style="display:block;"/>
+    <img src="PPCLOGO.jpeg" height="96" alt="PPC (alt logo)" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="ealogo.png" height="96"" alt="EA (brand asset)" style="display:block;"/>
+    <img src="ealogo.png" height="96" alt="EA (brand asset)" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="White_WL_Logo.avif" height="96"" alt="Whiskey Library (alt)" style="display:block;"/>
+    <img src="White_WL_Logo.avif" height="96" alt="Whiskey Library (alt)" style="display:block;"/>
   </span>
 </div>
 
 
 ---
 
-## 🎥 Testimonials (quote preview + video link)
-<!-- Two highlight cards with quotes + CTA buttons -->
-<div align="left">
-  <div style="display:inline-block; vertical-align:top; width:48%; min-width:280px; margin:6px; padding:14px; border:1px solid #e6eef7; border-radius:14px; background:#fbfeff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
-    <div style="font-weight:700; color:#1a1a2e; margin-bottom:6px;">Sean Elias — Threecolts / 70K Affiliates</div>
-    <div style="font-size:15px; color:#0f172a; margin:8px 0 12px;">“Jane is really good at getting things done fast.”</div>
-    <a href="./Sean%20Elias-TestimonialVideo.mp4" style="display:inline-block; padding:10px 14px; background:#0f4c75; color:#fff; text-decoration:none; border-radius:10px; font-weight:600;">▶ Watch video</a>
-  </div>
+## 🎥 Testimonials
 
-  <div style="display:inline-block; vertical-align:top; width:48%; min-width:280px; margin:6px; padding:14px; border:1px solid #e6eef7; border-radius:14px; background:#fbfeff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
-    <div style="font-weight:700; color:#1a1a2e; margin-bottom:6px;">Joe Remington — PPC Professor</div>
-    <div style="font-size:15px; color:#0f172a; margin:8px 0 12px;">“Jane is a phenomenal resource for me and my team.”</div>
-    <a href="./Joe-Remington-TestimonialVideo.mp4" style="display:inline-block; padding:10px 14px; background:#0f4c75; color:#fff; text-decoration:none; border-radius:10px; font-weight:600;">▶ Watch video</a>
-  </div>
+<div style="display:flex; gap:12px; flex-wrap:wrap;">
+
+  <!-- SEAN ELIAS -->
+  <a href="./Sean%20Elias-TestimonialVideo.mp4" style="flex:1 1 340px; text-decoration:none; color:#0f172a;">
+    <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
+      <div style="background:#0b1b2c;">
+        <img src="threecoltslogo.png" alt="Threecolts / 70K Affiliates" style="width:100%; height:180px; object-fit:cover; display:block;">
+      </div>
+      <div style="padding:12px 14px;">
+        <div style="font-weight:800; font-size:16px; color:#1a1a2e; margin-bottom:6px;">Sean Elias — Threecolts / 70K Affiliates</div>
+        <div style="font-size:14px; color:#334155; margin-bottom:10px;">“Jane is really good at getting things done fast.”</div>
+        <span style="display:inline-block; padding:10px 14px; background:#0f4c75; color:#fff; border-radius:10px; font-weight:600;">▶ Watch video</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- JOE REMINGTON -->
+  <a href="./Joe-Remington-TestimonialVideo.mp4" style="flex:1 1 340px; text-decoration:none; color:#0f172a;">
+    <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
+      <div style="background:#0b1b2c;">
+        <img src="ppcprofessorlogo.png" alt="PPC Professor" style="width:100%; height:180px; object-fit:cover; display:block;">
+      </div>
+      <div style="padding:12px 14px;">
+        <div style="font-weight:800; font-size:16px; color:#1a1a2e; margin-bottom:6px;">Joe Remington — PPC Professor</div>
+        <div style="font-size:14px; color:#334155; margin-bottom:10px;">“Jane is a phenomenal resource for me and my team.”</div>
+        <span style="display:inline-block; padding:10px 14px; background:#0f4c75; color:#fff; border-radius:10px; font-weight:600;">▶ Watch video</span>
+      </div>
+    </div>
+  </a>
+
 </div>
 
 ---
@@ -146,10 +164,10 @@
 ## 🏅 Certifications
 <div align="left">
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="verified power user  v3_1.png" height="300"" alt="ClickUp Verified Power User" style="display:block;"/>
+    <img src="verified power user  v3_1.png" height="300" alt="ClickUp Verified Power User" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="HubSpot%20(1).png" height="300"" alt="HubSpot SEO Certification" style="display:block;"/>
+    <img src="HubSpot%20(1).png" height="300" alt="HubSpot SEO Certification" style="display:block;"/>
   </span>
 </div>
 
