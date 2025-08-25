@@ -6,16 +6,7 @@
 <p align="center"><b>Project Manager & Executive Assistant</b></p>
 
 <p align="center">
-  <a href="#about">About</a> ·
-  <a href="#results">🔎 Results at a Glance</a> ·
-  <a href="#demos">🎬 Demo Walkthroughs</a> ·
-  <a href="#testimonials">🎥 Testimonials</a> ·
-  <a href="#experience">🗂 Experience (Selected)</a> ·
-  <a href="#clients">🤝 Clients & Websites Managed</a> ·
-  <a href="#systems">🧭 Core Focus — PM &amp; EA</a> ·
-  <a href="#certifications">🏅 Certifications</a> ·
   <a href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick virtual coffee</a> ·
-  <a href="#contact">💬 Contact</a>
 </p>
 
 <p align="center">
@@ -31,7 +22,6 @@
 </p>
 
 <p align="center">
-  ## About
   <i>I translate founder vision into systems, sprints, and measurable outcomes across Marketing, Web, and Ops.
     Formal, metrics-driven, and results-focused.</i>
 </p>
@@ -104,8 +94,9 @@
   </a>
 
 ---
+
 ## 🗂 Experience (Selected)
-### Project Manager — **Whiskey Library** *(2025)*
+## Project Manager — **Whiskey Library** *(2025)*
 - Launched data-driven affiliate engine: **$10K+ in 30 days**.
 - Automated outreach & tracking; onboarding time **-87%**.
 - **-30%** delays; **5–6 hrs/mo** founder time saved.
