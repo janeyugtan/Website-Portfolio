@@ -2,13 +2,14 @@
 
   <img src="jy-linkedin.jpeg" alt="Jane Yugtan" width="140" height="140" style="border-radius:50%;object-fit:cover;" />
 
-  # **Jane Yugtan**
-  **Project Manager & Executive Assistant**
+  **Jane Yugtan**
+    **Project Manager & Executive Assistant**
 
 
   <br/>
 
-  *I turn founder vision into systems, sprints, and measurable results across Marketing, Web, and Ops. Formal, metrics-driven, and outcomes-focused.*
+
+  I turn founder vision into systems, sprints, and measurable results across Marketing, Web, and Ops. Formal, metrics-driven, and outcomes-focused.
 </div>
 
 ---
