@@ -1,17 +1,25 @@
-<div align="center">
-
+<p align="center">
   <img src="jy-linkedin.jpeg" alt="Jane Yugtan" width="140" height="140" style="border-radius:50%;object-fit:cover;" />
+</p>
 
-  **Jane Yugtan**
-    
-  **Project Manager & Executive Assistant**
+<h1 align="center">Jane Yugtan</h1>
+<p align="center"><b>Project Manager & Executive Assistant</b></p>
 
+<p align="center">
+  <a href="https://www.linkedin.com/in/jyugtan/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0f4c75?logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:yugtanlynette@gmail.com">
+    <img src="https://img.shields.io/badge/Email-yugtanlynette%40gmail.com-1a1a2e?logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="./RESUME.pdf">
+    <img src="https://img.shields.io/badge/Resume-Download-0f4c75?logo=adobeacrobatreader&logoColor=white" alt="Resume" />
+  </a>
+</p>
 
-  <br/>
-
-
-  I turn founder vision into systems, sprints, and measurable results across Marketing, Web, and Ops. Formal, metrics-driven, and outcomes-focused.
-</div>
+<p align="center">
+  <i>I translate founder vision into systems, sprints, and measurable outcomes across Marketing, Web, and Ops. Formal, metrics-driven, and results-focused.</i>
+</p>
 
 ---
 
@@ -19,19 +27,21 @@
 - **$10K+** affiliate revenue in the **first 30 days** (zero ad spend).
 - **-87%** onboarding time (3 days → **4 hours**).
 - **95%** new-hire satisfaction (from ~60%).
-- **-30%** project delays via ClickUp QA gates and automation.
-- **5–6 hrs/mo** founder time saved with reporting and status automation.
+- **-30%** project delays via ClickUp QA gates & automation.
+- **5–6 hrs/mo** founder time saved with reporting & status automation.
+
+> **Operating style:** Strategic, structured, and calm under pressure. I turn meetings/looms into prioritized roadmaps with risk flags, SLAs, and KPI visibility.
 
 ---
 
 ## 🧭 Core Focus — PM & EA
 **Project Management**
 - Roadmaps → sprints → QA in **ClickUp** and **Notion**.
-- SOPs, RACI, risk flags, and KPI dashboards to keep throughput predictable.
+- SOPs, RACI, risk registers, and KPI dashboards for predictable throughput.
 
 **Executive Assistant**
-- Inbox & calendar control, stakeholder comms, meeting notes → tasks.
-- Renewal hygiene, structured follow-ups, and executive-ready reports.
+- Inbox & calendar control; stakeholder comms; meeting notes → actionable tasks.
+- Renewal hygiene, structured follow-ups, and executive-ready reporting cadence.
 
 ---
 
@@ -57,6 +67,7 @@
 
 ## 🤝 Clients & Websites Managed
 <p align="left">
+  <img src="ppcprofessorlogo.png" height="36" alt="PPC Professor"/>
   <img src="70KLOGO.webp" height="36" alt="70K Affiliates"/>
   <img src="dreamindigitallogo.jpeg" height="36" alt="Dream in Digital"/>
   <img src="threecoltslogo.png" height="36" alt="Threecolts"/>
@@ -70,12 +81,13 @@
   <img src="audaciouslyagencylogo.png" height="36" alt="Audaciously Agency"/>
   <img src="marketingmeca.jpeg" height="36" alt="Marketing Meca"/>
   <img src="cropped-Forget-Me-Not-02.png" height="36" alt="Forget Me Not"/>
-  <img src="IAAlogo.png" height="36" alt="Investor Attraction Academy"/>
+  <img src="IAlogo.png" height="36" alt="Investor Attraction Academy"/>
   <img src="PPCLOGO.jpeg" height="36" alt="PPC (alt logo)"/>
   <img src="ealogo.png" height="36" alt="EA (brand asset)"/>
   <img src="White_WL_Logo.avif" height="36" alt="Whiskey Library (alt)"/>
 </p>
 
+> If any logo doesn’t render, confirm the filename above matches the repo exactly (case-sensitive; encode spaces if any).
 
 ---
 
@@ -87,7 +99,7 @@
 
 ## 🏅 Certifications
 <p align="left">
-  <img src="verified power user  v3_1.png" height="40" alt="ClickUp Verified Power User"/>
+  <img src="verified%20power%20user%20v3_1.png" height="40" alt="ClickUp Verified Power User"/>
   <img src="HubSpot%20(1).png" height="40" alt="HubSpot SEO Certification"/>
 </p>
 
