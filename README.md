@@ -118,7 +118,6 @@
     <img src="ealogo.png" height="96" alt="EA (brand asset)" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="White_WL_Logo.avif" height="96" alt="Whiskey Library (alt)" style="display:block;"/>
   </span>
 </div>
 
