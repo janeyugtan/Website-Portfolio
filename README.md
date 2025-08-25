@@ -92,8 +92,9 @@
     </div>
   </a>
   
----
-### 🗂 Experience (Selected) 
+<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
+
+## 🗂 Experience (Selected)
 
 ### Project Manager — **Whiskey Library** *(2025)*
 - Launched data-driven affiliate engine: **$10K+ in 30 days**.
@@ -112,7 +113,8 @@
 - Founder support (inbox/calendar, client comms, scheduling).
 - Automated sequences; maintained SLAs & satisfaction.
 
----
+<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
+
 ## 🤝 Clients & Websites Managed
 
 <div align="left" style="display:flex; flex-wrap:wrap; gap:12px;">
@@ -159,7 +161,7 @@
     <img src="cropped-Forget-Me-Not-02.png" height="96" alt="Forget Me Not" />
   </span>
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="IAAlogo.png" height="96" alt="Investor Attraction Academy" />
+    <img src="IAlogo.png" height="96" alt="Investor Attraction Academy" />
   </span>
   <!-- row 4 -->
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
@@ -173,7 +175,8 @@
   </span>
 </div>
 
----
+<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
+
 ## 🎥 Testimonials
 
 <div style="display:flex; gap:12px; flex-wrap:wrap;">
@@ -181,7 +184,7 @@
   <a href="./Sean%20Elias-TestimonialVideo.mp4" style="flex:1 1 340px; text-decoration:none; color:#0f172a;">
     <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
       <div style="background:#0b1b2c;">
-        <img src="threecoltslogo.png" alt="Threecolts / 70K Affiliates" style="width:100%; height:180px; object-fit:cover; display:block;">
+        <img src="preview-sean.png" alt="Sean Elias — Threecolts / 70K Affiliates" style="width:100%; height:180px; object-fit:cover; display:block;">
       </div>
       <div style="padding:12px 14px;">
         <div style="font-weight:800; font-size:16px; color:#1a1a2e; margin-bottom:6px;">Sean Elias — Threecolts / 70K Affiliates</div>
@@ -195,7 +198,7 @@
   <a href="./Joe-Remington-TestimonialVideo.mp4" style="flex:1 1 340px; text-decoration:none; color:#0f172a;">
     <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
       <div style="background:#0b1b2c;">
-        <img src="PPCLOGO.jpeg" alt="PPC Professor" style="width:100%; height:180px; object-fit:cover; display:block;">
+        <img src="preview-joe.png" alt="Joe Remington — PPC Professor" style="width:100%; height:180px; object-fit:cover; display:block;">
       </div>
       <div style="padding:12px 14px;">
         <div style="font-weight:800; font-size:16px; color:#1a1a2e; margin-bottom:6px;">Joe Remington — PPC Professor</div>
@@ -206,23 +209,19 @@
   </a>
 </div>
 
----
+<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
+
 ## 🏅 Certifications
 
 <div align="left" style="display:flex; flex-wrap:wrap; gap:12px;">
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="verified power user  v3_1.png" height="120" alt="ClickUp Verified Power User" />
+    <img src="verified%20power%20user%20v3_1.png" height="120" alt="ClickUp Verified Power User" />
   </span>
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
     <img src="HubSpot%20(1).png" height="120" alt="HubSpot SEO Certification" />
   </span>
 </div>
 
----
-
-<p align="left" style="margin-top:12px;">
-  <a href="https://calendly.com/jyugtan/discovery-call-with-jane" style="display:inline-block; padding:12px 16px; background:#1a1a2e; color:#fff; text-decoration:none; border-radius:12px; font-weight:700;">☕ Book a quick virtual coffee</a>
-</p>
-
+<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
 ---
 <p align="center">© 2025 Jane Yugtan — Project Manager & Executive Assistant</p>
