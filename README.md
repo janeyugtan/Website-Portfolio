@@ -91,8 +91,9 @@
       </div>
     </div>
   </a>
+  
 ---
-**### 🗂 Experience (Selected)** 
+### 🗂 Experience (Selected) 
 
 ### Project Manager — **Whiskey Library** *(2025)*
 - Launched data-driven affiliate engine: **$10K+ in 30 days**.
