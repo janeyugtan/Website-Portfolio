@@ -146,10 +146,10 @@
 ## 🏅 Certifications
 <div align="left">
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="verified power user  v3_1.png" height="200"" alt="ClickUp Verified Power User" style="display:block;"/>
+    <img src="verified power user  v3_1.png" height="500"" alt="ClickUp Verified Power User" style="display:block;"/>
   </span>
   <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="HubSpot%20(1).png" height="200"" alt="HubSpot SEO Certification" style="display:block;"/>
+    <img src="HubSpot%20(1).png" height="500"" alt="HubSpot SEO Certification" style="display:block;"/>
   </span>
 </div>
 
