@@ -161,7 +161,7 @@
     <img src="cropped-Forget-Me-Not-02.png" height="96" alt="Forget Me Not" />
   </span>
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="IAlogo.png" height="96" alt="Investor Attraction Academy" />
+    <img src="IAAlogo.png" height="96" alt="Investor Attraction Academy" />
   </span>
   <!-- row 4 -->
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
@@ -215,7 +215,7 @@
 
 <div align="left" style="display:flex; flex-wrap:wrap; gap:12px;">
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="verified%20power%20user%20v3_1.png" height="120" alt="ClickUp Verified Power User" />
+    <img src="verified power user  v3_1.png" height="120" alt="ClickUp Verified Power User" />
   </span>
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
     <img src="HubSpot%20(1).png" height="120" alt="HubSpot SEO Certification" />
