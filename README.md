@@ -69,7 +69,7 @@
   <img src="audaciouslyagencylogo.png" height="36" alt="Audaciously Agency"/>
   <img src="marketingmeca.jpeg" height="36" alt="Marketing Meca"/>
   <img src="cropped-Forget-Me-Not-02.png" height="36" alt="Forget Me Not"/>
-  <img src="IAlogo.png" height="36" alt="Investor Attraction Academy"/>
+  <img src="IAAlogo.png" height="36" alt="Investor Attraction Academy"/>
   <img src="PPCLOGO.jpeg" height="36" alt="PPC (alt logo)"/>
   <img src="ealogo.png" height="36" alt="EA (brand asset)"/>
   <img src="White_WL_Logo.avif" height="36" alt="Whiskey Library (alt)"/>
