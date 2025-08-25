@@ -147,7 +147,7 @@
   <a href="./Joe-Remington-TestimonialVideo.mp4" style="flex:1 1 340px; text-decoration:none; color:#0f172a;">
     <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
       <div style="background:#0b1b2c;">
-        <img src="ppcprofessorlogo.png" alt="PPC Professor" style="width:100%; height:180px; object-fit:cover; display:block;">
+        <img src="PPCLOGO.jpeg" alt="PPC Professor" style="width:100%; height:180px; object-fit:cover; display:block;">
       </div>
       <div style="padding:12px 14px;">
         <div style="font-weight:800; font-size:16px; color:#1a1a2e; margin-bottom:6px;">Joe Remington — PPC Professor</div>
