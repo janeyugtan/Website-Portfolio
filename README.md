@@ -93,10 +93,9 @@
     </div>
   </a>
 
----
-
 ## 🗂 Experience (Selected)
-## Project Manager — **Whiskey Library** *(2025)*
+
+### Project Manager — **Whiskey Library** *(2025)*
 - Launched data-driven affiliate engine: **$10K+ in 30 days**.
 - Automated outreach & tracking; onboarding time **-87%**.
 - **-30%** delays; **5–6 hrs/mo** founder time saved.
@@ -116,70 +115,70 @@
 ---
 
 ## 🤝 Clients & Websites Managed
-<div align="left">
+
+<div align="left" style="display:flex; flex-wrap:wrap; gap:12px;">
   <!-- row 1 -->
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="70KLOGO.webp" height="96" alt="70K Affiliates" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="70KLOGO.webp" height="96" alt="70K Affiliates" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="dreamindigitallogo.jpeg" height="96" alt="Dream in Digital" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="dreamindigitallogo.jpeg" height="96" alt="Dream in Digital" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="threecoltslogo.png" height="96" alt="Threecolts" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="threecoltslogo.png" height="96" alt="Threecolts" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="servicethrivelogo.png" height="96" alt="ServiceThrive" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="servicethrivelogo.png" height="96" alt="ServiceThrive" />
   </span>
   <!-- row 2 -->
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="Fanti-sewer-and-drain-pros-retina.png" height="96" alt="Fanti Sewer & Drain Pros" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="Fanti-sewer-and-drain-pros-retina.png" height="96" alt="Fanti Sewer & Drain Pros" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="MW-logo.png" height="96" alt="Morgan White Window Coverings" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="MW-logo.png" height="96" alt="Morgan White Window Coverings" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="san-benito-realty-hollister-ca.webp" height="96" alt="San Benito Realty" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="san-benito-realty-hollister-ca.webp" height="96" alt="San Benito Realty" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="WL-LOGO.webp" height="96" alt="Whiskey Library" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="WL-LOGO.webp" height="96" alt="Whiskey Library" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="AA-ROOFING-LOGO-02.png" height="96" alt="AA Roofing" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="AA-ROOFING-LOGO-02.png" height="96" alt="AA Roofing" />
   </span>
   <!-- row 3 -->
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="highlandfarmparklogo.jpg" height="96" alt="Highland Farm Park" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="highlandfarmparklogo.jpg" height="96" alt="Highland Farm Park" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="audaciouslyagencylogo.png" height="96" alt="Audaciously Agency" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="audaciouslyagencylogo.png" height="96" alt="Audaciously Agency" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="marketingmeca.jpeg" height="96" alt="Marketing Meca" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="marketingmeca.jpeg" height="96" alt="Marketing Meca" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="cropped-Forget-Me-Not-02.png" height="96" alt="Forget Me Not" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="cropped-Forget-Me-Not-02.png" height="96" alt="Forget Me Not" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="IAAlogo.png" height="96" alt="Investor Attraction Academy" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="IAlogo.png" height="96" alt="Investor Attraction Academy" />
   </span>
   <!-- row 4 -->
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="PPCLOGO.jpeg" height="96" alt="PPC (alt logo)" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="PPCLOGO.jpeg" height="96" alt="PPC (alt logo)" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="ealogo.png" height="96" alt="EA (brand asset)" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="ealogo.png" height="96" alt="EA (brand asset)" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="White_WL_Logo.avif" height="96" alt="Whiskey Library (alt)" />
   </span>
 </div>
-
 
 ---
 
 ## 🎥 Testimonials
 
 <div style="display:flex; gap:12px; flex-wrap:wrap;">
-
   <!-- SEAN ELIAS -->
   <a href="./Sean%20Elias-TestimonialVideo.mp4" style="flex:1 1 340px; text-decoration:none; color:#0f172a;">
     <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
@@ -207,41 +206,23 @@
       </div>
     </div>
   </a>
-
 </div>
 
 ---
 
 ## 🏅 Certifications
-<div align="left">
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="verified power user  v3_1.png" height="300" alt="ClickUp Verified Power User" style="display:block;"/>
+
+<div align="left" style="display:flex; flex-wrap:wrap; gap:12px;">
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="verified%20power%20user%20v3_1.png" height="120" alt="ClickUp Verified Power User" />
   </span>
-  <span style="display:inline-block;margin:6px;padding:10px 14px;border:1px solid #e6eef7;border-radius:14px;background:#ffffff;box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="HubSpot%20(1).png" height="300" alt="HubSpot SEO Certification" style="display:block;"/>
+  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
+    <img src="HubSpot%20(1).png" height="120" alt="HubSpot SEO Certification" />
   </span>
 </div>
 
 ---
 
-
-</div>
-
 <p align="left" style="margin-top:12px;">
-  <a href="https://calendly.com/jyugtan/discovery-call-with-jane" style="display:inline-block; padding:12px 16px; background:#1a1a2e; color:#fff; text-decoration:none; border-radius:12px; font-weight:700;">
-    ☕ Book a quick virtual coffee
-  </a>
+  <a href="https://calendly.com/jyugtan/discovery-call-with-jane" style="display:inline-block; padding:12px 16px; background:#1a1a2e; color:#fff; text-decoration:none; border-radius:12px; font-weight:700;">☕ Book a quick virtual coffee</a>
 </p>
-
-## 💬 Contact
-<a href="https://www.linkedin.com/in/jyugtan/">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0f4c75?logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="mailto:yugtanlynette@gmail.com">
-  <img src="https://img.shields.io/badge/Email-yugtanlynette%40gmail.com-1a1a2e?logo=gmail&logoColor=white" alt="Email" />
-</a>
-<a href="./RESUME.pdf">
-  <img src="https://img.shields.io/badge/Resume-Download-0f4c75?logo=adobeacrobatreader&logoColor=white" alt="Resume" />
-</a>
-
-<p align="center">© 2025 Jane Yugtan — Project Manager & Executive Assistant</p>
