@@ -3,7 +3,8 @@
   <img src="jy-linkedin.jpeg" alt="Jane Yugtan" width="140" height="140" style="border-radius:50%;object-fit:cover;" />
 
   **Jane Yugtan**
-    **Project Manager & Executive Assistant**
+    
+  **Project Manager & Executive Assistant**
 
 
   <br/>
