@@ -81,13 +81,12 @@
   <img src="audaciouslyagencylogo.png" height="36" alt="Audaciously Agency"/>
   <img src="marketingmeca.jpeg" height="36" alt="Marketing Meca"/>
   <img src="cropped-Forget-Me-Not-02.png" height="36" alt="Forget Me Not"/>
-  <img src="IAlogo.png" height="36" alt="Investor Attraction Academy"/>
+  <img src="IAAlogo.png" height="36" alt="Investor Attraction Academy"/>
   <img src="PPCLOGO.jpeg" height="36" alt="PPC (alt logo)"/>
   <img src="ealogo.png" height="36" alt="EA (brand asset)"/>
   <img src="White_WL_Logo.avif" height="36" alt="Whiskey Library (alt)"/>
 </p>
 
-> If any logo doesn’t render, confirm the filename above matches the repo exactly (case-sensitive; encode spaces if any).
 
 ---
 
@@ -99,7 +98,7 @@
 
 ## 🏅 Certifications
 <p align="left">
-  <img src="verified%20power%20user%20v3_1.png" height="40" alt="ClickUp Verified Power User"/>
+  <img src="verified power user  v3_1.png" height="40" alt="ClickUp Verified Power User"/>
   <img src="HubSpot%20(1).png" height="40" alt="HubSpot SEO Certification"/>
 </p>
 
