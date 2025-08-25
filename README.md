@@ -114,6 +114,7 @@
 <hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
 
 ## 🤝 Clients & Websites Managed
+
 <div align="left" style="display:flex; flex-wrap:wrap; gap:12px;">
   <!-- row 1 -->
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="70KLOGO.webp" height="96" alt="70K Affiliates" /></span>
@@ -135,7 +136,6 @@
   <!-- row 4 -->
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="PPCLOGO.jpeg" height="96" alt="PPC (alt logo)" /></span>
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="ealogo.png" height="96" alt="EA (brand asset)" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
 </div>
 
 <hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
@@ -178,10 +178,10 @@
 ## 🏅 Certifications
 <div align="left" style="display:flex; flex-wrap:wrap; gap:12px;">
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="verified power user  v3_1.png" height="350" alt="ClickUp Verified Power User" />
+    <img src="verified power user  v3_1.png" height="120" alt="ClickUp Verified Power User" />
   </span>
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="HubSpot%20(1).png" height="350" alt="HubSpot SEO Certification" />
+    <img src="HubSpot%20(1).png" height="120" alt="HubSpot SEO Certification" />
   </span>
 </div>
 
