@@ -18,7 +18,8 @@
 </p>
 
 <p align="center">
-  <i>I translate founder vision into systems, sprints, and measurable outcomes across Marketing, Web, and Ops. Formal, metrics-driven, and results-focused.</i>
+  <i>I translate founder vision into systems, sprints, and measurable outcomes across Marketing, Web, and Ops.
+    Formal, metrics-driven, and results-focused.</i>
 </p>
 
 ---
