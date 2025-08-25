@@ -233,8 +233,6 @@
   </a>
 </p>
 
---
-
 ## 💬 Contact
 <a href="https://www.linkedin.com/in/jyugtan/">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0f4c75?logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -245,7 +243,5 @@
 <a href="./RESUME.pdf">
   <img src="https://img.shields.io/badge/Resume-Download-0f4c75?logo=adobeacrobatreader&logoColor=white" alt="Resume" />
 </a>
-
---
 
 <p align="center">© 2025 Jane Yugtan — Project Manager & Executive Assistant</p>
