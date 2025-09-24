@@ -239,7 +239,7 @@
 
 <div align="left" style="display:flex; flex-wrap:wrap; gap:12px;">
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="verified power user v3_1.png" height="320" alt="ClickUp Verified Power User — 2025" />
+    <img src="verified power user  v3_1.png" height="320" alt="ClickUp Verified Power User — 2025" />
     <div align="center" style="font-size:13px; color:#334155; margin-top:6px;"><b>ClickUp Verified Power User (v3)</b> — 2025</div>
   </span>
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
