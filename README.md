@@ -42,18 +42,30 @@
 <div align="center" style="margin: 20px 0;">
   <a href="https://www.loom.com/share/6325ce02a04148188bf5de8a8e26732b?sid=54f70cf0-e26a-4e4c-9abf-9808cce40351" target="_blank" rel="noopener" style="text-decoration:none; color:#0f172a;" aria-label="Watch Jane's introduction video">
     <div style="border:2px solid #0f4c75; border-radius:16px; overflow:hidden; background:#fff; box-shadow:0 8px 24px rgba(15,76,117,.15); max-width:600px; margin:0 auto;">
-      <div style="position:relative; background:linear-gradient(135deg, #0f4c75 0%, #1a5490 100%); padding:40px 20px;">
-        <div style="text-align:center;">
-          <h3 style="color:#fff; margin:0 0 12px 0; font-size:24px; font-weight:800;">👋 Get to Know Jane</h3>
-          <p style="color:#e6f3ff; margin:0 0 20px 0; font-size:16px; line-height:1.5;">
-            Watch this quick 2-minute introduction to see how I help founders scale through systems, project management, and executive support.
-          </p>
-          <div style="display:inline-flex; align-items:center; background:rgba(255,255,255,0.9); padding:12px 24px; border-radius:50px; color:#0f4c75; font-weight:700; font-size:16px;">
-            <span style="margin-right:8px; font-size:20px;">▶️</span>
-            Watch Introduction Video
-          </div>
+      <!-- Video Cover Image -->
+      <div style="position:relative; background:#f8fafe;">
+        <img src="intro-cover.jpg" alt="Jane Yugtan - Video Introduction Cover" style="width:100%; height:320px; object-fit:cover; display:block;">
+        <!-- Play button overlay -->
+        <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:rgba(15,76,117,0.9); width:80px; height:80px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 20px rgba(0,0,0,0.3);">
+          <span style="color:#fff; font-size:28px; margin-left:4px;">▶️</span>
+        </div>
+        <!-- Video duration badge -->
+        <div style="position:absolute; bottom:12px; right:12px; background:rgba(0,0,0,0.8); color:#fff; padding:4px 8px; border-radius:4px; font-size:12px; font-weight:600;">
+          2:00
         </div>
       </div>
+      <!-- Video Content Description -->
+      <div style="padding:20px;">
+        <h3 style="color:#0f4c75; margin:0 0 12px 0; font-size:20px; font-weight:800;">👋 Get to Know Jane</h3>
+        <p style="color:#334155; margin:0 0 16px 0; font-size:15px; line-height:1.6;">
+          Watch this quick 2-minute introduction to see how I help founders scale through systems, project management, and executive support.
+        </p>
+        <div style="display:inline-flex; align-items:center; background:#0f4c75; padding:12px 24px; border-radius:50px; color:#fff; font-weight:700; font-size:16px; transition:all 0.2s;">
+          <span style="margin-right:8px; font-size:18px;">▶️</span>
+          Watch Introduction Video
+        </div>
+      </div>
+      <!-- Call to Action Footer -->
       <div style="padding:16px 20px; background:#f8fafe; border-top:1px solid #e6eef7;">
         <p style="margin:0; text-align:center; color:#334155; font-size:14px;">
           <strong>Ready to chat?</strong> 
@@ -239,7 +251,7 @@
 
 <div align="left" style="display:flex; flex-wrap:wrap; gap:12px;">
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="verified power user  v3_1.png" height="320" alt="ClickUp Verified Power User — 2025" />
+    <img src="verified power user v3_1.png" height="320" alt="ClickUp Verified Power User — 2025" />
     <div align="center" style="font-size:13px; color:#334155; margin-top:6px;"><b>ClickUp Verified Power User (v3)</b> — 2025</div>
   </span>
   <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
