@@ -1402,9 +1402,7 @@
           <h3>Life outside work</h3>
           <p>I love traveling around the Philippines, especially beach destinations. I enjoy sunsets, good conversations, and ending the day with a cocktail.</p>
           <p>I also love cats and exploring new places around my country. Working remotely allows me to do work I enjoy while still experiencing the world around me.</p>
-          <div style="width:100%; height:280px; overflow:hidden; border-radius:16px; margin-top:12px;">
-            <img src="473789924_497176110077009_588533906754352097_n (1).jpg" style="width:100%; height:100%; object-fit:cover; object-position:center 42%;" alt="Jane in Boracay Philippines" />
-          </div>
+          
         </div>
       </div>
     </section>
