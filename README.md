@@ -967,7 +967,7 @@
           <div class="result-copy">Based on 18 closed renewals out of 28 tracked renewal decisions.</div>
         </div>
         <div class="result-card">
-          <div class="result-kpi" data-count-to="185" data-suffix="K+">185K+</div>
+          <div class="result-kpi" data-count-to="135" data-suffix="K+">135K+</div>
           <div class="result-label">Global subscribers reached</div>
           <div class="result-copy">Included as an account manager in subscriber-facing email communications for a large global B2C audience.</div>
         </div>
@@ -991,9 +991,6 @@
           <div class="result-label">Project delays reduced</div>
           <div class="result-copy">Improved execution through QA gates, process control, and more predictable delivery workflows.</div>
         </div>
-        <div class="result-card">
-          <div class="result-kpi" data-count-to="6" data-prefix="~" data-suffix=" hrs">5–6 hrs</div>
-          <div class="result-label">Founder time saved monthly</div>
           <div class="result-copy">Freed up leadership time with better reporting, status visibility, and workflow automation.</div>
         </div>
       </div>
