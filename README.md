@@ -1005,46 +1005,51 @@
       <p class="section-subtitle">A tighter project section focused on your strongest and most relevant case studies.</p>
       <div class="projects-grid">
         <div class="project-card interactive-project" data-project="sava">
-          <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
-            <div class="project-kicker">Featured Project</div>
-            <a href="https://sava-amsterdam.com/" target="_blank" rel="noopener" class="btn btn-light" style="padding:6px 10px;font-size:12px;">Visit Website</a>
+          <div class="browser-frame" style="margin-bottom:16px; border:1px solid var(--line); box-shadow:0 12px 28px rgba(15,76,117,0.10);">
+            <div class="browser-top" style="background:#eef6fc; border-bottom:1px solid var(--line);">
+              <div class="browser-dots"><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span></div>
+              <div class="browser-url" style="background:#fff; color:var(--slate);">https://sava-amsterdam.com/</div>
+            </div>
+            <div class="browser-preview" style="background-image:url('https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/'); min-height:260px;">
+              <div class="preview-overlay">
+                <div class="preview-badge">🌐 Live Website</div>
+                <a href="https://sava-amsterdam.com/" target="_blank" rel="noopener" class="btn btn-light">Visit Website ↗</a>
+              </div>
+            </div>
           </div>
-          <div class="project-kicker">Featured Project</div>
-          <h3>SAVA Amsterdam — Company-Wide Notion Dashboard Optimization</h3>
+          <h3>SAVA Amsterdam</h3>
+          <p style="margin:0 0 10px; color:var(--blue); font-weight:700;">Full company Notion system</p>
           <p>
-            Designed a full Notion optimization structure for an e-commerce company to turn its workspace into a clean, scalable operating system for the entire business.
+            Company-wide Notion dashboard optimization concept designed for cleaner operations, better visibility, and a more scalable workspace structure.
           </p>
-          <ul>
-            <li>Structured company-wide dashboards across Sales, Customer Support, HR, Supply Chain, and Marketing</li>
-            <li>Centralized SOPs, KPIs, and team resources into one searchable system</li>
-            <li>Improved usability with a founder-friendly layout designed for visibility and adoption</li>
-            <li>Built a system intended to help teams find what they need faster and operate more consistently</li>
-          </ul>
           <div class="tag-row">
+            <span class="tag">What this project focused on</span>
             <span class="tag">E-commerce Ops</span>
-            <span class="tag">Workspace Design</span>
             <span class="tag">Company Systems</span>
           </div>
         </div>
+
         <div class="project-card interactive-project" data-project="whiskey">
-          <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
-            <div class="project-kicker">Featured Project</div>
-            <a href="https://whiskeylibrary.com/" target="_blank" rel="noopener" class="btn btn-light" style="padding:6px 10px;font-size:12px;">Visit Website</a>
+          <div class="browser-frame" style="margin-bottom:16px; border:1px solid var(--line); box-shadow:0 12px 28px rgba(15,76,117,0.10);">
+            <div class="browser-top" style="background:#eef6fc; border-bottom:1px solid var(--line);">
+              <div class="browser-dots"><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span></div>
+              <div class="browser-url" style="background:#fff; color:var(--slate);">https://whiskeylibrary.com/</div>
+            </div>
+            <div class="browser-preview" style="background-image:url('https://image.thum.io/get/width/1400/crop/900/noanimate/https://whiskeylibrary.com/'); min-height:260px;">
+              <div class="preview-overlay">
+                <div class="preview-badge">🌐 Live Website</div>
+                <a href="https://whiskeylibrary.com/" target="_blank" rel="noopener" class="btn btn-light">Visit Website ↗</a>
+              </div>
+            </div>
           </div>
-          <div class="project-kicker">Featured Project</div>
-          <h3>Whiskey Library — Affiliate Pipeline & Notion Workflow Build</h3>
+          <h3>Whiskey Library</h3>
+          <p style="margin:0 0 10px; color:var(--blue); font-weight:700;">$10K pipeline in 30 days</p>
           <p>
-            Launched a data-driven affiliate engine focused on generating qualified affiliates and building a pipeline valued at <strong>$10,000 in the first 30 days</strong>.
+            Affiliate pipeline and Notion workflow build focused on early-stage growth, visibility, and a more organized affiliate operations structure.
           </p>
-          <ul>
-            <li>Created a Notion-based workflow to manage affiliate operations, tracking, and visibility</li>
-            <li>Built structure for a more organized affiliate pipeline and operational follow-through</li>
-            <li>Supported a cleaner process for affiliate onboarding, coordination, and execution</li>
-            <li>Focused on turning early-stage affiliate efforts into a trackable revenue pipeline</li>
-          </ul>
           <div class="tag-row">
-            <span class="tag">Affiliate Operations</span>
-            <span class="tag">Pipeline Build</span>
+            <span class="tag">What this project focused on</span>
+            <span class="tag">Affiliate Ops</span>
             <span class="tag">Notion Workflow</span>
           </div>
         </div>
