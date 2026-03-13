@@ -1569,38 +1569,6 @@
     renewalsCalloutClose?.addEventListener('click', () => toggleRenewalsCallout(false));
 
     const projectData = {
-      'case-ops': {
-        website: 'about:blank',
-        preview: '',
-        kicker: 'Notion System Case Study',
-        title: 'From scattered processes to one clear operating system',
-        summary: 'I often step into businesses where workflows are spread across docs, chats, spreadsheets, and disconnected tools. My role is to bring that into one operational system that is easier to manage and easier for the team to adopt.',
-        stat: 'Cleaner operations, clearer ownership',
-        detailTitle: 'What I usually improve in this kind of project',
-        bullets: [
-          'Centralize SOPs, dashboards, and key resources into one workspace.',
-          'Create clearer structure so teams can find what they need faster.',
-          'Reduce dependency on memory and manual follow-up by improving visibility.',
-          'Design systems around real team usage, not just visual organization.'
-        ],
-        tags: ['Operations', 'Notion Systems', 'Documentation']
-      },
-      'case-pipeline': {
-        website: 'about:blank',
-        preview: '',
-        kicker: 'Notion System Case Study',
-        title: 'From manual follow-up to a trackable pipeline',
-        summary: 'When a process depends too much on memory, scattered notes, or constant checking in, I build a clearer workflow that makes progress easier to track and manage.',
-        stat: 'Better tracking, smoother execution',
-        detailTitle: 'What I usually improve in this kind of project',
-        bullets: [
-          'Organize stages, ownership, and statuses so movement is easier to follow.',
-          'Create cleaner handoffs between people or departments.',
-          'Support better consistency through templates, workflows, and automation.',
-          'Turn activity into something leadership can actually review and understand.'
-        ],
-        tags: ['Pipelines', 'Workflow Design', 'Process Clarity']
-      },
       sava: {
         website: 'https://sava-amsterdam.com/',
         preview: 'https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/',
@@ -1632,6 +1600,38 @@
           'Turned affiliate efforts into a more trackable and systemized growth function.'
         ],
         tags: ['Affiliate Ops', 'Pipeline Build', 'Notion Workflow']
+      },
+      'case-ops': {
+        website: '',
+        preview: '',
+        kicker: 'Notion System Case Study',
+        title: 'From scattered processes to one clear operating system',
+        summary: 'I often step into businesses where workflows are spread across documents, chats, spreadsheets, and disconnected tools. My role is to bring that into one operational system that is easier to manage and easier for the team to adopt.',
+        stat: 'Cleaner operations, clearer ownership',
+        detailTitle: 'What I usually improve in this kind of project',
+        bullets: [
+          'Centralize SOPs, dashboards, and key resources into one workspace.',
+          'Create clearer structure so teams can find what they need faster.',
+          'Reduce dependency on memory and manual follow-up by improving visibility.',
+          'Design systems around real team usage, not just visual organization.'
+        ],
+        tags: ['Operations', 'Notion Systems', 'Documentation']
+      },
+      'case-pipeline': {
+        website: '',
+        preview: '',
+        kicker: 'Notion System Case Study',
+        title: 'From manual follow-up to a trackable pipeline',
+        summary: 'When a process depends too much on memory, scattered notes, or constant checking in, I build a clearer workflow that makes progress easier to track and manage.',
+        stat: 'Better tracking, smoother execution',
+        detailTitle: 'What I usually improve in this kind of project',
+        bullets: [
+          'Organize stages, ownership, and statuses so movement is easier to follow.',
+          'Create cleaner handoffs between people or departments.',
+          'Support better consistency through templates, workflows, and automation.',
+          'Turn activity into something leadership can actually review and understand.'
+        ],
+        tags: ['Pipelines', 'Workflow Design', 'Process Clarity']
       }
     };
 
@@ -1644,11 +1644,42 @@
       const project = projectData[projectKey];
       if (!project) return;
       const tags = project.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
-      const websiteButton = project.website && project.website !== 'about:blank'
-        ? `<a href="${project.website}" target="_blank" rel="noopener" class="btn btn-light">Visit Live Website ↗</a>`
-        : `<span class="preview-badge">Internal Systems / Workflow Case Study</span>`;
-      const previewBlock = project.preview
-        ? `${previewBlock}
+      const bullets = project.bullets.map(item => `<li>${item}</li>`).join('');
+
+      let previewBlock = '';
+      if (project.preview && project.website) {
+        previewBlock = `
+          <div class="browser-frame">
+            <div class="browser-top">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-url">${project.website}</div>
+            </div>
+            <div class="browser-preview" style="background-image:url('${project.preview}');">
+              <div class="preview-overlay">
+                <div class="preview-badge">🌐 Live Website Preview</div>
+                <a href="${project.website}" target="_blank" rel="noopener" class="btn btn-light">Visit Live Website ↗</a>
+              </div>
+            </div>
+          </div>`;
+      } else {
+        previewBlock = `
+          <div class="project-modal-panel" style="min-height:320px; display:flex; flex-direction:column; justify-content:center; gap:16px; background:linear-gradient(135deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.06) 100%);">
+            <div class="project-modal-kicker" style="margin-bottom:0; width:max-content;">System Transformation</div>
+            <div style="font-size:28px; font-weight:800; line-height:1.15;">Before → After</div>
+            <div style="color:rgba(255,255,255,0.92);">I redesign messy workflows into clear systems with stronger visibility, cleaner handoffs, and better day-to-day usability for the team.</div>
+            <span class="preview-badge">Internal Systems / Workflow Case Study</span>
+          </div>`;
+      }
+
+      projectModalContent.innerHTML = `
+        <div>
+          <div class="project-modal-kicker">${project.kicker}</div>
+          <h3>${project.title}</h3>
+          <p>${project.summary}</p>
+          <ul>${bullets}</ul>
+        </div>
+        <div>
+          ${previewBlock}
           <div class="project-modal-panel" style="margin-top:16px;">
             <div class="project-modal-stat">${project.stat}</div>
             <p>${project.detailTitle}</p>
