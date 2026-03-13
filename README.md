@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -28,6 +27,8 @@
       background: linear-gradient(180deg, #f8fbff 0%, #ffffff 30%, #f8fbff 100%);
       line-height: 1.6;
     }
+
+    body.modal-open { overflow: hidden; }
 
     a { color: var(--blue); text-decoration: none; }
     a:hover { text-decoration: underline; }
@@ -147,7 +148,8 @@
       border-radius: 14px;
       font-weight: 700;
       border: 1px solid transparent;
-      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+      cursor: pointer;
     }
 
     .btn:hover {
@@ -235,6 +237,7 @@
       padding: 18px;
       box-shadow: var(--shadow);
       min-height: 168px;
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
     }
 
     .result-card::before {
@@ -245,6 +248,36 @@
       width: 100%;
       height: 5px;
       background: linear-gradient(90deg, var(--blue), var(--blue-2));
+    }
+
+    .result-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 36px rgba(15, 76, 117, 0.14);
+    }
+
+    .result-card.featured-metric {
+      cursor: pointer;
+    }
+
+    .result-card.featured-metric.active {
+      transform: scale(1.02);
+      box-shadow: 0 20px 40px rgba(15, 76, 117, 0.18);
+      border-color: #b9d7ec;
+    }
+
+    .result-card.featured-metric.active::after {
+      content: "";
+      position: absolute;
+      inset: 14px;
+      border: 2px solid rgba(15,76,117,0.16);
+      border-radius: 14px;
+      pointer-events: none;
+      animation: pulseRing 1.3s ease-out infinite;
+    }
+
+    @keyframes pulseRing {
+      0% { transform: scale(0.96); opacity: 0.8; }
+      100% { transform: scale(1.04); opacity: 0; }
     }
 
     .result-kpi {
@@ -264,6 +297,74 @@
     .result-copy {
       color: var(--slate);
       font-size: 14px;
+    }
+
+    .metric-callout {
+      margin-top: 18px;
+      background: linear-gradient(135deg, #0f4c75 0%, #1d6fa5 100%);
+      color: white;
+      border-radius: 22px;
+      box-shadow: 0 18px 40px rgba(15, 76, 117, 0.20);
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 20px;
+      align-items: center;
+      opacity: 0;
+      transform: translateY(12px) scale(0.98);
+      max-height: 0;
+      overflow: hidden;
+      pointer-events: none;
+      transition: opacity 0.28s ease, transform 0.28s ease, max-height 0.32s ease, padding 0.32s ease, margin 0.32s ease;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .metric-callout.show {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      max-height: 260px;
+      pointer-events: auto;
+      padding: 24px;
+      margin-bottom: 4px;
+    }
+
+    .metric-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.14);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      margin: 0 auto;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.18);
+    }
+
+    .metric-callout h3 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+
+    .metric-callout p {
+      margin: 0;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .metric-close {
+      margin-top: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
     }
 
     .services-grid,
@@ -332,6 +433,33 @@
       letter-spacing: 0.2px;
       text-transform: uppercase;
       margin-bottom: 10px;
+    }
+
+    .project-card.interactive-project {
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+      overflow: hidden;
+    }
+
+    .project-card.interactive-project::after {
+      content: "Click to expand";
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: #eef6fc;
+      color: var(--blue);
+      border: 1px solid #d7e8f5;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .project-card.interactive-project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 42px rgba(15,76,117,0.16);
+      border-color: #bfd9ec;
     }
 
     .logo-marquee {
@@ -403,6 +531,119 @@
       font-size: 14px;
     }
 
+    .project-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(9, 19, 35, 0.72);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.28s ease;
+    }
+
+    .project-modal.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .project-modal-card {
+      width: min(980px, 100%);
+      max-height: 90vh;
+      overflow: auto;
+      border-radius: 28px;
+      background: linear-gradient(180deg, #0f4c75 0%, #0c3c5d 100%);
+      color: white;
+      box-shadow: 0 30px 80px rgba(5, 15, 28, 0.35);
+      transform: scale(0.92);
+      transition: transform 0.28s ease;
+      position: relative;
+      padding: 34px;
+    }
+
+    .project-modal.show .project-modal-card {
+      transform: scale(1);
+    }
+
+    .project-modal-close {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.10);
+      color: white;
+      font-size: 22px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .project-modal-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .project-modal-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.14);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .project-modal h3 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.05;
+    }
+
+    .project-modal p,
+    .project-modal li {
+      color: rgba(255,255,255,0.92);
+    }
+
+    .project-modal ul {
+      margin: 18px 0 0;
+      padding-left: 20px;
+    }
+
+    .project-modal-panel {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .project-modal-stat {
+      font-size: 38px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .project-modal .tag {
+      background: rgba(255,255,255,0.10);
+      border-color: rgba(255,255,255,0.16);
+      color: #fff;
+    }
+
     @media (max-width: 980px) {
       .hero-card { grid-template-columns: 1fr; text-align: center; }
       .results-grid { grid-template-columns: repeat(2, 1fr); }
@@ -412,6 +653,8 @@
       .cta-row, .badge-row { justify-content: center; }
       .topbar-inner { flex-direction: column; align-items: flex-start; }
       .nav { justify-content: flex-start; }
+      .metric-callout,
+      .project-modal-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 640px) {
@@ -421,6 +664,8 @@
       .results-grid { grid-template-columns: 1fr; }
       .logo-card { min-width: 150px; height: 100px; }
       .section-title { font-size: 26px; }
+      .project-modal-card { padding: 24px; }
+      .metric-callout.show { padding: 20px; }
     }
   </style>
 </head>
@@ -485,7 +730,7 @@
       <h2 class="section-title">🔎 Results at a Glance</h2>
       <p class="section-subtitle">A cleaner KPI layout to highlight the outcomes most relevant to account management, renewals, automation, and systems design.</p>
       <div class="results-grid">
-        <div class="result-card">
+        <div class="result-card featured-metric" id="renewalsMetricCard">
           <div class="result-kpi">$100K+</div>
           <div class="result-label">Enterprise renewals processed</div>
           <div class="result-copy">Managed renewal processing across high-value subscription accounts with a focus on retention, continuity, and account health.</div>
@@ -524,6 +769,16 @@
           <div class="result-kpi">5–6 hrs</div>
           <div class="result-label">Founder time saved monthly</div>
           <div class="result-copy">Freed up leadership time with better reporting, status visibility, and workflow automation.</div>
+        </div>
+      </div>
+      <div class="metric-callout" id="renewalsCallout">
+        <div class="metric-icon">🔎</div>
+        <div>
+          <h3>$100K+ in enterprise renewals</h3>
+          <p>
+            This metric reflects renewal processing across high-value subscription accounts, with a strong focus on revenue retention, account continuity, and client relationship management. Click the KPI card again or use the button below to minimize this view.
+          </p>
+          <button class="metric-close" id="renewalsCalloutClose" type="button">Close highlight</button>
         </div>
       </div>
     </section>
@@ -578,7 +833,7 @@
       <h2 class="section-title">📌 Featured Projects</h2>
       <p class="section-subtitle">A tighter project section focused on your strongest and most relevant case studies.</p>
       <div class="projects-grid">
-        <div class="project-card">
+        <div class="project-card interactive-project" data-project="sava">
           <div class="project-kicker">Featured Project</div>
           <h3>SAVA Amsterdam — Company-Wide Notion Dashboard Optimization</h3>
           <p>
@@ -596,7 +851,7 @@
             <span class="tag">Company Systems</span>
           </div>
         </div>
-        <div class="project-card">
+        <div class="project-card interactive-project" data-project="whiskey">
           <div class="project-kicker">Featured Project</div>
           <h3>Whiskey Library — Affiliate Pipeline & Notion Workflow Build</h3>
           <p>
@@ -758,9 +1013,114 @@
       </div>
     </section>
 
-    <div class="footer">© 2025 Jane Yugtan — Account Manager | Project Manager | Executive Assistant</div>
+    <div class="footer">© 2026 JNugdan — Account Manager | Project Manager | Executive Assistant</div>
   </main>
 
+  <div class="project-modal" id="projectModal" aria-hidden="true">
+    <div class="project-modal-card">
+      <button class="project-modal-close" id="projectModalClose" aria-label="Close project details">×</button>
+      <div class="project-modal-grid" id="projectModalContent"></div>
+    </div>
+  </div>
+
+  <script>
+    const renewalsMetricCard = document.getElementById('renewalsMetricCard');
+    const renewalsCallout = document.getElementById('renewalsCallout');
+    const renewalsCalloutClose = document.getElementById('renewalsCalloutClose');
+
+    function toggleRenewalsCallout(forceOpen = null) {
+      const shouldOpen = forceOpen !== null ? forceOpen : !renewalsCallout.classList.contains('show');
+      renewalsCallout.classList.toggle('show', shouldOpen);
+      renewalsMetricCard.classList.toggle('active', shouldOpen);
+      if (shouldOpen) {
+        renewalsCallout.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    renewalsMetricCard?.addEventListener('click', () => toggleRenewalsCallout());
+    renewalsCalloutClose?.addEventListener('click', () => toggleRenewalsCallout(false));
+
+    const projectData = {
+      sava: {
+        kicker: 'Featured Project',
+        title: 'SAVA Amsterdam — Company-Wide Notion Dashboard Optimization',
+        summary: 'A full workspace optimization concept for an e-commerce company, designed to turn Notion into a cleaner, more scalable operating system across departments.',
+        stat: 'Full company Notion system',
+        detailTitle: 'What this project focused on',
+        bullets: [
+          'Restructured company-wide dashboards across Sales, Customer Support, HR, Supply Chain, and Marketing.',
+          'Centralized SOPs, KPIs, references, and team resources into one searchable workspace.',
+          'Designed the workspace around founder visibility, cleaner navigation, and easier team adoption.',
+          'Improved consistency by creating a layout that supports governance and long-term operational use.'
+        ],
+        tags: ['E-commerce Ops', 'Notion Design', 'Company Systems']
+      },
+      whiskey: {
+        kicker: 'Featured Project',
+        title: 'Whiskey Library — Affiliate Pipeline & Notion Workflow Build',
+        summary: 'A data-driven affiliate operations build focused on generating qualified affiliates, improving visibility, and shaping a revenue pipeline valued at $10,000 in the first 30 days.',
+        stat: '$10K pipeline in 30 days',
+        detailTitle: 'What this project focused on',
+        bullets: [
+          'Built a Notion-based workflow to support affiliate operations, tracking, and execution visibility.',
+          'Created structure around qualified affiliate generation and early-stage pipeline management.',
+          'Improved operational follow-through with a cleaner process for onboarding and coordination.',
+          'Turned affiliate efforts into a more trackable and systemized growth function.'
+        ],
+        tags: ['Affiliate Ops', 'Pipeline Build', 'Notion Workflow']
+      }
+    };
+
+    const projectModal = document.getElementById('projectModal');
+    const projectModalContent = document.getElementById('projectModalContent');
+    const projectModalClose = document.getElementById('projectModalClose');
+    const projectCards = document.querySelectorAll('.interactive-project');
+
+    function renderProjectModal(projectKey) {
+      const project = projectData[projectKey];
+      if (!project) return;
+      const tags = project.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+      const bullets = project.bullets.map(item => `<li>${item}</li>`).join('');
+      projectModalContent.innerHTML = `
+        <div>
+          <div class="project-modal-kicker">${project.kicker}</div>
+          <h3>${project.title}</h3>
+          <p>${project.summary}</p>
+          <ul>${bullets}</ul>
+        </div>
+        <div>
+          <div class="project-modal-panel">
+            <div class="project-modal-stat">${project.stat}</div>
+            <p>${project.detailTitle}</p>
+            <div class="tag-row">${tags}</div>
+          </div>
+        </div>
+      `;
+      projectModal.classList.add('show');
+      projectModal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+    }
+
+    function closeProjectModal() {
+      projectModal.classList.remove('show');
+      projectModal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+    }
+
+    projectCards.forEach(card => {
+      card.addEventListener('click', () => {
+        renderProjectModal(card.dataset.project);
+      });
+    });
+
+    projectModalClose?.addEventListener('click', closeProjectModal);
+    projectModal?.addEventListener('click', (e) => {
+      if (e.target === projectModal) closeProjectModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeProjectModal();
+    });
+  </script>
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>
