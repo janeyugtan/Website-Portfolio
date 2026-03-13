@@ -906,9 +906,9 @@
         <a href="#results">Results</a>
         <a href="#services">Services</a>
         <a href="#featured-projects">Projects</a>
-        <a href="#about">About Me</a>
-        
+        <a href="#pricing">Ways I Work</a>
         <a href="#testimonials">Testimonials</a>
+        <a href="#about">About</a>
         </nav>
     </div>
   </div>
@@ -955,14 +955,13 @@
 
     <section class="section reveal" id="results">
       <h2 class="section-title">🔎 Results at a Glance</h2>
-      <p class="section-subtitle">A cleaner KPI layout to highlight the outcomes most relevant to account management, renewals, automation, and systems design.</p>
+      <p class="section-subtitle">A cleaner KPI layout to highlight the outcomes most relevant to account management, automation, and systems design.</p>
       <div class="results-grid">
         <div class="result-card featured-metric" id="renewalsMetricCard">
           <div class="result-kpi" data-count-to="100" data-prefix="$" data-suffix="K+">$100K+</div>
           <div class="result-label">Enterprise renewals processed</div>
           <div class="result-copy">Managed renewal processing across high-value subscription accounts with a focus on retention, continuity, and account health.</div>
         </div>
-        
         <div class="result-card">
           <div class="result-kpi" data-count-to="135" data-suffix="K+">135K+</div>
           <div class="result-label">Global subscribers reached</div>
@@ -988,7 +987,6 @@
           <div class="result-label">Project delays reduced</div>
           <div class="result-copy">Improved execution through QA gates, process control, and more predictable delivery workflows.</div>
         </div>
-          </div>
         <div class="result-card">
           <div class="result-kpi" data-count-to="10" data-suffix=" hrs">6–10 hrs</div>
           <div class="result-label">CEO time saved weekly</div>
@@ -1191,313 +1189,7 @@
       </div>
     </section>
 
-    <section class="section reveal" id="case-studies">
-      <div class="container">
-        <h2 class="section-title">🧠 Notion System Case Studies</h2>
-        <p class="section-subtitle">Here’s how I typically think about operations and system design: I look at what feels messy, manual, or hard to maintain, then turn it into something cleaner, easier to use, and more scalable for the team.</p>
-
-        <div class="projects-grid">
-          <div class="project-card interactive-project" data-project="case-ops">
-            <div class="project-kicker">Before → After</div>
-            <h3>From scattered processes to one clear operating system</h3>
-            <p>In many teams, information lives in too many places. I help bring workflows, SOPs, dashboards, and ownership into one system that is easier to navigate and actually gets used.</p>
-            <div class="tag-row">
-              <span class="tag">Dashboards</span>
-              <span class="tag">SOPs</span>
-              <span class="tag">Team Visibility</span>
-            </div>
-          </div>
-
-          <div class="project-card interactive-project" data-project="case-pipeline">
-            <div class="project-kicker">Before → After</div>
-            <h3>From manual follow-up to a trackable pipeline</h3>
-            <p>I build systems that make pipelines easier to manage by improving structure, visibility, status tracking, and handoff clarity across moving parts.</p>
-            <div class="tag-row">
-              <span class="tag">Pipelines</span>
-              <span class="tag">Automation</span>
-              <span class="tag">Execution</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="pricing">
-      <div class="container">
-        <h2 class="section-title">💼 Ways I Work With Clients</h2>
-        <p class="section-subtitle">I moved this closer to the end of the page so visitors can first understand my work, then decide which type of engagement fits best.</p>
-
-        <div style="position:relative; overflow:hidden; border-radius:24px; background:#fff; border:1px solid var(--line); box-shadow:var(--shadow); padding:22px;">
-          <div style="display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px;" id="pricingCarousel">
-
-            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
-              <div class="service-icon">⏱</div>
-              <h3>Hourly Support</h3>
-              <p>For ongoing operational, project, or account management support.</p>
-              <ul>
-                <li><strong>$15–$20 / hour</strong></li>
-                <li>Ideal for agencies and founders needing flexible support</li>
-              </ul>
-            </div>
-
-            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
-              <div class="service-icon">🧩</div>
-              <h3>Notion System Projects</h3>
-              <p>Company-wide Notion dashboards, operations systems, and workflow design.</p>
-              <ul>
-                <li><strong>Starts at $1,500 / month</strong></li>
-                <li>Includes planning, system design, and implementation</li>
-              </ul>
-            </div>
-
-            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
-              <div class="service-icon">🔧</div>
-              <h3>Maintenance & Retainers</h3>
-              <p>Post-project maintenance, optimization, and system support.</p>
-              <ul>
-                <li><strong>Starts at $500 / month</strong></li>
-                <li>Ideal for teams needing ongoing updates</li>
-              </ul>
-            </div>
-
-            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
-              <div class="service-icon">📊</div>
-              <h3>Consulting Sessions</h3>
-              <p>Strategic sessions focused on systems, operations, and workflow optimization.</p>
-              <ul>
-                <li><strong>$50 / hour</strong></li>
-                <li>Includes a follow-up SOP or action guide</li>
-              </ul>
-            </div>
-
-          </div>
-          <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:14px;">
-            <button class="btn btn-light" type="button" id="pricingPrev">← Prev</button>
-            <button class="btn btn-light" type="button" id="pricingNext">Next →</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="featured-projects">
-      <h2 class="section-title">📌 Featured Projects</h2>
-      <p class="section-subtitle">These are two projects I’m proud to highlight because they reflect how I think, what I build, and how I support growth through systems and execution.</p>
-      <div class="projects-grid">
-        <div class="project-card interactive-project" data-project="sava">
-          <div class="browser-frame" style="margin-bottom:16px; border:1px solid var(--line); box-shadow:0 12px 28px rgba(15,76,117,0.10);">
-            <div class="browser-top" style="background:#eef6fc; border-bottom:1px solid var(--line);">
-              <div class="browser-dots"><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span></div>
-              <div class="browser-url" style="background:#fff; color:var(--slate);">https://sava-amsterdam.com/</div>
-            </div>
-            <div class="browser-preview" style="background-image:url('https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/'); min-height:260px;">
-              <div class="preview-overlay">
-                <div class="preview-badge">🌐 Live Website</div>
-                <a href="https://sava-amsterdam.com/" target="_blank" rel="noopener" class="btn btn-light">Visit Website ↗</a>
-              </div>
-            </div>
-          </div>
-          <h3>SAVA Amsterdam</h3>
-          <p style="margin:0 0 10px; color:var(--blue); font-weight:700;">Full company Notion system</p>
-          <p>
-            Company-wide Notion dashboard optimization concept designed for cleaner operations, better visibility, and a more scalable workspace structure.
-          </p>
-          <div class="tag-row">
-            <span class="tag">What this project focused on</span>
-            <span class="tag">E-commerce Ops</span>
-            <span class="tag">Company Systems</span>
-          </div>
-        </div>
-
-        <div class="project-card interactive-project" data-project="whiskey">
-          <div class="browser-frame" style="margin-bottom:16px; border:1px solid var(--line); box-shadow:0 12px 28px rgba(15,76,117,0.10);">
-            <div class="browser-top" style="background:#eef6fc; border-bottom:1px solid var(--line);">
-              <div class="browser-dots"><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span></div>
-              <div class="browser-url" style="background:#fff; color:var(--slate);">https://whiskeylibrary.com/</div>
-            </div>
-            <div class="browser-preview" style="background-image:url('https://image.thum.io/get/width/1400/crop/900/noanimate/https://whiskeylibrary.com/'); min-height:260px;">
-              <div class="preview-overlay">
-                <div class="preview-badge">🌐 Live Website</div>
-                <a href="https://whiskeylibrary.com/" target="_blank" rel="noopener" class="btn btn-light">Visit Website ↗</a>
-              </div>
-            </div>
-          </div>
-          <h3>Whiskey Library</h3>
-          <p style="margin:0 0 10px; color:var(--blue); font-weight:700;">$10K pipeline in 30 days</p>
-          <p>
-            Affiliate pipeline and Notion workflow build focused on early-stage growth, visibility, and a more organized affiliate operations structure.
-          </p>
-          <div class="tag-row">
-            <span class="tag">What this project focused on</span>
-            <span class="tag">Affiliate Ops</span>
-            <span class="tag">Notion Workflow</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="about">
-      <h2 class="section-title">👋 About Me</h2>
-      <p class="section-subtitle">A little about my story, how I started working remotely, and why this work matters to me.</p>
-      <div class="experience-grid">
-
-        <div class="experience-card exp-card">
-          <div class="meta">My Story</div>
-          <h3>Working remotely since 2021</h3>
-          <p>
-            I started working remotely in 2021, and in 2022 I landed my first real project supporting a marketing agency in the United States. Since then everything shifted.
-          </p>
-          <p>
-            Over the past few years I’ve helped marketing agencies and founders improve operations, organize systems, and support their client relationships. Along the way I’ve worked with around <strong>10 amazing clients</strong> and indirectly supported <strong>100+ of their clients</strong> through project delivery, systems work, and account management.
-          </p>
-          <p>
-            My work now focuses on helping teams save time, streamline processes, and build systems that make daily operations easier.
-          </p>
-        </div>
-
-        <div class="experience-card exp-card">
-          <div class="meta">Experience</div>
-          <h3>Project Manager & Operations Support (2022–2025)</h3>
-          <ul>
-            <li>Supported marketing agencies and founders with project delivery and systems implementation</li>
-            <li>Built Notion workflows, affiliate pipelines, and operational dashboards</li>
-            <li>Helped teams improve execution visibility, coordination, and process consistency</li>
-          </ul>
-        </div>
-
-        <div class="experience-card exp-card">
-          <div class="meta">Fun Fact</div>
-          <h3>Life outside work</h3>
-          <p>
-            I love traveling around the Philippines, especially beach destinations. I enjoy sunsets, good conversations, and ending the day with a cocktail.
-          </p>
-          <p>
-            I also love cats and exploring new places around my country. Working remotely allows me to do work I enjoy while still experiencing the world around me.
-          </p>
-          <img src="473789924_497176110077009_588533906754352097_n (1).jpg" style="width:100%; border-radius:16px; margin-top:12px;" alt="Jane in Boracay Philippines" />
-        </div>
-
-      </div>
-    </section>
-
     
-
-    <section class="section reveal" id="testimonials">
-      <h2 class="section-title">🎥 Testimonials</h2>
-      <p class="section-subtitle">Social proof from collaborators and clients who have seen how I work.</p>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <h3>Sean Elias — Threecolts / 70K Affiliates</h3>
-          <p class="quote">“Jane is really good at getting things done fast.”</p>
-          <a class="btn btn-secondary" href="./Sean%20Elias-TestimonialVideo.mp4">▶ Watch video</a>
-        </div>
-        <div class="testimonial-card">
-          <h3>Joe Remington — PPC Professor</h3>
-          <p class="quote">“Jane is a phenomenal resource for me and my team.”</p>
-          <a class="btn btn-secondary" href="./Joe-Remington-TestimonialVideo.mp4">▶ Watch video</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="about">
-      <h2 class="section-title">👋 About Me</h2>
-      <p class="section-subtitle">A little about my story, how I started working remotely, and why this work matters to me.</p>
-      <div class="experience-grid">
-
-        <div class="experience-card exp-card">
-          <div class="meta">My Story</div>
-          <h3>Working remotely since 2021</h3>
-          <p>
-            I started working remotely in 2021, and in 2022 I landed my first real project supporting a marketing agency in the United States. Since then everything shifted.
-          </p>
-          <p>
-            Over the past few years I’ve helped marketing agencies and founders improve operations, organize systems, and support their client relationships. Along the way I’ve worked with around <strong>10 amazing clients</strong> and indirectly supported <strong>100+ of their clients</strong> through project delivery, systems work, and account management.
-          </p>
-          <p>
-            My work now focuses on helping teams save time, streamline processes, and build systems that make daily operations easier.
-          </p>
-        </div>
-
-        <div class="experience-card exp-card">
-          <div class="meta">Experience</div>
-          <h3>Project Manager & Operations Support (2022–2025)</h3>
-          <ul>
-            <li>Supported marketing agencies and founders with project delivery and systems implementation</li>
-            <li>Built Notion workflows, affiliate pipelines, and operational dashboards</li>
-            <li>Helped teams improve execution visibility, coordination, and process consistency</li>
-          </ul>
-        </div>
-
-        <div class="experience-card exp-card">
-          <div class="meta">Fun Fact</div>
-          <h3>Life outside work</h3>
-          <p>
-            I love traveling around the Philippines, especially beach destinations. I enjoy sunsets, good conversations, and ending the day with a cocktail.
-          </p>
-          <p>
-            I also love cats and exploring new places around my country. Working remotely allows me to do work I enjoy while still experiencing the world around me.
-          </p>
-          <img src="473789924_497176110077009_588533906754352097_n (1).jpg" style="width:100%; border-radius:16px; margin-top:12px;" alt="Jane in Boracay Philippines" />
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section reveal" id="pricing">
-      <div class="container">
-        <h2 class="section-title">💼 Ways I Work With Clients</h2>
-        <p class="section-subtitle">I moved this closer to the end of the page so visitors can first understand my work, then decide which type of engagement fits best.</p>
-
-        <div style="position:relative; overflow:hidden; border-radius:24px; background:#fff; border:1px solid var(--line); box-shadow:var(--shadow); padding:22px;">
-          <div style="display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px;" id="pricingCarousel">
-
-            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
-              <div class="service-icon">⏱</div>
-              <h3>Hourly Support</h3>
-              <p>For ongoing operational, project, or account management support.</p>
-              <ul>
-                <li><strong>$15–$20 / hour</strong></li>
-                <li>Ideal for agencies and founders needing flexible support</li>
-              </ul>
-            </div>
-
-            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
-              <div class="service-icon">🧩</div>
-              <h3>Notion System Projects</h3>
-              <p>Company-wide Notion dashboards, operations systems, and workflow design.</p>
-              <ul>
-                <li><strong>Starts at $1,500 / month</strong></li>
-                <li>Includes planning, system design, and implementation</li>
-              </ul>
-            </div>
-
-            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
-              <div class="service-icon">🔧</div>
-              <h3>Maintenance & Retainers</h3>
-              <p>Post-project maintenance, optimization, and system support.</p>
-              <ul>
-                <li><strong>Starts at $500 / month</strong></li>
-                <li>Ideal for teams needing ongoing updates</li>
-              </ul>
-            </div>
-
-            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
-              <div class="service-icon">📊</div>
-              <h3>Consulting Sessions</h3>
-              <p>Strategic sessions focused on systems, operations, and workflow optimization.</p>
-              <ul>
-                <li><strong>$50 / hour</strong></li>
-                <li>Includes a follow-up SOP or action guide</li>
-              </ul>
-            </div>
-
-          </div>
-          <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:14px;">
-            <button class="btn btn-light" type="button" id="pricingPrev">← Prev</button>
-            <button class="btn btn-light" type="button" id="pricingNext">Next →</button>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="section reveal" id="contact">
       <div class="end-cta">
@@ -1626,11 +1318,11 @@
     const pricingNext = document.getElementById('pricingNext');
 
     pricingPrev?.addEventListener('click', () => {
-      pricingCarousel?.scrollBy({ left: -340, behavior: 'smooth' });
+      if (pricingCarousel) pricingCarousel.scrollLeft -= 340;
     });
 
     pricingNext?.addEventListener('click', () => {
-      pricingCarousel?.scrollBy({ left: 340, behavior: 'smooth' });
+      if (pricingCarousel) pricingCarousel.scrollLeft += 340;
     });
 
     const projectData = {
