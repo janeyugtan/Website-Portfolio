@@ -937,16 +937,17 @@
 
     <section class="section reveal" id="video-intro">
       <h2 class="section-title">🎥 Meet Jane</h2>
-      <p class="section-subtitle">A quick introduction to how I support enterprise accounts, founders, and growing teams through client success, operational systems, and project execution.</p>
+      <p class="section-subtitle">This quick introduction gives you context before you explore the portfolio below, including the kind of work I do, the teams I support, and what you’ll find on this page.</p>
       <div class="video-card">
-        <a class="video-thumb" href="https://www.loom.com/share/6325ce02a04148188bf5de8a8e26732b?sid=54f70cf0-e26a-4e4c-9abf-9808cce40351" target="_blank" rel="noopener" aria-label="Watch Jane's introduction video">
+        <a class="video-thumb" href="#" id="openIntroVideo" aria-label="Watch Jane's introduction video">
           <img src="intro-cover.jpg" alt="Jane Yugtan introduction video cover" />
           <div class="play-button">▶</div>
+          <div style="position:absolute; left:50%; top:calc(50% + 72px); transform:translateX(-50%); z-index:2; background:rgba(15,76,117,0.9); color:#fff; padding:10px 16px; border-radius:999px; font-size:13px; font-weight:700; box-shadow:0 8px 20px rgba(15,76,117,0.25);">Watch My Introduction</div>
         </a>
         <div class="video-body">
-          <h3>Client-facing strategy with systems that actually get used</h3>
+          <h3>A quick introduction before you explore my portfolio</h3>
           <p>
-            This introduction highlights my approach to account management, delivery support, automation, and founder operations — with a strong emphasis on communication, follow-through, and measurable outcomes.
+            In this short video, I introduce myself, share the kind of work I do across account management, project delivery, and systems optimization, and walk you through what you can expect to see throughout this one-page portfolio.
           </p>
         </div>
       </div>
@@ -1324,6 +1325,20 @@
     <div class="footer">© 2026 Jane Yugtan — Account Manager | Project Manager | Executive Assistant</div>
   </main>
 
+  <div class="project-modal" id="introVideoModal" aria-hidden="true">
+    <div class="project-modal-card" style="background:linear-gradient(180deg, #0b1f33 0%, #0f4c75 100%); max-width:960px;">
+      <button class="project-modal-close" id="introVideoModalClose" aria-label="Close intro video">×</button>
+      <div style="margin-bottom:18px;">
+        <div class="project-modal-kicker">Meet Jane</div>
+        <h3 style="margin-bottom:8px;">A quick introduction to my portfolio</h3>
+        <p style="margin:0; color:rgba(255,255,255,0.9);">This short video shares who I am, the kind of work I do, and what you’ll find throughout this portfolio before you continue scrolling.</p>
+      </div>
+      <div style="position:relative; width:100%; padding-top:56.25%; border-radius:22px; overflow:hidden; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14); box-shadow:0 20px 42px rgba(5,15,28,0.22);">
+        <iframe id="introVideoFrame" src="" title="Jane portfolio introduction video" allowfullscreen style="position:absolute; inset:0; width:100%; height:100%; border:0;"></iframe>
+      </div>
+    </div>
+  </div>
+
   <div class="project-modal" id="projectModal" aria-hidden="true">
     <div class="project-modal-card">
       <button class="project-modal-close" id="projectModalClose" aria-label="Close project details">×</button>
@@ -1332,6 +1347,33 @@
   </div>
 
   <script>
+    const introVideoModal = document.getElementById('introVideoModal');
+    const introVideoModalClose = document.getElementById('introVideoModalClose');
+    const openIntroVideo = document.getElementById('openIntroVideo');
+    const introVideoFrame = document.getElementById('introVideoFrame');
+    const introVideoUrl = 'https://www.loom.com/embed/6325ce02a04148188bf5de8a8e26732b?sid=54f70cf0-e26a-4e4c-9abf-9808cce40351';
+
+    function openIntroVideoModal(e) {
+      if (e) e.preventDefault();
+      introVideoFrame.src = introVideoUrl;
+      introVideoModal.classList.add('show');
+      introVideoModal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+    }
+
+    function closeIntroVideoModal() {
+      introVideoModal.classList.remove('show');
+      introVideoModal.setAttribute('aria-hidden', 'true');
+      introVideoFrame.src = '';
+      document.body.classList.remove('modal-open');
+    }
+
+    openIntroVideo?.addEventListener('click', openIntroVideoModal);
+    introVideoModalClose?.addEventListener('click', closeIntroVideoModal);
+    introVideoModal?.addEventListener('click', (e) => {
+      if (e.target === introVideoModal) closeIntroVideoModal();
+    });
+
     const revealSections = document.querySelectorAll('.section.reveal');
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -1486,7 +1528,10 @@
       if (e.target === projectModal) closeProjectModal();
     });
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeProjectModal();
+      if (e.key === 'Escape') {
+        closeProjectModal();
+        closeIntroVideoModal();
+      }
     });
   </script>
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
