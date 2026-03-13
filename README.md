@@ -603,6 +603,14 @@
     .carousel-arrow.left { left: 14px; }
     .carousel-arrow.right { right: 14px; }
 
+    .auto-carousel {
+      scroll-behavior: smooth;
+    }
+
+    .auto-carousel:hover {
+      cursor: grab;
+    }
+
     .work-card {
       cursor: pointer;
       transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
@@ -1311,7 +1319,7 @@
         <div class="carousel-shell">
           <button class="carousel-arrow left" type="button" id="pricingPrev" aria-label="Previous">‹</button>
           <div style="position:relative; overflow:hidden; border-radius:24px; background:#fff; border:1px solid var(--line); box-shadow:var(--shadow); padding:22px;">
-            <div style="display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; scrollbar-width:none; -ms-overflow-style:none;" id="pricingCarousel">
+            <div style="display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; scrollbar-width:none; -ms-overflow-style:none;" id="pricingCarousel" class="auto-carousel">
               <div class="panel service-panel work-card" data-project="work-hourly" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
                 <div class="service-icon">⏱</div>
                 <h3>Hourly Support</h3>
@@ -1524,6 +1532,22 @@
     renewalsCalloutClose?.addEventListener('click', () => toggleRenewalsCallout(false));
 
     const pricingCarousel = document.getElementById('pricingCarousel');
+    let autoCarouselInterval = null;
+
+    function startAutoCarousel() {
+      if (!pricingCarousel) return;
+      stopAutoCarousel();
+      autoCarouselInterval = setInterval(() => {
+        loopCarousel('next');
+      }, 3200);
+    }
+
+    function stopAutoCarousel() {
+      if (autoCarouselInterval) {
+        clearInterval(autoCarouselInterval);
+        autoCarouselInterval = null;
+      }
+    }
     const pricingPrev = document.getElementById('pricingPrev');
     const pricingNext = document.getElementById('pricingNext');
 
@@ -1548,6 +1572,13 @@
 
     pricingPrev?.addEventListener('click', () => loopCarousel('prev'));
     pricingNext?.addEventListener('click', () => loopCarousel('next'));
+
+    pricingCarousel?.addEventListener('mouseenter', stopAutoCarousel);
+    pricingCarousel?.addEventListener('mouseleave', startAutoCarousel);
+    pricingCarousel?.addEventListener('touchstart', stopAutoCarousel, { passive: true });
+    pricingCarousel?.addEventListener('touchend', startAutoCarousel, { passive: true });
+
+    startAutoCarousel();
 
     const projectData = {
       'work-hourly': {
