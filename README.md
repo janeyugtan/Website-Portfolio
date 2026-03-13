@@ -963,8 +963,7 @@
           <div class="result-copy">Managed renewal processing across high-value subscription accounts with a focus on retention, continuity, and account health.</div>
         </div>
         <div class="result-card">
-          <div class="result-kpi" data-count-to="64.3" data-suffix="%">64.3%</div>
-          <div class="result-label">Renewal close rate</div>
+          
           <div class="result-copy">Based on 18 closed renewals out of 28 tracked renewal decisions.</div>
         </div>
         <div class="result-card">
@@ -1139,37 +1138,51 @@
 
     <section class="section reveal" id="notion-demos">
       <div class="container">
-        <h2 class="section-title">🎬 Notion Systems & Workflow Demos</h2>
-        <p class="section-subtitle">Below are short walkthrough videos where I explain systems and workflows I built inside Notion for operations, affiliate pipelines, and team management.</p>
+        <h2 class="section-title">🎬 Notion Systems & Automation Demos</h2>
+        <p class="section-subtitle">Below are short walkthrough videos where I demonstrate systems and automation workflows I built inside Notion and integrated tools. Hover over each demo to preview and open the walkthrough.</p>
 
         <div class="projects-grid">
 
-          <div class="project-card">
-            <div class="project-kicker">Notion System Demo</div>
-            <h3>Affiliate Operations Pipeline</h3>
-            <p>I walk through the affiliate pipeline and automation workflow built to track partners, revenue contribution, and outreach progress.</p>
+          <div class="project-card" style="transition:transform .25s ease, box-shadow .25s ease;">
+            <div class="project-kicker">System Walkthrough</div>
+            <h3>Affiliate Operations Automation Dashboard</h3>
+            <p>This walkthrough shows the creator and affiliate pipeline I designed using Notion and GoHighLevel to organize outreach, manage creator partnerships, and track program performance.</p>
+
             <div class="tag-row">
-              <span class="tag">Notion</span>
-              <span class="tag">Affiliate Operations</span>
-              <span class="tag">Automation</span>
+              <span class="tag">Notion Automation</span>
+              <span class="tag">Affiliate Pipeline</span>
+              <span class="tag">Creator Outreach</span>
             </div>
-            <div style="margin-top:14px">
-              <a class="btn btn-light" href="https://www.loom.com/share/f883c45c953848fca179d3bc8724875f" target="_blank">▶ Watch Demo</a>
+
+            <div style="margin-top:16px; position:relative; overflow:hidden; border-radius:16px; border:1px solid var(--line);">
+              <a href="https://www.loom.com/share/f883c45c953848fca179d3bc8724875f" target="_blank" rel="noopener" style="display:block; position:relative;">
+                <img src="https://cdn.loom.com/sessions/thumbnails/f883c45c953848fca179d3bc8724875f-with-play.gif" style="width:100%; display:block; transition:transform .35s ease;"/>
+                <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:52px; color:white; text-shadow:0 10px 30px rgba(0,0,0,.5);">▶</div>
+              </a>
             </div>
+
+            <p style="margin-top:12px; font-size:14px; color:var(--slate);">In this demo I explain how the affiliate program pipeline, creator database, outreach automation, and tracking system were structured to generate revenue without paid ads.</p>
           </div>
 
-          <div class="project-card">
-            <div class="project-kicker">Notion System Demo</div>
-            <h3>Talent & Hiring Pipeline</h3>
-            <p>This walkthrough explains the hiring workflow I built in Notion to streamline candidate tracking, onboarding preparation, and team coordination.</p>
+          <div class="project-card" style="transition:transform .25s ease, box-shadow .25s ease;">
+            <div class="project-kicker">System Walkthrough</div>
+            <h3>Talent & Hiring Pipeline Workflow</h3>
+            <p>A walkthrough of the hiring and candidate management workflow built in Notion to streamline candidate tracking, interviews, and onboarding preparation.</p>
+
             <div class="tag-row">
-              <span class="tag">Notion</span>
-              <span class="tag">Hiring Workflow</span>
-              <span class="tag">Operations</span>
+              <span class="tag">Notion Database</span>
+              <span class="tag">Hiring Pipeline</span>
+              <span class="tag">Operations Workflow</span>
             </div>
-            <div style="margin-top:14px">
-              <a class="btn btn-light" href="https://www.loom.com/share/5aa9f903245a482dbbebb103931f1408" target="_blank">▶ Watch Demo</a>
+
+            <div style="margin-top:16px; position:relative; overflow:hidden; border-radius:16px; border:1px solid var(--line);">
+              <a href="https://www.loom.com/share/5aa9f903245a482dbbebb103931f1408" target="_blank" rel="noopener" style="display:block; position:relative;">
+                <img src="https://cdn.loom.com/sessions/thumbnails/5aa9f903245a482dbbebb103931f1408-with-play.gif" style="width:100%; display:block; transition:transform .35s ease;"/>
+                <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:52px; color:white; text-shadow:0 10px 30px rgba(0,0,0,.5);">▶</div>
+              </a>
             </div>
+
+            <p style="margin-top:12px; font-size:14px; color:var(--slate);">This demo explains how the hiring pipeline organizes candidates, status tracking, and communication flow for smoother recruitment coordination.</p>
           </div>
 
         </div>
