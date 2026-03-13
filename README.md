@@ -603,6 +603,17 @@
     .carousel-arrow.left { left: 14px; }
     .carousel-arrow.right { right: 14px; }
 
+    .work-card {
+      cursor: pointer;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    }
+
+    .work-card:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 24px 48px rgba(15,76,117,0.18);
+      border-color: #bfd9ec;
+    }
+
     .logo-card img {
       max-width: 100%;
       max-height: 82px;
@@ -1295,13 +1306,13 @@
     <section class="section reveal" id="pricing">
       <div class="container">
         <h2 class="section-title">💼 Ways I Work With Clients</h2>
-        <p class="section-subtitle">I kept this as one focused section so visitors can quickly browse the ways I support clients and choose what fits best.</p>
+        <p class="section-subtitle">I turned this into a cleaner continuous gallery so visitors can keep browsing in either direction, then click any card to expand the details.</p>
 
         <div class="carousel-shell">
           <button class="carousel-arrow left" type="button" id="pricingPrev" aria-label="Previous">‹</button>
           <div style="position:relative; overflow:hidden; border-radius:24px; background:#fff; border:1px solid var(--line); box-shadow:var(--shadow); padding:22px;">
             <div style="display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; scrollbar-width:none; -ms-overflow-style:none;" id="pricingCarousel">
-              <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+              <div class="panel service-panel work-card" data-project="work-hourly" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
                 <div class="service-icon">⏱</div>
                 <h3>Hourly Support</h3>
                 <p>For ongoing operational, project, or account management support.</p>
@@ -1310,7 +1321,7 @@
                   <li>Ideal for agencies and founders needing flexible support</li>
                 </ul>
               </div>
-              <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+              <div class="panel service-panel work-card" data-project="work-notion" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
                 <div class="service-icon">🧩</div>
                 <h3>Notion System Projects</h3>
                 <p>Company-wide Notion dashboards, operations systems, and workflow design.</p>
@@ -1319,7 +1330,7 @@
                   <li>Includes planning, system design, and implementation</li>
                 </ul>
               </div>
-              <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+              <div class="panel service-panel work-card" data-project="work-retainer" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
                 <div class="service-icon">🔧</div>
                 <h3>Maintenance & Retainers</h3>
                 <p>Post-project maintenance, optimization, and system support.</p>
@@ -1328,7 +1339,7 @@
                   <li>Ideal for teams needing ongoing updates</li>
                 </ul>
               </div>
-              <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+              <div class="panel service-panel work-card" data-project="work-consulting" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
                 <div class="service-icon">📊</div>
                 <h3>Consulting Sessions</h3>
                 <p>Strategic sessions focused on systems, operations, and workflow optimization.</p>
@@ -1373,20 +1384,19 @@
           <p>My work now focuses on helping teams save time, streamline processes, and build systems that make daily operations easier.</p>
         </div>
         <div class="experience-card exp-card">
-          <div class="meta">Experience</div>
-          <h3>Project Manager & Operations Support (2022–2025)</h3>
-          <ul>
-            <li>Supported marketing agencies and founders with project delivery and systems implementation</li>
-            <li>Built Notion workflows, affiliate pipelines, and operational dashboards</li>
-            <li>Helped teams improve execution visibility, coordination, and process consistency</li>
-          </ul>
+          <div class="meta">Current Focus</div>
+          <h3>What I’m focused on today</h3>
+          <p>I currently work as an <strong>Account Manager for an e-learning provider</strong>, where I support client relationships, account continuity, and renewal coordination while continuing to help teams improve systems and day-to-day operations.</p>
+          <p>I’m most energized by work that saves people time, creates clarity, and helps teams move faster without sacrificing quality.</p>
         </div>
         <div class="experience-card exp-card">
           <div class="meta">Fun Fact</div>
           <h3>Life outside work</h3>
           <p>I love traveling around the Philippines, especially beach destinations. I enjoy sunsets, good conversations, and ending the day with a cocktail.</p>
           <p>I also love cats and exploring new places around my country. Working remotely allows me to do work I enjoy while still experiencing the world around me.</p>
-          <img src="473789924_497176110077009_588533906754352097_n (1).jpg" style="width:100%; border-radius:16px; margin-top:12px;" alt="Jane in Boracay Philippines" />
+          <div style="width:100%; height:280px; overflow:hidden; border-radius:16px; margin-top:12px;">
+            <img src="473789924_497176110077009_588533906754352097_n (1).jpg" style="width:100%; height:100%; object-fit:cover; object-position:center 42%;" alt="Jane in Boracay Philippines" />
+          </div>
         </div>
       </div>
     </section>
@@ -1517,15 +1527,89 @@
     const pricingPrev = document.getElementById('pricingPrev');
     const pricingNext = document.getElementById('pricingNext');
 
-    pricingPrev?.addEventListener('click', () => {
-      if (pricingCarousel) pricingCarousel.scrollLeft -= 340;
-    });
+    function loopCarousel(direction) {
+      if (!pricingCarousel) return;
+      const cardWidth = 332;
+      const maxScroll = pricingCarousel.scrollWidth - pricingCarousel.clientWidth;
+      if (direction === 'next') {
+        if (pricingCarousel.scrollLeft + cardWidth >= maxScroll - 10) {
+          pricingCarousel.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          pricingCarousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        }
+      } else {
+        if (pricingCarousel.scrollLeft <= 10) {
+          pricingCarousel.scrollTo({ left: maxScroll, behavior: 'smooth' });
+        } else {
+          pricingCarousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        }
+      }
+    }
 
-    pricingNext?.addEventListener('click', () => {
-      if (pricingCarousel) pricingCarousel.scrollLeft += 340;
-    });
+    pricingPrev?.addEventListener('click', () => loopCarousel('prev'));
+    pricingNext?.addEventListener('click', () => loopCarousel('next'));
 
     const projectData = {
+      'work-hourly': {
+        website: '',
+        preview: '',
+        kicker: 'Ways I Work',
+        title: 'Hourly Support',
+        summary: 'This option works best for founders and teams who need flexible support across account management, project coordination, operations, or executive support.',
+        stat: '$15–$20 / hour',
+        detailTitle: 'What this is best for',
+        bullets: [
+          'Ongoing support without committing to a full project scope.',
+          'Flexible help across operations, delivery, client coordination, and admin-heavy work.',
+          'Best fit for agencies and founders who need a reliable right hand.'
+        ],
+        tags: ['Flexible Support', 'Operations', 'Account Management']
+      },
+      'work-notion': {
+        website: '',
+        preview: '',
+        kicker: 'Ways I Work',
+        title: 'Notion System Projects',
+        summary: 'This is for teams that need a more structured buildout such as company-wide dashboards, workflows, SOP libraries, or operational systems inside Notion.',
+        stat: 'Starts at $1,500 / month',
+        detailTitle: 'What this is best for',
+        bullets: [
+          'Company-wide Notion workspace organization and system design.',
+          'Workflow cleanup, implementation, and better team visibility.',
+          'A stronger operating system for growing teams and founders.'
+        ],
+        tags: ['Notion', 'Systems Design', 'Implementation']
+      },
+      'work-retainer': {
+        website: '',
+        preview: '',
+        kicker: 'Ways I Work',
+        title: 'Maintenance & Retainers',
+        summary: 'This is for clients who already have systems in place and want ongoing support to maintain, improve, or update them over time.',
+        stat: 'Starts at $500 / month',
+        detailTitle: 'What this is best for',
+        bullets: [
+          'Monthly updates and refinements after a project is completed.',
+          'Support for teams who want a lighter but ongoing partnership.',
+          'Ideal for keeping systems useful as the business grows.'
+        ],
+        tags: ['Retainer', 'Optimization', 'Support']
+      },
+      'work-consulting': {
+        website: '',
+        preview: '',
+        kicker: 'Ways I Work',
+        title: 'Consulting Sessions',
+        summary: 'This is best for teams that want strategic input, workflow guidance, or a second set of eyes before making bigger operations or systems decisions.',
+        stat: '$50 / hour',
+        detailTitle: 'What this is best for',
+        bullets: [
+          'A focused strategy session around systems, operations, or process design.',
+          'Includes a follow-up SOP guide or action document.',
+          'Best for founders who want direction before committing to implementation.'
+        ],
+        tags: ['Consulting', 'Strategy', 'SOP Guide']
+      },
       sava: {
         website: 'https://sava-amsterdam.com/',
         preview: 'https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/',
@@ -1595,7 +1679,7 @@
     const projectModal = document.getElementById('projectModal');
     const projectModalContent = document.getElementById('projectModalContent');
     const projectModalClose = document.getElementById('projectModalClose');
-    const projectCards = document.querySelectorAll('.interactive-project');
+    const projectCards = document.querySelectorAll('.interactive-project, .work-card');
 
     function renderProjectModal(projectKey) {
       const project = projectData[projectKey];
