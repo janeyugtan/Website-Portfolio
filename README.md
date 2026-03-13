@@ -1,395 +1,766 @@
-<p id="top" align="center">
-  <img src="jy-linkedin.jpeg" width="200" height="200" style="border-radius:50%;object-fit:cover;border:4px solid #0f4c75;" alt="Portrait of Jane Yugtan" />
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jane Yugtan | Account Manager | Project Manager | Executive Assistant</title>
+  <style>
+    :root {
+      --navy: #1a1a2e;
+      --blue: #0f4c75;
+      --blue-2: #1d6fa5;
+      --slate: #334155;
+      --muted: #64748b;
+      --line: #e6eef7;
+      --bg: #f8fbff;
+      --white: #ffffff;
+      --shadow: 0 12px 30px rgba(15, 76, 117, 0.10);
+      --radius: 20px;
+      --max: 1180px;
+    }
 
-<h1 align="center" style="margin-bottom:0;">Jane Yugtan</h1>
-<p align="center" style="margin-top:4px;"><b>Account Manager | Project Manager | Executive Assistant</b></p>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--navy);
+      background: linear-gradient(180deg, #f8fbff 0%, #ffffff 30%, #f8fbff 100%);
+      line-height: 1.6;
+    }
 
-<p align="center">
-  <a href="#video-intro">Video Intro</a> · 
-  <a href="#results">Results</a> · 
-  <a href="#core-focus">Core Focus</a> · 
-  <a href="#services">Services</a> ·
-  <a href="#featured-projects">Featured Projects</a> ·
-  <a href="#demos">Demos</a> · 
-  <a href="#experience">Experience</a> · 
-  <a href="#clients">Clients</a> · 
-  <a href="#testimonials">Testimonials</a> · 
-  <a href="#certifications">Certifications</a> · 
-  <a href="#linkedin">LinkedIn</a> ·
-  <a href="#contact">Contact</a>
-</p>
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-<p align="center">
-  <a href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" aria-label="Book a quick virtual coffee">☕ Book a quick virtual coffee</a>
-</p>
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/jyugtan/" aria-label="LinkedIn">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0f4c75?logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:yugtanlynette@gmail.com" aria-label="Email Jane">
-    <img src="https://img.shields.io/badge/Email-yugtanlynette%40gmail.com-1a1a2e?logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="./RESUME.pdf" aria-label="Download Resume (PDF)">
-    <img src="https://img.shields.io/badge/Resume-Download-0f4c75?logo=adobeacrobatreader&logoColor=white" alt="Resume (PDF)" />
-  </a>
-</p>
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(14px);
+      background: rgba(255,255,255,0.90);
+      border-bottom: 1px solid rgba(230,238,247,0.9);
+    }
 
-<p align="center"><i>I help founders, agencies, and B2B teams strengthen client retention, improve delivery systems, automate operations, and grow revenue through account management, enterprise renewals, Notion systems, and AI-powered workflows.</i></p>
+    .topbar-inner {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+    }
 
-<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      color: var(--navy);
+      white-space: nowrap;
+    }
 
-## <span id="video-intro">🎥 Meet Jane: Your Partner in Client Success, Systems & Growth</span>
+    .nav {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      font-size: 14px;
+    }
 
-<div align="center" style="margin: 20px 0;">
-  <a href="https://www.loom.com/share/6325ce02a04148188bf5de8a8e26732b?sid=54f70cf0-e26a-4e4c-9abf-9808cce40351" target="_blank" rel="noopener" style="text-decoration:none; color:#0f172a;" aria-label="Watch Jane's introduction video">
-    <div style="border:2px solid #0f4c75; border-radius:16px; overflow:hidden; background:#fff; box-shadow:0 8px 24px rgba(15,76,117,.15); max-width:600px; margin:0 auto;">
-      <div style="position:relative; background:#f8fafe;">
-        <img src="intro-cover.jpg" alt="Jane Yugtan - Video Introduction Cover" style="width:100%; height:320px; object-fit:cover; display:block;">
-        <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:rgba(15,76,117,0.9); width:80px; height:80px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 20px rgba(0,0,0,0.3);">
-          <span style="color:#fff; font-size:28px; margin-left:4px;">▶️</span>
-        </div>
-        <div style="position:absolute; bottom:12px; right:12px; background:rgba(0,0,0,0.8); color:#fff; padding:4px 8px; border-radius:4px; font-size:12px; font-weight:600;">
-          2:00
-        </div>
-      </div>
-      <div style="padding:20px;">
-        <h3 style="color:#0f4c75; margin:0 0 12px 0; font-size:20px; font-weight:800;">👋 Get to Know Jane</h3>
-        <p style="color:#334155; margin:0 0 16px 0; font-size:15px; line-height:1.6;">
-          Watch this quick introduction to see how I support enterprise accounts, agency owners, and growing teams through client success, account management, process optimization, and operational systems.
-        </p>
-        <div style="display:inline-flex; align-items:center; background:#0f4c75; padding:12px 24px; border-radius:50px; color:#fff; font-weight:700; font-size:16px; transition:all 0.2s;">
-          <span style="margin-right:8px; font-size:18px;">▶️</span>
-          Watch Introduction Video
-        </div>
-      </div>
-      <div style="padding:16px 20px; background:#f8fafe; border-top:1px solid #e6eef7;">
-        <p style="margin:0; text-align:center; color:#334155; font-size:14px;">
-          <strong>Ready to connect?</strong> 
-          <a href="https://calendly.com/jyugtan/discovery-call-with-jane" style="color:#0f4c75; text-decoration:none; font-weight:600;">Book your virtual coffee ☕</a>
-        </p>
-      </div>
+    .hero {
+      padding: 48px 0 26px;
+    }
+
+    .hero-card {
+      background: radial-gradient(circle at top right, rgba(29,111,165,0.15), transparent 28%), var(--white);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .hero-photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--blue);
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 10px 24px rgba(15, 76, 117, 0.18);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: #eef6fc;
+      color: var(--blue);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 6vw, 52px);
+      line-height: 1.05;
+      margin: 0 0 10px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 14px;
+    }
+
+    .intro {
+      color: var(--slate);
+      max-width: 760px;
+      font-size: 17px;
+      margin-bottom: 18px;
+    }
+
+    .cta-row, .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 18px;
+      border-radius: 14px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(15,76,117,0.12);
+      text-decoration: none;
+    }
+
+    .btn-primary { background: var(--navy); color: #fff; }
+    .btn-secondary { background: var(--blue); color: #fff; }
+    .btn-light { background: #eef6fc; color: var(--blue); border-color: #d9eaf7; }
+
+    .section {
+      padding: 28px 0;
+    }
+
+    .section-title {
+      font-size: 30px;
+      margin: 0 0 8px;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      margin: 0 0 20px;
+      max-width: 800px;
+    }
+
+    .video-card,
+    .panel,
+    .project-card,
+    .testimonial-card,
+    .experience-card,
+    .linkedin-card,
+    .contact-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .video-card {
+      overflow: hidden;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .video-thumb {
+      position: relative;
+      display: block;
+      background: #edf5fb;
+    }
+
+    .video-thumb img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .play-button {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 72px;
+      color: white;
+      text-shadow: 0 10px 25px rgba(0,0,0,0.45);
+    }
+
+    .video-body { padding: 24px; }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .result-card {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+      min-height: 168px;
+    }
+
+    .result-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--blue), var(--blue-2));
+    }
+
+    .result-kpi {
+      font-size: 34px;
+      font-weight: 800;
+      color: var(--blue);
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+
+    .result-label {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .result-copy {
+      color: var(--slate);
+      font-size: 14px;
+    }
+
+    .services-grid,
+    .projects-grid,
+    .testimonials-grid,
+    .experience-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .services-grid { grid-template-columns: repeat(3, 1fr); }
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+    .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+    .experience-grid { grid-template-columns: 1fr; }
+
+    .panel,
+    .project-card,
+    .testimonial-card,
+    .experience-card,
+    .linkedin-card,
+    .contact-card {
+      padding: 22px;
+    }
+
+    .panel h3,
+    .project-card h3,
+    .testimonial-card h3,
+    .experience-card h3,
+    .linkedin-card h3,
+    .contact-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .panel ul,
+    .project-card ul,
+    .experience-card ul {
+      padding-left: 18px;
+      margin-bottom: 0;
+      color: var(--slate);
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      padding: 7px 12px;
+      background: #eef6fc;
+      border: 1px solid #d7e8f5;
+      color: var(--blue);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .project-kicker,
+    .meta {
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .logo-marquee {
+      overflow: hidden;
+      position: relative;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: var(--white);
+      box-shadow: var(--shadow);
+      padding: 18px 0;
+    }
+
+    .logo-track {
+      display: flex;
+      width: max-content;
+      animation: scrollLogos 32s linear infinite;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .logo-marquee:hover .logo-track {
+      animation-play-state: paused;
+    }
+
+    .logo-card {
+      min-width: 180px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(180deg, #fff 0%, #f8fbff 100%);
+      box-shadow: 0 6px 16px rgba(2,18,30,.05);
+      padding: 14px;
+      margin-left: 16px;
+    }
+
+    .logo-card img {
+      max-width: 100%;
+      max-height: 82px;
+      object-fit: contain;
+      display: block;
+    }
+
+    @keyframes scrollLogos {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .quote {
+      font-size: 16px;
+      color: var(--slate);
+      margin-bottom: 16px;
+    }
+
+    .contact-card p,
+    .linkedin-card p,
+    .experience-card p,
+    .project-card p,
+    .panel p {
+      color: var(--slate);
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 24px 0 40px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-card { grid-template-columns: 1fr; text-align: center; }
+      .results-grid { grid-template-columns: repeat(2, 1fr); }
+      .services-grid,
+      .projects-grid,
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .cta-row, .badge-row { justify-content: center; }
+      .topbar-inner { flex-direction: column; align-items: flex-start; }
+      .nav { justify-content: flex-start; }
+    }
+
+    @media (max-width: 640px) {
+      .hero { padding-top: 26px; }
+      .hero-card { padding: 22px; border-radius: 22px; }
+      .video-thumb img { height: 240px; }
+      .results-grid { grid-template-columns: 1fr; }
+      .logo-card { min-width: 150px; height: 100px; }
+      .section-title { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Jane Yugtan</div>
+      <nav class="nav">
+        <a href="#video-intro">Video</a>
+        <a href="#results">Results</a>
+        <a href="#services">Services</a>
+        <a href="#featured-projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#clients">Clients</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#linkedin">LinkedIn</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </a>
-</div>
-
-<p align="center" style="margin-top:16px; color:#64748b; font-style:italic;">
-  "I bring together client-facing strategy, execution, and systems so businesses can retain clients, reduce chaos, and scale more sustainably."
-</p>
-
-<p align="right"><a href="#top">Back to top ↑</a></p>
-
-<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
-
-## <span id="results">🔎 Results at a Glance</span>
-
-- **$100,000+** in enterprise renewals processed
-- **64.3% renewal close rate** across tracked renewal opportunities
-- **18 enterprise renewals closed**
-- Added as an account manager in email communications sent to **185,000+ global subscribers**
-- **$10K+** affiliate revenue in the **first 30 days** with **$0 ad spend**
-- **-87%** onboarding time (**3 days → 4 hours**)
-- **95%** new-hire satisfaction improvement from workflow and systems improvements
-- **-30%** project delays via QA gates, automation, and delivery structure
-- **5–6 hrs/mo** founder time saved through reporting and status automation
-
-<p align="right"><a href="#top">Back to top ↑</a></p>
-
-<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
-
-## <span id="core-focus">🧭 Core Focus</span>
-
-**Account Management & Client Success**
-- Enterprise renewal management, retention support, and client relationship ownership
-- Revenue protection through proactive follow-up, renewal processing, stakeholder coordination, and structured communication
-- B2B relationship management focused on trust, continuity, and account growth
-
-**Project Management & Operations**
-- Roadmaps, sprint tracking, QA, documentation, and delivery systems in **Notion**, **ClickUp**, and Google Workspace
-- SOPs, dashboards, process design, team coordination, and execution support for founders and operators
-
-**Automation & AI Integration**
-- Workflow automation for agency owners and contractor-led businesses in the US
-- AI-assisted B2B outreach systems, admin support workflows, and operational process optimization
-- Practical automation focused on saving time, reducing manual tasks, and increasing consistency
-
-<p align="right"><a href="#top">Back to top ↑</a></p>
-
-<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
-
-## <span id="services">🛠 Services</span>
-
-<div style="display:flex; gap:12px; flex-wrap:wrap;">
-  <div style="flex:1 1 300px; border:1px solid #e6eef7; border-radius:14px; padding:16px; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
-    <div style="font-weight:800; color:#0f4c75; margin-bottom:8px;">Account Management & Client Retention</div>
-    <ul style="margin:0 0 0 18px; color:#334155; font-size:14px;">
-      <li>Enterprise renewals and account coordination</li>
-      <li>Client communication and retention support</li>
-      <li>Revenue-focused follow-up and relationship management</li>
-    </ul>
   </div>
 
-  <div style="flex:1 1 300px; border:1px solid #e6eef7; border-radius:14px; padding:16px; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
-    <div style="font-weight:800; color:#0f4c75; margin-bottom:8px;">Notion Dashboard Optimization</div>
-    <ul style="margin:0 0 0 18px; color:#334155; font-size:14px;">
-      <li>Company-wide Notion architecture and cleanup</li>
-      <li>Department dashboards, SOP libraries, and KPI systems</li>
-      <li>Founder-friendly operating systems for teams</li>
-    </ul>
-  </div>
-
-  <div style="flex:1 1 300px; border:1px solid #e6eef7; border-radius:14px; padding:16px; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
-    <div style="font-weight:800; color:#0f4c75; margin-bottom:8px;">AI + Automation for Agencies & B2B Outreach</div>
-    <ul style="margin:0 0 0 18px; color:#334155; font-size:14px;">
-      <li>AI-assisted outreach workflows for B2B organizations</li>
-      <li>Automation of repetitive admin and reporting tasks</li>
-      <li>Systems that support agency owners and lean teams</li>
-    </ul>
-  </div>
-</div>
-
-<p style="margin-top:16px; color:#334155;">
-I work best with founders, agency owners, consultants, e-commerce operators, and service businesses that need stronger systems, cleaner delivery, better follow-up, and more consistent client retention.
-</p>
-
-<p align="right"><a href="#top">Back to top ↑</a></p>
-
-<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
-
-## <span id="featured-projects">📌 Featured Projects</span>
-
-### <b>SAVA Amsterdam</b> — Company-Wide Notion Dashboard Optimization
-<p style="color:#334155;">
-Designed and proposed a full Notion workspace optimization for an e-commerce company, focused on transforming Notion into a clean, scalable company operating system.
-</p>
-
-- Built a structure designed to help teams find what they need in under 30 seconds
-- Organized company-wide dashboards across departments such as Sales, Customer Support, HR, Supply Chain/Production, and Marketing
-- Centralized SOPs, KPIs, and operational documents into one searchable system
-- Structured the workspace to improve adoption, governance, and day-to-day execution
-- Focused on founder-friendly visibility, long-term usability, and cross-functional coordination
-
-### <b>Agency Support for US Contractor Businesses</b> — Operations + Automation
-<p style="color:#334155;">
-Supported agency owners serving contractors in the US by simplifying repetitive workflows, tightening task coordination, and implementing practical automations.
-</p>
-
-- Reduced manual admin work through automation-first thinking
-- Supported smoother internal coordination and follow-up systems
-- Helped organize workflows that improve delivery visibility and team accountability
-
-### <b>B2B Outreach + AI Workflow Support</b> — Sales Enablement
-<p style="color:#334155;">
-Implemented AI-assisted workflows to support outreach, follow-up, and admin-heavy sales tasks for B2B targeting and organizational prospecting.
-</p>
-
-- Built systems that help reduce manual outreach preparation
-- Improved repeatability and consistency in outbound support workflows
-- Focused on sales support, relationship-building, and process efficiency rather than generic automation
-
-<p align="right"><a href="#top">Back to top ↑</a></p>
-
-<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
-
-## <span id="demos">🎬 Demo Walkthroughs</span>
-
-<div style="display:flex; gap:12px; flex-wrap:wrap;">
-  <a href="https://www.loom.com/share/f883c45c953848fca179d3bc8724875f?sid=d8f6f443-d770-473d-b4ae-b3fe70d53e16" style="flex:1 1 360px; text-decoration:none; color:#0f172a;" aria-label="Watch Affiliate Program demo">
-    <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
-      <div style="position:relative; background:#0b1b2c;">
-        <img src="affiliate-dashboard.png" alt="Affiliate Program dashboard in Notion & GoHighLevel" style="width:100%; height:200px; object-fit:cover; display:block;">
-        <span style="position:absolute; right:10px; bottom:10px; background:rgba(0,0,0,.55); color:#fff; padding:6px 10px; border-radius:10px; font-weight:700;">▶</span>
-      </div>
-      <div style="padding:12px 14px;">
-        <div style="font-weight:800; font-size:16px; color:#1a1a2e; margin-bottom:6px;">Affiliate Program — Notion &amp; GoHighLevel</div>
-        <div style="font-size:14px; color:#334155; margin-bottom:8px;">
-          <b>Outcome:</b> Scaled to <b>$12K</b> with <b>$0 ad spend</b>; replaced spreadsheets with a data-driven pipeline; saved CEO ~<b>2 hrs/week</b>.
+  <main class="container">
+    <section class="hero" id="top">
+      <div class="hero-card">
+        <div>
+          <img class="hero-photo" src="jy-linkedin.jpeg" alt="Portrait of Jane Yugtan" />
         </div>
-        <ul style="margin:0 0 10px 18px; color:#334155; font-size:14px;">
-          <li>Automated status, payouts, and comms</li>
-          <li>Built repeatable SOPs and handoff workflows</li>
-          <li>Improved visibility across marketing and operations</li>
-        </ul>
-        <span style="display:inline-block; padding:10px 14px; background:#0f4c75; color:#fff; border-radius:10px; font-weight:600;">▶ Watch demo</span>
-      </div>
-    </div>
-  </a>
-
-  <a href="https://www.loom.com/share/5aa9f903245a482dbbebb103931f1408?sid=c71648f4-3d88-49a5-bed6-65d787dd9dfe" style="flex:1 1 360px; text-decoration:none; color:#0f172a;" aria-label="Watch Talent & Hiring Pipeline demo">
-    <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
-      <div style="position:relative; background:#0b1b2c;">
-        <img src="talent-pipeline.png" alt="Notion-based Talent & Hiring pipeline" style="width:100%; height:200px; object-fit:cover; display:block;">
-        <span style="position:absolute; right:10px; bottom:10px; background:rgba(0,0,0,.55); color:#fff; padding:6px 10px; border-radius:10px; font-weight:700;">▶</span>
-      </div>
-      <div style="padding:12px 14px;">
-        <div style="font-weight:800; font-size:16px; color:#1a1a2e; margin-bottom:6px;">Talent &amp; Hiring Pipeline — Notion</div>
-        <div style="font-size:14px; color:#334155; margin-bottom:8px;">
-          <b>Outcome:</b> Onboarding compressed from ~<b>3 days → 4 hours</b>; removed last-minute approvals with stages and automations.
+        <div>
+          <div class="eyebrow">Client Retention • Systems • Revenue Operations</div>
+          <h1>Jane Yugtan</h1>
+          <div class="subtitle">Account Manager | Project Manager | Executive Assistant</div>
+          <p class="intro">
+            I help founders, agencies, and B2B teams improve client retention, strengthen delivery systems, automate operations, and support revenue growth through account management, enterprise renewals, Notion systems, and AI-powered workflows.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick virtual coffee</a>
+            <a class="btn btn-secondary" href="mailto:yugtanlynette@gmail.com">📩 Email Me</a>
+            <a class="btn btn-light" href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+          </div>
         </div>
-        <ul style="margin:0 0 10px 18px; color:#334155; font-size:14px;">
-          <li>Role scorecards, structured interviews, and onboarding flows</li>
-          <li>Automated candidate communications and status transitions</li>
-          <li>Created a repeatable hiring and onboarding process</li>
-        </ul>
-        <span style="display:inline-block; padding:10px 14px; background:#0f4c75; color:#fff; border-radius:10px; font-weight:600;">▶ Watch demo</span>
       </div>
-    </div>
-  </a>
-</div>
+    </section>
 
-<p align="right"><a href="#top">Back to top ↑</a></p>
-
-<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
-
-## <span id="experience">🗂 Experience (Selected)</span>
-
-### Account Manager — <b>E-Learning Provider / Enterprise Subscription Accounts</b> <i>(Current)</i>
-- Processed **$100,000+ in renewals** across high-value enterprise subscription accounts
-- Achieved a **64.3% renewal close rate** based on tracked renewal decisions
-- Closed **18 renewal accounts**
-- Supported enterprise relationships through renewal follow-up, account coordination, and client communication
-- Included as an account manager in marketing-facing email signatures and communications reaching **185,000+ global individual subscribers**
-- Focused on retention, renewal continuity, client experience, and revenue preservation
-
-### Project Manager — <b>Whiskey Library</b> <i>(2025)</i>
-- Launched a data-driven affiliate engine generating **$10K+ in the first 30 days**
-- Automated outreach, tracking, and operational systems
-- Reduced onboarding time and improved founder visibility through Notion-based workflows
-
-### Project Manager — <b>ServiceThrive</b> <i>(2024–2025)</i>
-- Built execution plans, QA processes, and workflow structures for delivery support
-- Proposed scalable systems and removed operational blockers
-- Supported stronger execution consistency across moving projects
-
-### Project Manager — <b>The Social Brand</b> <i>(2023–2024)</i>
-- Managed 6 full-stack web and SEO projects with an average launch timeline of **1.8 months**
-- Reduced rework by **30%** through ClickUp-first QA and workflow improvements
-- Maintained strong communication cadence and client-facing project visibility
-
-### EA / OBM — <b>Investor Attraction Academy</b> <i>(2023–2024)</i>
-- Supported founder operations through inbox, calendar, scheduling, and client communication
-- Managed follow-up, reporting, meeting coordination, and execution support
-- Helped maintain SLA consistency and operational organization
-
-<p align="right"><a href="#top">Back to top ↑</a></p>
-
-<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
-
-## <span id="clients">🤝 Clients & Websites Managed</span>
-
-<div align="left" style="display:flex; flex-wrap:wrap; gap:12px;">
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="70KLOGO.webp" height="96" alt="70K Affiliates" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="dreamindigitallogo.jpeg" height="96" alt="Dream in Digital" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="threecoltslogo.png" height="96" alt="Threecolts" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="servicethrivelogo.png" height="96" alt="ServiceThrive" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="Fanti-sewer-and-drain-pros-retina.png" height="96" alt="Fanti Sewer & Drain Pros" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="MW-logo.png" height="96" alt="Morgan White Window Coverings" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="san-benito-realty-hollister-ca.webp" height="96" alt="San Benito Realty" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="WL-LOGO.webp" height="96" alt="Whiskey Library" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="AA-ROOFING-LOGO-02.png" height="96" alt="AA Roofing" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="highlandfarmparklogo.jpg" height="96" alt="Highland Farm Park" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="audaciouslyagencylogo.png" height="96" alt="Audaciously Agency" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="marketingmeca.jpeg" height="96" alt="Marketing Meca" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="cropped-Forget-Me-Not-02.png" height="96" alt="Forget Me Not" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="IAAlogo.png" height="96" alt="Investor Attraction Academy" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="PPCLOGO.jpeg" height="96" alt="PPC Professor" /></span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);"><img src="ealogo.png" height="96" alt="EA brand asset" /></span>
-</div>
-
-<p align="right"><a href="#top">Back to top ↑</a></p>
-
-<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
-
-## <span id="testimonials">🎥 Testimonials</span>
-
-<div style="display:flex; gap:12px; flex-wrap:wrap;">
-  <a href="./Sean%20Elias-TestimonialVideo.mp4" style="flex:1 1 340px; text-decoration:none; color:#0f172a;" aria-label="Watch testimonial from Sean Elias">
-    <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
-      <div style="background:#0b1b2c;">
-        <img src="preview-sean.png" alt="Sean Elias — Threecolts / 70K Affiliates" style="width:100%; height:180px; object-fit:cover; display:block;">
+    <section class="section" id="video-intro">
+      <h2 class="section-title">🎥 Meet Jane</h2>
+      <p class="section-subtitle">A quick introduction to how I support enterprise accounts, founders, and growing teams through client success, operational systems, and project execution.</p>
+      <div class="video-card">
+        <a class="video-thumb" href="https://www.loom.com/share/6325ce02a04148188bf5de8a8e26732b?sid=54f70cf0-e26a-4e4c-9abf-9808cce40351" target="_blank" rel="noopener" aria-label="Watch Jane's introduction video">
+          <img src="intro-cover.jpg" alt="Jane Yugtan introduction video cover" />
+          <div class="play-button">▶</div>
+        </a>
+        <div class="video-body">
+          <h3>Client-facing strategy with systems that actually get used</h3>
+          <p>
+            This introduction highlights my approach to account management, delivery support, automation, and founder operations — with a strong emphasis on communication, follow-through, and measurable outcomes.
+          </p>
+        </div>
       </div>
-      <div style="padding:12px 14px;">
-        <div style="font-weight:800; font-size:16px; color:#1a1a2e; margin-bottom:6px;">Sean Elias — Threecolts / 70K Affiliates</div>
-        <div style="font-size:14px; color:#334155; margin-bottom:10px;">"Jane is really good at getting things done fast."</div>
-        <span style="display:inline-block; padding:10px 14px; background:#0f4c75; color:#fff; border-radius:10px; font-weight:600;">▶ Watch video</span>
+    </section>
+
+    <section class="section" id="results">
+      <h2 class="section-title">🔎 Results at a Glance</h2>
+      <p class="section-subtitle">A cleaner KPI layout to highlight the outcomes most relevant to account management, renewals, automation, and systems design.</p>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-kpi">$100K+</div>
+          <div class="result-label">Enterprise renewals processed</div>
+          <div class="result-copy">Managed renewal processing across high-value subscription accounts with a focus on retention, continuity, and account health.</div>
+        </div>
+        <div class="result-card">
+          <div class="result-kpi">64.3%</div>
+          <div class="result-label">Renewal close rate</div>
+          <div class="result-copy">Based on 18 closed renewals out of 28 tracked renewal decisions.</div>
+        </div>
+        <div class="result-card">
+          <div class="result-kpi">185K+</div>
+          <div class="result-label">Global subscribers reached</div>
+          <div class="result-copy">Included as an account manager in subscriber-facing email communications for a large global B2C audience.</div>
+        </div>
+        <div class="result-card">
+          <div class="result-kpi">$10K</div>
+          <div class="result-label">Affiliate pipeline in 30 days</div>
+          <div class="result-copy">Built a qualified affiliate pipeline and supporting workflow structure for Whiskey Library in the first 30 days.</div>
+        </div>
+        <div class="result-card">
+          <div class="result-kpi">-87%</div>
+          <div class="result-label">Onboarding time reduced</div>
+          <div class="result-copy">Reduced onboarding from approximately 3 days to 4 hours through structured systems and automation.</div>
+        </div>
+        <div class="result-card">
+          <div class="result-kpi">95%</div>
+          <div class="result-label">Workflow satisfaction improvement</div>
+          <div class="result-copy">Supported stronger team experience through cleaner systems, visibility, and documentation.</div>
+        </div>
+        <div class="result-card">
+          <div class="result-kpi">-30%</div>
+          <div class="result-label">Project delays reduced</div>
+          <div class="result-copy">Improved execution through QA gates, process control, and more predictable delivery workflows.</div>
+        </div>
+        <div class="result-card">
+          <div class="result-kpi">5–6 hrs</div>
+          <div class="result-label">Founder time saved monthly</div>
+          <div class="result-copy">Freed up leadership time with better reporting, status visibility, and workflow automation.</div>
+        </div>
       </div>
-    </div>
-  </a>
+    </section>
 
-  <a href="./Joe-Remington-TestimonialVideo.mp4" style="flex:1 1 340px; text-decoration:none; color:#0f172a;" aria-label="Watch testimonial from Joe Remington">
-    <div style="border:1px solid #e6eef7; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 6px 16px rgba(2,18,30,.06);">
-      <div style="background:#0b1b2c;">
-        <img src="preview-joe.png" alt="Joe Remington — PPC Professor" style="width:100%; height:180px; object-fit:cover; display:block;">
+    <section class="section" id="services">
+      <h2 class="section-title">🛠 Services</h2>
+      <p class="section-subtitle">Focused service lines aligned with your current positioning: client retention, systems optimization, and automation support.</p>
+      <div class="services-grid">
+        <div class="panel">
+          <h3>Account Management & Client Retention</h3>
+          <ul>
+            <li>Enterprise renewals and retention support</li>
+            <li>Client communication, follow-up, and relationship management</li>
+            <li>Revenue-focused coordination for ongoing accounts</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Renewals</span>
+            <span class="tag">Retention</span>
+            <span class="tag">Client Success</span>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Notion Dashboard Optimization</h3>
+          <ul>
+            <li>Company-wide Notion architecture and dashboard cleanup</li>
+            <li>Department dashboards, SOP libraries, and KPI systems</li>
+            <li>Founder-friendly systems that improve visibility and usability</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Notion Systems</span>
+            <span class="tag">Operations</span>
+            <span class="tag">Documentation</span>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>AI + Automation for Agencies & B2B Teams</h3>
+          <ul>
+            <li>AI-assisted outreach workflows for B2B companies and organizations</li>
+            <li>Automation of repetitive admin, reporting, and coordination work</li>
+            <li>Process improvement for agencies and contractor-focused businesses</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">AI Workflows</span>
+            <span class="tag">Automation</span>
+            <span class="tag">B2B Outreach</span>
+          </div>
+        </div>
       </div>
-      <div style="padding:12px 14px;">
-        <div style="font-weight:800; font-size:16px; color:#1a1a2e; margin-bottom:6px;">Joe Remington — PPC Professor</div>
-        <div style="font-size:14px; color:#334155; margin-bottom:10px;">"Jane is a phenomenal resource for me and my team."</div>
-        <span style="display:inline-block; padding:10px 14px; background:#0f4c75; color:#fff; border-radius:10px; font-weight:600;">▶ Watch video</span>
+    </section>
+
+    <section class="section" id="featured-projects">
+      <h2 class="section-title">📌 Featured Projects</h2>
+      <p class="section-subtitle">A tighter project section focused on your strongest and most relevant case studies.</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-kicker">Featured Project</div>
+          <h3>SAVA Amsterdam — Company-Wide Notion Dashboard Optimization</h3>
+          <p>
+            Designed a full Notion optimization structure for an e-commerce company to turn its workspace into a clean, scalable operating system for the entire business.
+          </p>
+          <ul>
+            <li>Structured company-wide dashboards across Sales, Customer Support, HR, Supply Chain, and Marketing</li>
+            <li>Centralized SOPs, KPIs, and team resources into one searchable system</li>
+            <li>Improved usability with a founder-friendly layout designed for visibility and adoption</li>
+            <li>Built a system intended to help teams find what they need faster and operate more consistently</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">E-commerce Ops</span>
+            <span class="tag">Workspace Design</span>
+            <span class="tag">Company Systems</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-kicker">Featured Project</div>
+          <h3>Whiskey Library — Affiliate Pipeline & Notion Workflow Build</h3>
+          <p>
+            Launched a data-driven affiliate engine focused on generating qualified affiliates and building a pipeline valued at <strong>$10,000 in the first 30 days</strong>.
+          </p>
+          <ul>
+            <li>Created a Notion-based workflow to manage affiliate operations, tracking, and visibility</li>
+            <li>Built structure for a more organized affiliate pipeline and operational follow-through</li>
+            <li>Supported a cleaner process for affiliate onboarding, coordination, and execution</li>
+            <li>Focused on turning early-stage affiliate efforts into a trackable revenue pipeline</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Affiliate Operations</span>
+            <span class="tag">Pipeline Build</span>
+            <span class="tag">Notion Workflow</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </a>
-</div>
+    </section>
 
-<p align="right"><a href="#top">Back to top ↑</a></p>
+    <section class="section" id="experience">
+      <h2 class="section-title">🗂 Experience</h2>
+      <p class="section-subtitle">Selected experience across account management, project delivery, founder support, and operational systems.</p>
+      <div class="experience-grid">
+        <div class="experience-card">
+          <div class="meta">Current Role</div>
+          <h3>Account Manager — E-Learning Provider / Enterprise Subscription Accounts</h3>
+          <ul>
+            <li>Processed <strong>$100,000+</strong> in renewals across high-value enterprise subscription accounts</li>
+            <li>Achieved a <strong>64.3% renewal close rate</strong> based on tracked renewal decisions</li>
+            <li>Closed <strong>18</strong> renewal accounts while supporting retention and continuity across the pipeline</li>
+            <li>Included as an account manager in communications sent to <strong>185,000+</strong> global B2C subscribers</li>
+            <li>Focused on client relationships, renewal follow-up, revenue retention, and account continuity</li>
+          </ul>
+        </div>
 
-<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
+        <div class="experience-card">
+          <div class="meta">2025</div>
+          <h3>Project Manager — Whiskey Library</h3>
+          <ul>
+            <li>Launched a data-driven affiliate engine generating qualified affiliates and a <strong>$10,000 pipeline</strong> in the first 30 days</li>
+            <li>Created a <strong>Notion-based workflow</strong> to support affiliate operations and process visibility</li>
+            <li>Improved structure for affiliate management, tracking, and operational execution</li>
+          </ul>
+        </div>
 
-## <span id="certifications">🏅 Certifications</span>
+        <div class="experience-card">
+          <div class="meta">2024–2025</div>
+          <h3>Project Manager — ServiceThrive</h3>
+          <ul>
+            <li>Built execution plans, QA process improvements, and workflow structures for delivery support</li>
+            <li>Proposed scalable systems and helped remove operational blockers</li>
+            <li>Supported stronger execution consistency across active projects</li>
+          </ul>
+        </div>
 
-<div align="left" style="display:flex; flex-wrap:wrap; gap:12px;">
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="verified power user  v3_1.png" height="320" alt="ClickUp Verified Power User — 2025" />
-    <div align="center" style="font-size:13px; color:#334155; margin-top:6px;"><b>ClickUp Verified Power User (v3)</b> — 2025</div>
-  </span>
-  <span style="display:inline-block; padding:10px 14px; border:1px solid #e6eef7; border-radius:14px; background:#fff; box-shadow:0 4px 12px rgba(2,18,30,.06);">
-    <img src="HubSpot (1).png" height="320" alt="HubSpot SEO Certification — 2024" />
-    <div align="center" style="font-size:13px; color:#334155; margin-top:6px;"><b>HubSpot SEO Certification</b> — 2024</div>
-  </span>
-</div>
+        <div class="experience-card">
+          <div class="meta">2023–2024</div>
+          <h3>Project Manager — The Social Brand</h3>
+          <ul>
+            <li>Managed web and SEO projects with stronger delivery visibility and organization</li>
+            <li>Reduced rework through process structure and QA-focused workflows</li>
+            <li>Maintained client-facing communication and project coordination</li>
+          </ul>
+        </div>
 
-<p align="right"><a href="#top">Back to top ↑</a></p>
+        <div class="experience-card">
+          <div class="meta">2023–2024</div>
+          <h3>EA / OBM — Investor Attraction Academy</h3>
+          <ul>
+            <li>Supported founder operations through inbox, calendar, scheduling, and client communication</li>
+            <li>Managed follow-up, reporting, meeting coordination, and execution support</li>
+            <li>Helped maintain operational consistency and visibility</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
+    <section class="section" id="clients">
+      <h2 class="section-title">🤝 Clients & Websites Managed</h2>
+      <p class="section-subtitle">A cleaner, more dynamic gallery-style presentation. The logo carousel auto-scrolls and pauses on hover, so it feels more polished than a static grid.</p>
+      <div class="logo-marquee" aria-label="Client logos carousel">
+        <div class="logo-track">
+          <div class="logo-card"><img src="70KLOGO.webp" alt="70K Affiliates" /></div>
+          <div class="logo-card"><img src="dreamindigitallogo.jpeg" alt="Dream in Digital" /></div>
+          <div class="logo-card"><img src="threecoltslogo.png" alt="Threecolts" /></div>
+          <div class="logo-card"><img src="servicethrivelogo.png" alt="ServiceThrive" /></div>
+          <div class="logo-card"><img src="Fanti-sewer-and-drain-pros-retina.png" alt="Fanti Sewer & Drain Pros" /></div>
+          <div class="logo-card"><img src="MW-logo.png" alt="Morgan White Window Coverings" /></div>
+          <div class="logo-card"><img src="san-benito-realty-hollister-ca.webp" alt="San Benito Realty" /></div>
+          <div class="logo-card"><img src="WL-LOGO.webp" alt="Whiskey Library" /></div>
+          <div class="logo-card"><img src="AA-ROOFING-LOGO-02.png" alt="AA Roofing" /></div>
+          <div class="logo-card"><img src="highlandfarmparklogo.jpg" alt="Highland Farm Park" /></div>
+          <div class="logo-card"><img src="audaciouslyagencylogo.png" alt="Audaciously Agency" /></div>
+          <div class="logo-card"><img src="marketingmeca.jpeg" alt="Marketing Meca" /></div>
+          <div class="logo-card"><img src="cropped-Forget-Me-Not-02.png" alt="Forget Me Not" /></div>
+          <div class="logo-card"><img src="IAAlogo.png" alt="Investor Attraction Academy" /></div>
+          <div class="logo-card"><img src="PPCLOGO.jpeg" alt="PPC Professor" /></div>
+          <div class="logo-card"><img src="ealogo.png" alt="EA brand asset" /></div>
 
-## <span id="linkedin">🔗 Connect on LinkedIn</span>
+          <div class="logo-card"><img src="70KLOGO.webp" alt="70K Affiliates" /></div>
+          <div class="logo-card"><img src="dreamindigitallogo.jpeg" alt="Dream in Digital" /></div>
+          <div class="logo-card"><img src="threecoltslogo.png" alt="Threecolts" /></div>
+          <div class="logo-card"><img src="servicethrivelogo.png" alt="ServiceThrive" /></div>
+          <div class="logo-card"><img src="Fanti-sewer-and-drain-pros-retina.png" alt="Fanti Sewer & Drain Pros" /></div>
+          <div class="logo-card"><img src="MW-logo.png" alt="Morgan White Window Coverings" /></div>
+          <div class="logo-card"><img src="san-benito-realty-hollister-ca.webp" alt="San Benito Realty" /></div>
+          <div class="logo-card"><img src="WL-LOGO.webp" alt="Whiskey Library" /></div>
+          <div class="logo-card"><img src="AA-ROOFING-LOGO-02.png" alt="AA Roofing" /></div>
+          <div class="logo-card"><img src="highlandfarmparklogo.jpg" alt="Highland Farm Park" /></div>
+          <div class="logo-card"><img src="audaciouslyagencylogo.png" alt="Audaciously Agency" /></div>
+          <div class="logo-card"><img src="marketingmeca.jpeg" alt="Marketing Meca" /></div>
+          <div class="logo-card"><img src="cropped-Forget-Me-Not-02.png" alt="Forget Me Not" /></div>
+          <div class="logo-card"><img src="IAAlogo.png" alt="Investor Attraction Academy" /></div>
+          <div class="logo-card"><img src="PPCLOGO.jpeg" alt="PPC Professor" /></div>
+          <div class="logo-card"><img src="ealogo.png" alt="EA brand asset" /></div>
+        </div>
+      </div>
+    </section>
 
-<p style="color:#334155;">
-You can also connect with me directly on LinkedIn to view my background in account management, client success, project management, and systems optimization.
-</p>
+    <section class="section" id="testimonials">
+      <h2 class="section-title">🎥 Testimonials</h2>
+      <p class="section-subtitle">Social proof from collaborators and clients who have seen how I work.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <h3>Sean Elias — Threecolts / 70K Affiliates</h3>
+          <p class="quote">“Jane is really good at getting things done fast.”</p>
+          <a class="btn btn-secondary" href="./Sean%20Elias-TestimonialVideo.mp4">▶ Watch video</a>
+        </div>
+        <div class="testimonial-card">
+          <h3>Joe Remington — PPC Professor</h3>
+          <p class="quote">“Jane is a phenomenal resource for me and my team.”</p>
+          <a class="btn btn-secondary" href="./Joe-Remington-TestimonialVideo.mp4">▶ Watch video</a>
+        </div>
+      </div>
+    </section>
 
-<p>
-  <a href="https://ph.linkedin.com/in/jyugtan?trk=profile-badge" target="_blank" rel="noopener">
-    View my LinkedIn Profile
-  </a>
-</p>
+    <section class="section" id="linkedin">
+      <h2 class="section-title">🔗 LinkedIn</h2>
+      <p class="section-subtitle">Another way to connect and review my professional background in account management, project delivery, client success, and systems optimization.</p>
+      <div class="linkedin-card">
+        <h3>Connect with me on LinkedIn</h3>
+        <p>View my profile directly or use the embedded badge below if your GitHub Pages setup supports it.</p>
+        <p><a class="btn btn-light" href="https://ph.linkedin.com/in/jyugtan?trk=profile-badge" target="_blank" rel="noopener">View my LinkedIn profile</a></p>
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="jyugtan" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ph.linkedin.com/in/jyugtan?trk=profile-badge">Jane Y.</a></div>
+      </div>
+    </section>
 
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="jyugtan" data-version="v1">
-  <a class="badge-base__link LI-simple-link" href="https://ph.linkedin.com/in/jyugtan?trk=profile-badge">Jane Y.</a>
-</div>
+    <section class="section" id="contact">
+      <h2 class="section-title">📬 Contact</h2>
+      <p class="section-subtitle">If my background and services align with what you need, I’d be glad to connect and discuss how I can support your business.</p>
+      <div class="contact-card">
+        <h3>Let’s connect</h3>
+        <p>I’m currently focused on account management, client retention, enterprise renewals, Notion systems, operational support, and AI-assisted workflow improvement for growing businesses.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick virtual coffee</a>
+          <a class="btn btn-secondary" href="mailto:yugtanlynette@gmail.com">📩 Email me directly</a>
+        </div>
+      </div>
+    </section>
 
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <div class="footer">© 2025 Jane Yugtan — Account Manager | Project Manager | Executive Assistant</div>
+  </main>
 
-<p align="right"><a href="#top">Back to top ↑</a></p>
-
-<hr style="border:0;border-top:2px solid #e6eef7;margin:24px 0;">
-
-## <span id="contact">📬 Contact</span>
-
-<p style="color:#334155;">
-I’m currently focused on account management, client retention, enterprise renewals, Notion systems, operational support, and AI-assisted workflow improvement for growing businesses.
-</p>
-
-<p style="color:#334155;">
-If my services are aligned with what you’re looking for, I’d be glad to connect and discuss how I can support your team.
-</p>
-
-<p align="left" style="margin-top:12px;">
-  <a href="https://calendly.com/jyugtan/discovery-call-with-jane" style="display:inline-block; padding:12px 16px; background:#1a1a2e; color:#fff; text-decoration:none; border-radius:12px; font-weight:700;">☕ Book a quick virtual coffee</a>
-</p>
-
-<p align="left" style="margin-top:12px;">
-  <a href="mailto:yugtanlynette@gmail.com" style="display:inline-block; padding:12px 16px; background:#0f4c75; color:#fff; text-decoration:none; border-radius:12px; font-weight:700;">📩 Email Me Directly</a>
-</p>
-
-<p align="center">© 2025 Jane Yugtan — Account Manager | Project Manager | Executive Assistant</p>
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+</body>
+</html>
