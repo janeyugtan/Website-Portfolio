@@ -298,6 +298,16 @@
       box-shadow: 0 18px 36px rgba(15, 76, 117, 0.14);
     }
 
+    /* KPI hover motion */
+    .result-card:hover .result-kpi {
+      animation: kpiPulse 0.9s ease-in-out infinite alternate;
+    }
+
+    @keyframes kpiPulse {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.08); }
+    }
+
     .result-card.featured-metric {
       cursor: pointer;
     }
