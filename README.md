@@ -267,8 +267,9 @@
 
     .results-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 16px;
+      align-items: stretch;
     }
 
     .result-card {
@@ -279,7 +280,7 @@
       border-radius: 18px;
       padding: 18px;
       box-shadow: var(--shadow);
-      min-height: 168px;
+      min-height: 210px;
       transition: transform 0.22s ease, box-shadow 0.22s ease;
     }
 
@@ -510,9 +511,20 @@
     }
 
     .project-card.interactive-project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 42px rgba(15,76,117,0.16);
+      transform: translateY(-8px) scale(1.01);
+      box-shadow: 0 24px 48px rgba(15,76,117,0.18);
       border-color: #bfd9ec;
+    }
+
+    .project-card.interactive-project .browser-frame,
+    .project-card.interactive-project img {
+      transition: transform 0.28s ease, filter 0.28s ease;
+    }
+
+    .project-card.interactive-project:hover .browser-frame,
+    .project-card.interactive-project:hover img {
+      transform: scale(1.02);
+      filter: saturate(1.05);
     }
 
     .logo-marquee {
@@ -556,6 +568,40 @@
       transform: translateY(-4px) scale(1.02);
       filter: saturate(1.06);
     }
+
+    .carousel-shell {
+      position: relative;
+    }
+
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 3;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid rgba(15,76,117,0.10);
+      background: rgba(255,255,255,0.94);
+      box-shadow: 0 14px 30px rgba(15,76,117,0.16);
+      color: var(--blue);
+      font-size: 24px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .carousel-arrow:hover {
+      transform: translateY(-50%) scale(1.06);
+      box-shadow: 0 18px 36px rgba(15,76,117,0.22);
+      background: #ffffff;
+    }
+
+    .carousel-arrow.left { left: 14px; }
+    .carousel-arrow.right { right: 14px; }
 
     .logo-card img {
       max-width: 100%;
@@ -874,13 +920,14 @@
 
     @media (max-width: 980px) {
       .hero-card { grid-template-columns: 1fr; text-align: center; }
-      .results-grid { grid-template-columns: repeat(2, 1fr); }
+      .results-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .services-grid,
       .projects-grid,
       .testimonials-grid { grid-template-columns: 1fr; }
       .cta-row, .badge-row { justify-content: center; }
       .topbar-inner { flex-direction: column; align-items: flex-start; }
       .nav { justify-content: flex-start; }
+      .carousel-arrow { display: none; }
       .metric-callout,
       .project-modal-grid { grid-template-columns: 1fr; }
     }
@@ -988,9 +1035,14 @@
           <div class="result-copy">Improved execution through QA gates, process control, and more predictable delivery workflows.</div>
         </div>
         <div class="result-card">
-          <div class="result-kpi" data-count-to="10" data-suffix=" hrs">6–10 hrs</div>
+          <div class="result-kpi">6–10 hrs</div>
           <div class="result-label">CEO time saved weekly</div>
           <div class="result-copy">Automation, clearer systems, and structured workflows freed up leadership time each week.</div>
+        </div>
+        <div class="result-card">
+          <div class="result-kpi" data-count-to="100" data-suffix="+">100+</div>
+          <div class="result-label">Client accounts supported</div>
+          <div class="result-copy">Supported client delivery and operations across agencies, founders, and the businesses they served.</div>
         </div>
       </div>
       <div class="metric-callout" id="renewalsCallout">
@@ -1188,8 +1240,156 @@
         </div>
       </div>
     </section>
+    <section class="section reveal" id="featured-projects">
+      <h2 class="section-title">📌 Featured Projects</h2>
+      <p class="section-subtitle">These are two projects I’m proud to highlight because they reflect how I think, what I build, and how I support growth through systems and execution.</p>
+      <div class="projects-grid">
+        <div class="project-card interactive-project" data-project="sava">
+          <div class="browser-frame" style="margin-bottom:16px; border:1px solid var(--line); box-shadow:0 12px 28px rgba(15,76,117,0.10);">
+            <div class="browser-top" style="background:#eef6fc; border-bottom:1px solid var(--line);">
+              <div class="browser-dots"><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span></div>
+              <div class="browser-url" style="background:#fff; color:var(--slate);">https://sava-amsterdam.com/</div>
+            </div>
+            <div class="browser-preview" style="background-image:url('https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/'); min-height:260px;">
+              <div class="preview-overlay">
+                <div class="preview-badge">🌐 Live Website</div>
+                <a href="https://sava-amsterdam.com/" target="_blank" rel="noopener" class="btn btn-light">Visit Website ↗</a>
+              </div>
+            </div>
+          </div>
+          <h3>SAVA Amsterdam</h3>
+          <p style="margin:0 0 10px; color:var(--blue); font-weight:700;">Full company Notion system</p>
+          <p>Company-wide Notion dashboard optimization concept designed for cleaner operations, better visibility, and a more scalable workspace structure.</p>
+          <div class="tag-row">
+            <span class="tag">What this project focused on</span>
+            <span class="tag">E-commerce Ops</span>
+            <span class="tag">Company Systems</span>
+          </div>
+        </div>
 
-    
+        <div class="project-card interactive-project" data-project="whiskey">
+          <div class="browser-frame" style="margin-bottom:16px; border:1px solid var(--line); box-shadow:0 12px 28px rgba(15,76,117,0.10);">
+            <div class="browser-top" style="background:#eef6fc; border-bottom:1px solid var(--line);">
+              <div class="browser-dots"><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span></div>
+              <div class="browser-url" style="background:#fff; color:var(--slate);">https://whiskeylibrary.com/</div>
+            </div>
+            <div class="browser-preview" style="background-image:url('https://image.thum.io/get/width/1400/crop/900/noanimate/https://whiskeylibrary.com/'); min-height:260px;">
+              <div class="preview-overlay">
+                <div class="preview-badge">🌐 Live Website</div>
+                <a href="https://whiskeylibrary.com/" target="_blank" rel="noopener" class="btn btn-light">Visit Website ↗</a>
+              </div>
+            </div>
+          </div>
+          <h3>Whiskey Library</h3>
+          <p style="margin:0 0 10px; color:var(--blue); font-weight:700;">$10K pipeline in 30 days</p>
+          <p>Affiliate pipeline and Notion workflow build focused on early-stage growth, visibility, and a more organized affiliate operations structure.</p>
+          <div class="tag-row">
+            <span class="tag">What this project focused on</span>
+            <span class="tag">Affiliate Ops</span>
+            <span class="tag">Notion Workflow</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="pricing">
+      <div class="container">
+        <h2 class="section-title">💼 Ways I Work With Clients</h2>
+        <p class="section-subtitle">I kept this as one focused section so visitors can quickly browse the ways I support clients and choose what fits best.</p>
+
+        <div class="carousel-shell">
+          <button class="carousel-arrow left" type="button" id="pricingPrev" aria-label="Previous">‹</button>
+          <div style="position:relative; overflow:hidden; border-radius:24px; background:#fff; border:1px solid var(--line); box-shadow:var(--shadow); padding:22px;">
+            <div style="display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; scrollbar-width:none; -ms-overflow-style:none;" id="pricingCarousel">
+              <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+                <div class="service-icon">⏱</div>
+                <h3>Hourly Support</h3>
+                <p>For ongoing operational, project, or account management support.</p>
+                <ul>
+                  <li><strong>$15–$20 / hour</strong></li>
+                  <li>Ideal for agencies and founders needing flexible support</li>
+                </ul>
+              </div>
+              <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+                <div class="service-icon">🧩</div>
+                <h3>Notion System Projects</h3>
+                <p>Company-wide Notion dashboards, operations systems, and workflow design.</p>
+                <ul>
+                  <li><strong>Starts at $1,500 / month</strong></li>
+                  <li>Includes planning, system design, and implementation</li>
+                </ul>
+              </div>
+              <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+                <div class="service-icon">🔧</div>
+                <h3>Maintenance & Retainers</h3>
+                <p>Post-project maintenance, optimization, and system support.</p>
+                <ul>
+                  <li><strong>Starts at $500 / month</strong></li>
+                  <li>Ideal for teams needing ongoing updates</li>
+                </ul>
+              </div>
+              <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+                <div class="service-icon">📊</div>
+                <h3>Consulting Sessions</h3>
+                <p>Strategic sessions focused on systems, operations, and workflow optimization.</p>
+                <ul>
+                  <li><strong>$50 / hour</strong></li>
+                  <li>Includes a follow-up SOP or action guide</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-arrow right" type="button" id="pricingNext" aria-label="Next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="testimonials">
+      <h2 class="section-title">🎥 Testimonials</h2>
+      <p class="section-subtitle">Social proof from collaborators and clients who have seen how I work.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <h3>Sean Elias — Threecolts / 70K Affiliates</h3>
+          <p class="quote">“Jane is really good at getting things done fast.”</p>
+          <a class="btn btn-secondary" href="./Sean%20Elias-TestimonialVideo.mp4">▶ Watch video</a>
+        </div>
+        <div class="testimonial-card">
+          <h3>Joe Remington — PPC Professor</h3>
+          <p class="quote">“Jane is a phenomenal resource for me and my team.”</p>
+          <a class="btn btn-secondary" href="./Joe-Remington-TestimonialVideo.mp4">▶ Watch video</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="about">
+      <h2 class="section-title">👋 About Me</h2>
+      <p class="section-subtitle">A little about my story, how I started working remotely, and why this work matters to me.</p>
+      <div class="experience-grid">
+        <div class="experience-card exp-card">
+          <div class="meta">My Story</div>
+          <h3>Working remotely since 2021</h3>
+          <p>I started working remotely in 2021, and in 2022 I landed my first real project supporting a marketing agency in the United States. Since then everything shifted.</p>
+          <p>Over the past few years I’ve helped marketing agencies and founders improve operations, organize systems, and support their client relationships. Along the way I’ve worked with around <strong>10 amazing clients</strong> and indirectly supported <strong>100+ of their clients</strong> through project delivery, systems work, and account management.</p>
+          <p>My work now focuses on helping teams save time, streamline processes, and build systems that make daily operations easier.</p>
+        </div>
+        <div class="experience-card exp-card">
+          <div class="meta">Experience</div>
+          <h3>Project Manager & Operations Support (2022–2025)</h3>
+          <ul>
+            <li>Supported marketing agencies and founders with project delivery and systems implementation</li>
+            <li>Built Notion workflows, affiliate pipelines, and operational dashboards</li>
+            <li>Helped teams improve execution visibility, coordination, and process consistency</li>
+          </ul>
+        </div>
+        <div class="experience-card exp-card">
+          <div class="meta">Fun Fact</div>
+          <h3>Life outside work</h3>
+          <p>I love traveling around the Philippines, especially beach destinations. I enjoy sunsets, good conversations, and ending the day with a cocktail.</p>
+          <p>I also love cats and exploring new places around my country. Working remotely allows me to do work I enjoy while still experiencing the world around me.</p>
+          <img src="473789924_497176110077009_588533906754352097_n (1).jpg" style="width:100%; border-radius:16px; margin-top:12px;" alt="Jane in Boracay Philippines" />
+        </div>
+      </div>
+    </section>
 
     <section class="section reveal" id="contact">
       <div class="end-cta">
@@ -1472,6 +1672,6 @@
       }
     });
   </script>
-  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  
 </body>
 </html>
