@@ -588,9 +588,101 @@
 
     .project-modal-grid {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1.05fr 0.95fr;
       gap: 28px;
       align-items: start;
+    }
+
+    .browser-frame {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 20px 42px rgba(5,15,28,0.22);
+    }
+
+    .browser-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      background: rgba(255,255,255,0.10);
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .browser-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .browser-dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+      display: block;
+    }
+
+    .browser-url {
+      flex: 1;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.10);
+      color: rgba(255,255,255,0.92);
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .browser-preview {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      background-size: cover;
+      background-position: top center;
+      overflow: hidden;
+    }
+
+    .browser-preview::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(8,25,44,0.08) 0%, rgba(8,25,44,0.16) 100%);
+    }
+
+    .browser-preview::after {
+      content: "";
+      position: absolute;
+      inset: 12px;
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 16px;
+      pointer-events: none;
+    }
+
+    .preview-overlay {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .preview-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
     }
 
     .project-modal-kicker {
@@ -913,6 +1005,10 @@
       <p class="section-subtitle">A tighter project section focused on your strongest and most relevant case studies.</p>
       <div class="projects-grid">
         <div class="project-card interactive-project" data-project="sava">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
+            <div class="project-kicker">Featured Project</div>
+            <a href="https://sava-amsterdam.com/" target="_blank" rel="noopener" class="btn btn-light" style="padding:6px 10px;font-size:12px;">Visit Website</a>
+          </div>
           <div class="project-kicker">Featured Project</div>
           <h3>SAVA Amsterdam — Company-Wide Notion Dashboard Optimization</h3>
           <p>
@@ -931,6 +1027,10 @@
           </div>
         </div>
         <div class="project-card interactive-project" data-project="whiskey">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
+            <div class="project-kicker">Featured Project</div>
+            <a href="https://whiskeylibrary.com/" target="_blank" rel="noopener" class="btn btn-light" style="padding:6px 10px;font-size:12px;">Visit Website</a>
+          </div>
           <div class="project-kicker">Featured Project</div>
           <h3>Whiskey Library — Affiliate Pipeline & Notion Workflow Build</h3>
           <p>
@@ -1080,7 +1180,7 @@
       </div>
     </section>
 
-    <div class="footer">© 2026 JNugdan — Account Manager | Project Manager | Executive Assistant</div>
+    <div class="footer">© 2026 Jane Yugtan — Account Manager | Project Manager | Executive Assistant</div>
   </main>
 
   <div class="project-modal" id="projectModal" aria-hidden="true">
@@ -1109,6 +1209,8 @@
 
     const projectData = {
       sava: {
+        website: 'https://sava-amsterdam.com/',
+        preview: 'https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/',
         kicker: 'Featured Project',
         title: 'SAVA Amsterdam — Company-Wide Notion Dashboard Optimization',
         summary: 'A full workspace optimization concept for an e-commerce company, designed to turn Notion into a cleaner, more scalable operating system across departments.',
@@ -1123,6 +1225,8 @@
         tags: ['E-commerce Ops', 'Notion Design', 'Company Systems']
       },
       whiskey: {
+        website: 'https://whiskeylibrary.com/',
+        preview: 'https://image.thum.io/get/width/1400/crop/900/noanimate/https://whiskeylibrary.com/',
         kicker: 'Featured Project',
         title: 'Whiskey Library — Affiliate Pipeline & Notion Workflow Build',
         summary: 'A data-driven affiliate operations build focused on generating qualified affiliates, improving visibility, and shaping a revenue pipeline valued at $10,000 in the first 30 days.',
@@ -1156,7 +1260,19 @@
           <ul>${bullets}</ul>
         </div>
         <div>
-          <div class="project-modal-panel">
+          <div class="browser-frame">
+            <div class="browser-top">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-url">${project.website}</div>
+            </div>
+            <div class="browser-preview" style="background-image:url('${project.preview}');">
+              <div class="preview-overlay">
+                <div class="preview-badge">🌐 Live Website Preview</div>
+                <a href="${project.website}" target="_blank" rel="noopener" class="btn btn-light">Visit Live Website ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-modal-panel" style="margin-top:16px;">
             <div class="project-modal-stat">${project.stat}</div>
             <p>${project.detailTitle}</p>
             <div class="tag-row">${tags}</div>
