@@ -907,7 +907,7 @@
         <a href="#services">Services</a>
         <a href="#featured-projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#clients">Clients</a>
+        
         <a href="#testimonials">Testimonials</a>
         </nav>
     </div>
@@ -962,10 +962,7 @@
           <div class="result-label">Enterprise renewals processed</div>
           <div class="result-copy">Managed renewal processing across high-value subscription accounts with a focus on retention, continuity, and account health.</div>
         </div>
-        <div class="result-card">
-          
-          <div class="result-copy">Based on 18 closed renewals out of 28 tracked renewal decisions.</div>
-        </div>
+        
         <div class="result-card">
           <div class="result-kpi" data-count-to="135" data-suffix="K+">135K+</div>
           <div class="result-label">Global subscribers reached</div>
@@ -991,7 +988,11 @@
           <div class="result-label">Project delays reduced</div>
           <div class="result-copy">Improved execution through QA gates, process control, and more predictable delivery workflows.</div>
         </div>
-          <div class="result-copy">Freed up leadership time with better reporting, status visibility, and workflow automation.</div>
+          </div>
+        <div class="result-card">
+          <div class="result-kpi" data-count-to="10" data-suffix=" hrs">6–10 hrs</div>
+          <div class="result-label">CEO time saved weekly</div>
+          <div class="result-copy">Automation, clearer systems, and structured workflows freed up leadership time each week.</div>
         </div>
       </div>
       <div class="metric-callout" id="renewalsCallout">
@@ -1325,104 +1326,50 @@
     </section>
 
     <section class="section reveal" id="experience">
-      <h2 class="section-title">🗂 My Experience</h2>
-      <p class="section-subtitle">My experience brings together account management, project delivery, founder support, and operational systems across different types of businesses and teams.</p>
+      <h2 class="section-title">👋 About Me</h2>
+      <p class="section-subtitle">A little about my journey and how I started working remotely.</p>
       <div class="experience-grid">
+
         <div class="experience-card exp-card">
-          <div class="meta">Current Role</div>
-          <h3>Account Manager — E-Learning Provider / Enterprise Subscription Accounts</h3>
+          <div class="meta">My Story</div>
+          <h3>Working remotely since 2021</h3>
+          <p>
+            I started working remotely in 2021, and in 2022 I landed my first real project supporting a marketing agency in the United States. Since then everything shifted.
+          </p>
+          <p>
+            Over the past few years I’ve helped marketing agencies and founders improve operations, organize systems, and support their client relationships. Along the way I’ve worked with around <strong>10 amazing clients</strong> and indirectly supported <strong>100+ of their clients</strong> through project delivery, systems work, and account management.
+          </p>
+          <p>
+            My work now focuses on helping teams save time, streamline processes, and build systems that make daily operations easier.
+          </p>
+        </div>
+
+        <div class="experience-card exp-card">
+          <div class="meta">Experience</div>
+          <h3>Project Manager & Operations Support (2022–2025)</h3>
           <ul>
-            <li>Processed <strong>$100,000+</strong> in renewals across high-value enterprise subscription accounts</li>
-            <li>Achieved a <strong>64.3% renewal close rate</strong> based on tracked renewal decisions</li>
-            <li>Closed <strong>18</strong> renewal accounts while supporting retention and continuity across the pipeline</li>
-            <li>Included as an account manager in communications sent to <strong>185,000+</strong> global B2C subscribers</li>
-            <li>Focused on client relationships, renewal follow-up, revenue retention, and account continuity</li>
+            <li>Supported marketing agencies and founders with project delivery and systems implementation</li>
+            <li>Built Notion workflows, affiliate pipelines, and operational dashboards</li>
+            <li>Helped teams improve execution visibility, coordination, and process consistency</li>
           </ul>
         </div>
 
         <div class="experience-card exp-card">
-          <div class="meta">2025</div>
-          <h3>Project Manager — Whiskey Library</h3>
-          <ul>
-            <li>Launched a data-driven affiliate engine generating qualified affiliates and a <strong>$10,000 pipeline</strong> in the first 30 days</li>
-            <li>Created a <strong>Notion-based workflow</strong> to support affiliate operations and process visibility</li>
-            <li>Improved structure for affiliate management, tracking, and operational execution</li>
-          </ul>
+          <div class="meta">Fun Fact</div>
+          <h3>Life outside work</h3>
+          <p>
+            I love traveling around the Philippines, especially beach destinations. I enjoy sunsets, good conversations, and ending the day with a cocktail.
+          </p>
+          <p>
+            I also love cats and exploring new places around my country. Working remotely allows me to do work I enjoy while still experiencing the world around me.
+          </p>
+          <img src="473789924_497176110077009_588533906754352097_n (1).jpg" style="width:100%; border-radius:16px; margin-top:12px;" alt="Jane in Boracay Philippines" />
         </div>
 
-        <div class="experience-card exp-card">
-          <div class="meta">2024–2025</div>
-          <h3>Project Manager — ServiceThrive</h3>
-          <ul>
-            <li>Built execution plans, QA process improvements, and workflow structures for delivery support</li>
-            <li>Proposed scalable systems and helped remove operational blockers</li>
-            <li>Supported stronger execution consistency across active projects</li>
-          </ul>
-        </div>
-
-        <div class="experience-card exp-card">
-          <div class="meta">2023–2024</div>
-          <h3>Project Manager — The Social Brand</h3>
-          <ul>
-            <li>Managed web and SEO projects with stronger delivery visibility and organization</li>
-            <li>Reduced rework through process structure and QA-focused workflows</li>
-            <li>Maintained client-facing communication and project coordination</li>
-          </ul>
-        </div>
-
-        <div class="experience-card exp-card">
-          <div class="meta">2023–2024</div>
-          <h3>EA / OBM — Investor Attraction Academy</h3>
-          <ul>
-            <li>Supported founder operations through inbox, calendar, scheduling, and client communication</li>
-            <li>Managed follow-up, reporting, meeting coordination, and execution support</li>
-            <li>Helped maintain operational consistency and visibility</li>
-          </ul>
-        </div>
       </div>
     </section>
 
-    <section class="section reveal" id="clients">
-      <h2 class="section-title">🤝 Companies and Websites I’ve Supported</h2>
-      <p class="section-subtitle">These are some of the companies, brands, and websites I’ve had the opportunity to support across operations, project delivery, account management, and systems work.</p>
-      <div class="logo-marquee" aria-label="Client logos carousel">
-        <div class="logo-track">
-          <div class="logo-card"><img src="70KLOGO.webp" alt="70K Affiliates" /></div>
-          <div class="logo-card"><img src="dreamindigitallogo.jpeg" alt="Dream in Digital" /></div>
-          <div class="logo-card"><img src="threecoltslogo.png" alt="Threecolts" /></div>
-          <div class="logo-card"><img src="servicethrivelogo.png" alt="ServiceThrive" /></div>
-          <div class="logo-card"><img src="Fanti-sewer-and-drain-pros-retina.png" alt="Fanti Sewer & Drain Pros" /></div>
-          <div class="logo-card"><img src="MW-logo.png" alt="Morgan White Window Coverings" /></div>
-          <div class="logo-card"><img src="san-benito-realty-hollister-ca.webp" alt="San Benito Realty" /></div>
-          <div class="logo-card"><img src="WL-LOGO.webp" alt="Whiskey Library" /></div>
-          <div class="logo-card"><img src="AA-ROOFING-LOGO-02.png" alt="AA Roofing" /></div>
-          <div class="logo-card"><img src="highlandfarmparklogo.jpg" alt="Highland Farm Park" /></div>
-          <div class="logo-card"><img src="audaciouslyagencylogo.png" alt="Audaciously Agency" /></div>
-          <div class="logo-card"><img src="marketingmeca.jpeg" alt="Marketing Meca" /></div>
-          <div class="logo-card"><img src="cropped-Forget-Me-Not-02.png" alt="Forget Me Not" /></div>
-          <div class="logo-card"><img src="IAAlogo.png" alt="Investor Attraction Academy" /></div>
-          <div class="logo-card"><img src="PPCLOGO.jpeg" alt="PPC Professor" /></div>
-          <div class="logo-card"><img src="ealogo.png" alt="EA brand asset" /></div>
-
-          <div class="logo-card"><img src="70KLOGO.webp" alt="70K Affiliates" /></div>
-          <div class="logo-card"><img src="dreamindigitallogo.jpeg" alt="Dream in Digital" /></div>
-          <div class="logo-card"><img src="threecoltslogo.png" alt="Threecolts" /></div>
-          <div class="logo-card"><img src="servicethrivelogo.png" alt="ServiceThrive" /></div>
-          <div class="logo-card"><img src="Fanti-sewer-and-drain-pros-retina.png" alt="Fanti Sewer & Drain Pros" /></div>
-          <div class="logo-card"><img src="MW-logo.png" alt="Morgan White Window Coverings" /></div>
-          <div class="logo-card"><img src="san-benito-realty-hollister-ca.webp" alt="San Benito Realty" /></div>
-          <div class="logo-card"><img src="WL-LOGO.webp" alt="Whiskey Library" /></div>
-          <div class="logo-card"><img src="AA-ROOFING-LOGO-02.png" alt="AA Roofing" /></div>
-          <div class="logo-card"><img src="highlandfarmparklogo.jpg" alt="Highland Farm Park" /></div>
-          <div class="logo-card"><img src="audaciouslyagencylogo.png" alt="Audaciously Agency" /></div>
-          <div class="logo-card"><img src="marketingmeca.jpeg" alt="Marketing Meca" /></div>
-          <div class="logo-card"><img src="cropped-Forget-Me-Not-02.png" alt="Forget Me Not" /></div>
-          <div class="logo-card"><img src="IAAlogo.png" alt="Investor Attraction Academy" /></div>
-          <div class="logo-card"><img src="PPCLOGO.jpeg" alt="PPC Professor" /></div>
-          <div class="logo-card"><img src="ealogo.png" alt="EA brand asset" /></div>
-        </div>
-      </div>
-    </section>
+    
 
     <section class="section reveal" id="testimonials">
       <h2 class="section-title">🎥 Testimonials</h2>
