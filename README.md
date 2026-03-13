@@ -681,9 +681,7 @@
         <a href="#experience">Experience</a>
         <a href="#clients">Clients</a>
         <a href="#testimonials">Testimonials</a>
-        <a href="#linkedin">LinkedIn</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        </nav>
     </div>
   </div>
 
@@ -784,10 +782,89 @@
     </section>
 
     <section class="section" id="services">
+      <style>
+        .services-grid .panel.service-panel {
+          position: relative;
+          overflow: hidden;
+          transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+        }
+        .services-grid .panel.service-panel::before {
+          content: "";
+          position: absolute;
+          inset: 0 auto 0 0;
+          width: 5px;
+          background: linear-gradient(180deg, var(--blue), var(--blue-2));
+        }
+        .services-grid .panel.service-panel::after {
+          content: "";
+          position: absolute;
+          top: -40px;
+          right: -40px;
+          width: 120px;
+          height: 120px;
+          background: radial-gradient(circle, rgba(29,111,165,0.12) 0%, rgba(29,111,165,0) 70%);
+          pointer-events: none;
+        }
+        .services-grid .panel.service-panel:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 20px 40px rgba(15,76,117,0.14);
+          border-color: #bfd9ec;
+        }
+        .service-icon {
+          width: 52px;
+          height: 52px;
+          border-radius: 14px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background: #eef6fc;
+          border: 1px solid #d7e8f5;
+          font-size: 24px;
+          margin-bottom: 14px;
+        }
+        .experience-card.exp-card {
+          position: relative;
+          transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+        }
+        .experience-card.exp-card::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          width: 5px;
+          border-radius: 20px 0 0 20px;
+          background: linear-gradient(180deg, var(--blue), var(--blue-2));
+        }
+        .experience-card.exp-card:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 18px 36px rgba(15,76,117,0.12);
+          border-color: #bfd9ec;
+        }
+        .end-cta {
+          margin: 18px auto 0;
+          max-width: 760px;
+          text-align: center;
+          padding: 28px;
+          background: linear-gradient(135deg, #0f4c75 0%, #1d6fa5 100%);
+          color: white;
+          border-radius: 24px;
+          box-shadow: 0 20px 46px rgba(15,76,117,0.18);
+        }
+        .end-cta h3 {
+          margin: 0 0 8px;
+          font-size: 28px;
+        }
+        .end-cta p {
+          margin: 0 0 18px;
+          color: rgba(255,255,255,0.92);
+        }
+      </style>
       <h2 class="section-title">🛠 Services</h2>
       <p class="section-subtitle">Focused service lines aligned with your current positioning: client retention, systems optimization, and automation support.</p>
       <div class="services-grid">
-        <div class="panel">
+        <div class="panel service-panel">
+          <div class="service-icon">🤝</div>
           <h3>Account Management & Client Retention</h3>
           <ul>
             <li>Enterprise renewals and retention support</li>
@@ -800,7 +877,8 @@
             <span class="tag">Client Success</span>
           </div>
         </div>
-        <div class="panel">
+        <div class="panel service-panel">
+          <div class="service-icon">🧩</div>
           <h3>Notion Dashboard Optimization</h3>
           <ul>
             <li>Company-wide Notion architecture and dashboard cleanup</li>
@@ -813,7 +891,8 @@
             <span class="tag">Documentation</span>
           </div>
         </div>
-        <div class="panel">
+        <div class="panel service-panel">
+          <div class="service-icon">⚙️</div>
           <h3>AI + Automation for Agencies & B2B Teams</h3>
           <ul>
             <li>AI-assisted outreach workflows for B2B companies and organizations</li>
@@ -876,7 +955,7 @@
       <h2 class="section-title">🗂 Experience</h2>
       <p class="section-subtitle">Selected experience across account management, project delivery, founder support, and operational systems.</p>
       <div class="experience-grid">
-        <div class="experience-card">
+        <div class="experience-card exp-card">
           <div class="meta">Current Role</div>
           <h3>Account Manager — E-Learning Provider / Enterprise Subscription Accounts</h3>
           <ul>
@@ -888,7 +967,7 @@
           </ul>
         </div>
 
-        <div class="experience-card">
+        <div class="experience-card exp-card">
           <div class="meta">2025</div>
           <h3>Project Manager — Whiskey Library</h3>
           <ul>
@@ -898,7 +977,7 @@
           </ul>
         </div>
 
-        <div class="experience-card">
+        <div class="experience-card exp-card">
           <div class="meta">2024–2025</div>
           <h3>Project Manager — ServiceThrive</h3>
           <ul>
@@ -908,7 +987,7 @@
           </ul>
         </div>
 
-        <div class="experience-card">
+        <div class="experience-card exp-card">
           <div class="meta">2023–2024</div>
           <h3>Project Manager — The Social Brand</h3>
           <ul>
@@ -918,7 +997,7 @@
           </ul>
         </div>
 
-        <div class="experience-card">
+        <div class="experience-card exp-card">
           <div class="meta">2023–2024</div>
           <h3>EA / OBM — Investor Attraction Academy</h3>
           <ul>
@@ -989,26 +1068,14 @@
       </div>
     </section>
 
-    <section class="section" id="linkedin">
-      <h2 class="section-title">🔗 LinkedIn</h2>
-      <p class="section-subtitle">Another way to connect and review my professional background in account management, project delivery, client success, and systems optimization.</p>
-      <div class="linkedin-card">
-        <h3>Connect with me on LinkedIn</h3>
-        <p>View my profile directly or use the embedded badge below if your GitHub Pages setup supports it.</p>
-        <p><a class="btn btn-light" href="https://ph.linkedin.com/in/jyugtan?trk=profile-badge" target="_blank" rel="noopener">View my LinkedIn profile</a></p>
-        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="jyugtan" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ph.linkedin.com/in/jyugtan?trk=profile-badge">Jane Y.</a></div>
-      </div>
-    </section>
+    
 
     <section class="section" id="contact">
-      <h2 class="section-title">📬 Contact</h2>
-      <p class="section-subtitle">If my background and services align with what you need, I’d be glad to connect and discuss how I can support your business.</p>
-      <div class="contact-card">
-        <h3>Let’s connect</h3>
-        <p>I’m currently focused on account management, client retention, enterprise renewals, Notion systems, operational support, and AI-assisted workflow improvement for growing businesses.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick virtual coffee</a>
-          <a class="btn btn-secondary" href="mailto:yugtanlynette@gmail.com">📩 Email me directly</a>
+      <div class="end-cta">
+        <h3>Let’s connect ☕</h3>
+        <p>If my background and services align with what you need, I’d be glad to connect and discuss how I can support your business.</p>
+        <div class="cta-row" style="justify-content:center;">
+          <a class="btn btn-light" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick virtual coffee</a>
         </div>
       </div>
     </section>
