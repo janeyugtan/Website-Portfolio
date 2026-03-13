@@ -166,6 +166,17 @@
       padding: 28px 0;
     }
 
+    .section.reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .section.reveal.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     .section-title {
       font-size: 30px;
       margin: 0 0 8px;
@@ -207,6 +218,11 @@
       height: 360px;
       object-fit: cover;
       display: block;
+      transition: transform 0.35s ease;
+    }
+
+    .video-thumb:hover img {
+      transform: scale(1.02);
     }
 
     .play-button {
@@ -218,6 +234,33 @@
       font-size: 72px;
       color: white;
       text-shadow: 0 10px 25px rgba(0,0,0,0.45);
+      transition: transform 0.25s ease, filter 0.25s ease;
+    }
+
+    .video-thumb::after {
+      content: "";
+      position: absolute;
+      inset: auto 50% 50% auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+      background: rgba(15, 76, 117, 0.18);
+      box-shadow: 0 0 0 0 rgba(15,76,117,0.35);
+      transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+    }
+
+    .video-thumb:hover::after {
+      background: rgba(15, 76, 117, 0.78);
+      box-shadow: 0 0 0 14px rgba(15,76,117,0.14);
+      transform: translate(-50%, -50%) scale(1.04);
+    }
+
+    .video-thumb:hover .play-button {
+      transform: scale(1.08);
+      filter: brightness(1.05);
     }
 
     .video-body { padding: 24px; }
@@ -496,6 +539,12 @@
       box-shadow: 0 6px 16px rgba(2,18,30,.05);
       padding: 14px;
       margin-left: 16px;
+      transition: transform 0.22s ease, filter 0.22s ease;
+    }
+
+    .logo-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      filter: saturate(1.06);
     }
 
     .logo-card img {
@@ -736,6 +785,83 @@
       color: #fff;
     }
 
+    .services-grid .panel.service-panel {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    }
+    .services-grid .panel.service-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 5px;
+      background: linear-gradient(180deg, var(--blue), var(--blue-2));
+    }
+    .services-grid .panel.service-panel::after {
+      content: "";
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 120px;
+      height: 120px;
+      background: radial-gradient(circle, rgba(29,111,165,0.12) 0%, rgba(29,111,165,0) 70%);
+      pointer-events: none;
+    }
+    .services-grid .panel.service-panel:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(15,76,117,0.14);
+      border-color: #bfd9ec;
+    }
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #eef6fc;
+      border: 1px solid #d7e8f5;
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+    .experience-card.exp-card {
+      position: relative;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    }
+    .experience-card.exp-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      border-radius: 20px 0 0 20px;
+      background: linear-gradient(180deg, var(--blue), var(--blue-2));
+    }
+    .experience-card.exp-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 36px rgba(15,76,117,0.12);
+      border-color: #bfd9ec;
+    }
+    .end-cta {
+      margin: 18px auto 0;
+      max-width: 760px;
+      text-align: center;
+      padding: 28px;
+      background: linear-gradient(135deg, #0f4c75 0%, #1d6fa5 100%);
+      color: white;
+      border-radius: 24px;
+      box-shadow: 0 20px 46px rgba(15,76,117,0.18);
+    }
+    .end-cta h3 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+    .end-cta p {
+      margin: 0 0 18px;
+      color: rgba(255,255,255,0.92);
+    }
+
     @media (max-width: 980px) {
       .hero-card { grid-template-columns: 1fr; text-align: center; }
       .results-grid { grid-template-columns: repeat(2, 1fr); }
@@ -799,7 +925,7 @@
       </div>
     </section>
 
-    <section class="section" id="video-intro">
+    <section class="section reveal" id="video-intro">
       <h2 class="section-title">🎥 Meet Jane</h2>
       <p class="section-subtitle">A quick introduction to how I support enterprise accounts, founders, and growing teams through client success, operational systems, and project execution.</p>
       <div class="video-card">
@@ -816,47 +942,47 @@
       </div>
     </section>
 
-    <section class="section" id="results">
+    <section class="section reveal" id="results">
       <h2 class="section-title">🔎 Results at a Glance</h2>
       <p class="section-subtitle">A cleaner KPI layout to highlight the outcomes most relevant to account management, renewals, automation, and systems design.</p>
       <div class="results-grid">
         <div class="result-card featured-metric" id="renewalsMetricCard">
-          <div class="result-kpi">$100K+</div>
+          <div class="result-kpi" data-count-to="100" data-prefix="$" data-suffix="K+">$100K+</div>
           <div class="result-label">Enterprise renewals processed</div>
           <div class="result-copy">Managed renewal processing across high-value subscription accounts with a focus on retention, continuity, and account health.</div>
         </div>
         <div class="result-card">
-          <div class="result-kpi">64.3%</div>
+          <div class="result-kpi" data-count-to="64.3" data-suffix="%">64.3%</div>
           <div class="result-label">Renewal close rate</div>
           <div class="result-copy">Based on 18 closed renewals out of 28 tracked renewal decisions.</div>
         </div>
         <div class="result-card">
-          <div class="result-kpi">185K+</div>
+          <div class="result-kpi" data-count-to="185" data-suffix="K+">185K+</div>
           <div class="result-label">Global subscribers reached</div>
           <div class="result-copy">Included as an account manager in subscriber-facing email communications for a large global B2C audience.</div>
         </div>
         <div class="result-card">
-          <div class="result-kpi">$10K</div>
+          <div class="result-kpi" data-count-to="10" data-prefix="$" data-suffix="K">$10K</div>
           <div class="result-label">Affiliate pipeline in 30 days</div>
           <div class="result-copy">Built a qualified affiliate pipeline and supporting workflow structure for Whiskey Library in the first 30 days.</div>
         </div>
         <div class="result-card">
-          <div class="result-kpi">-87%</div>
+          <div class="result-kpi" data-count-to="87" data-prefix="-" data-suffix="%">-87%</div>
           <div class="result-label">Onboarding time reduced</div>
           <div class="result-copy">Reduced onboarding from approximately 3 days to 4 hours through structured systems and automation.</div>
         </div>
         <div class="result-card">
-          <div class="result-kpi">95%</div>
+          <div class="result-kpi" data-count-to="95" data-suffix="%">95%</div>
           <div class="result-label">Workflow satisfaction improvement</div>
           <div class="result-copy">Supported stronger team experience through cleaner systems, visibility, and documentation.</div>
         </div>
         <div class="result-card">
-          <div class="result-kpi">-30%</div>
+          <div class="result-kpi" data-count-to="30" data-prefix="-" data-suffix="%">-30%</div>
           <div class="result-label">Project delays reduced</div>
           <div class="result-copy">Improved execution through QA gates, process control, and more predictable delivery workflows.</div>
         </div>
         <div class="result-card">
-          <div class="result-kpi">5–6 hrs</div>
+          <div class="result-kpi" data-count-to="6" data-prefix="~" data-suffix=" hrs">5–6 hrs</div>
           <div class="result-label">Founder time saved monthly</div>
           <div class="result-copy">Freed up leadership time with better reporting, status visibility, and workflow automation.</div>
         </div>
@@ -873,7 +999,7 @@
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section class="section reveal" id="services">
       <style>
         .services-grid .panel.service-panel {
           position: relative;
@@ -953,7 +1079,7 @@
         }
       </style>
       <h2 class="section-title">🛠 Services</h2>
-      <p class="section-subtitle">Focused service lines aligned with your current positioning: client retention, systems optimization, and automation support.</p>
+      <p class="section-subtitle">Here are the core ways I support founders, agencies, and growing teams through retention, systems optimization, and automation.</p>
       <div class="services-grid">
         <div class="panel service-panel">
           <div class="service-icon">🤝</div>
@@ -1000,9 +1126,9 @@
       </div>
     </section>
 
-    <section class="section" id="featured-projects">
+    <section class="section reveal" id="featured-projects">
       <h2 class="section-title">📌 Featured Projects</h2>
-      <p class="section-subtitle">A tighter project section focused on your strongest and most relevant case studies.</p>
+      <p class="section-subtitle">These are two projects I’m proud to highlight because they reflect how I think, what I build, and how I support growth through systems and execution.</p>
       <div class="projects-grid">
         <div class="project-card interactive-project" data-project="sava">
           <div class="browser-frame" style="margin-bottom:16px; border:1px solid var(--line); box-shadow:0 12px 28px rgba(15,76,117,0.10);">
@@ -1056,9 +1182,9 @@
       </div>
     </section>
 
-    <section class="section" id="experience">
-      <h2 class="section-title">🗂 Experience</h2>
-      <p class="section-subtitle">Selected experience across account management, project delivery, founder support, and operational systems.</p>
+    <section class="section reveal" id="experience">
+      <h2 class="section-title">🗂 My Experience</h2>
+      <p class="section-subtitle">My experience brings together account management, project delivery, founder support, and operational systems across different types of businesses and teams.</p>
       <div class="experience-grid">
         <div class="experience-card exp-card">
           <div class="meta">Current Role</div>
@@ -1114,9 +1240,9 @@
       </div>
     </section>
 
-    <section class="section" id="clients">
-      <h2 class="section-title">🤝 Clients & Websites Managed</h2>
-      <p class="section-subtitle">A cleaner, more dynamic gallery-style presentation. The logo carousel auto-scrolls and pauses on hover, so it feels more polished than a static grid.</p>
+    <section class="section reveal" id="clients">
+      <h2 class="section-title">🤝 Companies and Websites I’ve Supported</h2>
+      <p class="section-subtitle">These are some of the companies, brands, and websites I’ve had the opportunity to support across operations, project delivery, account management, and systems work.</p>
       <div class="logo-marquee" aria-label="Client logos carousel">
         <div class="logo-track">
           <div class="logo-card"><img src="70KLOGO.webp" alt="70K Affiliates" /></div>
@@ -1156,7 +1282,7 @@
       </div>
     </section>
 
-    <section class="section" id="testimonials">
+    <section class="section reveal" id="testimonials">
       <h2 class="section-title">🎥 Testimonials</h2>
       <p class="section-subtitle">Social proof from collaborators and clients who have seen how I work.</p>
       <div class="testimonials-grid">
@@ -1175,7 +1301,7 @@
 
     
 
-    <section class="section" id="contact">
+    <section class="section reveal" id="contact">
       <div class="end-cta">
         <h3>Let’s connect ☕</h3>
         <p>If my background and services align with what you need, I’d be glad to connect and discuss how I can support your business.</p>
@@ -1196,6 +1322,50 @@
   </div>
 
   <script>
+    const revealSections = document.querySelectorAll('.section.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+    revealSections.forEach((section) => revealObserver.observe(section));
+
+    const kpiCounters = document.querySelectorAll('.result-kpi[data-count-to]');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        if (el.dataset.animated === 'true') return;
+        el.dataset.animated = 'true';
+        const endValue = parseFloat(el.dataset.countTo || '0');
+        const prefix = el.dataset.prefix || '';
+        const suffix = el.dataset.suffix || '';
+        const duration = 1400;
+        const startTime = performance.now();
+        const decimals = Number.isInteger(endValue) ? 0 : 1;
+
+        function tick(now) {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = endValue * eased;
+          const formatted = current.toLocaleString(undefined, {
+            minimumFractionDigits: decimals,
+            maximumFractionDigits: decimals
+          });
+          el.textContent = `${prefix}${formatted}${suffix}`;
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          }
+        }
+        requestAnimationFrame(tick);
+        counterObserver.unobserve(el);
+      });
+    }, { threshold: 0.45 });
+    kpiCounters.forEach((counter) => counterObserver.observe(counter));
+
     const renewalsMetricCard = document.getElementById('renewalsMetricCard');
     const renewalsCallout = document.getElementById('renewalsCallout');
     const renewalsCalloutClose = document.getElementById('renewalsCalloutClose');
