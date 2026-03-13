@@ -906,7 +906,7 @@
         <a href="#results">Results</a>
         <a href="#services">Services</a>
         <a href="#featured-projects">Projects</a>
-        <a href="#experience">Experience</a>
+        <a href="#about">About Me</a>
         
         <a href="#testimonials">Testimonials</a>
         </nav>
@@ -1137,7 +1137,7 @@
     <section class="section reveal" id="notion-demos">
       <div class="container">
         <h2 class="section-title">🎬 Notion Systems & Automation Demos</h2>
-        <p class="section-subtitle">Below are short walkthrough videos where I demonstrate systems and automation workflows I built inside Notion and integrated tools. Hover over each demo to preview and open the walkthrough.</p>
+        <p class="section-subtitle">Below are short walkthroughs of systems I built in Notion and integrated tools. I replaced the static Loom thumbnails with custom branded previews so the section feels more polished and consistent with the rest of the site.</p>
 
         <div class="projects-grid">
 
@@ -1152,10 +1152,12 @@
               <span class="tag">Creator Outreach</span>
             </div>
 
-            <div style="margin-top:16px; position:relative; overflow:hidden; border-radius:16px; border:1px solid var(--line);">
-              <a href="https://www.loom.com/share/f883c45c953848fca179d3bc8724875f" target="_blank" rel="noopener" style="display:block; position:relative;">
-                <img src="https://cdn.loom.com/sessions/thumbnails/f883c45c953848fca179d3bc8724875f-with-play.gif" style="width:100%; display:block; transition:transform .35s ease;"/>
+            <div style="margin-top:16px; position:relative; overflow:hidden; border-radius:16px; border:1px solid var(--line); background:#eef6fc;">
+              <a href="https://www.loom.com/share/f883c45c953848fca179d3bc8724875f" target="_blank" rel="noopener" style="display:block; position:relative; text-decoration:none;">
+                <img src="affiliate-dashboard.png" alt="Affiliate dashboard preview" style="width:100%; display:block; transition:transform .35s ease;"/>
+                <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,76,117,0.10) 0%, rgba(15,76,117,0.35) 100%);"></div>
                 <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:52px; color:white; text-shadow:0 10px 30px rgba(0,0,0,.5);">▶</div>
+                <div style="position:absolute; left:16px; bottom:16px; background:rgba(15,76,117,0.92); color:#fff; padding:8px 12px; border-radius:999px; font-size:12px; font-weight:700;">Watch Loom Demo</div>
               </a>
             </div>
 
@@ -1173,10 +1175,12 @@
               <span class="tag">Operations Workflow</span>
             </div>
 
-            <div style="margin-top:16px; position:relative; overflow:hidden; border-radius:16px; border:1px solid var(--line);">
-              <a href="https://www.loom.com/share/5aa9f903245a482dbbebb103931f1408" target="_blank" rel="noopener" style="display:block; position:relative;">
-                <img src="https://cdn.loom.com/sessions/thumbnails/5aa9f903245a482dbbebb103931f1408-with-play.gif" style="width:100%; display:block; transition:transform .35s ease;"/>
+            <div style="margin-top:16px; position:relative; overflow:hidden; border-radius:16px; border:1px solid var(--line); background:#eef6fc;">
+              <a href="https://www.loom.com/share/5aa9f903245a482dbbebb103931f1408" target="_blank" rel="noopener" style="display:block; position:relative; text-decoration:none;">
+                <img src="talent-pipeline.png" alt="Talent pipeline preview" style="width:100%; display:block; transition:transform .35s ease;"/>
+                <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,76,117,0.10) 0%, rgba(15,76,117,0.35) 100%);"></div>
                 <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:52px; color:white; text-shadow:0 10px 30px rgba(0,0,0,.5);">▶</div>
+                <div style="position:absolute; left:16px; bottom:16px; background:rgba(15,76,117,0.92); color:#fff; padding:8px 12px; border-radius:999px; font-size:12px; font-weight:700;">Watch Loom Demo</div>
               </a>
             </div>
 
@@ -1221,50 +1225,56 @@
     <section class="section reveal" id="pricing">
       <div class="container">
         <h2 class="section-title">💼 Ways I Work With Clients</h2>
-        <p class="section-subtitle">Depending on the type of support needed, I work with clients through hourly support, consulting, or ongoing system and operations projects.</p>
+        <p class="section-subtitle">I moved this closer to the end of the page so visitors can first understand my work, then decide which type of engagement fits best.</p>
 
-        <div class="services-grid">
+        <div style="position:relative; overflow:hidden; border-radius:24px; background:#fff; border:1px solid var(--line); box-shadow:var(--shadow); padding:22px;">
+          <div style="display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px;" id="pricingCarousel">
 
-          <div class="panel service-panel">
-            <div class="service-icon">⏱</div>
-            <h3>Hourly Support</h3>
-            <p>For ongoing operational, project, or account management support.</p>
-            <ul>
-              <li><strong>$15–$20 / hour</strong></li>
-              <li>Ideal for agencies and founders needing flexible support</li>
-            </ul>
+            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+              <div class="service-icon">⏱</div>
+              <h3>Hourly Support</h3>
+              <p>For ongoing operational, project, or account management support.</p>
+              <ul>
+                <li><strong>$15–$20 / hour</strong></li>
+                <li>Ideal for agencies and founders needing flexible support</li>
+              </ul>
+            </div>
+
+            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+              <div class="service-icon">🧩</div>
+              <h3>Notion System Projects</h3>
+              <p>Company-wide Notion dashboards, operations systems, and workflow design.</p>
+              <ul>
+                <li><strong>Starts at $1,500 / month</strong></li>
+                <li>Includes planning, system design, and implementation</li>
+              </ul>
+            </div>
+
+            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+              <div class="service-icon">🔧</div>
+              <h3>Maintenance & Retainers</h3>
+              <p>Post-project maintenance, optimization, and system support.</p>
+              <ul>
+                <li><strong>Starts at $500 / month</strong></li>
+                <li>Ideal for teams needing ongoing updates</li>
+              </ul>
+            </div>
+
+            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+              <div class="service-icon">📊</div>
+              <h3>Consulting Sessions</h3>
+              <p>Strategic sessions focused on systems, operations, and workflow optimization.</p>
+              <ul>
+                <li><strong>$50 / hour</strong></li>
+                <li>Includes a follow-up SOP or action guide</li>
+              </ul>
+            </div>
+
           </div>
-
-          <div class="panel service-panel">
-            <div class="service-icon">🧩</div>
-            <h3>Notion System Projects</h3>
-            <p>Company-wide Notion dashboards, operations systems, and workflow design.</p>
-            <ul>
-              <li><strong>Starts at $1,500 / month</strong></li>
-              <li>Includes planning, system design, and implementation</li>
-            </ul>
+          <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:14px;">
+            <button class="btn btn-light" type="button" id="pricingPrev">← Prev</button>
+            <button class="btn btn-light" type="button" id="pricingNext">Next →</button>
           </div>
-
-          <div class="panel service-panel">
-            <div class="service-icon">🔧</div>
-            <h3>Maintenance & Retainers</h3>
-            <p>Post‑project maintenance, optimization, and system support.</p>
-            <ul>
-              <li><strong>Starts at $500 / month</strong></li>
-              <li>Ideal for teams needing ongoing updates</li>
-            </ul>
-          </div>
-
-          <div class="panel service-panel">
-            <div class="service-icon">📊</div>
-            <h3>Consulting Sessions</h3>
-            <p>Strategic sessions focused on systems, operations, and workflow optimization.</p>
-            <ul>
-              <li><strong>$50 / hour</strong></li>
-              <li>Includes a follow‑up SOP or action guide</li>
-            </ul>
-          </div>
-
         </div>
       </div>
     </section>
@@ -1325,9 +1335,9 @@
       </div>
     </section>
 
-    <section class="section reveal" id="experience">
+    <section class="section reveal" id="about">
       <h2 class="section-title">👋 About Me</h2>
-      <p class="section-subtitle">A little about my journey and how I started working remotely.</p>
+      <p class="section-subtitle">A little about my story, how I started working remotely, and why this work matters to me.</p>
       <div class="experience-grid">
 
         <div class="experience-card exp-card">
@@ -1388,7 +1398,106 @@
       </div>
     </section>
 
-    
+    <section class="section reveal" id="about">
+      <h2 class="section-title">👋 About Me</h2>
+      <p class="section-subtitle">A little about my story, how I started working remotely, and why this work matters to me.</p>
+      <div class="experience-grid">
+
+        <div class="experience-card exp-card">
+          <div class="meta">My Story</div>
+          <h3>Working remotely since 2021</h3>
+          <p>
+            I started working remotely in 2021, and in 2022 I landed my first real project supporting a marketing agency in the United States. Since then everything shifted.
+          </p>
+          <p>
+            Over the past few years I’ve helped marketing agencies and founders improve operations, organize systems, and support their client relationships. Along the way I’ve worked with around <strong>10 amazing clients</strong> and indirectly supported <strong>100+ of their clients</strong> through project delivery, systems work, and account management.
+          </p>
+          <p>
+            My work now focuses on helping teams save time, streamline processes, and build systems that make daily operations easier.
+          </p>
+        </div>
+
+        <div class="experience-card exp-card">
+          <div class="meta">Experience</div>
+          <h3>Project Manager & Operations Support (2022–2025)</h3>
+          <ul>
+            <li>Supported marketing agencies and founders with project delivery and systems implementation</li>
+            <li>Built Notion workflows, affiliate pipelines, and operational dashboards</li>
+            <li>Helped teams improve execution visibility, coordination, and process consistency</li>
+          </ul>
+        </div>
+
+        <div class="experience-card exp-card">
+          <div class="meta">Fun Fact</div>
+          <h3>Life outside work</h3>
+          <p>
+            I love traveling around the Philippines, especially beach destinations. I enjoy sunsets, good conversations, and ending the day with a cocktail.
+          </p>
+          <p>
+            I also love cats and exploring new places around my country. Working remotely allows me to do work I enjoy while still experiencing the world around me.
+          </p>
+          <img src="473789924_497176110077009_588533906754352097_n (1).jpg" style="width:100%; border-radius:16px; margin-top:12px;" alt="Jane in Boracay Philippines" />
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section reveal" id="pricing">
+      <div class="container">
+        <h2 class="section-title">💼 Ways I Work With Clients</h2>
+        <p class="section-subtitle">I moved this closer to the end of the page so visitors can first understand my work, then decide which type of engagement fits best.</p>
+
+        <div style="position:relative; overflow:hidden; border-radius:24px; background:#fff; border:1px solid var(--line); box-shadow:var(--shadow); padding:22px;">
+          <div style="display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px;" id="pricingCarousel">
+
+            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+              <div class="service-icon">⏱</div>
+              <h3>Hourly Support</h3>
+              <p>For ongoing operational, project, or account management support.</p>
+              <ul>
+                <li><strong>$15–$20 / hour</strong></li>
+                <li>Ideal for agencies and founders needing flexible support</li>
+              </ul>
+            </div>
+
+            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+              <div class="service-icon">🧩</div>
+              <h3>Notion System Projects</h3>
+              <p>Company-wide Notion dashboards, operations systems, and workflow design.</p>
+              <ul>
+                <li><strong>Starts at $1,500 / month</strong></li>
+                <li>Includes planning, system design, and implementation</li>
+              </ul>
+            </div>
+
+            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+              <div class="service-icon">🔧</div>
+              <h3>Maintenance & Retainers</h3>
+              <p>Post-project maintenance, optimization, and system support.</p>
+              <ul>
+                <li><strong>Starts at $500 / month</strong></li>
+                <li>Ideal for teams needing ongoing updates</li>
+              </ul>
+            </div>
+
+            <div class="panel service-panel" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
+              <div class="service-icon">📊</div>
+              <h3>Consulting Sessions</h3>
+              <p>Strategic sessions focused on systems, operations, and workflow optimization.</p>
+              <ul>
+                <li><strong>$50 / hour</strong></li>
+                <li>Includes a follow-up SOP or action guide</li>
+              </ul>
+            </div>
+
+          </div>
+          <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:14px;">
+            <button class="btn btn-light" type="button" id="pricingPrev">← Prev</button>
+            <button class="btn btn-light" type="button" id="pricingNext">Next →</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="section reveal" id="contact">
       <div class="end-cta">
@@ -1511,6 +1620,18 @@
 
     renewalsMetricCard?.addEventListener('click', () => toggleRenewalsCallout());
     renewalsCalloutClose?.addEventListener('click', () => toggleRenewalsCallout(false));
+
+    const pricingCarousel = document.getElementById('pricingCarousel');
+    const pricingPrev = document.getElementById('pricingPrev');
+    const pricingNext = document.getElementById('pricingNext');
+
+    pricingPrev?.addEventListener('click', () => {
+      pricingCarousel?.scrollBy({ left: -340, behavior: 'smooth' });
+    });
+
+    pricingNext?.addEventListener('click', () => {
+      pricingCarousel?.scrollBy({ left: 340, behavior: 'smooth' });
+    });
 
     const projectData = {
       sava: {
