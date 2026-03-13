@@ -1137,6 +1137,127 @@
       </div>
     </section>
 
+    <section class="section reveal" id="notion-demos">
+      <div class="container">
+        <h2 class="section-title">🎬 Notion Systems & Workflow Demos</h2>
+        <p class="section-subtitle">Below are short walkthrough videos where I explain systems and workflows I built inside Notion for operations, affiliate pipelines, and team management.</p>
+
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-kicker">Notion System Demo</div>
+            <h3>Affiliate Operations Pipeline</h3>
+            <p>I walk through the affiliate pipeline and automation workflow built to track partners, revenue contribution, and outreach progress.</p>
+            <div class="tag-row">
+              <span class="tag">Notion</span>
+              <span class="tag">Affiliate Operations</span>
+              <span class="tag">Automation</span>
+            </div>
+            <div style="margin-top:14px">
+              <a class="btn btn-light" href="https://www.loom.com/share/f883c45c953848fca179d3bc8724875f" target="_blank">▶ Watch Demo</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-kicker">Notion System Demo</div>
+            <h3>Talent & Hiring Pipeline</h3>
+            <p>This walkthrough explains the hiring workflow I built in Notion to streamline candidate tracking, onboarding preparation, and team coordination.</p>
+            <div class="tag-row">
+              <span class="tag">Notion</span>
+              <span class="tag">Hiring Workflow</span>
+              <span class="tag">Operations</span>
+            </div>
+            <div style="margin-top:14px">
+              <a class="btn btn-light" href="https://www.loom.com/share/5aa9f903245a482dbbebb103931f1408" target="_blank">▶ Watch Demo</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="case-studies">
+      <div class="container">
+        <h2 class="section-title">🧠 Notion System Case Studies</h2>
+        <p class="section-subtitle">Here’s how I typically think about operations and system design: I look at what feels messy, manual, or hard to maintain, then turn it into something cleaner, easier to use, and more scalable for the team.</p>
+
+        <div class="projects-grid">
+          <div class="project-card interactive-project" data-project="case-ops">
+            <div class="project-kicker">Before → After</div>
+            <h3>From scattered processes to one clear operating system</h3>
+            <p>In many teams, information lives in too many places. I help bring workflows, SOPs, dashboards, and ownership into one system that is easier to navigate and actually gets used.</p>
+            <div class="tag-row">
+              <span class="tag">Dashboards</span>
+              <span class="tag">SOPs</span>
+              <span class="tag">Team Visibility</span>
+            </div>
+          </div>
+
+          <div class="project-card interactive-project" data-project="case-pipeline">
+            <div class="project-kicker">Before → After</div>
+            <h3>From manual follow-up to a trackable pipeline</h3>
+            <p>I build systems that make pipelines easier to manage by improving structure, visibility, status tracking, and handoff clarity across moving parts.</p>
+            <div class="tag-row">
+              <span class="tag">Pipelines</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Execution</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="pricing">
+      <div class="container">
+        <h2 class="section-title">💼 Ways I Work With Clients</h2>
+        <p class="section-subtitle">Depending on the type of support needed, I work with clients through hourly support, consulting, or ongoing system and operations projects.</p>
+
+        <div class="services-grid">
+
+          <div class="panel service-panel">
+            <div class="service-icon">⏱</div>
+            <h3>Hourly Support</h3>
+            <p>For ongoing operational, project, or account management support.</p>
+            <ul>
+              <li><strong>$15–$20 / hour</strong></li>
+              <li>Ideal for agencies and founders needing flexible support</li>
+            </ul>
+          </div>
+
+          <div class="panel service-panel">
+            <div class="service-icon">🧩</div>
+            <h3>Notion System Projects</h3>
+            <p>Company-wide Notion dashboards, operations systems, and workflow design.</p>
+            <ul>
+              <li><strong>Starts at $1,500 / month</strong></li>
+              <li>Includes planning, system design, and implementation</li>
+            </ul>
+          </div>
+
+          <div class="panel service-panel">
+            <div class="service-icon">🔧</div>
+            <h3>Maintenance & Retainers</h3>
+            <p>Post‑project maintenance, optimization, and system support.</p>
+            <ul>
+              <li><strong>Starts at $500 / month</strong></li>
+              <li>Ideal for teams needing ongoing updates</li>
+            </ul>
+          </div>
+
+          <div class="panel service-panel">
+            <div class="service-icon">📊</div>
+            <h3>Consulting Sessions</h3>
+            <p>Strategic sessions focused on systems, operations, and workflow optimization.</p>
+            <ul>
+              <li><strong>$50 / hour</strong></li>
+              <li>Includes a follow‑up SOP or action guide</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <section class="section reveal" id="featured-projects">
       <h2 class="section-title">📌 Featured Projects</h2>
       <p class="section-subtitle">These are two projects I’m proud to highlight because they reflect how I think, what I build, and how I support growth through systems and execution.</p>
@@ -1435,6 +1556,38 @@
     renewalsCalloutClose?.addEventListener('click', () => toggleRenewalsCallout(false));
 
     const projectData = {
+      'case-ops': {
+        website: 'about:blank',
+        preview: '',
+        kicker: 'Notion System Case Study',
+        title: 'From scattered processes to one clear operating system',
+        summary: 'I often step into businesses where workflows are spread across docs, chats, spreadsheets, and disconnected tools. My role is to bring that into one operational system that is easier to manage and easier for the team to adopt.',
+        stat: 'Cleaner operations, clearer ownership',
+        detailTitle: 'What I usually improve in this kind of project',
+        bullets: [
+          'Centralize SOPs, dashboards, and key resources into one workspace.',
+          'Create clearer structure so teams can find what they need faster.',
+          'Reduce dependency on memory and manual follow-up by improving visibility.',
+          'Design systems around real team usage, not just visual organization.'
+        ],
+        tags: ['Operations', 'Notion Systems', 'Documentation']
+      },
+      'case-pipeline': {
+        website: 'about:blank',
+        preview: '',
+        kicker: 'Notion System Case Study',
+        title: 'From manual follow-up to a trackable pipeline',
+        summary: 'When a process depends too much on memory, scattered notes, or constant checking in, I build a clearer workflow that makes progress easier to track and manage.',
+        stat: 'Better tracking, smoother execution',
+        detailTitle: 'What I usually improve in this kind of project',
+        bullets: [
+          'Organize stages, ownership, and statuses so movement is easier to follow.',
+          'Create cleaner handoffs between people or departments.',
+          'Support better consistency through templates, workflows, and automation.',
+          'Turn activity into something leadership can actually review and understand.'
+        ],
+        tags: ['Pipelines', 'Workflow Design', 'Process Clarity']
+      },
       sava: {
         website: 'https://sava-amsterdam.com/',
         preview: 'https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/',
@@ -1478,27 +1631,11 @@
       const project = projectData[projectKey];
       if (!project) return;
       const tags = project.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
-      const bullets = project.bullets.map(item => `<li>${item}</li>`).join('');
-      projectModalContent.innerHTML = `
-        <div>
-          <div class="project-modal-kicker">${project.kicker}</div>
-          <h3>${project.title}</h3>
-          <p>${project.summary}</p>
-          <ul>${bullets}</ul>
-        </div>
-        <div>
-          <div class="browser-frame">
-            <div class="browser-top">
-              <div class="browser-dots"><span></span><span></span><span></span></div>
-              <div class="browser-url">${project.website}</div>
-            </div>
-            <div class="browser-preview" style="background-image:url('${project.preview}');">
-              <div class="preview-overlay">
-                <div class="preview-badge">🌐 Live Website Preview</div>
-                <a href="${project.website}" target="_blank" rel="noopener" class="btn btn-light">Visit Live Website ↗</a>
-              </div>
-            </div>
-          </div>
+      const websiteButton = project.website && project.website !== 'about:blank'
+        ? `<a href="${project.website}" target="_blank" rel="noopener" class="btn btn-light">Visit Live Website ↗</a>`
+        : `<span class="preview-badge">Internal Systems / Workflow Case Study</span>`;
+      const previewBlock = project.preview
+        ? `${previewBlock}
           <div class="project-modal-panel" style="margin-top:16px;">
             <div class="project-modal-stat">${project.stat}</div>
             <p>${project.detailTitle}</p>
