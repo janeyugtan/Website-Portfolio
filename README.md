@@ -3,6 +3,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jane Yugtan | Account Manager | Project Manager | Executive Assistant</title>
+  <meta name="description" content="Jane Yugtan portfolio. Account manager supporting client retention, operations, systems, and project delivery." />
   <style>
     :root {
       --navy: #1a1a2e;
@@ -11,7 +12,6 @@
       --slate: #334155;
       --muted: #64748b;
       --line: #e6eef7;
-      --bg: #f8fbff;
       --white: #ffffff;
       --shadow: 0 12px 30px rgba(15, 76, 117, 0.10);
       --radius: 20px;
@@ -27,7 +27,6 @@
       background: linear-gradient(180deg, #f8fbff 0%, #ffffff 30%, #f8fbff 100%);
       line-height: 1.6;
     }
-
     body.modal-open { overflow: hidden; }
 
     a { color: var(--blue); text-decoration: none; }
@@ -72,9 +71,7 @@
       font-size: 14px;
     }
 
-    .hero {
-      padding: 48px 0 26px;
-    }
+    .hero { padding: 48px 0 26px; }
 
     .hero-card {
       background: radial-gradient(circle at top right, rgba(29,111,165,0.15), transparent 28%), var(--white);
@@ -132,7 +129,7 @@
       margin-bottom: 18px;
     }
 
-    .cta-row, .badge-row {
+    .cta-row {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
@@ -162,16 +159,12 @@
     .btn-secondary { background: var(--blue); color: #fff; }
     .btn-light { background: #eef6fc; color: var(--blue); border-color: #d9eaf7; }
 
-    .section {
-      padding: 28px 0;
-    }
-
+    .section { padding: 28px 0; }
     .section.reveal {
       opacity: 0;
       transform: translateY(28px);
       transition: opacity 0.7s ease, transform 0.7s ease;
     }
-
     .section.reveal.in-view {
       opacity: 1;
       transform: translateY(0);
@@ -193,7 +186,6 @@
     .project-card,
     .testimonial-card,
     .experience-card,
-    .linkedin-card,
     .contact-card {
       background: var(--white);
       border: 1px solid var(--line);
@@ -221,9 +213,7 @@
       transition: transform 0.35s ease;
     }
 
-    .video-thumb:hover img {
-      transform: scale(1.02);
-    }
+    .video-thumb:hover img { transform: scale(1.02); }
 
     .play-button {
       position: absolute;
@@ -240,7 +230,6 @@
     .video-thumb::after {
       content: "";
       position: absolute;
-      inset: auto 50% 50% auto;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -299,7 +288,6 @@
       box-shadow: 0 18px 36px rgba(15, 76, 117, 0.14);
     }
 
-    /* KPI hover motion */
     .result-card:hover .result-kpi {
       animation: kpiPulse 0.9s ease-in-out infinite alternate;
     }
@@ -309,10 +297,7 @@
       100% { transform: scale(1.08); }
     }
 
-    .result-card.featured-metric {
-      cursor: pointer;
-    }
-
+    .result-card.featured-metric { cursor: pointer; }
     .result-card.featured-metric.active {
       transform: scale(1.02);
       box-shadow: 0 20px 40px rgba(15, 76, 117, 0.18);
@@ -438,7 +423,6 @@
     .project-card,
     .testimonial-card,
     .experience-card,
-    .linkedin-card,
     .contact-card {
       padding: 22px;
     }
@@ -447,7 +431,6 @@
     .project-card h3,
     .testimonial-card h3,
     .experience-card h3,
-    .linkedin-card h3,
     .contact-card h3 {
       margin-top: 0;
       margin-bottom: 10px;
@@ -489,14 +472,16 @@
       margin-bottom: 10px;
     }
 
-    .project-card.interactive-project {
+    .project-card.interactive-project,
+    .work-card {
       position: relative;
       cursor: pointer;
       transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
       overflow: hidden;
     }
 
-    .project-card.interactive-project::after {
+    .project-card.interactive-project::after,
+    .work-card::after {
       content: "Click to expand";
       position: absolute;
       top: 16px;
@@ -510,7 +495,8 @@
       font-weight: 700;
     }
 
-    .project-card.interactive-project:hover {
+    .project-card.interactive-project:hover,
+    .work-card:hover {
       transform: translateY(-8px) scale(1.01);
       box-shadow: 0 24px 48px rgba(15,76,117,0.18);
       border-color: #bfd9ec;
@@ -527,51 +513,7 @@
       filter: saturate(1.05);
     }
 
-    .logo-marquee {
-      overflow: hidden;
-      position: relative;
-      border-radius: 22px;
-      border: 1px solid var(--line);
-      background: var(--white);
-      box-shadow: var(--shadow);
-      padding: 18px 0;
-    }
-
-    .logo-track {
-      display: flex;
-      width: max-content;
-      animation: scrollLogos 32s linear infinite;
-      gap: 16px;
-      align-items: center;
-    }
-
-    .logo-marquee:hover .logo-track {
-      animation-play-state: paused;
-    }
-
-    .logo-card {
-      min-width: 180px;
-      height: 120px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background: linear-gradient(180deg, #fff 0%, #f8fbff 100%);
-      box-shadow: 0 6px 16px rgba(2,18,30,.05);
-      padding: 14px;
-      margin-left: 16px;
-      transition: transform 0.22s ease, filter 0.22s ease;
-    }
-
-    .logo-card:hover {
-      transform: translateY(-4px) scale(1.02);
-      filter: saturate(1.06);
-    }
-
-    .carousel-shell {
-      position: relative;
-    }
+    .carousel-shell { position: relative; }
 
     .carousel-arrow {
       position: absolute;
@@ -603,36 +545,8 @@
     .carousel-arrow.left { left: 14px; }
     .carousel-arrow.right { right: 14px; }
 
-    .auto-carousel {
-      scroll-behavior: smooth;
-    }
-
-    .auto-carousel:hover {
-      cursor: grab;
-    }
-
-    .work-card {
-      cursor: pointer;
-      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-    }
-
-    .work-card:hover {
-      transform: translateY(-6px) scale(1.01);
-      box-shadow: 0 24px 48px rgba(15,76,117,0.18);
-      border-color: #bfd9ec;
-    }
-
-    .logo-card img {
-      max-width: 100%;
-      max-height: 82px;
-      object-fit: contain;
-      display: block;
-    }
-
-    @keyframes scrollLogos {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
+    .auto-carousel { scroll-behavior: smooth; }
+    .auto-carousel:hover { cursor: grab; }
 
     .quote {
       font-size: 16px;
@@ -641,7 +555,6 @@
     }
 
     .contact-card p,
-    .linkedin-card p,
     .experience-card p,
     .project-card p,
     .panel p {
@@ -689,9 +602,7 @@
       padding: 34px;
     }
 
-    .project-modal.show .project-modal-card {
-      transform: scale(1);
-    }
+    .project-modal.show .project-modal-card { transform: scale(1); }
 
     .project-modal-close {
       position: absolute;
@@ -865,6 +776,7 @@
       overflow: hidden;
       transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
     }
+
     .services-grid .panel.service-panel::before {
       content: "";
       position: absolute;
@@ -872,6 +784,7 @@
       width: 5px;
       background: linear-gradient(180deg, var(--blue), var(--blue-2));
     }
+
     .services-grid .panel.service-panel::after {
       content: "";
       position: absolute;
@@ -882,11 +795,13 @@
       background: radial-gradient(circle, rgba(29,111,165,0.12) 0%, rgba(29,111,165,0) 70%);
       pointer-events: none;
     }
+
     .services-grid .panel.service-panel:hover {
       transform: translateY(-4px);
       box-shadow: 0 20px 40px rgba(15,76,117,0.14);
       border-color: #bfd9ec;
     }
+
     .service-icon {
       width: 52px;
       height: 52px;
@@ -899,10 +814,12 @@
       font-size: 24px;
       margin-bottom: 14px;
     }
+
     .experience-card.exp-card {
       position: relative;
       transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
     }
+
     .experience-card.exp-card::before {
       content: "";
       position: absolute;
@@ -913,11 +830,13 @@
       border-radius: 20px 0 0 20px;
       background: linear-gradient(180deg, var(--blue), var(--blue-2));
     }
+
     .experience-card.exp-card:hover {
       transform: translateY(-3px);
       box-shadow: 0 18px 36px rgba(15,76,117,0.12);
       border-color: #bfd9ec;
     }
+
     .end-cta {
       margin: 18px auto 0;
       max-width: 760px;
@@ -928,10 +847,12 @@
       border-radius: 24px;
       box-shadow: 0 20px 46px rgba(15,76,117,0.18);
     }
+
     .end-cta h3 {
       margin: 0 0 8px;
       font-size: 28px;
     }
+
     .end-cta p {
       margin: 0 0 18px;
       color: rgba(255,255,255,0.92);
@@ -943,7 +864,7 @@
       .services-grid,
       .projects-grid,
       .testimonials-grid { grid-template-columns: 1fr; }
-      .cta-row, .badge-row { justify-content: center; }
+      .cta-row { justify-content: center; }
       .topbar-inner { flex-direction: column; align-items: flex-start; }
       .nav { justify-content: flex-start; }
       .carousel-arrow { display: none; }
@@ -956,7 +877,6 @@
       .hero-card { padding: 22px; border-radius: 22px; }
       .video-thumb img { height: 240px; }
       .results-grid { grid-template-columns: 1fr; }
-      .logo-card { min-width: 150px; height: 100px; }
       .section-title { font-size: 26px; }
       .project-modal-card { padding: 24px; }
       .metric-callout.show { padding: 20px; }
@@ -975,7 +895,7 @@
         <a href="#pricing">Ways I Work</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#about">About</a>
-        </nav>
+      </nav>
     </div>
   </div>
 
@@ -990,7 +910,7 @@
           <h1>Jane Yugtan</h1>
           <div class="subtitle">Account Manager | Project Manager | Executive Assistant</div>
           <p class="intro">
-            I help founders, agencies, and B2B teams improve client retention, strengthen delivery systems, automate operations, and support revenue growth through account management, enterprise renewals, Notion systems, and AI-powered workflows.
+            I help founders, agencies, and B2B teams strengthen client retention, improve delivery, streamline operations, and support revenue growth through account management, renewals, Notion systems, and practical automation.
           </p>
           <div class="cta-row">
             <a class="btn btn-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick virtual coffee</a>
@@ -1003,7 +923,7 @@
 
     <section class="section reveal" id="video-intro">
       <h2 class="section-title">🎥 Meet Jane</h2>
-      <p class="section-subtitle">This quick introduction gives you context before you explore the portfolio below, including the kind of work I do, the teams I support, and what you’ll find on this page.</p>
+      <p class="section-subtitle">This short introduction gives you a quick overview of my work, the teams I support, and what you’ll find in this portfolio.</p>
       <div class="video-card">
         <a class="video-thumb" href="#" id="openIntroVideo" aria-label="Watch Jane's introduction video">
           <img src="intro-cover.jpg" alt="Jane Yugtan introduction video cover" />
@@ -1011,9 +931,9 @@
           <div style="position:absolute; left:50%; top:calc(50% + 72px); transform:translateX(-50%); z-index:2; background:rgba(15,76,117,0.9); color:#fff; padding:10px 16px; border-radius:999px; font-size:13px; font-weight:700; box-shadow:0 8px 20px rgba(15,76,117,0.25);">Watch My Introduction</div>
         </a>
         <div class="video-body">
-          <h3>A quick introduction before you explore my portfolio</h3>
+          <h3>A quick introduction to my work</h3>
           <p>
-            In this short video, I introduce myself, share the kind of work I do across account management, project delivery, and systems optimization, and walk you through what you can expect to see throughout this one-page portfolio.
+            In this short video, I share a quick overview of my background, the work I do across account management, project delivery, and systems, and what you can expect to see throughout this portfolio.
           </p>
         </div>
       </div>
@@ -1021,47 +941,47 @@
 
     <section class="section reveal" id="results">
       <h2 class="section-title">🔎 Results at a Glance</h2>
-      <p class="section-subtitle">A cleaner KPI layout to highlight the outcomes most relevant to account management, automation, and systems design.</p>
+      <p class="section-subtitle">A snapshot of the results I’ve delivered across account management, operations, and systems work.</p>
       <div class="results-grid">
         <div class="result-card featured-metric" id="renewalsMetricCard">
           <div class="result-kpi" data-count-to="100" data-prefix="$" data-suffix="K+">$100K+</div>
           <div class="result-label">Enterprise renewals processed</div>
-          <div class="result-copy">Managed renewal processing across high-value subscription accounts with a focus on retention, continuity, and account health.</div>
+          <div class="result-copy">Managed high-value renewals with a focus on retention, continuity, and account health.</div>
         </div>
         <div class="result-card">
           <div class="result-kpi" data-count-to="135" data-suffix="K+">135K+</div>
           <div class="result-label">Global subscribers reached</div>
-          <div class="result-copy">Included as an account manager in subscriber-facing email communications for a large global B2C audience.</div>
+          <div class="result-copy">Included as an account manager in subscriber-facing communications for a global B2C audience.</div>
         </div>
         <div class="result-card">
           <div class="result-kpi" data-count-to="10" data-prefix="$" data-suffix="K">$10K</div>
           <div class="result-label">Affiliate pipeline in 30 days</div>
-          <div class="result-copy">Built a qualified affiliate pipeline and supporting workflow structure for Whiskey Library in the first 30 days.</div>
+          <div class="result-copy">Built a qualified affiliate pipeline and supporting workflow for Whiskey Library in the first 30 days.</div>
         </div>
         <div class="result-card">
           <div class="result-kpi" data-count-to="87" data-prefix="-" data-suffix="%">-87%</div>
           <div class="result-label">Onboarding time reduced</div>
-          <div class="result-copy">Reduced onboarding from approximately 3 days to 4 hours through structured systems and automation.</div>
+          <div class="result-copy">Reduced onboarding from about 3 days to 4 hours through clearer systems and automation.</div>
         </div>
         <div class="result-card">
           <div class="result-kpi" data-count-to="95" data-suffix="%">95%</div>
           <div class="result-label">Workflow satisfaction improvement</div>
-          <div class="result-copy">Supported stronger team experience through cleaner systems, visibility, and documentation.</div>
+          <div class="result-copy">Improved team experience through clearer systems, better visibility, and stronger documentation.</div>
         </div>
         <div class="result-card">
           <div class="result-kpi" data-count-to="30" data-prefix="-" data-suffix="%">-30%</div>
           <div class="result-label">Project delays reduced</div>
-          <div class="result-copy">Improved execution through QA gates, process control, and more predictable delivery workflows.</div>
+          <div class="result-copy">Improved execution through QA gates, clearer process control, and more predictable delivery.</div>
         </div>
         <div class="result-card">
           <div class="result-kpi">6–10 hrs</div>
           <div class="result-label">CEO time saved weekly</div>
-          <div class="result-copy">Automation, clearer systems, and structured workflows freed up leadership time each week.</div>
+          <div class="result-copy">Clearer systems, structured workflows, and automation freed up leadership time each week.</div>
         </div>
         <div class="result-card">
           <div class="result-kpi" data-count-to="100" data-suffix="+">100+</div>
           <div class="result-label">Client accounts supported</div>
-          <div class="result-copy">Supported client delivery and operations across agencies, founders, and the businesses they served.</div>
+          <div class="result-copy">Supported delivery and operations across agencies, founders, and the clients they served.</div>
         </div>
       </div>
       <div class="metric-callout" id="renewalsCallout">
@@ -1069,7 +989,7 @@
         <div>
           <h3>$100K+ in enterprise renewals</h3>
           <p>
-            This metric reflects renewal processing across high-value subscription accounts, with a strong focus on revenue retention, account continuity, and client relationship management. Click the KPI card again or use the button below to minimize this view.
+            This reflects high-value renewal work tied to retention, account continuity, and client relationships. Click the card again or use the button below to close this highlight.
           </p>
           <button class="metric-close" id="renewalsCalloutClose" type="button">Close highlight</button>
         </div>
@@ -1077,86 +997,8 @@
     </section>
 
     <section class="section reveal" id="services">
-      <style>
-        .services-grid .panel.service-panel {
-          position: relative;
-          overflow: hidden;
-          transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-        }
-        .services-grid .panel.service-panel::before {
-          content: "";
-          position: absolute;
-          inset: 0 auto 0 0;
-          width: 5px;
-          background: linear-gradient(180deg, var(--blue), var(--blue-2));
-        }
-        .services-grid .panel.service-panel::after {
-          content: "";
-          position: absolute;
-          top: -40px;
-          right: -40px;
-          width: 120px;
-          height: 120px;
-          background: radial-gradient(circle, rgba(29,111,165,0.12) 0%, rgba(29,111,165,0) 70%);
-          pointer-events: none;
-        }
-        .services-grid .panel.service-panel:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 20px 40px rgba(15,76,117,0.14);
-          border-color: #bfd9ec;
-        }
-        .service-icon {
-          width: 52px;
-          height: 52px;
-          border-radius: 14px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          background: #eef6fc;
-          border: 1px solid #d7e8f5;
-          font-size: 24px;
-          margin-bottom: 14px;
-        }
-        .experience-card.exp-card {
-          position: relative;
-          transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-        }
-        .experience-card.exp-card::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0;
-          bottom: 0;
-          width: 5px;
-          border-radius: 20px 0 0 20px;
-          background: linear-gradient(180deg, var(--blue), var(--blue-2));
-        }
-        .experience-card.exp-card:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 18px 36px rgba(15,76,117,0.12);
-          border-color: #bfd9ec;
-        }
-        .end-cta {
-          margin: 18px auto 0;
-          max-width: 760px;
-          text-align: center;
-          padding: 28px;
-          background: linear-gradient(135deg, #0f4c75 0%, #1d6fa5 100%);
-          color: white;
-          border-radius: 24px;
-          box-shadow: 0 20px 46px rgba(15,76,117,0.18);
-        }
-        .end-cta h3 {
-          margin: 0 0 8px;
-          font-size: 28px;
-        }
-        .end-cta p {
-          margin: 0 0 18px;
-          color: rgba(255,255,255,0.92);
-        }
-      </style>
       <h2 class="section-title">🛠 Services</h2>
-      <p class="section-subtitle">Here are the core ways I support founders, agencies, and growing teams through retention, systems optimization, and automation.</p>
+      <p class="section-subtitle">Here are the main ways I support founders, agencies, and growing teams.</p>
       <div class="services-grid">
         <div class="panel service-panel">
           <div class="service-icon">🤝</div>
@@ -1176,9 +1018,9 @@
           <div class="service-icon">🧩</div>
           <h3>Notion Dashboard Optimization</h3>
           <ul>
-            <li>Company-wide Notion architecture and dashboard cleanup</li>
+            <li>Company-wide Notion setup and dashboard cleanup</li>
             <li>Department dashboards, SOP libraries, and KPI systems</li>
-            <li>Founder-friendly systems that improve visibility and usability</li>
+            <li>Systems that improve visibility, consistency, and day-to-day use</li>
           </ul>
           <div class="tag-row">
             <span class="tag">Notion Systems</span>
@@ -1206,21 +1048,17 @@
     <section class="section reveal" id="notion-demos">
       <div class="container">
         <h2 class="section-title">🎬 Notion Systems & Automation Demos</h2>
-        <p class="section-subtitle">Below are short walkthroughs of systems I built in Notion and integrated tools. I replaced the static Loom thumbnails with custom branded previews so the section feels more polished and consistent with the rest of the site.</p>
-
+        <p class="section-subtitle">Below are short walkthroughs of systems I built in Notion and related tools.</p>
         <div class="projects-grid">
-
           <div class="project-card" style="transition:transform .25s ease, box-shadow .25s ease;">
             <div class="project-kicker">System Walkthrough</div>
             <h3>Affiliate Operations Automation Dashboard</h3>
-            <p>This walkthrough shows the creator and affiliate pipeline I designed using Notion and GoHighLevel to organize outreach, manage creator partnerships, and track program performance.</p>
-
+            <p>This walkthrough shows the creator and affiliate pipeline I built using Notion and GoHighLevel to organize outreach, manage creator partnerships, and track performance.</p>
             <div class="tag-row">
               <span class="tag">Notion Automation</span>
               <span class="tag">Affiliate Pipeline</span>
               <span class="tag">Creator Outreach</span>
             </div>
-
             <div style="margin-top:16px; position:relative; overflow:hidden; border-radius:16px; border:1px solid var(--line); background:#eef6fc;">
               <a href="https://www.loom.com/share/f883c45c953848fca179d3bc8724875f" target="_blank" rel="noopener" style="display:block; position:relative; text-decoration:none;">
                 <img src="affiliate-dashboard.png" alt="Affiliate dashboard preview" style="width:100%; display:block; transition:transform .35s ease;"/>
@@ -1229,21 +1067,18 @@
                 <div style="position:absolute; left:16px; bottom:16px; background:rgba(15,76,117,0.92); color:#fff; padding:8px 12px; border-radius:999px; font-size:12px; font-weight:700;">Watch Loom Demo</div>
               </a>
             </div>
-
-            <p style="margin-top:12px; font-size:14px; color:var(--slate);">In this demo I explain how the affiliate program pipeline, creator database, outreach automation, and tracking system were structured to generate revenue without paid ads.</p>
+            <p style="margin-top:12px; font-size:14px; color:var(--slate);">This demo covers the affiliate pipeline, creator database, outreach automation, and tracking system behind the program.</p>
           </div>
 
           <div class="project-card" style="transition:transform .25s ease, box-shadow .25s ease;">
             <div class="project-kicker">System Walkthrough</div>
             <h3>Talent & Hiring Pipeline Workflow</h3>
-            <p>A walkthrough of the hiring and candidate management workflow built in Notion to streamline candidate tracking, interviews, and onboarding preparation.</p>
-
+            <p>A walkthrough of the hiring workflow I built in Notion to streamline candidate tracking, interviews, and onboarding.</p>
             <div class="tag-row">
               <span class="tag">Notion Database</span>
               <span class="tag">Hiring Pipeline</span>
               <span class="tag">Operations Workflow</span>
             </div>
-
             <div style="margin-top:16px; position:relative; overflow:hidden; border-radius:16px; border:1px solid var(--line); background:#eef6fc;">
               <a href="https://www.loom.com/share/5aa9f903245a482dbbebb103931f1408" target="_blank" rel="noopener" style="display:block; position:relative; text-decoration:none;">
                 <img src="talent-pipeline.png" alt="Talent pipeline preview" style="width:100%; display:block; transition:transform .35s ease;"/>
@@ -1252,16 +1087,15 @@
                 <div style="position:absolute; left:16px; bottom:16px; background:rgba(15,76,117,0.92); color:#fff; padding:8px 12px; border-radius:999px; font-size:12px; font-weight:700;">Watch Loom Demo</div>
               </a>
             </div>
-
-            <p style="margin-top:12px; font-size:14px; color:var(--slate);">This demo explains how the hiring pipeline organizes candidates, status tracking, and communication flow for smoother recruitment coordination.</p>
+            <p style="margin-top:12px; font-size:14px; color:var(--slate);">This demo shows how the hiring pipeline organizes candidates, status tracking, and communication flow.</p>
           </div>
-
         </div>
       </div>
     </section>
+
     <section class="section reveal" id="featured-projects">
       <h2 class="section-title">📌 Featured Projects</h2>
-      <p class="section-subtitle">These are two projects I’m proud to highlight because they reflect how I think, what I build, and how I support growth through systems and execution.</p>
+      <p class="section-subtitle">These two projects give a clear view of how I approach systems, execution, and growth support.</p>
       <div class="projects-grid">
         <div class="project-card interactive-project" data-project="sava">
           <div class="browser-frame" style="margin-bottom:16px; border:1px solid var(--line); box-shadow:0 12px 28px rgba(15,76,117,0.10);">
@@ -1278,7 +1112,7 @@
           </div>
           <h3>SAVA Amsterdam</h3>
           <p style="margin:0 0 10px; color:var(--blue); font-weight:700;">Full company Notion system</p>
-          <p>Company-wide Notion dashboard optimization concept designed for cleaner operations, better visibility, and a more scalable workspace structure.</p>
+          <p>A company-wide Notion system built for cleaner operations, stronger visibility, and a more scalable workspace.</p>
           <div class="tag-row">
             <span class="tag">What this project focused on</span>
             <span class="tag">E-commerce Ops</span>
@@ -1301,7 +1135,7 @@
           </div>
           <h3>Whiskey Library</h3>
           <p style="margin:0 0 10px; color:var(--blue); font-weight:700;">$10K pipeline in 30 days</p>
-          <p>Affiliate pipeline and Notion workflow build focused on early-stage growth, visibility, and a more organized affiliate operations structure.</p>
+          <p>An affiliate pipeline and Notion workflow built to support early-stage growth, visibility, and a more organized affiliate operation.</p>
           <div class="tag-row">
             <span class="tag">What this project focused on</span>
             <span class="tag">Affiliate Ops</span>
@@ -1314,12 +1148,11 @@
     <section class="section reveal" id="pricing">
       <div class="container">
         <h2 class="section-title">💼 Ways I Work With Clients</h2>
-        <p class="section-subtitle">I turned this into a cleaner continuous gallery so visitors can keep browsing in either direction, then click any card to expand the details.</p>
-
+        <p class="section-subtitle">Browse the different ways I work with clients, then click a card to see more detail.</p>
         <div class="carousel-shell">
           <button class="carousel-arrow left" type="button" id="pricingPrev" aria-label="Previous">‹</button>
           <div style="position:relative; overflow:hidden; border-radius:24px; background:#fff; border:1px solid var(--line); box-shadow:var(--shadow); padding:22px;">
-            <div style="display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; scrollbar-width:none; -ms-overflow-style:none;" id="pricingCarousel" class="auto-carousel">
+            <div id="pricingCarousel" class="auto-carousel" style="display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; scrollbar-width:none; -ms-overflow-style:none;">
               <div class="panel service-panel work-card" data-project="work-hourly" style="min-width:320px; scroll-snap-align:start; flex:0 0 320px;">
                 <div class="service-icon">⏱</div>
                 <h3>Hourly Support</h3>
@@ -1365,7 +1198,7 @@
 
     <section class="section reveal" id="testimonials">
       <h2 class="section-title">🎥 Testimonials</h2>
-      <p class="section-subtitle">Social proof from collaborators and clients who have seen how I work.</p>
+      <p class="section-subtitle">Feedback from people I’ve worked with.</p>
       <div class="testimonials-grid">
         <div class="testimonial-card">
           <h3>Sean Elias — Threecolts / 70K Affiliates</h3>
@@ -1382,27 +1215,26 @@
 
     <section class="section reveal" id="about">
       <h2 class="section-title">👋 About Me</h2>
-      <p class="section-subtitle">A little about my story, how I started working remotely, and why this work matters to me.</p>
+      <p class="section-subtitle">A little about how I got started and what keeps me interested in this work.</p>
       <div class="experience-grid">
         <div class="experience-card exp-card">
           <div class="meta">My Story</div>
           <h3>Working remotely since 2021</h3>
           <p>I started working remotely in 2021, and in 2022 I landed my first real project supporting a marketing agency in the United States. Since then everything shifted.</p>
-          <p>Over the past few years I’ve helped marketing agencies and founders improve operations, organize systems, and support their client relationships. Along the way I’ve worked with around <strong>10 amazing clients</strong> and indirectly supported <strong>100+ of their clients</strong> through project delivery, systems work, and account management.</p>
-          <p>My work now focuses on helping teams save time, streamline processes, and build systems that make daily operations easier.</p>
+          <p>Over the past few years, I’ve helped marketing agencies and founders improve operations, organize systems, and support client relationships. Along the way, I’ve worked with around <strong>10 clients</strong> and indirectly supported <strong>100+ of their clients</strong> through project delivery, systems work, and account management.</p>
+          <p>Today, I focus on helping teams save time, streamline processes, and build systems that make day-to-day work easier.</p>
         </div>
         <div class="experience-card exp-card">
           <div class="meta">Current Focus</div>
           <h3>What I’m focused on today</h3>
-          <p>I currently work as an <strong>Account Manager for an e-learning provider</strong>, where I support client relationships, account continuity, and renewal coordination while continuing to help teams improve systems and day-to-day operations.</p>
-          <p>I’m most energized by work that saves people time, creates clarity, and helps teams move faster without sacrificing quality.</p>
+          <p>I currently work as an <strong>Account Manager for an e-learning provider</strong>, supporting client relationships, account continuity, and renewal coordination while also helping teams improve systems and day-to-day operations.</p>
+          <p>I do my best work in roles that save people time, create clarity, and help teams move faster without sacrificing quality.</p>
         </div>
         <div class="experience-card exp-card">
           <div class="meta">Fun Fact</div>
           <h3>Life outside work</h3>
           <p>I love traveling around the Philippines, especially beach destinations. I enjoy sunsets, good conversations, and ending the day with a cocktail.</p>
-          <p>I also love cats and exploring new places around my country. Working remotely allows me to do work I enjoy while still experiencing the world around me.</p>
-          
+          <p>I also love cats and exploring new places around my country. Working remotely lets me do work I enjoy while still experiencing the world around me.</p>
         </div>
       </div>
     </section>
@@ -1410,7 +1242,7 @@
     <section class="section reveal" id="contact">
       <div class="end-cta">
         <h3>Let’s connect ☕</h3>
-        <p>If my background and services align with what you need, I’d be glad to connect and discuss how I can support your business.</p>
+        <p>If my background is a fit for what you need, I’d be glad to connect.</p>
         <div class="cta-row" style="justify-content:center;">
           <a class="btn btn-light" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick virtual coffee</a>
         </div>
@@ -1426,7 +1258,7 @@
       <div style="margin-bottom:18px;">
         <div class="project-modal-kicker">Meet Jane</div>
         <h3 style="margin-bottom:8px;">A quick introduction to my portfolio</h3>
-        <p style="margin:0; color:rgba(255,255,255,0.9);">This short video shares who I am, the kind of work I do, and what you’ll find throughout this portfolio before you continue scrolling.</p>
+        <p style="margin:0; color:rgba(255,255,255,0.9);">This short video gives a quick overview of who I am, the work I do, and what you’ll find in this portfolio.</p>
       </div>
       <div style="position:relative; width:100%; padding-top:56.25%; border-radius:22px; overflow:hidden; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14); box-shadow:0 20px 42px rgba(5,15,28,0.22);">
         <iframe id="introVideoFrame" src="" title="Jane portfolio introduction video" allowfullscreen style="position:absolute; inset:0; width:100%; height:100%; border:0;"></iframe>
@@ -1503,9 +1335,7 @@
             maximumFractionDigits: decimals
           });
           el.textContent = `${prefix}${formatted}${suffix}`;
-          if (progress < 1) {
-            requestAnimationFrame(tick);
-          }
+          if (progress < 1) requestAnimationFrame(tick);
         }
         requestAnimationFrame(tick);
         counterObserver.unobserve(el);
@@ -1521,33 +1351,16 @@
       const shouldOpen = forceOpen !== null ? forceOpen : !renewalsCallout.classList.contains('show');
       renewalsCallout.classList.toggle('show', shouldOpen);
       renewalsMetricCard.classList.toggle('active', shouldOpen);
-      if (shouldOpen) {
-        renewalsCallout.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }
+      if (shouldOpen) renewalsCallout.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
 
     renewalsMetricCard?.addEventListener('click', () => toggleRenewalsCallout());
     renewalsCalloutClose?.addEventListener('click', () => toggleRenewalsCallout(false));
 
     const pricingCarousel = document.getElementById('pricingCarousel');
-    let autoCarouselInterval = null;
-
-    function startAutoCarousel() {
-      if (!pricingCarousel) return;
-      stopAutoCarousel();
-      autoCarouselInterval = setInterval(() => {
-        loopCarousel('next');
-      }, 3200);
-    }
-
-    function stopAutoCarousel() {
-      if (autoCarouselInterval) {
-        clearInterval(autoCarouselInterval);
-        autoCarouselInterval = null;
-      }
-    }
     const pricingPrev = document.getElementById('pricingPrev');
     const pricingNext = document.getElementById('pricingNext');
+    let autoCarouselInterval = null;
 
     function loopCarousel(direction) {
       if (!pricingCarousel) return;
@@ -1568,14 +1381,25 @@
       }
     }
 
+    function startAutoCarousel() {
+      if (!pricingCarousel) return;
+      stopAutoCarousel();
+      autoCarouselInterval = setInterval(() => loopCarousel('next'), 3200);
+    }
+
+    function stopAutoCarousel() {
+      if (autoCarouselInterval) {
+        clearInterval(autoCarouselInterval);
+        autoCarouselInterval = null;
+      }
+    }
+
     pricingPrev?.addEventListener('click', () => loopCarousel('prev'));
     pricingNext?.addEventListener('click', () => loopCarousel('next'));
-
     pricingCarousel?.addEventListener('mouseenter', stopAutoCarousel);
     pricingCarousel?.addEventListener('mouseleave', startAutoCarousel);
     pricingCarousel?.addEventListener('touchstart', stopAutoCarousel, { passive: true });
     pricingCarousel?.addEventListener('touchend', startAutoCarousel, { passive: true });
-
     startAutoCarousel();
 
     const projectData = {
@@ -1584,7 +1408,7 @@
         preview: '',
         kicker: 'Ways I Work',
         title: 'Hourly Support',
-        summary: 'This option works best for founders and teams who need flexible support across account management, project coordination, operations, or executive support.',
+        summary: 'Best for founders and teams who need flexible support across account management, project coordination, operations, or executive support.',
         stat: '$15–$20 / hour',
         detailTitle: 'What this is best for',
         bullets: [
@@ -1599,7 +1423,7 @@
         preview: '',
         kicker: 'Ways I Work',
         title: 'Notion System Projects',
-        summary: 'This is for teams that need a more structured buildout such as company-wide dashboards, workflows, SOP libraries, or operational systems inside Notion.',
+        summary: 'Best for teams that need a more structured buildout such as company dashboards, workflows, SOP libraries, or operational systems in Notion.',
         stat: 'Starts at $1,500 / month',
         detailTitle: 'What this is best for',
         bullets: [
@@ -1614,7 +1438,7 @@
         preview: '',
         kicker: 'Ways I Work',
         title: 'Maintenance & Retainers',
-        summary: 'This is for clients who already have systems in place and want ongoing support to maintain, improve, or update them over time.',
+        summary: 'Best for clients who already have systems in place and want ongoing support to maintain, improve, or update them.',
         stat: 'Starts at $500 / month',
         detailTitle: 'What this is best for',
         bullets: [
@@ -1629,7 +1453,7 @@
         preview: '',
         kicker: 'Ways I Work',
         title: 'Consulting Sessions',
-        summary: 'This is best for teams that want strategic input, workflow guidance, or a second set of eyes before making bigger operations or systems decisions.',
+        summary: 'Best for teams that want strategic input, workflow guidance, or a second set of eyes before making bigger operations or systems decisions.',
         stat: '$50 / hour',
         detailTitle: 'What this is best for',
         bullets: [
@@ -1670,38 +1494,6 @@
           'Turned affiliate efforts into a more trackable and systemized growth function.'
         ],
         tags: ['Affiliate Ops', 'Pipeline Build', 'Notion Workflow']
-      },
-      'case-ops': {
-        website: '',
-        preview: '',
-        kicker: 'Notion System Case Study',
-        title: 'From scattered processes to one clear operating system',
-        summary: 'I often step into businesses where workflows are spread across documents, chats, spreadsheets, and disconnected tools. My role is to bring that into one operational system that is easier to manage and easier for the team to adopt.',
-        stat: 'Cleaner operations, clearer ownership',
-        detailTitle: 'What I usually improve in this kind of project',
-        bullets: [
-          'Centralize SOPs, dashboards, and key resources into one workspace.',
-          'Create clearer structure so teams can find what they need faster.',
-          'Reduce dependency on memory and manual follow-up by improving visibility.',
-          'Design systems around real team usage, not just visual organization.'
-        ],
-        tags: ['Operations', 'Notion Systems', 'Documentation']
-      },
-      'case-pipeline': {
-        website: '',
-        preview: '',
-        kicker: 'Notion System Case Study',
-        title: 'From manual follow-up to a trackable pipeline',
-        summary: 'When a process depends too much on memory, scattered notes, or constant checking in, I build a clearer workflow that makes progress easier to track and manage.',
-        stat: 'Better tracking, smoother execution',
-        detailTitle: 'What I usually improve in this kind of project',
-        bullets: [
-          'Organize stages, ownership, and statuses so movement is easier to follow.',
-          'Create cleaner handoffs between people or departments.',
-          'Support better consistency through templates, workflows, and automation.',
-          'Turn activity into something leadership can actually review and understand.'
-        ],
-        tags: ['Pipelines', 'Workflow Design', 'Process Clarity']
       }
     };
 
@@ -1734,9 +1526,9 @@
       } else {
         previewBlock = `
           <div class="project-modal-panel" style="min-height:320px; display:flex; flex-direction:column; justify-content:center; gap:16px; background:linear-gradient(135deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.06) 100%);">
-            <div class="project-modal-kicker" style="margin-bottom:0; width:max-content;">System Transformation</div>
-            <div style="font-size:28px; font-weight:800; line-height:1.15;">Before → After</div>
-            <div style="color:rgba(255,255,255,0.92);">I redesign messy workflows into clear systems with stronger visibility, cleaner handoffs, and better day-to-day usability for the team.</div>
+            <div class="project-modal-kicker" style="margin-bottom:0; width:max-content;">Overview</div>
+            <div style="font-size:28px; font-weight:800; line-height:1.15;">How I work</div>
+            <div style="color:rgba(255,255,255,0.92);">I help turn messy workflows into clear systems with better visibility, cleaner handoffs, and stronger day-to-day usability for the team.</div>
             <span class="preview-badge">Internal Systems / Workflow Case Study</span>
           </div>`;
       }
@@ -1769,15 +1561,14 @@
     }
 
     projectCards.forEach(card => {
-      card.addEventListener('click', () => {
-        renderProjectModal(card.dataset.project);
-      });
+      card.addEventListener('click', () => renderProjectModal(card.dataset.project));
     });
 
     projectModalClose?.addEventListener('click', closeProjectModal);
     projectModal?.addEventListener('click', (e) => {
       if (e.target === projectModal) closeProjectModal();
     });
+
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeProjectModal();
@@ -1785,6 +1576,5 @@
       }
     });
   </script>
-  
 </body>
 </html>
