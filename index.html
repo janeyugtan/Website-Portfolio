@@ -138,31 +138,6 @@
       pointer-events:none;
     }
 
-    .hero-scroll{
-      position:absolute;
-      inset:auto 0 22px 0;
-      overflow:hidden;
-      opacity:.16;
-      pointer-events:none;
-    }
-
-    .hero-scroll-track{
-      display:flex;
-      gap:28px;
-      width:max-content;
-      animation:scrollHero 26s linear infinite;
-      font-size:13px;
-      font-weight:800;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-      color:var(--blue);
-    }
-
-    @keyframes scrollHero{
-      0%{transform:translateX(0)}
-      100%{transform:translateX(-50%)}
-    }
-
     .hero-card{
       position:relative;
       z-index:1;
@@ -403,12 +378,12 @@
 
     @keyframes kpiPulse{
       0%{transform:scale(1)}
-      100%{transform:scale(1.08)}
+      100%{transform:scale(1.05)}
     }
 
     .result-card.featured-metric{cursor:pointer}
     .result-card.featured-metric.active{
-      transform:scale(1.02);
+      transform:scale(1.01);
       box-shadow:0 20px 40px rgba(15,76,117,.18);
       border-color:#b9d7ec;
     }
@@ -424,8 +399,8 @@
     }
 
     @keyframes pulseRing{
-      0%{transform:scale(.96);opacity:.8}
-      100%{transform:scale(1.04);opacity:0}
+      0%{transform:scale(.97);opacity:.8}
+      100%{transform:scale(1.03);opacity:0}
     }
 
     .result-kpi{
@@ -578,7 +553,7 @@
 
     .project-card.interactive-project::after,
     .work-card::after{
-      content:"Click to expand";
+      content:"View details";
       position:absolute;
       top:16px;
       right:16px;
@@ -593,8 +568,8 @@
 
     .project-card.interactive-project:hover,
     .work-card:hover{
-      transform:translateY(-8px) scale(1.01);
-      box-shadow:0 24px 48px rgba(15,76,117,.18);
+      transform:translateY(-5px);
+      box-shadow:0 20px 40px rgba(15,76,117,.14);
       border-color:#bfd9ec;
     }
 
@@ -603,8 +578,8 @@
     }
 
     .project-card.float-card:hover{
-      transform:translateY(-10px) rotate(-.2deg);
-      box-shadow:0 28px 56px rgba(15,76,117,.18);
+      transform:translateY(-6px);
+      box-shadow:0 22px 44px rgba(15,76,117,.14);
       border-color:#b8d8ec;
     }
 
@@ -721,10 +696,12 @@
       cursor:pointer;
       transition:transform .18s ease, box-shadow .18s ease;
     }
+
     .carousel-arrow:hover{
-      transform:translateY(-50%) scale(1.06);
-      box-shadow:0 18px 36px rgba(15,76,117,.22);
+      transform:translateY(-50%) scale(1.04);
+      box-shadow:0 18px 36px rgba(15,76,117,.18);
     }
+
     .carousel-arrow.left{left:14px}
     .carousel-arrow.right{right:14px}
     .auto-carousel{scroll-behavior:smooth}
@@ -922,14 +899,6 @@
 
   <main class="container">
     <section class="hero" id="top">
-      <div class="hero-scroll">
-        <div class="hero-scroll-track">
-          <span>Client Retention</span><span>Notion Systems</span><span>Revenue Operations</span><span>Automation</span>
-          <span>Project Delivery</span><span>Account Management</span><span>Client Retention</span><span>Notion Systems</span>
-          <span>Revenue Operations</span><span>Automation</span><span>Project Delivery</span><span>Account Management</span>
-        </div>
-      </div>
-
       <div class="hero-card">
         <div class="hero-photo-wrap">
           <img class="hero-photo" src="jy-linkedin.jpeg" alt="Portrait of Jane Yugtan" />
@@ -939,7 +908,7 @@
           <h1>Jane Yugtan</h1>
           <div class="subtitle">Account Manager | Project Manager | Executive Assistant</div>
           <p class="intro">
-            I help founders, agencies, and B2B teams strengthen client retention, improve delivery, streamline operations, and support revenue growth through account management, renewals, Notion systems, and practical automation.
+            I help founders, agencies, and growing teams improve client retention, streamline delivery, and build operational systems that save time, increase visibility, and support growth.
           </p>
           <div class="cta-row">
             <a class="btn btn-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick virtual coffee</a>
@@ -1338,7 +1307,6 @@
     const pricingCarousel = document.getElementById('pricingCarousel');
     const pricingPrev = document.getElementById('pricingPrev');
     const pricingNext = document.getElementById('pricingNext');
-    let autoCarouselInterval = null;
 
     function loopCarousel(direction) {
       if (!pricingCarousel) return;
@@ -1359,26 +1327,8 @@
       }
     }
 
-    function startAutoCarousel() {
-      if (!pricingCarousel) return;
-      stopAutoCarousel();
-      autoCarouselInterval = setInterval(() => loopCarousel('next'), 3200);
-    }
-
-    function stopAutoCarousel() {
-      if (autoCarouselInterval) {
-        clearInterval(autoCarouselInterval);
-        autoCarouselInterval = null;
-      }
-    }
-
     pricingPrev?.addEventListener('click', () => loopCarousel('prev'));
     pricingNext?.addEventListener('click', () => loopCarousel('next'));
-    pricingCarousel?.addEventListener('mouseenter', stopAutoCarousel);
-    pricingCarousel?.addEventListener('mouseleave', startAutoCarousel);
-    pricingCarousel?.addEventListener('touchstart', stopAutoCarousel, { passive: true });
-    pricingCarousel?.addEventListener('touchend', startAutoCarousel, { passive: true });
-    startAutoCarousel();
 
     const projectData = {
       'work-hourly': {
