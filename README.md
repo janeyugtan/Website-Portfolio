@@ -1088,7 +1088,7 @@
             <div class="browser-preview" style="background-image:url('https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/'); min-height:260px;">
               <div class="preview-overlay">
                 <div class="preview-badge">🌐 Live Website</div>
-                <a href="[https://sava-amsterdam.com/](https://www.loom.com/share/3055c23d989b440b89c32c487e5de84e)" target="_blank" rel="noopener" class="btn btn-light">🎥 System Walkthrough ↗</a>
+                <a href="[(https://www.loom.com/share/3055c23d989b440b89c32c487e5de84e)]" target="_blank" rel="noopener" class="btn btn-light">🎥 System Walkthrough ↗</a>
               </div>
             </div>
           </div>
@@ -1110,7 +1110,7 @@
             <div class="browser-preview" style="background-image:url('https://image.thum.io/get/width/1400/crop/900/noanimate/https://whiskeylibrary.com/'); min-height:260px;">
               <div class="preview-overlay">
                 <div class="preview-badge">🌐 Live Website</div>
-                <a href="[https://whiskeylibrary.com/](https://www.loom.com/share/3055c23d989b440b89c32c487e5de84e)" target="_blank" rel="noopener" class="btn btn-light">🎥 System Walkthrough ↗</a>
+                <a href="[(https://www.loom.com/share/3055c23d989b440b89c32c487e5de84e)](https://www.loom.com/share/3055c23d989b440b89c32c487e5de84e)" target="_blank" rel="noopener" class="btn btn-light">🎥 System Walkthrough ↗</a>
               </div>
             </div>
           </div>
