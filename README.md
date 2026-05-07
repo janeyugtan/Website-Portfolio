@@ -22,7 +22,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 <link rel="manifest" href="site.webmanifest" />
 
-<!-- IMPROVEMENT 1: Better font — replaced Arial with DM Sans (clean, modern, professional) -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet" />
@@ -132,7 +131,6 @@ background:#eef6fc;
 color:var(--blue);
 transform:translateY(-1px);
 }
-/* IMPROVEMENT 4: Active nav state on scroll */
 .nav a.active{
 background:#eef6fc;
 color:var(--blue);
@@ -449,7 +447,6 @@ transition:transform .18s ease, box-shadow .18s ease;
 .auto-carousel{scroll-behavior:smooth}
 .auto-carousel:hover{cursor:grab}
 
-/* IMPROVEMENT 3: Swipe indicator for mobile carousel */
 .swipe-hint{
 display:none;
 text-align:center;
