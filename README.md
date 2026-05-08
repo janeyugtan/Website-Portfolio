@@ -803,7 +803,6 @@ Swipe to see more options
 <div class="experience-card">
 <div class="meta">Current Focus</div>
 <h3>What I'm focused on right now</h3>
-<!-- SAFE VERSION: no employer name, no role title, no industry specifics that could identify current job -->
 <p>My day-to-day work keeps me sharp across client relationships, account continuity, and operational support — which is exactly what I bring to the projects I take on here.</p>
 <p>I'm selectively open to <strong>part-time engagements</strong> where I can make a real impact — whether that's tightening up operations, keeping clients retained, or building systems that actually get used.</p>
 <p>If the scope is right and the timing works, I'd love to connect.</p>
