@@ -250,6 +250,30 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 @media(max-width:860px){.life-photos-grid{grid-template-columns:repeat(2,1fr)}.life-photo-wrap{height:230px}}
 @media(max-width:768px){html,body{height:auto}body{display:block;overflow:auto}.deck{overflow:visible;scroll-snap-type:none;flex:none}.slide{min-height:auto;scroll-snap-align:none;scroll-snap-stop:normal;scroll-margin-top:96px;padding:30px 0;justify-content:flex-start}.deck-controls{right:12px;bottom:12px}.scroll-hint{display:none}.slide:not(.hero) .life-photo-card{opacity:1!important;transform:none!important;transition:none!important}}
 @media(max-width:640px){.hero-card{padding:22px;border-radius:22px}.video-thumb img{height:240px}.results-grid{grid-template-columns:1fr}.section-title{font-size:26px}.project-modal-card{padding:24px}.brand-logo{height:42px}.nav{gap:4px}.nav a{padding:6px 8px;font-size:13px}.end-cta{padding:32px 20px}.hook-line{font-size:32px}.hero-hook{margin-bottom:20px}.float-cta{font-size:12px;padding:9px 16px}.float-cta-dot{display:none}.life-photos-grid{grid-template-columns:1fr}.life-photo-wrap{height:200px}}
+
+/* Photo lightbox hint */
+.life-photo-wrap[onclick]::before {
+  content: '⤢';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 4;
+  background: rgba(9,15,26,.55);
+  color: rgba(255,255,255,.8);
+  font-size: 14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .2s ease;
+  backdrop-filter: blur(4px);
+}
+.life-photo-wrap[onclick]:hover::before {
+  opacity: 1;
+}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Jane Yugtan","url":"https://janeyugtan.com","image":"https://janeyugtan.github.io/Website-Portfolio/jy-linkedin.jpeg","jobTitle":"Operations Partner, Project Manager, Systems Designer","description":"Jane Yugtan is an Operations Partner for founders and agency owners. Based in the Philippines, working remotely with US clients.","worksFor":{"@type":"Organization","name":"Self-Employed / Freelance"},"knowsAbout":["Project Management","Notion Systems","Workflow Automation","Operations Design","SOP Creation"],"nationality":"Filipino","sameAs":["https://www.linkedin.com/in/jyugtan/"],"contactPoint":{"@type":"ContactPoint","email":"jane@janeyugtan.com","contactType":"Business Inquiries"}}
@@ -292,14 +316,14 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div class="hero-card">
 <div class="hero-photo-wrap"><img class="hero-photo" src="jy-linkedin.jpeg" width="200" height="200" alt="Portrait of Jane Yugtan" /></div>
 <div>
-<div class="eyebrow hero-eyebrow">Project Management â¢ Notion Systems â¢ Automation</div>
+<div class="eyebrow hero-eyebrow">Project Management • Notion Systems • Automation</div>
 <h1>Jane Yugtan</h1>
-<div class="subtitle">Operations Partner Â· Project Manager Â· Systems Designer</div>
+<div class="subtitle">Operations Partner · Project Manager · Systems Designer</div>
 <p class="intro">I help founders and agencies get organised, move faster, and stop dropping the ball on delivery. Project management, Notion builds, and workflow automation. No babysitting.</p>
 <div class="cta-row">
-<a class="btn btn-hero-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">â Book a quick call</a>
-<a class="btn btn-hero-light" href="mailto:jane@janeyugtan.com">ð© Email Me</a>
-<a class="btn btn-hero-ghost" href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener">LinkedIn â</a>
+<a class="btn btn-hero-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick call</a>
+<a class="btn btn-hero-light" href="mailto:jane@janeyugtan.com">📩 Email Me</a>
+<a class="btn btn-hero-ghost" href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener">LinkedIn ↗</a>
 </div>
 <div class="hero-jumps">
 <span class="jump-label">Jump to:</span>
@@ -444,12 +468,12 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 </div>
 <div class="life-strip-label">A little more of the person behind the work</div>
 <div class="life-photos-grid">
-<div class="life-photo-card"><div class="life-photo-wrap"><img src="jane-cats-pochi.jpeg" alt="Pochi, blue blotched smoke British Shorthair" loading="lazy" /><div class="life-photo-caption"><strong>Pochi</strong><span>Blue blotched smoke British Shorthair. My resident cat. Knows when I need a break before I do.</span></div></div></div>
-<div class="life-photo-card"><div class="life-photo-wrap"><img src="jane-cats-asher.jpeg" alt="Asher, pure cinnamon British Shorthair" loading="lazy" /><div class="life-photo-caption"><strong>Asher</strong><span>Pure cinnamon British Shorthair. The newcomer who walked in and immediately started running things.</span></div></div></div>
-<div class="life-photo-card"><div class="life-photo-wrap"><img src="jane-travel-windowseat.jpeg" alt="Jane in a window seat on a plane" loading="lazy" /><div class="life-photo-caption"><strong>Window seat, always</strong><span>My spot of choice. Booking this for every flight for at least the next five years.</span></div></div></div>
-<div class="life-photo-card"><div class="life-photo-wrap"><img src="jane-sunset.jpeg" alt="Jane watching a sunset at a pier" loading="lazy" /><div class="life-photo-caption"><strong>Somewhere in the Philippines</strong><span>The kind of view that makes remote work worth it.</span></div></div></div>
-<div class="life-photo-card"><div class="life-photo-wrap"><img src="jane-mom-travelcebu.jpeg" alt="Jane and her mom at Temple of Leah Cebu" loading="lazy" /><div class="life-photo-caption"><strong>Sinulog trip. Temple of Leah, Cebu</strong><span>With mom. Everyone we meet tells us we look like sisters. We take it every time.</span></div></div></div>
-<div class="life-photo-card"><div class="life-photo-wrap"><img src="jane-family.jpeg" alt="Jane and her mom at Escala Tagaytay" loading="lazy" /><div class="life-photo-caption"><strong>Mom's 50th. Escala Tagaytay</strong><span>Infinity pool, lake view, morning breakfast. A birthday she deserved.</span></div></div></div>
+<div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-cats-pochi.jpeg','Pochi — Blue blotched smoke British Shorthair')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo: Pochi — Blue blotched smoke British Shorthair"><img src="jane-cats-pochi.jpeg" alt="Pochi, blue blotched smoke British Shorthair" loading="lazy" /><div class="life-photo-caption"><strong>Pochi</strong><span>Blue blotched smoke British Shorthair. My resident cat. Knows when I need a break before I do.</span></div></div></div>
+<div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-cats-asher.jpeg','Asher — Pure cinnamon British Shorthair')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo: Asher — Pure cinnamon British Shorthair"><img src="jane-cats-asher.jpeg" alt="Asher, pure cinnamon British Shorthair" loading="lazy" /><div class="life-photo-caption"><strong>Asher</strong><span>Pure cinnamon British Shorthair. The newcomer who walked in and immediately started running things.</span></div></div></div>
+<div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-travel-windowseat.jpeg','Window seat selfie')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo: Window seat selfie"><img src="jane-travel-windowseat.jpeg" alt="Jane in a window seat on a plane" loading="lazy" /><div class="life-photo-caption"><strong>Window seat, always</strong><span>My spot of choice. Booking this for every flight for at least the next five years.</span></div></div></div>
+<div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-sunset.jpeg','Sunset somewhere in the Philippines')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo: Sunset somewhere in the Philippines"><img src="jane-sunset.jpeg" alt="Jane watching a sunset at a pier" loading="lazy" /><div class="life-photo-caption"><strong>Somewhere in the Philippines</strong><span>The kind of view that makes remote work worth it.</span></div></div></div>
+<div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-mom-travelcebu.jpeg','Sinulog trip — Temple of Leah, Cebu')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo: Sinulog trip — Temple of Leah, Cebu"><img src="jane-mom-travelcebu.jpeg" alt="Jane and her mom at Temple of Leah Cebu" loading="lazy" /><div class="life-photo-caption"><strong>Sinulog trip. Temple of Leah, Cebu</strong><span>With mom. Everyone we meet tells us we look like sisters. We take it every time.</span></div></div></div>
+<div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-family.jpeg','Mom's 50th birthday — Escala Tagaytay')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo: Mom's 50th birthday — Escala Tagaytay"><img src="jane-family.jpeg" alt="Jane and her mom at Escala Tagaytay" loading="lazy" /><div class="life-photo-caption"><strong>Mom's 50th. Escala Tagaytay</strong><span>Infinity pool, lake view, morning breakfast. A birthday she deserved.</span></div></div></div>
 </div>
 </div>
 </section>
@@ -464,9 +488,9 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <a class="btn btn-light" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" style="font-size:15px;padding:14px 22px;">&#9749; Book a discovery call</a>
 <a class="btn" href="mailto:jane@janeyugtan.com" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2);font-size:15px;padding:14px 22px;">&#128233; Send me an email</a>
 </div>
-<div class="end-cta-sub">EST hours Â· Remote Â· Part-time and project-based</div>
+<div class="end-cta-sub">EST hours · Remote · Part-time and project-based</div>
 </div>
-<div class="footer">Â© 2026 Jane Yugtan. Operations Partner Â· Project Manager Â· Systems Designer</div>
+<div class="footer">© 2026 Jane Yugtan. Operations Partner · Project Manager · Systems Designer</div>
 </div>
 </section>
 </div>
