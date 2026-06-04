@@ -1,21 +1,22 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Jane Yugtan | Account Manager Portfolio | Project Manager | Executive Assistant</title>
-<meta name="description" content="Portfolio of Jane Yugtan — Account Manager, Project Manager, and Executive Assistant helping founders and agencies improve client retention, streamline operations, build Notion systems, and automate workflows." />
-<meta name="keywords" content="Jane Yugtan, Account Manager Portfolio, Project Manager Portfolio, Executive Assistant Portfolio, Notion Systems, Client Retention, Operations Support, Automation" />
+<title>Jane Yugtan | Operations Partner | Project Manager | Systems Designer</title>
+<meta name="description" content="Jane Yugtan is an Operations Partner for founders and agency owners. She runs the backend so you can run your business. Project management, Notion systems, and workflow automation." />
+<meta name="keywords" content="Jane Yugtan, Operations Partner, Project Manager, Systems Designer, Notion Systems, Workflow Automation, Operations Support, Freelance Operations" />
 <meta name="author" content="Jane Yugtan" />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://janeyugtan.com/" />
-<meta property="og:title" content="Jane Yugtan | Account Manager Portfolio" />
-<meta property="og:description" content="Helping founders and agencies improve client retention, operations, systems, and workflow automation." />
+<meta property="og:title" content="Jane Yugtan | Operations Partner" />
+<meta property="og:description" content="Operations Partner for founders and agency owners. Project management, Notion builds, and workflow automation." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://janeyugtan.com/" />
 <meta property="og:image" content="intro-cover.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Jane Yugtan | Account Manager Portfolio" />
-<meta name="twitter:description" content="Account Manager, Project Manager, and Executive Assistant portfolio." />
+<meta name="twitter:title" content="Jane Yugtan | Operations Partner" />
+<meta name="twitter:description" content="Project Manager, Systems Designer, and Freelance Operations Specialist portfolio." />
 <meta name="twitter:image" content="intro-cover.jpg" />
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -219,7 +220,7 @@ font-family:'DM Sans', Arial, sans-serif;
 .services-grid,.projects-grid,.experience-grid{display:grid;gap:16px}
 .services-grid{grid-template-columns:repeat(3,1fr)}
 .projects-grid{grid-template-columns:repeat(2,1fr)}
-.experience-grid{grid-template-columns:1fr}
+.experience-grid{grid-template-columns:repeat(3,1fr)}
 .panel,.project-card,.testimonial-card,.experience-card{padding:22px}
 .panel h3,.project-card h3,.testimonial-card h3,.experience-card h3{margin-top:0;margin-bottom:10px;font-size:22px}
 .panel ul,.experience-card ul{padding-left:18px;margin-bottom:0;color:var(--slate)}
@@ -368,7 +369,7 @@ transition:opacity .2s ease, transform .2s ease;
 .feedback-img-wrap:hover .feedback-zoom{opacity:1;transform:scale(1)}
 .feedback-caption{padding:12px 18px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
 .quote{font-size:16px;color:var(--slate);margin-bottom:16px}
-.footer{text-align:center;color:var(--muted);padding:24px 0 40px;font-size:14px}
+.footer{text-align:center;color:var(--muted);padding:24px 0 0;font-size:14px}
 .project-modal{
 position:fixed;inset:0;background:rgba(9,19,35,.72);backdrop-filter:blur(10px);
 display:flex;align-items:center;justify-content:center;
@@ -423,7 +424,7 @@ color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify
 font-family:'DM Sans', Arial, sans-serif;
 }
 .end-cta{
-margin:18px auto 0;max-width:860px;text-align:center;
+margin:0 auto;max-width:860px;text-align:center;
 padding:48px 36px;
 background:linear-gradient(135deg, #091a2a 0%, #0f4c75 60%, #1d6fa5 100%);
 color:white;border-radius:28px;
@@ -447,10 +448,56 @@ margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1;
 }
 .end-cta p{margin:0 0 24px;color:rgba(255,255,255,.85);font-size:17px}
 .end-cta-sub{margin-top:20px;font-size:13px;color:rgba(255,255,255,.55)}
+
+/* =========================================================
+   PRESENTATION / SLIDE-DECK LAYOUT
+   Each <section> now behaves like a full-screen slide.
+   ========================================================= */
+html,body{height:100%}
+body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
+.topbar{position:relative;top:auto}
+.deck{
+position:relative;flex:1 1 auto;
+overflow-y:auto;overflow-x:hidden;
+scroll-snap-type:y mandatory;scroll-behavior:smooth;
+scrollbar-width:none;-ms-overflow-style:none;
+}
+.deck::-webkit-scrollbar{width:0;height:0;display:none}
+.slide{
+min-height:100%;
+scroll-snap-align:start;scroll-snap-stop:always;
+display:flex;flex-direction:column;justify-content:center;
+padding:clamp(26px,5vh,54px) 0;position:relative;
+}
+.slide>.container{width:min(var(--max), calc(100% - 32px));margin:0 auto}
+.slide.scrollable{justify-content:flex-start}
+/* progress bar sits on the topbar's lower edge */
+.deck-progress{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:rgba(15,76,117,.08);overflow:hidden;z-index:5}
+.deck-progress-bar{height:100%;width:100%;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--blue),var(--cyan));transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+/* right-side slide dots */
+.deck-dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:85;display:flex;flex-direction:column;gap:13px;align-items:flex-end}
+.deck-dot{position:relative;width:11px;height:11px;border-radius:50%;border:1.6px solid rgba(15,76,117,.4);background:transparent;cursor:pointer;padding:0;transition:transform .25s ease,background .25s ease,border-color .25s ease}
+.deck-dot:hover{border-color:var(--blue)}
+.deck-dot.active{background:var(--blue);border-color:var(--blue);transform:scale(1.35);box-shadow:0 0 0 4px rgba(15,76,117,.12)}
+.deck-dot::after{content:attr(data-label);position:absolute;right:22px;top:50%;transform:translateY(-50%) translateX(6px);white-space:nowrap;background:var(--navy);color:#fff;font-size:11px;font-weight:700;padding:5px 9px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease}
+.deck-dot:hover::after{opacity:1;transform:translateY(-50%) translateX(0)}
+/* bottom-right controls */
+.deck-controls{position:fixed;right:20px;bottom:20px;z-index:85;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:999px;padding:7px;box-shadow:var(--shadow)}
+.deck-arrow{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--blue);font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .18s ease,background .18s ease,color .18s ease;font-family:'DM Sans',Arial,sans-serif}
+.deck-arrow:hover:not(:disabled){background:var(--blue);color:#fff;transform:scale(1.06)}
+.deck-arrow:disabled{opacity:.35;cursor:default}
+.deck-counter{font-variant-numeric:tabular-nums;font-weight:800;color:var(--blue);font-size:13px;min-width:62px;text-align:center;letter-spacing:.06em}
+/* scroll hint on the hero */
+.scroll-hint{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:4px;color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;animation:hintFloat 2.4s ease-in-out infinite}
+.scroll-hint svg{width:18px;height:18px}
+@keyframes hintFloat{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+.slide.hero .hero-card{animation:heroIn .8s cubic-bezier(.2,.7,.2,1) both}
+@keyframes heroIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+
 @media (max-width:980px){
 .hero-card{grid-template-columns:1fr;text-align:center}
 .results-grid{grid-template-columns:repeat(2, minmax(0, 1fr))}
-.services-grid,.projects-grid{grid-template-columns:1fr}
+.services-grid,.projects-grid,.experience-grid{grid-template-columns:1fr}
 .social-proof-grid,.feedback-grid{grid-template-columns:1fr}
 .cta-row{justify-content:center}
 .topbar-inner{flex-direction:column;align-items:flex-start}
@@ -458,6 +505,17 @@ margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1;
 .carousel-arrow{display:none}
 .swipe-hint{display:flex}
 .metric-callout,.project-modal-grid{grid-template-columns:1fr}
+.deck-dots{display:none}
+}
+@media (max-width:768px){
+/* On phones, fall back to a normal, reliable scrolling page */
+html,body{height:auto}
+body{display:block;overflow:auto}
+.topbar{position:sticky;top:0}
+.deck{overflow:visible;scroll-snap-type:none;flex:none}
+.slide{min-height:auto;scroll-snap-align:none;scroll-snap-stop:normal;scroll-margin-top:96px;padding:30px 0;justify-content:flex-start}
+.deck-controls{right:12px;bottom:12px}
+.scroll-hint{display:none}
 }
 @media (max-width:640px){
 .hero{padding-top:26px}
@@ -472,12 +530,467 @@ margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1;
 .nav a{padding:6px 8px;font-size:13px}
 .end-cta{padding:32px 20px}
 }
+
+/* ══════════════════════════════════════════════════════════
+   CARD-ZOOM SCROLL EFFECT
+   Each slide scales + blurs in like a card coming forward.
+   Mirrors the brandalchemy.io-style entrance feel.
+   ══════════════════════════════════════════════════════════ */
+
+/* Initial state: slide is "behind" the screen */
+.slide:not(.hero) {
+  opacity: 0;
+  transform: scale(0.88) translateY(56px);
+  transform-origin: center 60%;
+  filter: blur(10px);
+  transition:
+    opacity   0.85s cubic-bezier(.16,1,.3,1),
+    transform 0.85s cubic-bezier(.16,1,.3,1),
+    filter    0.65s ease;
+}
+
+/* Active/in-view: card zooms to the foreground */
+.slide.in-view {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  filter: blur(0px);
+}
+
+/* Hero gets its own entrance (already visible on load) */
+.slide.hero {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* Stagger slide children when card zooms in */
+.slide:not(.hero) .section-title {
+  opacity: 0;
+  transform: translateX(-28px);
+  transition: opacity .65s cubic-bezier(.16,1,.3,1) .2s,
+              transform .65s cubic-bezier(.16,1,.3,1) .2s;
+}
+.slide.in-view .section-title {
+  opacity: 1; transform: none;
+}
+
+.slide:not(.hero) .section-subtitle {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .55s ease .32s, transform .55s ease .32s;
+}
+.slide.in-view .section-subtitle {
+  opacity: 1; transform: none;
+}
+
+/* Content grids/blocks */
+.slide:not(.hero) .results-grid,
+.slide:not(.hero) .services-grid,
+.slide:not(.hero) .projects-grid,
+.slide:not(.hero) .video-card,
+.slide:not(.hero) .carousel-shell,
+.slide:not(.hero) .social-proof-grid,
+.slide:not(.hero) .feedback-grid,
+.slide:not(.hero) .experience-grid,
+.slide:not(.hero) .end-cta {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .6s ease .38s, transform .6s ease .38s;
+}
+.slide.in-view .results-grid,
+.slide.in-view .services-grid,
+.slide.in-view .projects-grid,
+.slide.in-view .video-card,
+.slide.in-view .carousel-shell,
+.slide.in-view .social-proof-grid,
+.slide.in-view .feedback-grid,
+.slide.in-view .experience-grid,
+.slide.in-view .end-cta {
+  opacity: 1; transform: none;
+}
+
+/* Result cards — individual stagger */
+.slide:not(.hero) .result-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .45s ease, transform .45s ease;
+}
+.slide.in-view .result-card:nth-child(1){opacity:1;transform:none;transition-delay:.20s}
+.slide.in-view .result-card:nth-child(2){opacity:1;transform:none;transition-delay:.26s}
+.slide.in-view .result-card:nth-child(3){opacity:1;transform:none;transition-delay:.32s}
+.slide.in-view .result-card:nth-child(4){opacity:1;transform:none;transition-delay:.38s}
+.slide.in-view .result-card:nth-child(5){opacity:1;transform:none;transition-delay:.44s}
+.slide.in-view .result-card:nth-child(6){opacity:1;transform:none;transition-delay:.50s}
+.slide.in-view .result-card:nth-child(7){opacity:1;transform:none;transition-delay:.56s}
+.slide.in-view .result-card:nth-child(8){opacity:1;transform:none;transition-delay:.62s}
+
+/* Experience cards stagger */
+.slide:not(.hero) .experience-card {
+  opacity: 0; transform: translateY(22px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.slide.in-view .experience-card:nth-child(1){opacity:1;transform:none;transition-delay:.24s}
+.slide.in-view .experience-card:nth-child(2){opacity:1;transform:none;transition-delay:.34s}
+.slide.in-view .experience-card:nth-child(3){opacity:1;transform:none;transition-delay:.44s}
+
+/* Testimonial + feedback cards stagger */
+.slide:not(.hero) .testi-video-card,
+.slide:not(.hero) .feedback-card {
+  opacity: 0; transform: translateY(22px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.slide.in-view .testi-video-card:nth-child(1){opacity:1;transform:none;transition-delay:.22s}
+.slide.in-view .testi-video-card:nth-child(2){opacity:1;transform:none;transition-delay:.34s}
+.slide.in-view .feedback-card:nth-child(1){opacity:1;transform:none;transition-delay:.28s}
+.slide.in-view .feedback-card:nth-child(2){opacity:1;transform:none;transition-delay:.40s}
+
+/* Mobile: simpler reveal, no blur/scale (performance) */
+@media (max-width: 768px) {
+  .slide:not(.hero) {
+    opacity: 0;
+    transform: translateY(24px);
+    filter: none;
+    transition: opacity .55s ease, transform .55s ease;
+  }
+  .slide.in-view {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+  /* Cancel child animations on mobile */
+  .slide:not(.hero) .section-title,
+  .slide:not(.hero) .section-subtitle,
+  .slide:not(.hero) .results-grid,
+  .slide:not(.hero) .services-grid,
+  .slide:not(.hero) .projects-grid,
+  .slide:not(.hero) .video-card,
+  .slide:not(.hero) .carousel-shell,
+  .slide:not(.hero) .social-proof-grid,
+  .slide:not(.hero) .feedback-grid,
+  .slide:not(.hero) .experience-grid,
+  .slide:not(.hero) .end-cta,
+  .slide:not(.hero) .result-card,
+  .slide:not(.hero) .experience-card,
+  .slide:not(.hero) .testi-video-card,
+  .slide:not(.hero) .feedback-card {
+    opacity: 1 !important; transform: none !important; transition: none !important;
+  }
+}
+
+
+/* ══════════════════════════════════════════════════════
+   DARK HERO — careyjames.co energy
+   ══════════════════════════════════════════════════════ */
+
+.slide.hero.dark-slide {
+  background: var(--navy);
+}
+
+/* ticker on dark bg */
+.slide.hero .hero-scroll-track { color: rgba(255,255,255,.18); }
+
+/* Hook headline */
+.hero-hook {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.hook-line {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(36px, 6.5vw, 74px);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin: 0;
+  display: block;
+}
+.hook-accent {
+  color: var(--cyan);
+  font-style: italic;
+}
+
+/* Hero card — glass on dark */
+.slide.hero .hero-card {
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.10);
+  box-shadow: 0 24px 60px rgba(0,0,0,.25);
+}
+.slide.hero .hero-photo { border-color: var(--cyan); }
+.slide.hero .hero-photo-wrap::after {
+  background: linear-gradient(135deg, rgba(39,211,242,.3), rgba(15,76,117,.15));
+}
+
+/* Text on dark */
+.slide.hero h1 { color: #fff; }
+.slide.hero .subtitle { color: var(--cyan); }
+.slide.hero .intro { color: rgba(255,255,255,.8); }
+.hero-eyebrow {
+  background: rgba(255,255,255,.08) !important;
+  color: rgba(255,255,255,.75) !important;
+  border: 1px solid rgba(255,255,255,.12) !important;
+}
+
+/* Dark hero buttons */
+.btn-hero-primary {
+  background: #fff;
+  color: var(--navy);
+  border-color: transparent;
+}
+.btn-hero-primary:hover { box-shadow: 0 10px 28px rgba(255,255,255,.15); }
+.btn-hero-light {
+  background: rgba(255,255,255,.10);
+  color: #fff;
+  border-color: rgba(255,255,255,.18);
+}
+.btn-hero-light:hover { background: rgba(255,255,255,.18); }
+.btn-hero-ghost {
+  background: transparent;
+  color: rgba(255,255,255,.65);
+  border-color: rgba(255,255,255,.18);
+}
+.btn-hero-ghost:hover { color: #fff; border-color: rgba(255,255,255,.4); }
+
+/* Scroll hint on dark */
+.slide.hero .scroll-hint { color: rgba(255,255,255,.35); }
+
+/* Jump-to quick links */
+.hero-jumps {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,.10);
+}
+.jump-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.4);
+  white-space: nowrap;
+}
+.jump-link {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255,255,255,.6);
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  transition: color .18s ease, background .18s ease, border-color .18s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.jump-link:hover {
+  color: #fff;
+  background: rgba(255,255,255,.14);
+  border-color: rgba(255,255,255,.28);
+}
+
+
+/* ══════════════════════════════════════════════════════
+   DARK RESULTS SECTION — metrics pop on dark
+   ══════════════════════════════════════════════════════ */
+
+.slide.dark-slide:not(.hero) {
+  background: #0a1c2e;
+}
+.slide.dark-slide:not(.hero) .section-title { color: #fff; }
+.slide.dark-slide:not(.hero) .section-subtitle { color: rgba(255,255,255,.55); }
+
+.slide.dark-slide .result-card {
+  background: rgba(255,255,255,.05);
+  border-color: rgba(255,255,255,.08);
+}
+.slide.dark-slide .result-card::before {
+  background: linear-gradient(90deg, var(--cyan), var(--blue-2));
+}
+.slide.dark-slide .result-card:hover {
+  background: rgba(255,255,255,.09);
+  border-color: rgba(255,255,255,.15);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(0,0,0,.25);
+}
+.slide.dark-slide .result-kpi { color: var(--cyan); }
+.slide.dark-slide .result-label { color: #fff; }
+.slide.dark-slide .result-copy { color: rgba(255,255,255,.6); }
+
+/* section counter number on dark slide */
+.slide.dark-slide:not(.hero) .section-title::before { color: var(--cyan); }
+
+
+/* ══════════════════════════════════════════════════════
+   SECTION NUMBERS — editorial like careyjames.co
+   ══════════════════════════════════════════════════════ */
+
+.slide:not(.hero) { counter-increment: slide-num; }
+html { counter-reset: slide-num; }
+
+.slide:not(.hero) .section-title::before {
+  content: "0" counter(slide-num);
+  display: block;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 8px;
+  opacity: .7;
+}
+
+
+/* ══════════════════════════════════════════════════════
+   FLOATING BOOK-A-CALL BUTTON
+   ══════════════════════════════════════════════════════ */
+
+.float-cta {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 20px;
+  background: var(--navy);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'DM Sans', Arial, sans-serif;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(9,26,42,.28);
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+  border: 1px solid rgba(255,255,255,.10);
+}
+.float-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(9,26,42,.36);
+  background: var(--blue);
+  color: #fff;
+}
+.float-cta-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cyan);
+  flex-shrink: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Hide float-cta on hero (Book a Call button already there) */
+.on-hero .float-cta { opacity: 0; pointer-events: none; transition: opacity .3s ease; }
+.float-cta { transition: transform .18s ease, box-shadow .18s ease, background .18s ease, opacity .3s ease; }
+
+
+/* ══════════════════════════════════════════════════════
+   NAV CTA BUTTON
+   ══════════════════════════════════════════════════════ */
+
+.nav-cta {
+  margin-left: 4px;
+  background: var(--navy) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+.nav-cta:hover {
+  background: var(--blue) !important;
+  transform: translateY(-1px);
+}
+/* Hide on smallest screens */
+@media (max-width: 640px) { .nav-cta { display: none; } }
+
+
+/* ══════════════════════════════════════════════════════
+   SECTION READABILITY IMPROVEMENTS
+   ══════════════════════════════════════════════════════ */
+
+/* Bigger, cleaner section title */
+.section-title {
+  font-size: 34px;
+  margin: 0 0 6px;
+  line-height: 1.1;
+}
+
+/* Slightly larger body text for readability */
+.result-copy, .panel ul li, .experience-card p, .testi-quote {
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+/* Cleaner panel headers */
+.panel h3, .experience-card h3 {
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+/* ══════════════════════════════════════════════════════
+   RESPONSIVE ADJUSTMENTS
+   ══════════════════════════════════════════════════════ */
+
+@media (max-width: 980px) {
+  .hook-line { font-size: clamp(30px, 8vw, 52px); }
+  .hero-jumps { display: none; } /* nav dots cover this on tablet */
+  .float-cta { bottom: 16px; left: 16px; }
+}
+@media (max-width: 640px) {
+  .hook-line { font-size: 32px; }
+  .hero-hook { margin-bottom: 20px; }
+  .float-cta { font-size: 12px; padding: 9px 16px; }
+  .float-cta-dot { display: none; }
+}
+
+.avail-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  transition: opacity .18s ease;
+}
+.avail-link:hover { opacity: .88; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jane Yugtan",
+  "url": "https://janeyugtan.com",
+  "image": "https://janeyugtan.github.io/Website-Portfolio/jy-linkedin.jpeg",
+  "jobTitle": "Operations Partner, Project Manager, Systems Designer",
+  "description": "Jane Yugtan is an Operations Partner for founders and agency owners. She runs project management, builds Notion systems, and sets up automations so businesses run without constant hand-holding. Based in the Philippines, working remotely with US clients.",
+  "worksFor": {"@type": "Organization", "name": "Self-Employed / Freelance"},
+  "knowsAbout": ["Project Management", "Notion Systems", "Workflow Automation", "Operations Design", "SOP Creation", "Business Systems"],
+  "nationality": "Filipino",
+  "sameAs": ["https://www.linkedin.com/in/jyugtan/"],
+  "contactPoint": {"@type": "ContactPoint", "email": "jane@janeyugtan.com", "contactType": "Business Inquiries"}
+}
+
+// Float CTA: hide on hero slide, show on all others
+(function(){
+  const floatCta = document.querySelector('.float-cta');
+  if (!floatCta) return;
+  const heroSlide = document.getElementById('top');
+  const slideObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.target === heroSlide) {
+        document.body.classList.toggle('on-hero', entry.isIntersecting);
+      }
+    });
+  }, { threshold: 0.4 });
+  if (heroSlide) slideObserver.observe(heroSlide);
+})();
+
+</script>
 </head>
 <body>
 
 <div class="availability-bar">
-<span><span class="avail-dot"></span>Currently accepting part-time clients (EST hours) — Book a quick call to see if we're a fit</span>
+<a href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" class="avail-link">
+  <span><span class="avail-dot"></span>Messy ops? Want to buy back your time? Book a call and let's see if we're a fit.</span>
+</a>
 </div>
 
 <div class="topbar">
@@ -496,66 +1009,88 @@ margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1;
 <a href="#testimonials" data-section="testimonials">Testimonials</a>
 <a href="#about" data-section="about">About</a>
 </nav>
+<a class="btn btn-primary nav-cta" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" style="font-size:13px;padding:9px 16px;border-radius:10px;white-space:nowrap;">☕ Book a Call</a>
 </div>
+<div class="deck-progress"><div class="deck-progress-bar" id="deckProgressBar"></div></div>
 </div>
 
-<main class="container">
+<div class="deck" id="deck">
 
-<section class="hero" id="top">
+<section class="slide hero dark-slide" id="top">
+<div class="container">
 <div class="hero-scroll">
 <div class="hero-scroll-track">
-<span>Client Retention</span><span>Notion Systems</span><span>Revenue Operations</span><span>Automation</span>
-<span>Project Delivery</span><span>Account Management</span><span>Client Retention</span><span>Notion Systems</span>
-<span>Revenue Operations</span><span>Automation</span><span>Project Delivery</span><span>Account Management</span>
+<span>Project Management</span><span>Notion Systems</span><span>Workflow Automation</span><span>Systems Design</span>
+<span>Project Delivery</span><span>Operations</span><span>Project Management</span><span>Notion Systems</span>
+<span>Workflow Automation</span><span>Systems Design</span><span>Project Delivery</span><span>Operations</span>
 </div>
+</div>
+<div class="hero-hook">
+  <p class="hook-line">I run the backend.</p>
+  <p class="hook-line hook-accent">You run the business.</p>
 </div>
 <div class="hero-card">
-<div class="hero-photo-wrap">
-<img class="hero-photo" src="jy-linkedin.jpeg" alt="Portrait of Jane Yugtan" />
+  <div class="hero-photo-wrap">
+    <img class="hero-photo" src="jy-linkedin.jpeg" width="200" height="200" alt="Portrait of Jane Yugtan" />
+  </div>
+  <div>
+    <div class="eyebrow hero-eyebrow">Project Management • Notion Systems • Automation</div>
+    <h1>Jane Yugtan</h1>
+    <div class="subtitle">Operations Partner · Project Manager · Systems Designer</div>
+    <p class="intro">I help founders and agencies get organised, move faster, and stop dropping the ball on delivery. Project management, Notion builds, and workflow automation. No babysitting.</p>
+    <div class="cta-row">
+      <a class="btn btn-hero-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick call</a>
+      <a class="btn btn-hero-light" href="mailto:jane@janeyugtan.com">📩 Email Me</a>
+      <a class="btn btn-hero-ghost" href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+    <div class="hero-jumps">
+      <span class="jump-label">Jump to:</span>
+      <a class="jump-link" href="#results">Results</a>
+      <a class="jump-link" href="#featured-projects">Projects</a>
+      <a class="jump-link" href="#pricing">Ways I Work</a>
+      <a class="jump-link" href="#testimonials">Testimonials</a>
+    </div>
+  </div>
 </div>
-<div>
-<div class="eyebrow">Client Retention • Systems • Revenue Operations</div>
-<h1>Jane Yugtan</h1>
-<div class="subtitle">Account Manager | Project Manager | Executive Assistant</div>
-<p class="intro">I help founders, agencies, and B2B teams strengthen client retention, improve delivery, streamline operations, and support revenue growth through account management, renewals, Notion systems, and practical automation.</p>
-<div class="cta-row">
-<a class="btn btn-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick virtual coffee</a>
-<a class="btn btn-secondary" href="mailto:jane@janeyugtan.com">📩 Email Me</a>
-<a class="btn btn-light" href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener">🔗 LinkedIn</a>
 </div>
-</div>
+<div class="scroll-hint" aria-hidden="true">
+Scroll
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
 </div>
 </section>
 
-<section class="section reveal" id="video-intro">
-<h2 class="section-title">🎥 Meet Jane</h2>
+<section class="slide section reveal" id="video-intro">
+<div class="container">
+<h2 class="section-title">Meet Jane</h2>
 <p class="section-subtitle">This short introduction gives you a quick overview of my work, the teams I support, and what you'll find in this portfolio.</p>
 <div class="video-card">
 <div class="video-thumb" id="openIntroVideo" role="button" tabindex="0" aria-label="Watch Jane's introduction video">
-<img src="intro-cover.jpg" alt="Jane Yugtan introduction video cover" />
+<img src="intro-cover.jpg" alt="Jane Yugtan introduction video cover" width="780" height="360" />
 <div class="play-button">▶</div>
 <div style="position:absolute;left:50%;top:calc(50% + 72px);transform:translateX(-50%);z-index:2;background:rgba(15,76,117,0.9);color:#fff;padding:10px 16px;border-radius:999px;font-size:13px;font-weight:700;box-shadow:0 8px 20px rgba(15,76,117,0.25);white-space:nowrap;">Watch My Introduction</div>
 </div>
 <div class="video-body">
-<h3>A quick introduction to my work</h3>
-<p>In this short video, I share a quick overview of my background, the work I do across account management, project delivery, and systems, and what you can expect to see throughout this portfolio.</p>
+<h3>A quick intro to my work</h3>
+<p>In this short video, I share a quick overview of my background, the work I do across project management, systems design, and operations, and what you can expect to see throughout this portfolio.</p>
+</div>
 </div>
 </div>
 </section>
 
-<section class="section reveal" id="results">
-<h2 class="section-title">🔎 Results at a Glance</h2>
-<p class="section-subtitle">A snapshot of the results I've delivered across account management, operations, and systems work.</p>
+<section class="slide section reveal scrollable dark-slide" id="results">
+<div class="container">
+<h2 class="section-title">Results at a Glance</h2>
+<p class="section-subtitle">Real numbers from real work. Here's what I've gotten done for the founders and agencies I've worked with.</p>
 <div class="results-grid">
-<div class="result-card featured-metric" id="renewalsMetricCard">
-<div class="result-kpi" data-count-to="100" data-prefix="$" data-suffix="K+">$100K+</div>
-<div class="result-label">Enterprise renewals processed</div>
-<div class="result-copy">Managed high-value renewals with a focus on retention, continuity, and account health.</div>
+<div class="result-card">
+<div class="result-kpi" data-count-to="10" data-suffix="+">10+</div>
+<div class="result-label">Clients directly served</div>
+<div class="result-copy">Direct, hands-on work with founders and agency owners across different industries, mostly US-based, fully remote.</div>
 </div>
 <div class="result-card">
 <div class="result-kpi" data-count-to="135" data-suffix="K+">135K+</div>
 <div class="result-label">Global subscribers reached</div>
-<div class="result-copy">Included as an account manager in subscriber-facing communications for a global B2C audience.</div>
+<div class="result-copy">Part of the operations team behind subscriber-facing communications for a global B2C audience.</div>
 </div>
 <div class="result-card">
 <div class="result-kpi" data-count-to="10" data-prefix="$" data-suffix="K">$10K</div>
@@ -570,7 +1105,7 @@ margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1;
 <div class="result-card">
 <div class="result-kpi" data-count-to="95" data-suffix="%">95%</div>
 <div class="result-label">Workflow satisfaction improvement</div>
-<div class="result-copy">Improved team experience through clearer systems, better visibility, and stronger documentation.</div>
+<div class="result-copy">Improved team experience through clearer systems and processes people actually follow.</div>
 </div>
 <div class="result-card">
 <div class="result-kpi" data-count-to="30" data-prefix="-" data-suffix="%">-30%</div>
@@ -585,32 +1120,25 @@ margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1;
 <div class="result-card">
 <div class="result-kpi" data-count-to="100" data-suffix="+">100+</div>
 <div class="result-label">Client accounts supported</div>
-<div class="result-copy">Supported delivery and operations across agencies, founders, and the clients they served.</div>
+<div class="result-copy">Supported project delivery and operations across agencies, founders, and the teams they served.</div>
 </div>
 </div>
-<div class="metric-callout" id="renewalsCallout">
-<div class="metric-icon">🔎</div>
-<div>
-<h3>$100K+ in enterprise renewals</h3>
-<p>This reflects high-value renewal work tied to retention, account continuity, and client relationships.</p>
-<button class="metric-close" id="renewalsCalloutClose" type="button">Close highlight</button>
-</div>
-</div>
-</section>
+  </section>
 
-<section class="section reveal" id="services">
-<h2 class="section-title">🛠 Services</h2>
-<p class="section-subtitle">Here are the main ways I support founders, agencies, and growing teams.</p>
+<section class="slide section reveal" id="services">
+<div class="container">
+<h2 class="section-title">Services</h2>
+<p class="section-subtitle">Three things I'm good at and actually enjoy doing.</p>
 <div class="services-grid">
 <div class="panel">
-<div class="project-kicker">Retention</div>
-<h3>Account Management & Client Retention</h3>
+<div class="project-kicker">Delivery</div>
+<h3>Project Management &amp; Delivery</h3>
 <ul>
-<li>Enterprise renewals and retention support</li>
-<li>Client communication, follow-up, and relationship management</li>
-<li>Revenue-focused coordination for ongoing accounts</li>
+<li>Running projects start to finish so nothing falls through</li>
+<li>Writing SOPs and setting up QA checkpoints that people follow</li>
+<li>Being the reliable second-in-command when founders are stretched thin</li>
 </ul>
-<div class="tag-row"><span class="tag">Renewals</span><span class="tag">Retention</span><span class="tag">Client Success</span></div>
+<div class="tag-row"><span class="tag">Project Management</span><span class="tag">SOPs</span><span class="tag">Process Design</span></div>
 </div>
 <div class="panel">
 <div class="project-kicker">Systems</div>
@@ -618,7 +1146,7 @@ margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1;
 <ul>
 <li>Company-wide Notion setup and dashboard cleanup</li>
 <li>Department dashboards, SOP libraries, and KPI systems</li>
-<li>Systems that improve visibility, consistency, and day-to-day use</li>
+<li>Built so people actually open them, not shelved after handover</li>
 </ul>
 <div class="tag-row"><span class="tag">Notion Systems</span><span class="tag">Operations</span><span class="tag">Documentation</span></div>
 </div>
@@ -626,18 +1154,20 @@ margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1;
 <div class="project-kicker">Automation</div>
 <h3>AI + Automation for Agencies & B2B Teams</h3>
 <ul>
-<li>AI-assisted outreach workflows for B2B companies</li>
-<li>Automation of repetitive admin, reporting, and coordination work</li>
-<li>Process improvement for agencies and contractor-focused businesses</li>
+<li>Outreach workflows using AI tools for B2B teams that want to scale without hiring</li>
+<li>Taking the repetitive stuff off your plate so you stop doing it manually</li>
+<li>Cleaning up processes that have been held together with duct tape</li>
 </ul>
 <div class="tag-row"><span class="tag">AI Workflows</span><span class="tag">Automation</span><span class="tag">B2B Outreach</span></div>
 </div>
 </div>
+</div>
 </section>
 
-<section class="section reveal" id="featured-projects">
-<h2 class="section-title">📌 Featured Projects</h2>
-<p class="section-subtitle">These two projects give a clear view of how I approach systems, execution, and growth support.</p>
+<section class="slide section reveal" id="featured-projects">
+<div class="container">
+<h2 class="section-title">Featured Projects</h2>
+<p class="section-subtitle">Two projects that show how I actually work.</p>
 <div class="projects-grid">
 <div class="project-card interactive-project float-card" data-project="sava">
 <div class="browser-frame" style="margin-bottom:16px;border:1px solid var(--line);box-shadow:0 12px 28px rgba(15,76,117,0.10);">
@@ -654,7 +1184,7 @@ margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1;
 </div>
 <h3>SAVA Amsterdam</h3>
 <p style="margin:0 0 10px;color:var(--blue);font-weight:700;">Full company Notion system</p>
-<p>A company-wide Notion system built for cleaner operations, stronger visibility, and a more scalable workspace.</p>
+<p>A company-wide Notion system built for cleaner operations and a workspace the whole team can actually use.</p>
 <div class="tag-row"><span class="tag">E-commerce Ops</span><span class="tag">Company Systems</span></div>
 </div>
 <div class="project-card interactive-project float-card" data-project="whiskey">
@@ -676,11 +1206,13 @@ margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1;
 <div class="tag-row"><span class="tag">Affiliate Ops</span><span class="tag">Notion Workflow</span></div>
 </div>
 </div>
+</div>
 </section>
 
-<section class="section reveal" id="pricing">
-<h2 class="section-title">💼 Ways I Work With Clients</h2>
-<p class="section-subtitle">I work with clients on a part-time or project basis. Rates are discussed during our discovery call based on scope and fit.</p>
+<section class="slide section reveal" id="pricing">
+<div class="container">
+<h2 class="section-title">Ways I Work</h2>
+<p class="section-subtitle">I work part-time or project-based. Rates are always talked through on a call, no guesswork.</p>
 <div class="carousel-shell">
 <button class="carousel-arrow left" type="button" id="pricingPrev" aria-label="Previous">‹</button>
 <div style="position:relative;overflow:hidden;border-radius:24px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:22px;">
@@ -688,29 +1220,29 @@ margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1;
 <div class="panel work-card" data-project="work-hourly" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;">
 <div class="project-kicker">Flexible Support</div>
 <h3>Hourly Support</h3>
-<p>For ongoing operational, project, or account management support.</p>
-<ul><li>Ideal for agencies and founders needing flexible, reliable support</li><li>No long-term commitment required</li></ul>
+<p>Ongoing support for founders and agencies who need a reliable person in their corner.</p>
+<ul><li>Good for when you need help but don't want to commit to a big scope yet</li><li>Start small, scale up if it works</li></ul>
 <div class="pricing-note">💬 Rate discussed on call</div>
 </div>
 <div class="panel work-card" data-project="work-notion" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;">
 <div class="project-kicker">Systems Build</div>
 <h3>Notion System Projects</h3>
-<p>Company-wide Notion dashboards, operations systems, and workflow design.</p>
-<ul><li>Includes planning, system design, and implementation</li><li>Scoped per project</li></ul>
+<p>I build the Notion workspace from scratch or clean up the mess you already have.</p>
+<ul><li>From blank page to working system</li><li>Priced per project, scoped on a call</li></ul>
 <div class="pricing-note">💬 Scoped on call</div>
 </div>
 <div class="panel work-card" data-project="work-retainer" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;">
 <div class="project-kicker">Ongoing Partnership</div>
 <h3>Maintenance & Retainers</h3>
-<p>Post-project maintenance, optimization, and system support.</p>
-<ul><li>Monthly partnership for ongoing updates and refinements</li><li>Ideal for teams wanting a consistent right hand</li></ul>
+<p>For clients who want things maintained after the build is done.</p>
+<ul><li>Monthly check-ins and updates so nothing gets stale</li><li>Good if you want someone who already knows your setup</li></ul>
 <div class="pricing-note">💬 Rate discussed on call</div>
 </div>
 <div class="panel work-card" data-project="work-consulting" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;">
 <div class="project-kicker">Strategy</div>
 <h3>Consulting Sessions</h3>
-<p>Strategic sessions focused on systems, operations, and workflow optimization.</p>
-<ul><li>Includes a follow-up SOP or action guide</li><li>Great for founders who want direction before committing to a build</li></ul>
+<p>A focused session where we look at what's broken and figure out how to fix it.</p>
+<ul><li>You leave with a clear action list or SOP, not just notes</li><li>Good if you want to think things through before spending money on a full build</li></ul>
 <div class="pricing-note">💬 Rate discussed on call</div>
 </div>
 </div>
@@ -722,18 +1254,20 @@ margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1;
 Swipe to see more options
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
 </div>
+</div>
 </section>
 
-<section class="section reveal" id="testimonials">
-<h2 class="section-title">🎥 What Clients Say</h2>
-<p class="section-subtitle">Video testimonials and direct feedback from founders and teams I've worked with.</p>
+<section class="slide section reveal scrollable" id="testimonials">
+<div class="container">
+<h2 class="section-title">What Clients Say</h2>
+<p class="section-subtitle">What the people I've worked with actually say.</p>
 <div class="social-proof-grid" style="margin-bottom:24px;">
 <div class="testi-video-card">
 <div class="testi-video-thumb">
 <div class="testi-play">▶</div>
 <div style="position:absolute;bottom:14px;left:14px;right:14px;z-index:1;">
 <div style="color:rgba(255,255,255,.7);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px;">Video Testimonial</div>
-<div style="color:#fff;font-size:15px;font-weight:700;">Sean Elias — Threecolts / 70K Affiliates</div>
+<div style="color:#fff;font-size:15px;font-weight:700;">Sean Elias. Threecolts / 70K Affiliates</div>
 </div>
 </div>
 <div class="testi-video-body">
@@ -749,7 +1283,7 @@ Swipe to see more options
 <div class="testi-play">▶</div>
 <div style="position:absolute;bottom:14px;left:14px;right:14px;z-index:1;">
 <div style="color:rgba(255,255,255,.7);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px;">Video Testimonial</div>
-<div style="color:#fff;font-size:15px;font-weight:700;">Joe Remington — PPC Professor</div>
+<div style="color:#fff;font-size:15px;font-weight:700;">Joe Remington. PPC Professor</div>
 </div>
 </div>
 <div class="testi-video-body">
@@ -761,15 +1295,15 @@ Swipe to see more options
 </div>
 </div>
 </div>
-<h3 style="font-family:'DM Serif Display',serif;font-size:22px;margin:0 0 6px;">📋 Client Feedback</h3>
+<h3 style="font-family:'DM Serif Display',serif;font-size:22px;margin:0 0 6px;">Client Feedback</h3>
 <p class="section-subtitle" style="margin-bottom:16px;">Direct messages and posts from clients I've worked with.</p>
 <div class="feedback-grid">
 <div class="feedback-card">
 <div class="feedback-header">
 <span class="feedback-platform-badge badge-message">💬 Direct Message</span>
-<span class="feedback-label">SAVA Amsterdam — Notion Project</span>
+<span class="feedback-label">SAVA Amsterdam. Notion Project</span>
 </div>
-<div class="feedback-img-wrap" onclick="openLightbox('sava-feedback.jpg','SAVA Amsterdam — Client Feedback')">
+<div class="feedback-img-wrap" onclick="openLightbox('sava-feedback.jpg','SAVA Amsterdam. Client Feedback')">
 <img src="sava-feedback.jpg" alt="Client feedback from SAVA Amsterdam" loading="lazy" />
 <div class="feedback-img-overlay"><span class="feedback-zoom">🔍 Click to enlarge</span></div>
 </div>
@@ -778,59 +1312,72 @@ Swipe to see more options
 <div class="feedback-card">
 <div class="feedback-header">
 <span class="feedback-platform-badge badge-linkedin">in LinkedIn</span>
-<span class="feedback-label">Yakov — Former Client</span>
+<span class="feedback-label">Yakov. Former Client</span>
 </div>
-<div class="feedback-img-wrap" onclick="openLightbox('yakov-feedback.jpg','Yakov — LinkedIn Post')">
+<div class="feedback-img-wrap" onclick="openLightbox('yakov-feedback.jpg','Yakov. LinkedIn Post')">
 <img src="yakov-feedback.jpg" alt="LinkedIn feedback from Yakov" loading="lazy" />
 <div class="feedback-img-overlay"><span class="feedback-zoom">🔍 Click to enlarge</span></div>
 </div>
-<div class="feedback-caption">LinkedIn post — <a href="https://www.linkedin.com/posts/jyugtan_virtualassistant-digitalserviceprovider-ugcPost-7190863868208771072-QcKw" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700;">View on LinkedIn ↗</a></div>
+<div class="feedback-caption">LinkedIn post. <a href="https://www.linkedin.com/posts/jyugtan_virtualassistant-digitalserviceprovider-ugcPost-7190863868208771072-QcKw" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700;">View on LinkedIn ↗</a></div>
+</div>
 </div>
 </div>
 </section>
 
-<section class="section reveal" id="about">
-<h2 class="section-title">👋 About Me</h2>
-<p class="section-subtitle">A little about how I got started and what keeps me interested in this work.</p>
+<section class="slide section reveal scrollable" id="about">
+<div class="container">
+<h2 class="section-title">About</h2>
+<p class="section-subtitle">How I got started and what I'm focused on now.</p>
 <div class="experience-grid">
 <div class="experience-card">
 <div class="meta">My Story</div>
 <h3>Working remotely since 2021</h3>
-<p>I started working remotely in 2021, and in 2022 I landed my first real project supporting a marketing agency in the United States. Since then everything shifted.</p>
-<p>Over the past few years, I've helped marketing agencies and founders improve operations, organize systems, and support client relationships. Along the way, I've worked with around <strong>10 clients</strong> and indirectly supported <strong>100+ of their clients</strong> through project delivery, systems work, and account management.</p>
-<p>Today, I focus on helping teams save time, streamline processes, and build systems that make day-to-day work easier.</p>
+<p>I started working remotely in 2021. In 2022 I got my first real project with a marketing agency in the US and everything changed from there.</p>
+<p>Since then I've worked directly with around <strong>10 clients</strong>, mostly founders and agency owners. Through their businesses, I've touched <strong>100+ client accounts</strong> across delivery, systems, and ops work.</p>
+<p>Now I focus on working with founders who want things running properly without micromanaging every moving part.</p>
 </div>
 <div class="experience-card">
 <div class="meta">Current Focus</div>
-<h3>What I'm focused on right now</h3>
-<p>My day-to-day work keeps me sharp across client relationships, account continuity, and operational support — which is exactly what I bring to the projects I take on here.</p>
-<p>I'm selectively open to <strong>part-time engagements</strong> where I can make a real impact — whether that's tightening up operations, keeping clients retained, or building systems that actually get used.</p>
+<h3>What I'm working on now</h3>
+<p>My day-to-day work keeps me sharp across client relationships, account continuity, and operational support. which is exactly what I bring to the projects I take on here.</p>
+<p>I take on <strong>project-based and freelance work</strong> when the scope makes sense. whether that's tightening up operations, fixing broken workflows, or building systems people actually use.</p>
 <p>If the scope is right and the timing works, I'd love to connect.</p>
 </div>
 <div class="experience-card">
 <div class="meta">Fun Fact</div>
 <h3>Life outside work</h3>
-<p>I love traveling around the Philippines, especially beach destinations. I enjoy sunsets, good conversations, and ending the day with a cocktail.</p>
-<p>I also love cats and exploring new places around my country. Working remotely lets me do work I enjoy while still experiencing the world around me.</p>
+<p>I travel around the Philippines whenever I get the chance, mostly beach spots. Sunsets, good conversations, and a cocktail at the end of the day.</p>
+<p>I also have cats and love finding new spots to explore locally. Remote work lets me do both.</p>
+</div>
 </div>
 </div>
 </section>
 
-<section class="section reveal" id="contact">
+<section class="slide section reveal" id="contact">
+<div class="container">
 <div class="end-cta">
-<div class="end-cta-eyebrow"><span class="avail-dot"></span> Currently accepting part-time clients</div>
-<h3>Let's build something that actually works.</h3>
-<p>If you need someone who can hold the operations together, keep clients happy, and get things done without hand-holding — let's talk.</p>
+<div class="end-cta-eyebrow"><span class="avail-dot"></span> Open for new projects</div>
+<h3>If it sounds like a fit, let's find out.</h3>
+<p>You've seen the work. If you need someone like me on your team, a 30-minute call is the fastest way to know.</p>
 <div class="cta-row" style="justify-content:center;gap:14px;">
 <a class="btn btn-light" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" style="font-size:15px;padding:14px 22px;">☕ Book a discovery call</a>
 <a class="btn" href="mailto:jane@janeyugtan.com" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2);font-size:15px;padding:14px 22px;">📩 Send me an email</a>
 </div>
-<div class="end-cta-sub">EST hours · Remote · Part-time engagements welcome</div>
+<div class="end-cta-sub">EST hours · Remote · Part-time and project-based</div>
+</div>
+<div class="footer">© 2026 Jane Yugtan. Operations Partner · Project Manager · Systems Designer</div>
 </div>
 </section>
 
-<div class="footer">© 2026 Jane Yugtan — Account Manager | Project Manager | Executive Assistant</div>
-</main>
+</div><!-- /.deck -->
+
+<!-- Slide navigation: dots + controls -->
+<nav class="deck-dots" id="deckDots" aria-label="Slide navigation"></nav>
+<div class="deck-controls" role="group" aria-label="Slide controls">
+<button class="deck-arrow" id="deckPrev" type="button" aria-label="Previous slide">↑</button>
+<span class="deck-counter" id="deckCounter">01 / 09</span>
+<button class="deck-arrow" id="deckNext" type="button" aria-label="Next slide">↓</button>
+</div>
 
 <div class="project-modal" id="introVideoModal" aria-hidden="true">
 <div class="project-modal-card" style="background:linear-gradient(180deg,#0b1f33 0%,#0f4c75 100%);max-width:960px;">
@@ -859,6 +1406,7 @@ Swipe to see more options
 </div>
 
 <script>
+/* ===== Intro video modal ===== */
 const introVideoModal = document.getElementById('introVideoModal');
 const introVideoModalClose = document.getElementById('introVideoModalClose');
 const openIntroVideoEl = document.getElementById('openIntroVideo');
@@ -871,6 +1419,7 @@ openIntroVideoEl?.addEventListener('keydown',(e)=>{if(e.key==='Enter'||e.key==='
 introVideoModalClose?.addEventListener('click',closeIntroVideoModal);
 introVideoModal?.addEventListener('click',(e)=>{if(e.target===introVideoModal)closeIntroVideoModal()});
 
+/* ===== Lightbox ===== */
 const lightbox=document.getElementById('lightbox');
 const lightboxImg=document.getElementById('lightboxImg');
 const lightboxClose=document.getElementById('lightboxClose');
@@ -879,23 +1428,25 @@ function closeLightbox(){lightbox.classList.remove('show');lightbox.setAttribute
 lightboxClose?.addEventListener('click',closeLightbox);
 lightbox?.addEventListener('click',(e)=>{if(e.target===lightbox)closeLightbox()});
 
-const revealObserver=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.classList.add('in-view');revealObserver.unobserve(entry.target)}})},{threshold:0.14});
-document.querySelectorAll('.section.reveal').forEach((s)=>revealObserver.observe(s));
+/* ===== Reveal animation per slide ===== */
+const revealObserver=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.classList.add('in-view');revealObserver.unobserve(entry.target)}})},{threshold:0.06,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.slide:not(.hero)').forEach((s)=>revealObserver.observe(s));
+// Hero is always visible
+const heroSlide=document.querySelector('.slide.hero');if(heroSlide)heroSlide.classList.add('in-view');
 
-const navLinks=document.querySelectorAll('.nav a[data-section]');
-const navObserver=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){navLinks.forEach(a=>a.classList.remove('active'));const active=document.querySelector(`.nav a[data-section="${entry.target.id}"]`);if(active)active.classList.add('active')}})},{threshold:0.3,rootMargin:'-10% 0px -60% 0px'});
-['video-intro','results','services','featured-projects','pricing','testimonials','about'].forEach(id=>{const el=document.getElementById(id);if(el)navObserver.observe(el)});
-
+/* ===== Count-up KPIs ===== */
 const counterObserver=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(!entry.isIntersecting)return;const el=entry.target;if(el.dataset.animated==='true')return;el.dataset.animated='true';const endValue=parseFloat(el.dataset.countTo||'0');const prefix=el.dataset.prefix||'';const suffix=el.dataset.suffix||'';const duration=1400;const startTime=performance.now();const decimals=Number.isInteger(endValue)?0:1;function tick(now){const progress=Math.min((now-startTime)/duration,1);const eased=1-Math.pow(1-progress,3);el.textContent=`${prefix}${(endValue*eased).toLocaleString(undefined,{minimumFractionDigits:decimals,maximumFractionDigits:decimals})}${suffix}`;if(progress<1)requestAnimationFrame(tick)}requestAnimationFrame(tick);counterObserver.unobserve(el)})},{threshold:0.45});
 document.querySelectorAll('.result-kpi[data-count-to]').forEach((c)=>counterObserver.observe(c));
 
-const renewalsMetricCard=document.getElementById('renewalsMetricCard');
+/* ===== Renewals featured-metric callout ===== */
+const renewalsMetricCard=document.getElementById('renewalsMetricCard'); // removed
 const renewalsCallout=document.getElementById('renewalsCallout');
 const renewalsCalloutClose=document.getElementById('renewalsCalloutClose');
-function toggleRenewalsCallout(forceOpen=null){const shouldOpen=forceOpen!==null?forceOpen:!renewalsCallout.classList.contains('show');renewalsCallout.classList.toggle('show',shouldOpen);renewalsMetricCard.classList.toggle('active',shouldOpen);if(shouldOpen)renewalsCallout.scrollIntoView({behavior:'smooth',block:'nearest'})}
-renewalsMetricCard?.addEventListener('click',()=>toggleRenewalsCallout());
-renewalsCalloutClose?.addEventListener('click',()=>toggleRenewalsCallout(false));
+function toggleRenewalsCallout(forceOpen=null){if(!renewalsCallout)return;const shouldOpen=forceOpen!==null?forceOpen:!renewalsCallout.classList.contains('show');renewalsCallout.classList.toggle('show',shouldOpen);if(renewalsMetricCard)renewalsMetricCard.classList.toggle('active',shouldOpen);if(shouldOpen)renewalsCallout.scrollIntoView({behavior:'smooth',block:'nearest'})}
+// renewalsMetricCard?.addEventListener('click',()=>toggleRenewalsCallout());
+// renewalsCalloutClose?.addEventListener('click',()=>toggleRenewalsCallout(false));
 
+/* ===== Pricing carousel ===== */
 const pricingCarousel=document.getElementById('pricingCarousel');
 let autoCarouselInterval=null;
 function loopCarousel(direction){if(!pricingCarousel)return;const cardWidth=332;const maxScroll=pricingCarousel.scrollWidth-pricingCarousel.clientWidth;if(direction==='next'){pricingCarousel.scrollLeft+cardWidth>=maxScroll-10?pricingCarousel.scrollTo({left:0,behavior:'smooth'}):pricingCarousel.scrollBy({left:cardWidth,behavior:'smooth'})}else{pricingCarousel.scrollLeft<=10?pricingCarousel.scrollTo({left:maxScroll,behavior:'smooth'}):pricingCarousel.scrollBy({left:-cardWidth,behavior:'smooth'})}}
@@ -909,13 +1460,14 @@ pricingCarousel?.addEventListener('touchstart',stopAutoCarousel,{passive:true});
 pricingCarousel?.addEventListener('touchend',startAutoCarousel,{passive:true});
 startAutoCarousel();
 
+/* ===== Project / pricing detail modal ===== */
 const projectData={
 'work-hourly':{website:'',preview:'',kicker:'Ways I Work',title:'Hourly Support',summary:'Best for founders and teams who need flexible support across account management, project coordination, operations, or executive support.',stat:'Flexible & part-time',detailTitle:'What this is best for',bullets:['Ongoing support without committing to a full project scope.','Flexible help across operations, delivery, client coordination, and admin-heavy work.','Best fit for agencies and founders who need a reliable right hand.'],tags:['Flexible Support','Operations','Account Management']},
-'work-notion':{website:'',preview:'',kicker:'Ways I Work',title:'Notion System Projects',summary:'Best for teams that need a more structured buildout such as company dashboards, workflows, SOP libraries, or operational systems in Notion.',stat:'Scoped per project',detailTitle:'What this is best for',bullets:['Company-wide Notion workspace organization and system design.','Workflow cleanup, implementation, and better team visibility.','A stronger operating system for growing teams and founders.'],tags:['Notion','Systems Design','Implementation']},
+'work-notion':{website:'',preview:'',kicker:'Ways I Work',title:'Notion System Projects',summary:'Best for teams that need a more structured buildout such as company dashboards, workflows, SOP libraries, or operational systems in Notion.',stat:'Priced per project, scoped on a call',detailTitle:'What this is best for',bullets:['Company-wide Notion workspace organization and system design.','Workflow cleanup, implementation, and better team visibility.','A stronger operating system for growing teams and founders.'],tags:['Notion','Systems Design','Implementation']},
 'work-retainer':{website:'',preview:'',kicker:'Ways I Work',title:'Maintenance & Retainers',summary:'Best for clients who already have systems in place and want ongoing support to maintain, improve, or update them.',stat:'Monthly partnership',detailTitle:'What this is best for',bullets:['Monthly updates and refinements after a project is completed.','Support for teams who want a lighter but ongoing partnership.','Ideal for keeping systems useful as the business grows.'],tags:['Retainer','Optimization','Support']},
 'work-consulting':{website:'',preview:'',kicker:'Ways I Work',title:'Consulting Sessions',summary:'Best for teams that want strategic input, workflow guidance, or a second set of eyes before making bigger operations or systems decisions.',stat:'Per session',detailTitle:'What this is best for',bullets:['A focused strategy session around systems, operations, or process design.','Includes a follow-up SOP guide or action document.','Best for founders who want direction before committing to implementation.'],tags:['Consulting','Strategy','SOP Guide']},
-sava:{website:'https://sava-amsterdam.com/',preview:'https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/',kicker:'Featured Project',title:'SAVA Amsterdam — Company-Wide Notion Dashboard Optimization',summary:'A full workspace optimization concept for an e-commerce company, designed to turn Notion into a cleaner, more scalable operating system across departments.',stat:'Full company Notion system',detailTitle:'What this project focused on',bullets:['Restructured company-wide dashboards across Sales, Customer Support, HR, Supply Chain, and Marketing.','Centralized SOPs, KPIs, references, and team resources into one searchable workspace.','Designed the workspace around founder visibility, cleaner navigation, and easier team adoption.','Improved consistency by creating a layout that supports governance and long-term operational use.'],tags:['E-commerce Ops','Notion Design','Company Systems']},
-whiskey:{website:'https://whiskeylibrary.com/',preview:'https://image.thum.io/get/width/1400/crop/900/noanimate/https://whiskeylibrary.com/',kicker:'Featured Project',title:'Whiskey Library — Affiliate Pipeline & Notion Workflow Build',summary:'A data-driven affiliate operations build focused on generating qualified affiliates, improving visibility, and shaping a revenue pipeline valued at $10,000 in the first 30 days.',stat:'$10K pipeline in 30 days',detailTitle:'What this project focused on',bullets:['Built a Notion-based workflow to support affiliate operations, tracking, and execution visibility.','Created structure around qualified affiliate generation and early-stage pipeline management.','Improved operational follow-through with a cleaner process for onboarding and coordination.','Turned affiliate efforts into a more trackable and systemized growth function.'],tags:['Affiliate Ops','Pipeline Build','Notion Workflow']}
+sava:{website:'https://sava-amsterdam.com/',preview:'https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/',kicker:'Featured Project',title:'SAVA Amsterdam. Company-Wide Notion Dashboard Optimization',summary:'SAVA Amsterdam needed their Notion cleaned up and rebuilt. I restructured the whole workspace so their team could actually use it instead of avoiding it.',stat:'Full company Notion system',detailTitle:'What I focused on',bullets:['Built out department pages for Sales, Support, HR, Supply Chain, and Marketing — all in one place.','Pulled their SOPs, KPIs, and team docs into a workspace that is easy to search and update.','Set up the layout so the founder could see what is happening without having to chase the team.','Built it to last, not just look good on delivery day.'],tags:['E-commerce Ops','Notion Design','Company Systems']},
+whiskey:{website:'https://whiskeylibrary.com/',preview:'https://image.thum.io/get/width/1400/crop/900/noanimate/https://whiskeylibrary.com/',kicker:'Featured Project',title:'Whiskey Library — Affiliate Pipeline & Notion Workflow Build',summary:'Whiskey Library needed an affiliate operation built from scratch. I set up the Notion workflow, found and qualified affiliates, and had a $10K pipeline running inside 30 days.',stat:'$10K pipeline in 30 days',detailTitle:'What I focused on',bullets:['Built the Notion workflow that tracked affiliates, outreach, and progress all in one place.','Found and qualified affiliates, not just collected names.','Set up a clear onboarding process so affiliates did not go cold after signing up.','Turned what was scattered effort into a repeatable, trackable process.'],tags:['Affiliate Ops','Pipeline Build','Notion Workflow']}
 };
 
 const projectModal=document.getElementById('projectModal');
@@ -934,6 +1486,135 @@ document.querySelectorAll('.interactive-project,.work-card').forEach(card=>{card
 projectModalClose?.addEventListener('click',closeProjectModal);
 projectModal?.addEventListener('click',(e)=>{if(e.target===projectModal)closeProjectModal()});
 document.addEventListener('keydown',(e)=>{if(e.key==='Escape'){closeProjectModal();closeIntroVideoModal();closeLightbox()}});
+
+/* ===========================================================
+   SLIDE-DECK NAVIGATION (dots, arrows, counter, progress,
+   keyboard, and top-nav syncing)
+   =========================================================== */
+(function(){
+const deck=document.getElementById('deck');
+const slides=Array.from(deck.querySelectorAll('.slide'));
+const dotsWrap=document.getElementById('deckDots');
+const counter=document.getElementById('deckCounter');
+const progressBar=document.getElementById('deckProgressBar');
+const prevBtn=document.getElementById('deckPrev');
+const nextBtn=document.getElementById('deckNext');
+const navLinks=Array.from(document.querySelectorAll('.nav a[data-section]'));
+const total=slides.length;
+let current=0;
+
+const labels={
+'top':'Intro','video-intro':'Video','results':'Results','services':'Services',
+'featured-projects':'Projects','pricing':'Ways I Work','testimonials':'Testimonials',
+'about':'About','contact':'Contact'
+};
+
+// build dots
+slides.forEach((s,i)=>{
+const b=document.createElement('button');
+b.className='deck-dot';
+b.type='button';
+b.dataset.label=labels[s.id]||('Slide '+(i+1));
+b.setAttribute('aria-label','Go to '+(labels[s.id]||('slide '+(i+1))));
+b.addEventListener('click',()=>goTo(i));
+dotsWrap.appendChild(b);
+});
+const dots=Array.from(dotsWrap.children);
+
+function pad(n){return String(n).padStart(2,'0')}
+
+function setActive(i){
+if(i===current && dots[i] && dots[i].classList.contains('active')) {/* still refresh ui below */}
+// Card-zoom: mark slide in-view for entrance animation
+if(slides[i] && !slides[i].classList.contains('in-view')) slides[i].classList.add('in-view');
+current=i;
+dots.forEach((d,idx)=>d.classList.toggle('active',idx===i));
+counter.textContent=pad(i+1)+' / '+pad(total);
+progressBar.style.transform='scaleX('+((i+1)/total)+')';
+prevBtn.disabled=(i===0);
+nextBtn.disabled=(i===total-1);
+// sync top nav highlight
+const id=slides[i].id;
+navLinks.forEach(a=>a.classList.toggle('active',a.dataset.section===id));
+}
+
+function goTo(i){
+i=Math.max(0,Math.min(total-1,i));
+slides[i].scrollIntoView({behavior:'smooth',block:'start'});
+// optimistic update; scroll handler will confirm
+setActive(i);
+}
+
+// determine the active slide from scroll position (works for
+// both the desktop deck-scroller and the mobile window-scroller)
+let ticking=false;
+function computeActive(){
+const probe=window.innerHeight*0.42;
+let idx=0;
+for(let i=0;i<slides.length;i++){
+if(slides[i].getBoundingClientRect().top<=probe) idx=i;
+}
+if(idx!==current) setActive(idx); else {
+// keep counter/progress fresh even if same index
+counter.textContent=pad(current+1)+' / '+pad(total);
+}
+ticking=false;
+}
+function onScroll(){if(!ticking){ticking=true;requestAnimationFrame(computeActive)}}
+deck.addEventListener('scroll',onScroll,{passive:true});
+window.addEventListener('scroll',onScroll,{passive:true});
+window.addEventListener('resize',onScroll,{passive:true});
+
+// arrows
+prevBtn.addEventListener('click',()=>goTo(current-1));
+nextBtn.addEventListener('click',()=>goTo(current+1));
+
+// keyboard navigation (ignore while a modal is open or while typing)
+document.addEventListener('keydown',(e)=>{
+if(document.body.classList.contains('modal-open'))return;
+const tag=(e.target.tagName||'').toLowerCase();
+if(tag==='input'||tag==='textarea')return;
+if(e.key==='ArrowDown'||e.key==='PageDown'){e.preventDefault();goTo(current+1)}
+else if(e.key==='ArrowUp'||e.key==='PageUp'){e.preventDefault();goTo(current-1)}
+else if(e.key==='Home'){e.preventDefault();goTo(0)}
+else if(e.key==='End'){e.preventDefault();goTo(total-1)}
+});
+
+// in-page hash links (brand logo + top nav) drive the deck
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+a.addEventListener('click',(e)=>{
+const id=a.getAttribute('href').slice(1);
+const idx=slides.findIndex(s=>s.id===id);
+if(idx!==-1){e.preventDefault();goTo(idx)}
+});
+});
+
+// init
+setActive(0);
+window.addEventListener('load',computeActive);
+})();
+
+// Float CTA: hide on hero slide, show on all others
+(function(){
+  const floatCta = document.querySelector('.float-cta');
+  if (!floatCta) return;
+  const heroSlide = document.getElementById('top');
+  const slideObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.target === heroSlide) {
+        document.body.classList.toggle('on-hero', entry.isIntersecting);
+      }
+    });
+  }, { threshold: 0.4 });
+  if (heroSlide) slideObserver.observe(heroSlide);
+})();
+
 </script>
+
+<!-- Floating persistent CTA -->
+<a class="float-cta" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" aria-label="Book a discovery call with Jane">
+  <span class="float-cta-dot"></span>
+  Book a Call
+</a>
 </body>
 </html>
