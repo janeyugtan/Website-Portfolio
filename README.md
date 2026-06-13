@@ -16,7 +16,7 @@
 <meta property="og:image" content="intro-cover.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Jane Yugtan | Operations Partner" />
-<meta name="twitter:description" content="Project Manager, Systems Designer, and Freelance Operations Specialist portfolio." />
+<meta name="twitter:description" content="Operations Partner for founders and agency owners." />
 <meta name="twitter:image" content="intro-cover.jpg" />
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -26,980 +26,268 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet" />
 <style>
-:root{
---navy:#091a2a;
---navy-2:#10293f;
---blue:#0f4c75;
---blue-2:#1d6fa5;
---cyan:#27d3f2;
---slate:#334155;
---muted:#64748b;
---line:#e6eef7;
---white:#ffffff;
---shadow:0 12px 30px rgba(15,76,117,.10);
---shadow-lg:0 24px 60px rgba(9,26,42,.16);
---radius:20px;
---radius-lg:28px;
---max:1180px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-margin:0;
-font-family:'DM Sans', Arial, sans-serif;
-color:var(--navy);
-background:
-radial-gradient(circle at top left, rgba(39,211,242,.08), transparent 24%),
-linear-gradient(180deg, #f8fbff 0%, #ffffff 30%, #f8fbff 100%);
-line-height:1.6;
-}
-body.modal-open{overflow:hidden}
-a{color:var(--blue);text-decoration:none}
-.container{width:min(var(--max), calc(100% - 32px));margin:0 auto}
-.availability-bar{
-background:linear-gradient(90deg, #0f4c75, #1d6fa5);
-color:#fff;text-align:center;padding:10px 16px;
-font-size:14px;font-weight:700;letter-spacing:.2px;
-}
+:root{--navy:#091a2a;--navy-2:#10293f;--blue:#0f4c75;--blue-2:#1d6fa5;--cyan:#27d3f2;--slate:#334155;--muted:#64748b;--line:#e6eef7;--white:#ffffff;--shadow:0 12px 30px rgba(15,76,117,.10);--shadow-lg:0 24px 60px rgba(9,26,42,.16);--radius:20px;--radius-lg:28px;--max:1180px;}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'DM Sans',Arial,sans-serif;color:var(--navy);background:radial-gradient(circle at top left,rgba(39,211,242,.08),transparent 24%),linear-gradient(180deg,#f8fbff 0%,#ffffff 30%,#f8fbff 100%);line-height:1.6}
+body.modal-open{overflow:hidden}a{color:var(--blue);text-decoration:none}
+.container{width:min(var(--max),calc(100% - 32px));margin:0 auto}
+.availability-bar{background:linear-gradient(90deg,#0f4c75,#1d6fa5);color:#fff;text-align:center;padding:10px 16px;font-size:14px;font-weight:700;letter-spacing:.2px}
 .availability-bar span{display:inline-flex;align-items:center;gap:8px}
-.avail-dot{
-width:9px;height:9px;border-radius:50%;background:#27d3f2;display:inline-block;
-animation:pulse 2s ease-in-out infinite;
-}
+.avail-dot{width:9px;height:9px;border-radius:50%;background:#27d3f2;display:inline-block;animation:pulse 2s ease-in-out infinite}
+.avail-link{color:inherit;text-decoration:none;display:block;transition:opacity .18s ease}.avail-link:hover{opacity:.88}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.3)}}
-.topbar{
-position:sticky;top:0;z-index:100;
-background:rgba(255,255,255,.84);backdrop-filter:blur(16px);
-border-bottom:1px solid rgba(230,238,247,.9);
-}
-.topbar-inner{
-width:min(var(--max), calc(100% - 32px));margin:0 auto;
-display:flex;align-items:center;justify-content:space-between;
-gap:16px;padding:12px 0;
-}
-.brand{display:flex;align-items:center;white-space:nowrap}
-.brand a{display:inline-flex;align-items:center}
+.topbar{position:relative;top:auto;z-index:100;background:rgba(255,255,255,.84);backdrop-filter:blur(16px);border-bottom:1px solid rgba(230,238,247,.9)}
+.topbar-inner{width:min(var(--max),calc(100% - 32px));margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.brand{display:flex;align-items:center;white-space:nowrap}.brand a{display:inline-flex;align-items:center}
 .brand-logo{height:54px;width:auto;display:block;filter:drop-shadow(0 6px 16px rgba(15,76,117,.18))}
 .nav{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;font-size:14px}
-.nav a{
-color:var(--muted);font-weight:500;padding:7px 12px;border-radius:999px;
-transition:background .2s ease, color .2s ease, transform .2s ease;
-}
-.nav a:hover{background:#eef6fc;color:var(--blue);transform:translateY(-1px)}
-.nav a.active{background:#eef6fc;color:var(--blue);font-weight:700}
+.nav a{color:var(--muted);font-weight:500;padding:7px 12px;border-radius:999px;transition:background .2s ease,color .2s ease,transform .2s ease}
+.nav a:hover{background:#eef6fc;color:var(--blue);transform:translateY(-1px)}.nav a.active{background:#eef6fc;color:var(--blue);font-weight:700}
+.nav-cta{margin-left:4px;background:var(--navy)!important;color:#fff!important;border-color:transparent!important}
+.nav-cta:hover{background:var(--blue)!important;transform:translateY(-1px)}
+@media(max-width:640px){.nav-cta{display:none}}
 .hero{position:relative;padding:54px 0 30px;overflow:hidden}
-.hero::before{
-content:"";position:absolute;inset:0;
-background:
-radial-gradient(circle at 15% 20%, rgba(39,211,242,.14), transparent 18%),
-radial-gradient(circle at 85% 15%, rgba(29,111,165,.12), transparent 22%),
-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.55) 100%);
-pointer-events:none;
-}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 20%,rgba(39,211,242,.14),transparent 18%),radial-gradient(circle at 85% 15%,rgba(29,111,165,.12),transparent 22%),linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.55) 100%);pointer-events:none}
 .hero-scroll{position:absolute;inset:auto 0 22px 0;overflow:hidden;opacity:.16;pointer-events:none}
-.hero-scroll-track{
-display:flex;gap:28px;width:max-content;
-animation:scrollHero 26s linear infinite;
-font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);
-}
+.hero-scroll-track{display:flex;gap:28px;width:max-content;animation:scrollHero 26s linear infinite;font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
 @keyframes scrollHero{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.hero-card{
-position:relative;z-index:1;
-background:
-radial-gradient(circle at top right, rgba(29,111,165,.15), transparent 28%),
-linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.94));
-border:1px solid var(--line);border-radius:var(--radius-lg);
-box-shadow:var(--shadow-lg);padding:36px;
-display:grid;grid-template-columns:220px 1fr;gap:30px;align-items:center;
-}
+.hero-card{position:relative;z-index:1;background:radial-gradient(circle at top right,rgba(29,111,165,.15),transparent 28%),linear-gradient(180deg,rgba(255,255,255,.98),rgba(255,255,255,.94));border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);padding:36px;display:grid;grid-template-columns:220px 1fr;gap:30px;align-items:center}
 .hero-photo-wrap{position:relative;width:200px;margin:0 auto}
-.hero-photo-wrap::after{
-content:"";position:absolute;inset:-10px;border-radius:50%;
-background:linear-gradient(135deg, rgba(39,211,242,.22), rgba(15,76,117,.10));
-z-index:0;filter:blur(4px);
-}
-.hero-photo{
-position:relative;z-index:1;width:200px;height:200px;border-radius:50%;
-object-fit:cover;border:5px solid var(--blue);display:block;
-box-shadow:0 12px 28px rgba(15,76,117,.18);
-}
-.eyebrow{
-display:inline-flex;align-items:center;gap:8px;padding:8px 14px;
-background:#eef6fc;color:var(--blue);border-radius:999px;
-font-size:13px;font-weight:700;margin-bottom:14px;
-}
-h1{font-family:'DM Serif Display', serif;font-size:clamp(34px, 6vw, 52px);line-height:1.05;margin:0 0 10px}
+.hero-photo-wrap::after{content:"";position:absolute;inset:-10px;border-radius:50%;background:linear-gradient(135deg,rgba(39,211,242,.22),rgba(15,76,117,.10));z-index:0;filter:blur(4px)}
+.hero-photo{position:relative;z-index:1;width:200px;height:200px;border-radius:50%;object-fit:cover;border:5px solid var(--blue);display:block;box-shadow:0 12px 28px rgba(15,76,117,.18)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;background:#eef6fc;color:var(--blue);border-radius:999px;font-size:13px;font-weight:700;margin-bottom:14px}
+h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,6vw,52px);line-height:1.05;margin:0 0 10px}
 .subtitle{font-size:20px;font-weight:700;color:var(--blue);margin-bottom:14px}
 .intro{color:var(--slate);max-width:760px;font-size:17px;margin-bottom:18px}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-.btn{
-display:inline-flex;align-items:center;justify-content:center;
-gap:8px;padding:13px 18px;border-radius:14px;font-weight:700;
-border:1px solid transparent;font-family:'DM Sans', Arial, sans-serif;
-transition:transform .18s ease, box-shadow .18s ease;cursor:pointer;
-}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:14px;font-weight:700;border:1px solid transparent;font-family:'DM Sans',Arial,sans-serif;transition:transform .18s ease,box-shadow .18s ease;cursor:pointer}
 .btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(15,76,117,.14)}
-.btn-primary{background:var(--navy);color:#fff}
-.btn-secondary{background:var(--blue);color:#fff}
-.btn-light{background:#eef6fc;color:var(--blue);border-color:#d9eaf7}
-.section{padding:30px 0}
-.section.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s ease}
-.section.reveal.in-view{opacity:1;transform:translateY(0)}
-.section-title{font-family:'DM Serif Display', serif;font-size:30px;margin:0 0 8px}
+.btn-primary{background:var(--navy);color:#fff}.btn-secondary{background:var(--blue);color:#fff}.btn-light{background:#eef6fc;color:var(--blue);border-color:#d9eaf7}
+.section-title{font-family:'DM Serif Display',serif;font-size:34px;margin:0 0 6px;line-height:1.1}
 .section-subtitle{color:var(--muted);margin:0 0 20px;max-width:840px}
-.video-card,.panel,.project-card,.testimonial-card,.experience-card{
-background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
-}
+.video-card,.panel,.project-card,.experience-card,.testimonial-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
 .video-card{overflow:hidden;max-width:780px;margin:0 auto}
 .video-thumb{position:relative;display:block;background:#edf5fb;cursor:pointer}
 .video-thumb img{width:100%;height:360px;object-fit:cover;display:block;transition:transform .35s ease}
 .video-thumb:hover img{transform:scale(1.02)}
-.play-button{
-position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-font-size:72px;color:white;text-shadow:0 10px 25px rgba(0,0,0,.45);
-transition:transform .25s ease, filter .25s ease;
-}
-.video-thumb::after{
-content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-width:112px;height:112px;border-radius:50%;background:rgba(15,76,117,.18);
-transition:background .25s ease, box-shadow .25s ease, transform .25s ease;
-}
-.video-thumb:hover::after{
-background:rgba(15,76,117,.78);box-shadow:0 0 0 14px rgba(15,76,117,.14);
-transform:translate(-50%,-50%) scale(1.04);
-}
-.video-thumb:hover .play-button{transform:scale(1.08);filter:brightness(1.05)}
-.video-body{padding:24px}
-.results-grid{display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:16px;align-items:stretch}
-.result-card{
-position:relative;overflow:hidden;
-background:linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
-border:1px solid var(--line);border-radius:18px;
-padding:18px;box-shadow:var(--shadow);min-height:210px;
-transition:transform .22s ease, box-shadow .22s ease;
-}
-.result-card::before{
-content:"";position:absolute;top:0;left:0;width:100%;height:5px;
-background:linear-gradient(90deg, var(--blue), var(--cyan));
-}
+.play-button{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:72px;color:white;text-shadow:0 10px 25px rgba(0,0,0,.45);transition:transform .25s ease,filter .25s ease}
+.video-thumb::after{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:112px;height:112px;border-radius:50%;background:rgba(15,76,117,.18);transition:background .25s ease,box-shadow .25s ease,transform .25s ease}
+.video-thumb:hover::after{background:rgba(15,76,117,.78);box-shadow:0 0 0 14px rgba(15,76,117,.14);transform:translate(-50%,-50%) scale(1.04)}
+.video-thumb:hover .play-button{transform:scale(1.08);filter:brightness(1.05)}.video-body{padding:24px}
+.results-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch}
+.result-card{position:relative;overflow:hidden;background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow);min-height:210px;transition:transform .22s ease,box-shadow .22s ease}
+.result-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:5px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
 .result-card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(15,76,117,.14)}
-.result-card:hover .result-kpi{animation:kpiPulse .9s ease-in-out infinite alternate}
-@keyframes kpiPulse{0%{transform:scale(1)}100%{transform:scale(1.08)}}
-.result-card.featured-metric{cursor:pointer}
-.result-card.featured-metric.active{transform:scale(1.02);box-shadow:0 20px 40px rgba(15,76,117,.18);border-color:#b9d7ec}
-.result-card.featured-metric.active::after{
-content:"";position:absolute;inset:14px;border:2px solid rgba(15,76,117,.16);
-border-radius:14px;pointer-events:none;animation:pulseRing 1.3s ease-out infinite;
-}
-@keyframes pulseRing{0%{transform:scale(.96);opacity:.8}100%{transform:scale(1.04);opacity:0}}
 .result-kpi{font-size:34px;font-weight:800;color:var(--blue);margin-bottom:10px;line-height:1}
-.result-label{font-size:15px;font-weight:700;margin-bottom:8px}
-.result-copy{color:var(--slate);font-size:14px}
-.metric-callout{
-margin-top:18px;
-background:linear-gradient(135deg, #0f4c75 0%, #1d6fa5 100%);
-color:white;border-radius:22px;box-shadow:0 18px 40px rgba(15,76,117,.20);
-display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:center;
-opacity:0;transform:translateY(12px) scale(.98);
-max-height:0;overflow:hidden;pointer-events:none;
-transition:opacity .28s ease, transform .28s ease, max-height .32s ease, padding .32s ease, margin .32s ease;
-padding-top:0;padding-bottom:0;margin-bottom:0;
-}
-.metric-callout.show{opacity:1;transform:translateY(0) scale(1);max-height:260px;pointer-events:auto;padding:24px;margin-bottom:4px}
-.metric-icon{
-width:96px;height:96px;border-radius:50%;background:rgba(255,255,255,.14);
-display:flex;align-items:center;justify-content:center;font-size:42px;margin:0 auto;
-box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);
-}
-.metric-close{
-margin-top:14px;display:inline-flex;align-items:center;gap:8px;
-padding:10px 14px;border-radius:12px;background:rgba(255,255,255,.14);
-border:1px solid rgba(255,255,255,.18);color:white;font-weight:700;cursor:pointer;
-font-family:'DM Sans', Arial, sans-serif;
-}
+.result-label{font-size:15px;font-weight:700;margin-bottom:8px}.result-copy{color:var(--slate);font-size:14px;line-height:1.65}
 .services-grid,.projects-grid,.experience-grid{display:grid;gap:16px}
-.services-grid{grid-template-columns:repeat(3,1fr)}
-.projects-grid{grid-template-columns:repeat(2,1fr)}
-.experience-grid{grid-template-columns:repeat(3,1fr)}
-.panel,.project-card,.testimonial-card,.experience-card{padding:22px}
-.panel h3,.project-card h3,.testimonial-card h3,.experience-card h3{margin-top:0;margin-bottom:10px;font-size:22px}
+.services-grid{grid-template-columns:repeat(3,1fr)}.projects-grid{grid-template-columns:repeat(2,1fr)}.experience-grid{grid-template-columns:repeat(3,1fr)}
+.panel,.project-card,.experience-card,.testimonial-card{padding:22px}
+.panel h3,.project-card h3,.experience-card h3{margin-top:0;margin-bottom:10px;font-size:20px;line-height:1.25}
 .panel ul,.experience-card ul{padding-left:18px;margin-bottom:0;color:var(--slate)}
+.panel ul li,.experience-card p,.testi-quote{font-size:15px;line-height:1.65}
 .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.tag{
-padding:7px 12px;background:#eef6fc;border:1px solid #d7e8f5;
-color:var(--blue);border-radius:999px;font-size:12px;font-weight:700;
-}
-.project-kicker,.meta{
-color:var(--blue);font-weight:700;font-size:13px;
-letter-spacing:.2px;text-transform:uppercase;margin-bottom:10px;
-}
-.project-card.interactive-project,.work-card{
-position:relative;cursor:pointer;
-transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;overflow:hidden;
-}
-.project-card.interactive-project::after,.work-card::after{
-content:"Click to expand";position:absolute;top:16px;right:16px;
-background:#eef6fc;color:var(--blue);border:1px solid #d7e8f5;
-padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;
-}
-.project-card.interactive-project:hover,.work-card:hover{
-transform:translateY(-8px) scale(1.01);
-box-shadow:0 24px 48px rgba(15,76,117,.18);border-color:#bfd9ec;
-}
-.project-card.float-card{transition:transform .28s ease, box-shadow .28s ease, border-color .28s ease}
-.project-card.float-card:hover{
-transform:translateY(-10px) rotate(-.2deg);
-box-shadow:0 28px 56px rgba(15,76,117,.18);border-color:#b8d8ec;
-}
-.browser-frame{
-background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);
-border-radius:22px;overflow:hidden;box-shadow:0 20px 42px rgba(5,15,28,.22);
-}
-.browser-top{
-display:flex;align-items:center;gap:10px;padding:12px 16px;
-background:rgba(255,255,255,.10);border-bottom:1px solid rgba(255,255,255,.12);
-}
-.browser-dots{display:flex;gap:6px}
-.browser-dots span{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.5);display:block}
-.browser-url{
-flex:1;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.10);
-color:rgba(255,255,255,.92);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-}
-.browser-preview{
-position:relative;aspect-ratio:16/10;
-background-size:cover;background-position:top center;overflow:hidden;
-}
-.browser-preview::before{
-content:"";position:absolute;inset:0;
-background:linear-gradient(180deg, rgba(8,25,44,.08) 0%, rgba(8,25,44,.16) 100%);
-}
-.browser-preview::after{
-content:"";position:absolute;inset:12px;
-border:1px solid rgba(255,255,255,.18);border-radius:16px;pointer-events:none;
-}
-.preview-overlay{
-position:absolute;left:18px;right:18px;bottom:18px;z-index:1;
-display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
-}
-.preview-badge{
-display:inline-flex;align-items:center;gap:8px;padding:9px 12px;border-radius:999px;
-background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);
-color:#fff;font-size:12px;font-weight:700;
-}
+.tag{padding:7px 12px;background:#eef6fc;border:1px solid #d7e8f5;color:var(--blue);border-radius:999px;font-size:12px;font-weight:700}
+.project-kicker,.meta{color:var(--blue);font-weight:700;font-size:13px;letter-spacing:.2px;text-transform:uppercase;margin-bottom:10px}
+.project-card.interactive-project,.work-card{position:relative;cursor:pointer;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;overflow:hidden}
+.project-card.interactive-project::after,.work-card::after{content:"Click to expand";position:absolute;top:16px;right:16px;background:#eef6fc;color:var(--blue);border:1px solid #d7e8f5;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
+.project-card.interactive-project:hover,.work-card:hover{transform:translateY(-8px) scale(1.01);box-shadow:0 24px 48px rgba(15,76,117,.18);border-color:#bfd9ec}
+.project-card.float-card{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.project-card.float-card:hover{transform:translateY(-10px) rotate(-.2deg);box-shadow:0 28px 56px rgba(15,76,117,.18);border-color:#b8d8ec}
+.browser-frame{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:22px;overflow:hidden;box-shadow:0 20px 42px rgba(5,15,28,.22)}
+.browser-top{display:flex;align-items:center;gap:10px;padding:12px 16px;background:rgba(255,255,255,.10);border-bottom:1px solid rgba(255,255,255,.12)}
+.browser-dots{display:flex;gap:6px}.browser-dots span{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.5);display:block}
+.browser-url{flex:1;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.10);color:rgba(255,255,255,.92);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.browser-preview{position:relative;aspect-ratio:16/10;background-size:cover;background-position:top center;overflow:hidden}
+.browser-preview::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,25,44,.08) 0%,rgba(8,25,44,.16) 100%)}
+.browser-preview::after{content:"";position:absolute;inset:12px;border:1px solid rgba(255,255,255,.18);border-radius:16px;pointer-events:none}
+.preview-overlay{position:absolute;left:18px;right:18px;bottom:18px;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.preview-badge{display:inline-flex;align-items:center;gap:8px;padding:9px 12px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:12px;font-weight:700}
 .carousel-shell{position:relative}
-.carousel-arrow{
-position:absolute;top:50%;transform:translateY(-50%);z-index:3;
-width:48px;height:48px;border-radius:50%;
-border:1px solid rgba(15,76,117,.10);background:rgba(255,255,255,.94);
-box-shadow:0 14px 30px rgba(15,76,117,.16);color:var(--blue);
-font-size:24px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;
-cursor:pointer;transition:transform .18s ease, box-shadow .18s ease;
-}
-.carousel-arrow:hover{transform:translateY(-50%) scale(1.06);box-shadow:0 18px 36px rgba(15,76,117,.22)}
-.carousel-arrow.left{left:14px}
-.carousel-arrow.right{right:14px}
-.auto-carousel{scroll-behavior:smooth}
-.auto-carousel:hover{cursor:grab}
-.swipe-hint{
-display:none;text-align:center;color:var(--muted);
-font-size:13px;font-weight:500;margin-top:10px;
-gap:6px;align-items:center;justify-content:center;
-}
-.pricing-note{
-display:inline-flex;align-items:center;gap:8px;
-background:#eef6fc;border:1px solid #d7e8f5;color:var(--blue);
-border-radius:999px;padding:8px 16px;font-size:13px;font-weight:700;margin-top:10px;
-}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:48px;height:48px;border-radius:50%;border:1px solid rgba(15,76,117,.10);background:rgba(255,255,255,.94);box-shadow:0 14px 30px rgba(15,76,117,.16);color:var(--blue);font-size:24px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.carousel-arrow:hover{transform:translateY(-50%) scale(1.06);box-shadow:0 18px 36px rgba(15,76,117,.22)}.carousel-arrow.left{left:14px}.carousel-arrow.right{right:14px}
+.auto-carousel{scroll-behavior:smooth}.auto-carousel:hover{cursor:grab}
+.swipe-hint{display:none;text-align:center;color:var(--muted);font-size:13px;font-weight:500;margin-top:10px;gap:6px;align-items:center;justify-content:center}
+.pricing-note{display:inline-flex;align-items:center;gap:8px;background:#eef6fc;border:1px solid #d7e8f5;color:var(--blue);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:700;margin-top:10px}
 .social-proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-.testi-video-card{
-background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
-box-shadow:var(--shadow);overflow:hidden;transition:transform .22s ease, box-shadow .22s ease;
-}
+.testi-video-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;transition:transform .22s ease,box-shadow .22s ease}
 .testi-video-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(15,76,117,.14)}
-.testi-video-thumb{
-position:relative;background:linear-gradient(135deg, #0f4c75, #1d6fa5);
-height:160px;display:flex;align-items:center;justify-content:center;
-cursor:pointer;overflow:hidden;
-}
-.testi-video-thumb::before{
-content:"";position:absolute;inset:0;
-background:linear-gradient(135deg, rgba(39,211,242,.15), transparent);
-}
-.testi-play{
-width:64px;height:64px;border-radius:50%;
-background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.4);
-display:flex;align-items:center;justify-content:center;
-font-size:28px;color:#fff;position:relative;z-index:1;
-transition:transform .2s ease, background .2s ease;
-}
-.testi-video-thumb:hover .testi-play{transform:scale(1.1);background:rgba(255,255,255,.28)}
-.testi-video-body{padding:18px}
+.testi-video-thumb{position:relative;background:linear-gradient(135deg,#0f4c75,#1d6fa5);height:160px;display:flex;align-items:center;justify-content:center;cursor:pointer;overflow:hidden}
+.testi-video-thumb::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(39,211,242,.15),transparent)}
+.testi-play{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;font-size:28px;color:#fff;position:relative;z-index:1;transition:transform .2s ease,background .2s ease}
+.testi-video-thumb:hover .testi-play{transform:scale(1.1);background:rgba(255,255,255,.28)}.testi-video-body{padding:18px}
 .testi-stars{color:#f59e0b;font-size:14px;margin-bottom:8px;letter-spacing:2px}
-.testi-quote{font-size:15px;color:var(--slate);font-style:italic;line-height:1.5}
 .feedback-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.feedback-card{
-background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
-box-shadow:var(--shadow);overflow:hidden;transition:transform .22s ease, box-shadow .22s ease;
-}
+.feedback-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;transition:transform .22s ease,box-shadow .22s ease}
 .feedback-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(15,76,117,.14)}
-.feedback-header{
-padding:14px 18px 10px;display:flex;align-items:center;gap:10px;
-border-bottom:1px solid var(--line);
-}
-.feedback-platform-badge{
-display:inline-flex;align-items:center;gap:6px;padding:5px 10px;
-border-radius:999px;font-size:12px;font-weight:700;
-}
-.badge-linkedin{background:#e8f4fd;color:#0077b5;border:1px solid #cce4f5}
-.badge-message{background:#eef6fc;color:var(--blue);border:1px solid #d7e8f5}
+.feedback-header{padding:14px 18px 10px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--line)}
+.feedback-platform-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;font-size:12px;font-weight:700}
+.badge-linkedin{background:#e8f4fd;color:#0077b5;border:1px solid #cce4f5}.badge-message{background:#eef6fc;color:var(--blue);border:1px solid #d7e8f5}
 .feedback-label{font-size:13px;font-weight:700;color:var(--navy)}
 .feedback-img-wrap{position:relative;overflow:hidden;cursor:pointer}
 .feedback-img-wrap img{width:100%;display:block;transition:transform .3s ease;object-fit:cover}
 .feedback-img-wrap:hover img{transform:scale(1.02)}
-.feedback-img-overlay{
-position:absolute;inset:0;background:rgba(9,26,42,0);
-display:flex;align-items:center;justify-content:center;transition:background .2s ease;
-}
+.feedback-img-overlay{position:absolute;inset:0;background:rgba(9,26,42,0);display:flex;align-items:center;justify-content:center;transition:background .2s ease}
 .feedback-img-wrap:hover .feedback-img-overlay{background:rgba(9,26,42,.18)}
-.feedback-zoom{
-opacity:0;transform:scale(.8);background:rgba(255,255,255,.9);color:var(--blue);
-padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;
-transition:opacity .2s ease, transform .2s ease;
-}
+.feedback-zoom{opacity:0;transform:scale(.8);background:rgba(255,255,255,.9);color:var(--blue);padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;transition:opacity .2s ease,transform .2s ease}
 .feedback-img-wrap:hover .feedback-zoom{opacity:1;transform:scale(1)}
 .feedback-caption{padding:12px 18px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
-.quote{font-size:16px;color:var(--slate);margin-bottom:16px}
 .footer{text-align:center;color:var(--muted);padding:24px 0 0;font-size:14px}
-.project-modal{
-position:fixed;inset:0;background:rgba(9,19,35,.72);backdrop-filter:blur(10px);
-display:flex;align-items:center;justify-content:center;
-padding:24px;z-index:999;opacity:0;pointer-events:none;transition:opacity .28s ease;
-}
+.project-modal{position:fixed;inset:0;background:rgba(9,19,35,.72);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;padding:24px;z-index:999;opacity:0;pointer-events:none;transition:opacity .28s ease}
 .project-modal.show{opacity:1;pointer-events:auto}
-.project-modal-card{
-width:min(980px,100%);max-height:90vh;overflow:auto;border-radius:28px;
-background:linear-gradient(180deg, #0f4c75 0%, #0c3c5d 100%);color:white;
-box-shadow:0 30px 80px rgba(5,15,28,.35);
-transform:scale(.92);transition:transform .28s ease;position:relative;padding:34px;
-}
+.project-modal-card{width:min(980px,100%);max-height:90vh;overflow:auto;border-radius:28px;background:linear-gradient(180deg,#0f4c75 0%,#0c3c5d 100%);color:white;box-shadow:0 30px 80px rgba(5,15,28,.35);transform:scale(.92);transition:transform .28s ease;position:relative;padding:34px}
 .project-modal.show .project-modal-card{transform:scale(1)}
-.project-modal-close{
-position:absolute;top:18px;right:18px;width:44px;height:44px;border-radius:50%;
-border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.10);
-color:white;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;
-font-family:'DM Sans', Arial, sans-serif;
-}
+.project-modal-close{position:absolute;top:18px;right:18px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.10);color:white;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:'DM Sans',Arial,sans-serif}
 .project-modal-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:start}
-.project-modal-kicker{
-display:inline-flex;align-items:center;gap:8px;
-background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.14);
-padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;
-letter-spacing:.4px;text-transform:uppercase;margin-bottom:14px;
-}
+.project-modal-kicker{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;margin-bottom:14px}
 .project-modal h3{margin:0 0 10px;font-size:clamp(28px,4vw,42px);line-height:1.05}
-.project-modal p,.project-modal li{color:rgba(255,255,255,.92)}
-.project-modal ul{margin:18px 0 0;padding-left:20px}
-.project-modal-panel{
-background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);
-border-radius:20px;padding:20px;
-}
+.project-modal p,.project-modal li{color:rgba(255,255,255,.92)}.project-modal ul{margin:18px 0 0;padding-left:20px}
+.project-modal-panel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:20px}
 .project-modal-stat{font-size:38px;font-weight:800;line-height:1;margin-bottom:8px}
 .project-modal .tag{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.16);color:#fff}
-.lightbox{
-position:fixed;inset:0;background:rgba(0,0,0,.88);backdrop-filter:blur(8px);
-display:flex;align-items:center;justify-content:center;
-padding:24px;z-index:1000;opacity:0;pointer-events:none;transition:opacity .22s ease;
-}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:24px;z-index:1000;opacity:0;pointer-events:none;transition:opacity .22s ease}
 .lightbox.show{opacity:1;pointer-events:auto}
-.lightbox img{
-max-width:min(900px,100%);max-height:85vh;border-radius:16px;
-box-shadow:0 30px 80px rgba(0,0,0,.5);
-transform:scale(.94);transition:transform .22s ease;
-}
+.lightbox img{max-width:min(900px,100%);max-height:85vh;border-radius:16px;box-shadow:0 30px 80px rgba(0,0,0,.5);transform:scale(.94);transition:transform .22s ease}
 .lightbox.show img{transform:scale(1)}
-.lightbox-close{
-position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:50%;
-background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
-color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;
-font-family:'DM Sans', Arial, sans-serif;
-}
-.end-cta{
-margin:0 auto;max-width:860px;text-align:center;
-padding:48px 36px;
-background:linear-gradient(135deg, #091a2a 0%, #0f4c75 60%, #1d6fa5 100%);
-color:white;border-radius:28px;
-box-shadow:0 24px 60px rgba(15,76,117,.22);
-position:relative;overflow:hidden;
-}
-.end-cta::before{
-content:"";position:absolute;inset:0;
-background:radial-gradient(circle at 80% 20%, rgba(39,211,242,.12), transparent 40%);
-pointer-events:none;
-}
-.end-cta-eyebrow{
-display:inline-flex;align-items:center;gap:8px;
-background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);
-color:rgba(255,255,255,.9);border-radius:999px;
-padding:7px 14px;font-size:13px;font-weight:700;margin-bottom:16px;
-}
-.end-cta h3{
-font-family:'DM Serif Display', serif;
-margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1;
-}
+.lightbox-close{position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:'DM Sans',Arial,sans-serif}
+.end-cta{margin:0 auto;max-width:860px;text-align:center;padding:48px 36px;background:linear-gradient(135deg,#091a2a 0%,#0f4c75 60%,#1d6fa5 100%);color:white;border-radius:28px;box-shadow:0 24px 60px rgba(15,76,117,.22);position:relative;overflow:hidden}
+.end-cta::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(39,211,242,.12),transparent 40%);pointer-events:none}
+.end-cta-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);color:rgba(255,255,255,.9);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;margin-bottom:16px}
+.end-cta h3{font-family:'DM Serif Display',serif;margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.1}
 .end-cta p{margin:0 0 24px;color:rgba(255,255,255,.85);font-size:17px}
 .end-cta-sub{margin-top:20px;font-size:13px;color:rgba(255,255,255,.55)}
-
-/* =========================================================
-   PRESENTATION / SLIDE-DECK LAYOUT
-   Each <section> now behaves like a full-screen slide.
-   ========================================================= */
 html,body{height:100%}
 body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
-.topbar{position:relative;top:auto}
-.deck{
-position:relative;flex:1 1 auto;
-overflow-y:auto;overflow-x:hidden;
-scroll-snap-type:y mandatory;scroll-behavior:smooth;
-scrollbar-width:none;-ms-overflow-style:none;
-}
+.deck{position:relative;flex:1 1 auto;overflow-y:auto;overflow-x:hidden;scroll-snap-type:y mandatory;scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none}
 .deck::-webkit-scrollbar{width:0;height:0;display:none}
-.slide{
-min-height:100%;
-scroll-snap-align:start;scroll-snap-stop:always;
-display:flex;flex-direction:column;justify-content:center;
-padding:clamp(26px,5vh,54px) 0;position:relative;
-}
-.slide>.container{width:min(var(--max), calc(100% - 32px));margin:0 auto}
+.slide{min-height:100%;scroll-snap-align:start;scroll-snap-stop:always;display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,5vh,54px) 0;position:relative}
+.slide>.container{width:min(var(--max),calc(100% - 32px));margin:0 auto}
 .slide.scrollable{justify-content:flex-start}
-/* progress bar sits on the topbar's lower edge */
 .deck-progress{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:rgba(15,76,117,.08);overflow:hidden;z-index:5}
 .deck-progress-bar{height:100%;width:100%;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--blue),var(--cyan));transition:transform .45s cubic-bezier(.2,.7,.2,1)}
-/* right-side slide dots */
 .deck-dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:85;display:flex;flex-direction:column;gap:13px;align-items:flex-end}
 .deck-dot{position:relative;width:11px;height:11px;border-radius:50%;border:1.6px solid rgba(15,76,117,.4);background:transparent;cursor:pointer;padding:0;transition:transform .25s ease,background .25s ease,border-color .25s ease}
 .deck-dot:hover{border-color:var(--blue)}
 .deck-dot.active{background:var(--blue);border-color:var(--blue);transform:scale(1.35);box-shadow:0 0 0 4px rgba(15,76,117,.12)}
 .deck-dot::after{content:attr(data-label);position:absolute;right:22px;top:50%;transform:translateY(-50%) translateX(6px);white-space:nowrap;background:var(--navy);color:#fff;font-size:11px;font-weight:700;padding:5px 9px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease}
 .deck-dot:hover::after{opacity:1;transform:translateY(-50%) translateX(0)}
-/* bottom-right controls */
 .deck-controls{position:fixed;right:20px;bottom:20px;z-index:85;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:999px;padding:7px;box-shadow:var(--shadow)}
 .deck-arrow{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--blue);font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .18s ease,background .18s ease,color .18s ease;font-family:'DM Sans',Arial,sans-serif}
-.deck-arrow:hover:not(:disabled){background:var(--blue);color:#fff;transform:scale(1.06)}
-.deck-arrow:disabled{opacity:.35;cursor:default}
+.deck-arrow:hover:not(:disabled){background:var(--blue);color:#fff;transform:scale(1.06)}.deck-arrow:disabled{opacity:.35;cursor:default}
 .deck-counter{font-variant-numeric:tabular-nums;font-weight:800;color:var(--blue);font-size:13px;min-width:62px;text-align:center;letter-spacing:.06em}
-/* scroll hint on the hero */
 .scroll-hint{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:4px;color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;animation:hintFloat 2.4s ease-in-out infinite}
 .scroll-hint svg{width:18px;height:18px}
 @keyframes hintFloat{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
-.slide.hero .hero-card{animation:heroIn .8s cubic-bezier(.2,.7,.2,1) both}
-@keyframes heroIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.slide.hero .hero-card{animation:heroIn .9s cubic-bezier(.16,1,.3,1) both}
+@keyframes heroIn{from{opacity:0;transform:translateY(36px) scale(.92);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
+.slide:not(.hero){opacity:0;transform:scale(.88) translateY(56px);transform-origin:center 60%;filter:blur(10px);transition:opacity .85s cubic-bezier(.16,1,.3,1),transform .85s cubic-bezier(.16,1,.3,1),filter .65s ease}
+.slide.in-view{opacity:1;transform:scale(1) translateY(0);filter:blur(0px)}
+.slide.hero{opacity:1;transform:none;filter:none}
+.slide:not(.hero) .section-title{opacity:0;transform:translateX(-28px);transition:opacity .65s cubic-bezier(.16,1,.3,1) .2s,transform .65s cubic-bezier(.16,1,.3,1) .2s}
+.slide.in-view .section-title{opacity:1;transform:none}
+.slide:not(.hero) .section-subtitle{opacity:0;transform:translateY(14px);transition:opacity .55s ease .32s,transform .55s ease .32s}
+.slide.in-view .section-subtitle{opacity:1;transform:none}
+.slide:not(.hero) .results-grid,.slide:not(.hero) .services-grid,.slide:not(.hero) .projects-grid,.slide:not(.hero) .video-card,.slide:not(.hero) .carousel-shell,.slide:not(.hero) .social-proof-grid,.slide:not(.hero) .feedback-grid,.slide:not(.hero) .experience-grid,.slide:not(.hero) .end-cta{opacity:0;transform:translateY(24px);transition:opacity .6s ease .38s,transform .6s ease .38s}
+.slide.in-view .results-grid,.slide.in-view .services-grid,.slide.in-view .projects-grid,.slide.in-view .video-card,.slide.in-view .carousel-shell,.slide.in-view .social-proof-grid,.slide.in-view .feedback-grid,.slide.in-view .experience-grid,.slide.in-view .end-cta{opacity:1;transform:none}
+.slide:not(.hero) .result-card{opacity:0;transform:translateY(20px);transition:opacity .45s ease,transform .45s ease}
+.slide.in-view .result-card:nth-child(1){opacity:1;transform:none;transition-delay:.20s}.slide.in-view .result-card:nth-child(2){opacity:1;transform:none;transition-delay:.26s}.slide.in-view .result-card:nth-child(3){opacity:1;transform:none;transition-delay:.32s}.slide.in-view .result-card:nth-child(4){opacity:1;transform:none;transition-delay:.38s}.slide.in-view .result-card:nth-child(5){opacity:1;transform:none;transition-delay:.44s}.slide.in-view .result-card:nth-child(6){opacity:1;transform:none;transition-delay:.50s}.slide.in-view .result-card:nth-child(7){opacity:1;transform:none;transition-delay:.56s}.slide.in-view .result-card:nth-child(8){opacity:1;transform:none;transition-delay:.62s}
+.slide:not(.hero) .experience-card{opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s ease}
+.slide.in-view .experience-card:nth-child(1){opacity:1;transform:none;transition-delay:.24s}.slide.in-view .experience-card:nth-child(2){opacity:1;transform:none;transition-delay:.34s}.slide.in-view .experience-card:nth-child(3){opacity:1;transform:none;transition-delay:.44s}
+.slide:not(.hero) .testi-video-card,.slide:not(.hero) .feedback-card{opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s ease}
+.slide.in-view .testi-video-card:nth-child(1){opacity:1;transform:none;transition-delay:.22s}.slide.in-view .testi-video-card:nth-child(2){opacity:1;transform:none;transition-delay:.34s}.slide.in-view .feedback-card:nth-child(1){opacity:1;transform:none;transition-delay:.28s}.slide.in-view .feedback-card:nth-child(2){opacity:1;transform:none;transition-delay:.40s}
+@media(max-width:768px){.slide:not(.hero){opacity:0;transform:translateY(24px);filter:none;transition:opacity .55s ease,transform .55s ease}.slide.in-view{opacity:1;transform:none;filter:none}.slide:not(.hero) .section-title,.slide:not(.hero) .section-subtitle,.slide:not(.hero) .results-grid,.slide:not(.hero) .services-grid,.slide:not(.hero) .projects-grid,.slide:not(.hero) .video-card,.slide:not(.hero) .carousel-shell,.slide:not(.hero) .social-proof-grid,.slide:not(.hero) .feedback-grid,.slide:not(.hero) .experience-grid,.slide:not(.hero) .end-cta,.slide:not(.hero) .result-card,.slide:not(.hero) .experience-card,.slide:not(.hero) .testi-video-card,.slide:not(.hero) .feedback-card{opacity:1!important;transform:none!important;transition:none!important}}
+.slide.hero.dark-slide{background:var(--navy)}
+.slide.hero .hero-scroll-track{color:rgba(255,255,255,.18)}
+.hero-hook{position:relative;z-index:1;text-align:center;margin-bottom:32px}
+.hook-line{font-family:'DM Serif Display',serif;font-size:clamp(36px,6.5vw,74px);line-height:1.02;letter-spacing:-.02em;color:#fff;margin:0;display:block}
+.hook-accent{color:var(--cyan);font-style:italic}
+.slide.hero .hero-card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.10);box-shadow:0 24px 60px rgba(0,0,0,.25)}
+.slide.hero .hero-photo{border-color:var(--cyan)}.slide.hero .hero-photo-wrap::after{background:linear-gradient(135deg,rgba(39,211,242,.3),rgba(15,76,117,.15))}
+.slide.hero h1{color:#fff}.slide.hero .subtitle{color:var(--cyan)}.slide.hero .intro{color:rgba(255,255,255,.8)}
+.hero-eyebrow{background:rgba(255,255,255,.08)!important;color:rgba(255,255,255,.75)!important;border:1px solid rgba(255,255,255,.12)!important}
+.btn-hero-primary{background:#fff;color:var(--navy);border-color:transparent}.btn-hero-primary:hover{box-shadow:0 10px 28px rgba(255,255,255,.15)}
+.btn-hero-light{background:rgba(255,255,255,.10);color:#fff;border-color:rgba(255,255,255,.18)}.btn-hero-light:hover{background:rgba(255,255,255,.18)}
+.btn-hero-ghost{background:transparent;color:rgba(255,255,255,.65);border-color:rgba(255,255,255,.18)}.btn-hero-ghost:hover{color:#fff;border-color:rgba(255,255,255,.4)}
+.slide.hero .scroll-hint{color:rgba(255,255,255,.35)}
+.hero-jumps{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.10)}
+.jump-label{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);white-space:nowrap}
+.jump-link{font-size:12px;font-weight:700;color:rgba(255,255,255,.6);padding:5px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);transition:color .18s ease,background .18s ease,border-color .18s ease;text-decoration:none;white-space:nowrap}
+.jump-link:hover{color:#fff;background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.28)}
+.slide.dark-slide:not(.hero){background:#0a1c2e}
+.slide.dark-slide:not(.hero) .section-title{color:#fff}.slide.dark-slide:not(.hero) .section-subtitle{color:rgba(255,255,255,.55)}
+.slide.dark-slide .result-card{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.08)}
+.slide.dark-slide .result-card::before{background:linear-gradient(90deg,var(--cyan),var(--blue-2))}
+.slide.dark-slide .result-card:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.15);transform:translateY(-4px);box-shadow:0 18px 36px rgba(0,0,0,.25)}
+.slide.dark-slide .result-kpi{color:var(--cyan)}.slide.dark-slide .result-label{color:#fff}.slide.dark-slide .result-copy{color:rgba(255,255,255,.6)}
+.slide.dark-slide:not(.hero) .section-title::before{color:var(--cyan)}
+.slide:not(.hero){counter-increment:slide-num}html{counter-reset:slide-num}
+.slide:not(.hero) .section-title::before{content:"0" counter(slide-num);display:block;font-family:'DM Sans',Arial,sans-serif;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin-bottom:8px;opacity:.7}
+.float-cta{position:fixed;bottom:24px;left:24px;z-index:600;display:inline-flex;align-items:center;gap:8px;padding:11px 20px;background:var(--navy);color:#fff;font-size:13px;font-weight:700;font-family:'DM Sans',Arial,sans-serif;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(9,26,42,.28);transition:transform .18s ease,box-shadow .18s ease,background .18s ease,opacity .3s ease;border:1px solid rgba(255,255,255,.10)}
+.float-cta:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(9,26,42,.36);background:var(--blue);color:#fff}
+.float-cta-dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex-shrink:0;animation:pulse 2s ease-in-out infinite}
+.on-hero .float-cta{opacity:0;pointer-events:none}
+.slide.dark-slide .experience-card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.10);box-shadow:0 12px 30px rgba(0,0,0,.20)}
+.slide.dark-slide .experience-card h3{color:#fff}
+.slide.dark-slide .experience-card p,.slide.dark-slide .experience-card strong{color:rgba(255,255,255,.80)}
+.slide.dark-slide .experience-card .meta{color:var(--cyan);opacity:1}
+.life-strip-label{font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);opacity:.75;margin:36px 0 16px}
+.life-photos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:8px}
+.life-photo-card{border-radius:16px;overflow:hidden;position:relative;cursor:default;box-shadow:0 8px 32px rgba(0,0,0,.35);transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s ease}
+.life-photo-card:hover{transform:translateY(-6px) scale(1.01);box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.life-photo-wrap{position:relative;overflow:hidden}
+.life-photo-wrap img{width:100%;height:auto;display:block;transition:transform .55s cubic-bezier(.16,1,.3,1)}
+.life-photo-card:hover .life-photo-wrap img{transform:scale(1.08)}
+.life-photo-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(9,15,26,.08) 0%,rgba(9,15,26,.10) 40%,rgba(9,15,26,.75) 75%,rgba(9,15,26,.95) 100%);pointer-events:none;z-index:1}
+.life-photo-caption{position:absolute;bottom:0;left:0;right:0;padding:20px 16px 16px;z-index:2;transform:translateY(3px);transition:transform .3s ease}
+.life-photo-card:hover .life-photo-caption{transform:translateY(0)}
+.life-photo-caption strong{display:block;color:#fff;font-size:13px;font-weight:700;margin-bottom:3px;line-height:1.3;font-family:'DM Sans',Arial,sans-serif}
+.life-photo-caption span{color:rgba(255,255,255,.65);font-size:12px;line-height:1.5;display:block;font-family:'DM Sans',Arial,sans-serif}
+.life-photo-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),var(--blue-2));z-index:3;opacity:0;transition:opacity .25s ease}
+.life-photo-card:hover::before{opacity:1}
+.slide:not(.hero) .life-photo-card{opacity:0;transform:scale(.92) translateY(20px);transition:opacity .55s ease,transform .55s cubic-bezier(.16,1,.3,1)}
+.slide.in-view .life-photo-card:nth-child(1){opacity:1;transform:none;transition-delay:.18s}.slide.in-view .life-photo-card:nth-child(2){opacity:1;transform:none;transition-delay:.25s}.slide.in-view .life-photo-card:nth-child(3){opacity:1;transform:none;transition-delay:.32s}.slide.in-view .life-photo-card:nth-child(4){opacity:1;transform:none;transition-delay:.39s}.slide.in-view .life-photo-card:nth-child(5){opacity:1;transform:none;transition-delay:.46s}.slide.in-view .life-photo-card:nth-child(6){opacity:1;transform:none;transition-delay:.53s}
+@media(max-width:980px){.hero-card{grid-template-columns:1fr;text-align:center}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.services-grid,.projects-grid,.experience-grid{grid-template-columns:1fr}.social-proof-grid,.feedback-grid{grid-template-columns:1fr}.cta-row{justify-content:center}.topbar-inner{flex-direction:column;align-items:flex-start}.nav{justify-content:flex-start}.carousel-arrow{display:none}.swipe-hint{display:flex}.project-modal-grid{grid-template-columns:1fr}.deck-dots{display:none}.hero-jumps{display:none}}
+@media(max-width:860px){.life-photos-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){html,body{height:auto}body{display:block;overflow:auto}.deck{overflow:visible;scroll-snap-type:none;flex:none}.slide{min-height:auto;scroll-snap-align:none;scroll-snap-stop:normal;scroll-margin-top:96px;padding:30px 0;justify-content:flex-start}.deck-controls{right:12px;bottom:12px}.scroll-hint{display:none}.slide:not(.hero) .life-photo-card{opacity:1!important;transform:none!important;transition:none!important}}
+@media(max-width:640px){.hero-card{padding:22px;border-radius:22px}.video-thumb img{height:240px}.results-grid{grid-template-columns:1fr}.section-title{font-size:26px}.project-modal-card{padding:24px}.brand-logo{height:42px}.nav{gap:4px}.nav a{padding:6px 8px;font-size:13px}.end-cta{padding:32px 20px}.hook-line{font-size:32px}.hero-hook{margin-bottom:20px}.float-cta{font-size:12px;padding:9px 16px}.float-cta-dot{display:none}.life-photos-grid{grid-template-columns:1fr}}
 
-@media (max-width:980px){
-.hero-card{grid-template-columns:1fr;text-align:center}
-.results-grid{grid-template-columns:repeat(2, minmax(0, 1fr))}
-.services-grid,.projects-grid,.experience-grid{grid-template-columns:1fr}
-.social-proof-grid,.feedback-grid{grid-template-columns:1fr}
-.cta-row{justify-content:center}
-.topbar-inner{flex-direction:column;align-items:flex-start}
-.nav{justify-content:flex-start}
-.carousel-arrow{display:none}
-.swipe-hint{display:flex}
-.metric-callout,.project-modal-grid{grid-template-columns:1fr}
-.deck-dots{display:none}
-}
-@media (max-width:768px){
-/* On phones, fall back to a normal, reliable scrolling page */
-html,body{height:auto}
-body{display:block;overflow:auto}
-.topbar{position:sticky;top:0}
-.deck{overflow:visible;scroll-snap-type:none;flex:none}
-.slide{min-height:auto;scroll-snap-align:none;scroll-snap-stop:normal;scroll-margin-top:96px;padding:30px 0;justify-content:flex-start}
-.deck-controls{right:12px;bottom:12px}
-.scroll-hint{display:none}
-}
-@media (max-width:640px){
-.hero{padding-top:26px}
-.hero-card{padding:22px;border-radius:22px}
-.video-thumb img{height:240px}
-.results-grid{grid-template-columns:1fr}
-.section-title{font-size:26px}
-.project-modal-card{padding:24px}
-.metric-callout.show{padding:20px}
-.brand-logo{height:42px}
-.nav{gap:4px}
-.nav a{padding:6px 8px;font-size:13px}
-.end-cta{padding:32px 20px}
-}
-
-/* ══════════════════════════════════════════════════════════
-   CARD-ZOOM SCROLL EFFECT
-   Each slide scales + blurs in like a card coming forward.
-   Mirrors the brandalchemy.io-style entrance feel.
-   ══════════════════════════════════════════════════════════ */
-
-/* Initial state: slide is "behind" the screen */
-.slide:not(.hero) {
-  opacity: 0;
-  transform: scale(0.88) translateY(56px);
-  transform-origin: center 60%;
-  filter: blur(10px);
-  transition:
-    opacity   0.85s cubic-bezier(.16,1,.3,1),
-    transform 0.85s cubic-bezier(.16,1,.3,1),
-    filter    0.65s ease;
-}
-
-/* Active/in-view: card zooms to the foreground */
-.slide.in-view {
-  opacity: 1;
-  transform: scale(1) translateY(0);
-  filter: blur(0px);
-}
-
-/* Hero gets its own entrance (already visible on load) */
-.slide.hero {
-  opacity: 1;
-  transform: none;
-  filter: none;
-}
-
-/* Stagger slide children when card zooms in */
-.slide:not(.hero) .section-title {
-  opacity: 0;
-  transform: translateX(-28px);
-  transition: opacity .65s cubic-bezier(.16,1,.3,1) .2s,
-              transform .65s cubic-bezier(.16,1,.3,1) .2s;
-}
-.slide.in-view .section-title {
-  opacity: 1; transform: none;
-}
-
-.slide:not(.hero) .section-subtitle {
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity .55s ease .32s, transform .55s ease .32s;
-}
-.slide.in-view .section-subtitle {
-  opacity: 1; transform: none;
-}
-
-/* Content grids/blocks */
-.slide:not(.hero) .results-grid,
-.slide:not(.hero) .services-grid,
-.slide:not(.hero) .projects-grid,
-.slide:not(.hero) .video-card,
-.slide:not(.hero) .carousel-shell,
-.slide:not(.hero) .social-proof-grid,
-.slide:not(.hero) .feedback-grid,
-.slide:not(.hero) .experience-grid,
-.slide:not(.hero) .end-cta {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity .6s ease .38s, transform .6s ease .38s;
-}
-.slide.in-view .results-grid,
-.slide.in-view .services-grid,
-.slide.in-view .projects-grid,
-.slide.in-view .video-card,
-.slide.in-view .carousel-shell,
-.slide.in-view .social-proof-grid,
-.slide.in-view .feedback-grid,
-.slide.in-view .experience-grid,
-.slide.in-view .end-cta {
-  opacity: 1; transform: none;
-}
-
-/* Result cards — individual stagger */
-.slide:not(.hero) .result-card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity .45s ease, transform .45s ease;
-}
-.slide.in-view .result-card:nth-child(1){opacity:1;transform:none;transition-delay:.20s}
-.slide.in-view .result-card:nth-child(2){opacity:1;transform:none;transition-delay:.26s}
-.slide.in-view .result-card:nth-child(3){opacity:1;transform:none;transition-delay:.32s}
-.slide.in-view .result-card:nth-child(4){opacity:1;transform:none;transition-delay:.38s}
-.slide.in-view .result-card:nth-child(5){opacity:1;transform:none;transition-delay:.44s}
-.slide.in-view .result-card:nth-child(6){opacity:1;transform:none;transition-delay:.50s}
-.slide.in-view .result-card:nth-child(7){opacity:1;transform:none;transition-delay:.56s}
-.slide.in-view .result-card:nth-child(8){opacity:1;transform:none;transition-delay:.62s}
-
-/* Experience cards stagger */
-.slide:not(.hero) .experience-card {
-  opacity: 0; transform: translateY(22px);
-  transition: opacity .5s ease, transform .5s ease;
-}
-.slide.in-view .experience-card:nth-child(1){opacity:1;transform:none;transition-delay:.24s}
-.slide.in-view .experience-card:nth-child(2){opacity:1;transform:none;transition-delay:.34s}
-.slide.in-view .experience-card:nth-child(3){opacity:1;transform:none;transition-delay:.44s}
-
-/* Testimonial + feedback cards stagger */
-.slide:not(.hero) .testi-video-card,
-.slide:not(.hero) .feedback-card {
-  opacity: 0; transform: translateY(22px);
-  transition: opacity .5s ease, transform .5s ease;
-}
-.slide.in-view .testi-video-card:nth-child(1){opacity:1;transform:none;transition-delay:.22s}
-.slide.in-view .testi-video-card:nth-child(2){opacity:1;transform:none;transition-delay:.34s}
-.slide.in-view .feedback-card:nth-child(1){opacity:1;transform:none;transition-delay:.28s}
-.slide.in-view .feedback-card:nth-child(2){opacity:1;transform:none;transition-delay:.40s}
-
-/* Mobile: simpler reveal, no blur/scale (performance) */
-@media (max-width: 768px) {
-  .slide:not(.hero) {
-    opacity: 0;
-    transform: translateY(24px);
-    filter: none;
-    transition: opacity .55s ease, transform .55s ease;
-  }
-  .slide.in-view {
-    opacity: 1;
-    transform: none;
-    filter: none;
-  }
-  /* Cancel child animations on mobile */
-  .slide:not(.hero) .section-title,
-  .slide:not(.hero) .section-subtitle,
-  .slide:not(.hero) .results-grid,
-  .slide:not(.hero) .services-grid,
-  .slide:not(.hero) .projects-grid,
-  .slide:not(.hero) .video-card,
-  .slide:not(.hero) .carousel-shell,
-  .slide:not(.hero) .social-proof-grid,
-  .slide:not(.hero) .feedback-grid,
-  .slide:not(.hero) .experience-grid,
-  .slide:not(.hero) .end-cta,
-  .slide:not(.hero) .result-card,
-  .slide:not(.hero) .experience-card,
-  .slide:not(.hero) .testi-video-card,
-  .slide:not(.hero) .feedback-card {
-    opacity: 1 !important; transform: none !important; transition: none !important;
-  }
-}
-
-
-/* ══════════════════════════════════════════════════════
-   DARK HERO — careyjames.co energy
-   ══════════════════════════════════════════════════════ */
-
-.slide.hero.dark-slide {
-  background: var(--navy);
-}
-
-/* ticker on dark bg */
-.slide.hero .hero-scroll-track { color: rgba(255,255,255,.18); }
-
-/* Hook headline */
-.hero-hook {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  margin-bottom: 32px;
-}
-.hook-line {
-  font-family: 'DM Serif Display', serif;
-  font-size: clamp(36px, 6.5vw, 74px);
-  line-height: 1.02;
-  letter-spacing: -0.02em;
-  color: #fff;
-  margin: 0;
-  display: block;
-}
-.hook-accent {
-  color: var(--cyan);
-  font-style: italic;
-}
-
-/* Hero card — glass on dark */
-.slide.hero .hero-card {
-  background: rgba(255,255,255,.06);
-  border-color: rgba(255,255,255,.10);
-  box-shadow: 0 24px 60px rgba(0,0,0,.25);
-}
-.slide.hero .hero-photo { border-color: var(--cyan); }
-.slide.hero .hero-photo-wrap::after {
-  background: linear-gradient(135deg, rgba(39,211,242,.3), rgba(15,76,117,.15));
-}
-
-/* Text on dark */
-.slide.hero h1 { color: #fff; }
-.slide.hero .subtitle { color: var(--cyan); }
-.slide.hero .intro { color: rgba(255,255,255,.8); }
-.hero-eyebrow {
-  background: rgba(255,255,255,.08) !important;
-  color: rgba(255,255,255,.75) !important;
-  border: 1px solid rgba(255,255,255,.12) !important;
-}
-
-/* Dark hero buttons */
-.btn-hero-primary {
-  background: #fff;
-  color: var(--navy);
-  border-color: transparent;
-}
-.btn-hero-primary:hover { box-shadow: 0 10px 28px rgba(255,255,255,.15); }
-.btn-hero-light {
-  background: rgba(255,255,255,.10);
-  color: #fff;
-  border-color: rgba(255,255,255,.18);
-}
-.btn-hero-light:hover { background: rgba(255,255,255,.18); }
-.btn-hero-ghost {
-  background: transparent;
-  color: rgba(255,255,255,.65);
-  border-color: rgba(255,255,255,.18);
-}
-.btn-hero-ghost:hover { color: #fff; border-color: rgba(255,255,255,.4); }
-
-/* Scroll hint on dark */
-.slide.hero .scroll-hint { color: rgba(255,255,255,.35); }
-
-/* Jump-to quick links */
-.hero-jumps {
+/* Photo lightbox hint */
+.life-photo-wrap[onclick]::before {
+  content: '⤢';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 4;
+  background: rgba(9,15,26,.55);
+  color: rgba(255,255,255,.8);
+  font-size: 14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 20px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255,255,255,.10);
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .2s ease;
+  backdrop-filter: blur(4px);
 }
-.jump-label {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,.4);
-  white-space: nowrap;
+.life-photo-wrap[onclick]:hover::before {
+  opacity: 1;
 }
-.jump-link {
-  font-size: 12px;
-  font-weight: 700;
-  color: rgba(255,255,255,.6);
-  padding: 5px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.06);
-  transition: color .18s ease, background .18s ease, border-color .18s ease;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.jump-link:hover {
-  color: #fff;
-  background: rgba(255,255,255,.14);
-  border-color: rgba(255,255,255,.28);
-}
-
-
-/* ══════════════════════════════════════════════════════
-   DARK RESULTS SECTION — metrics pop on dark
-   ══════════════════════════════════════════════════════ */
-
-.slide.dark-slide:not(.hero) {
-  background: #0a1c2e;
-}
-.slide.dark-slide:not(.hero) .section-title { color: #fff; }
-.slide.dark-slide:not(.hero) .section-subtitle { color: rgba(255,255,255,.55); }
-
-.slide.dark-slide .result-card {
-  background: rgba(255,255,255,.05);
-  border-color: rgba(255,255,255,.08);
-}
-.slide.dark-slide .result-card::before {
-  background: linear-gradient(90deg, var(--cyan), var(--blue-2));
-}
-.slide.dark-slide .result-card:hover {
-  background: rgba(255,255,255,.09);
-  border-color: rgba(255,255,255,.15);
-  transform: translateY(-4px);
-  box-shadow: 0 18px 36px rgba(0,0,0,.25);
-}
-.slide.dark-slide .result-kpi { color: var(--cyan); }
-.slide.dark-slide .result-label { color: #fff; }
-.slide.dark-slide .result-copy { color: rgba(255,255,255,.6); }
-
-/* section counter number on dark slide */
-.slide.dark-slide:not(.hero) .section-title::before { color: var(--cyan); }
-
-
-/* ══════════════════════════════════════════════════════
-   SECTION NUMBERS — editorial like careyjames.co
-   ══════════════════════════════════════════════════════ */
-
-.slide:not(.hero) { counter-increment: slide-num; }
-html { counter-reset: slide-num; }
-
-.slide:not(.hero) .section-title::before {
-  content: "0" counter(slide-num);
-  display: block;
-  font-family: 'DM Sans', Arial, sans-serif;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-  color: var(--blue);
-  margin-bottom: 8px;
-  opacity: .7;
-}
-
-
-/* ══════════════════════════════════════════════════════
-   FLOATING BOOK-A-CALL BUTTON
-   ══════════════════════════════════════════════════════ */
-
-.float-cta {
-  position: fixed;
-  bottom: 24px;
-  left: 24px;
-  z-index: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 11px 20px;
-  background: var(--navy);
-  color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  font-family: 'DM Sans', Arial, sans-serif;
-  border-radius: 999px;
-  text-decoration: none;
-  box-shadow: 0 8px 24px rgba(9,26,42,.28);
-  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
-  border: 1px solid rgba(255,255,255,.10);
-}
-.float-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 36px rgba(9,26,42,.36);
-  background: var(--blue);
-  color: #fff;
-}
-.float-cta-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--cyan);
-  flex-shrink: 0;
-  animation: pulse 2s ease-in-out infinite;
-}
-
-/* Hide float-cta on hero (Book a Call button already there) */
-.on-hero .float-cta { opacity: 0; pointer-events: none; transition: opacity .3s ease; }
-.float-cta { transition: transform .18s ease, box-shadow .18s ease, background .18s ease, opacity .3s ease; }
-
-
-/* ══════════════════════════════════════════════════════
-   NAV CTA BUTTON
-   ══════════════════════════════════════════════════════ */
-
-.nav-cta {
-  margin-left: 4px;
-  background: var(--navy) !important;
-  color: #fff !important;
-  border-color: transparent !important;
-}
-.nav-cta:hover {
-  background: var(--blue) !important;
-  transform: translateY(-1px);
-}
-/* Hide on smallest screens */
-@media (max-width: 640px) { .nav-cta { display: none; } }
-
-
-/* ══════════════════════════════════════════════════════
-   SECTION READABILITY IMPROVEMENTS
-   ══════════════════════════════════════════════════════ */
-
-/* Bigger, cleaner section title */
-.section-title {
-  font-size: 34px;
-  margin: 0 0 6px;
-  line-height: 1.1;
-}
-
-/* Slightly larger body text for readability */
-.result-copy, .panel ul li, .experience-card p, .testi-quote {
-  font-size: 15px;
-  line-height: 1.65;
-}
-
-/* Cleaner panel headers */
-.panel h3, .experience-card h3 {
-  font-size: 20px;
-  line-height: 1.25;
-}
-
-/* ══════════════════════════════════════════════════════
-   RESPONSIVE ADJUSTMENTS
-   ══════════════════════════════════════════════════════ */
-
-@media (max-width: 980px) {
-  .hook-line { font-size: clamp(30px, 8vw, 52px); }
-  .hero-jumps { display: none; } /* nav dots cover this on tablet */
-  .float-cta { bottom: 16px; left: 16px; }
-}
-@media (max-width: 640px) {
-  .hook-line { font-size: 32px; }
-  .hero-hook { margin-bottom: 20px; }
-  .float-cta { font-size: 12px; padding: 9px 16px; }
-  .float-cta-dot { display: none; }
-}
-
-.avail-link {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-  transition: opacity .18s ease;
-}
-.avail-link:hover { opacity: .88; }
 </style>
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Jane Yugtan",
-  "url": "https://janeyugtan.com",
-  "image": "https://janeyugtan.github.io/Website-Portfolio/jy-linkedin.jpeg",
-  "jobTitle": "Operations Partner, Project Manager, Systems Designer",
-  "description": "Jane Yugtan is an Operations Partner for founders and agency owners. She runs project management, builds Notion systems, and sets up automations so businesses run without constant hand-holding. Based in the Philippines, working remotely with US clients.",
-  "worksFor": {"@type": "Organization", "name": "Self-Employed / Freelance"},
-  "knowsAbout": ["Project Management", "Notion Systems", "Workflow Automation", "Operations Design", "SOP Creation", "Business Systems"],
-  "nationality": "Filipino",
-  "sameAs": ["https://www.linkedin.com/in/jyugtan/"],
-  "contactPoint": {"@type": "ContactPoint", "email": "jane@janeyugtan.com", "contactType": "Business Inquiries"}
-}
-
-// Float CTA: hide on hero slide, show on all others
-(function(){
-  const floatCta = document.querySelector('.float-cta');
-  if (!floatCta) return;
-  const heroSlide = document.getElementById('top');
-  const slideObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.target === heroSlide) {
-        document.body.classList.toggle('on-hero', entry.isIntersecting);
-      }
-    });
-  }, { threshold: 0.4 });
-  if (heroSlide) slideObserver.observe(heroSlide);
-})();
-
+{"@context":"https://schema.org","@type":"Person","name":"Jane Yugtan","url":"https://janeyugtan.com","image":"https://janeyugtan.github.io/Website-Portfolio/jy-linkedin.jpeg","jobTitle":"Operations Partner, Project Manager, Systems Designer","description":"Jane Yugtan is an Operations Partner for founders and agency owners. Based in the Philippines, working remotely with US clients.","worksFor":{"@type":"Organization","name":"Self-Employed / Freelance"},"knowsAbout":["Project Management","Notion Systems","Workflow Automation","Operations Design","SOP Creation"],"nationality":"Filipino","sameAs":["https://www.linkedin.com/in/jyugtan/"],"contactPoint":{"@type":"ContactPoint","email":"jane@janeyugtan.com","contactType":"Business Inquiries"}}
 </script>
 </head>
 <body>
-
 <div class="availability-bar">
 <a href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" class="avail-link">
-  <span><span class="avail-dot"></span>Messy ops? Want to buy back your time? Book a call and let's see if we're a fit.</span>
+<span><span class="avail-dot"></span>Messy ops? Want to buy back your time? Book a call and let's see if we're a fit.</span>
 </a>
 </div>
-
 <div class="topbar">
 <div class="topbar-inner">
-<div class="brand">
-<a href="#top" aria-label="Jane Yugtan home">
-<img src="own-website-logo.png" alt="Jane Yugtan logo" class="brand-logo">
-</a>
-</div>
+<div class="brand"><a href="#top" aria-label="Jane Yugtan home"><img src="own-website-logo.png" alt="Jane Yugtan logo" class="brand-logo"></a></div>
 <nav class="nav" id="mainNav">
 <a href="#video-intro" data-section="video-intro">Video</a>
 <a href="#results" data-section="results">Results</a>
@@ -1013,65 +301,56 @@ html { counter-reset: slide-num; }
 </div>
 <div class="deck-progress"><div class="deck-progress-bar" id="deckProgressBar"></div></div>
 </div>
-
 <div class="deck" id="deck">
-
 <section class="slide hero dark-slide" id="top">
 <div class="container">
-<div class="hero-scroll">
-<div class="hero-scroll-track">
+<div class="hero-scroll"><div class="hero-scroll-track">
 <span>Project Management</span><span>Notion Systems</span><span>Workflow Automation</span><span>Systems Design</span>
 <span>Project Delivery</span><span>Operations</span><span>Project Management</span><span>Notion Systems</span>
 <span>Workflow Automation</span><span>Systems Design</span><span>Project Delivery</span><span>Operations</span>
-</div>
-</div>
+</div></div>
 <div class="hero-hook">
-  <p class="hook-line">I run the backend.</p>
-  <p class="hook-line hook-accent">You run the business.</p>
+<p class="hook-line">I run the backend.</p>
+<p class="hook-line hook-accent">You run the business.</p>
 </div>
 <div class="hero-card">
-  <div class="hero-photo-wrap">
-    <img class="hero-photo" src="jy-linkedin.jpeg" width="200" height="200" alt="Portrait of Jane Yugtan" />
-  </div>
-  <div>
-    <div class="eyebrow hero-eyebrow">Project Management • Notion Systems • Automation</div>
-    <h1>Jane Yugtan</h1>
-    <div class="subtitle">Operations Partner · Project Manager · Systems Designer</div>
-    <p class="intro">I help founders and agencies get organised, move faster, and stop dropping the ball on delivery. Project management, Notion builds, and workflow automation. No babysitting.</p>
-    <div class="cta-row">
-      <a class="btn btn-hero-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick call</a>
-      <a class="btn btn-hero-light" href="mailto:jane@janeyugtan.com">📩 Email Me</a>
-      <a class="btn btn-hero-ghost" href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener">LinkedIn ↗</a>
-    </div>
-    <div class="hero-jumps">
-      <span class="jump-label">Jump to:</span>
-      <a class="jump-link" href="#results">Results</a>
-      <a class="jump-link" href="#featured-projects">Projects</a>
-      <a class="jump-link" href="#pricing">Ways I Work</a>
-      <a class="jump-link" href="#testimonials">Testimonials</a>
-    </div>
-  </div>
+<div class="hero-photo-wrap"><img class="hero-photo" src="jy-linkedin.jpeg" width="200" height="200" alt="Portrait of Jane Yugtan" /></div>
+<div>
+<div class="eyebrow hero-eyebrow">Project Management • Notion Systems • Automation</div>
+<h1>Jane Yugtan</h1>
+<div class="subtitle">Operations Partner · Project Manager · Systems Designer</div>
+<p class="intro">I help founders and agencies get organised, move faster, and stop dropping the ball on delivery. Project management, Notion builds, and workflow automation. No babysitting.</p>
+<div class="cta-row">
+<a class="btn btn-hero-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick call</a>
+<a class="btn btn-hero-light" href="mailto:jane@janeyugtan.com">📩 Email Me</a>
+<a class="btn btn-hero-ghost" href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn btn-hero-ghost" href="https://www.instagram.com/ljane_hy/" target="_blank" rel="noopener">Instagram ↗</a>
+</div>
+<div class="hero-jumps">
+<span class="jump-label">Jump to:</span>
+<a class="jump-link" href="#results">Results</a>
+<a class="jump-link" href="#featured-projects">Projects</a>
+<a class="jump-link" href="#pricing">Ways I Work</a>
+<a class="jump-link" href="#testimonials">Testimonials</a>
 </div>
 </div>
-<div class="scroll-hint" aria-hidden="true">
-Scroll
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
 </div>
+</div>
+<div class="scroll-hint" aria-hidden="true">Scroll<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
 </section>
-
 <section class="slide section reveal" id="video-intro">
 <div class="container">
 <h2 class="section-title">Meet Jane</h2>
-<p class="section-subtitle">This short introduction gives you a quick overview of my work, the teams I support, and what you'll find in this portfolio.</p>
+<p class="section-subtitle">A quick walk-through of who I am, the type of work I do, and what you will find here.</p>
 <div class="video-card">
-<div class="video-thumb" id="openIntroVideo" role="button" tabindex="0" aria-label="Watch Jane's introduction video">
+<div class="video-thumb" id="openIntroVideo" role="button" tabindex="0" aria-label="Watch Jane introduction video">
 <img src="intro-cover.jpg" alt="Jane Yugtan introduction video cover" width="780" height="360" />
-<div class="play-button">▶</div>
+<div class="play-button">&#9654;</div>
 <div style="position:absolute;left:50%;top:calc(50% + 72px);transform:translateX(-50%);z-index:2;background:rgba(15,76,117,0.9);color:#fff;padding:10px 16px;border-radius:999px;font-size:13px;font-weight:700;box-shadow:0 8px 20px rgba(15,76,117,0.25);white-space:nowrap;">Watch My Introduction</div>
 </div>
 <div class="video-body">
 <h3>A quick intro to my work</h3>
-<p>In this short video, I share a quick overview of my background, the work I do across project management, systems design, and operations, and what you can expect to see throughout this portfolio.</p>
+<p>In this short video, I walk through my background, the work I do across project management, systems design, and operations, and what you can expect to see in this portfolio.</p>
 </div>
 </div>
 </div>
@@ -1080,86 +359,28 @@ Scroll
 <section class="slide section reveal scrollable dark-slide" id="results">
 <div class="container">
 <h2 class="section-title">Results at a Glance</h2>
-<p class="section-subtitle">Real numbers from real work. Here's what I've gotten done for the founders and agencies I've worked with.</p>
+<p class="section-subtitle">Real numbers from real work. Here is what I have gotten done for the founders and agencies I have worked with.</p>
 <div class="results-grid">
-<div class="result-card">
-<div class="result-kpi" data-count-to="10" data-suffix="+">10+</div>
-<div class="result-label">Clients directly served</div>
-<div class="result-copy">Direct, hands-on work with founders and agency owners across different industries, mostly US-based, fully remote.</div>
-</div>
-<div class="result-card">
-<div class="result-kpi" data-count-to="135" data-suffix="K+">135K+</div>
-<div class="result-label">Global subscribers reached</div>
-<div class="result-copy">Part of the operations team behind subscriber-facing communications for a global B2C audience.</div>
-</div>
-<div class="result-card">
-<div class="result-kpi" data-count-to="10" data-prefix="$" data-suffix="K">$10K</div>
-<div class="result-label">Affiliate pipeline in 30 days</div>
-<div class="result-copy">Built a qualified affiliate pipeline and supporting workflow for Whiskey Library in the first 30 days.</div>
-</div>
-<div class="result-card">
-<div class="result-kpi" data-count-to="87" data-prefix="-" data-suffix="%">-87%</div>
-<div class="result-label">Onboarding time reduced</div>
-<div class="result-copy">Reduced onboarding from about 3 days to 4 hours through clearer systems and automation.</div>
-</div>
-<div class="result-card">
-<div class="result-kpi" data-count-to="95" data-suffix="%">95%</div>
-<div class="result-label">Workflow satisfaction improvement</div>
-<div class="result-copy">Improved team experience through clearer systems and processes people actually follow.</div>
-</div>
-<div class="result-card">
-<div class="result-kpi" data-count-to="30" data-prefix="-" data-suffix="%">-30%</div>
-<div class="result-label">Project delays reduced</div>
-<div class="result-copy">Improved execution through QA gates, clearer process control, and more predictable delivery.</div>
-</div>
-<div class="result-card">
-<div class="result-kpi">6–10 hrs</div>
-<div class="result-label">CEO time saved weekly</div>
-<div class="result-copy">Clearer systems, structured workflows, and automation freed up leadership time each week.</div>
-</div>
-<div class="result-card">
-<div class="result-kpi" data-count-to="100" data-suffix="+">100+</div>
-<div class="result-label">Client accounts supported</div>
-<div class="result-copy">Supported project delivery and operations across agencies, founders, and the teams they served.</div>
+<div class="result-card"><div class="result-kpi" data-count-to="10" data-suffix="+">10+</div><div class="result-label">Clients directly served</div><div class="result-copy">Direct work with founders and agency owners across industries. Mostly US-based, fully remote.</div></div>
+<div class="result-card"><div class="result-kpi" data-count-to="135" data-suffix="K+">135K+</div><div class="result-label">Global subscribers reached</div><div class="result-copy">Part of the operations team behind subscriber-facing communications for a global B2C audience.</div></div>
+<div class="result-card"><div class="result-kpi" data-count-to="10" data-prefix="$" data-suffix="K">$10K</div><div class="result-label">Affiliate pipeline in 30 days</div><div class="result-copy">Built a qualified affiliate pipeline and supporting workflow for Whiskey Library in the first 30 days.</div></div>
+<div class="result-card"><div class="result-kpi" data-count-to="87" data-prefix="-" data-suffix="%">-87%</div><div class="result-label">Onboarding time reduced</div><div class="result-copy">Reduced onboarding from about 3 days to 4 hours through clearer systems and automation.</div></div>
+<div class="result-card"><div class="result-kpi" data-count-to="95" data-suffix="%">95%</div><div class="result-label">Workflow satisfaction improvement</div><div class="result-copy">Improved team experience through clearer systems and processes people actually follow.</div></div>
+<div class="result-card"><div class="result-kpi" data-count-to="30" data-prefix="-" data-suffix="%">-30%</div><div class="result-label">Project delays reduced</div><div class="result-copy">Improved execution through QA gates, clearer process control, and more predictable delivery.</div></div>
+<div class="result-card"><div class="result-kpi">6-10 hrs</div><div class="result-label">CEO time saved weekly</div><div class="result-copy">Structured workflows and automation freed up leadership time each week.</div></div>
+<div class="result-card"><div class="result-kpi" data-count-to="100" data-suffix="+">100+</div><div class="result-label">Client accounts supported</div><div class="result-copy">Supported project delivery and operations across agencies, founders, and the teams they serve.</div></div>
 </div>
 </div>
-  </section>
+</section>
 
 <section class="slide section reveal" id="services">
 <div class="container">
 <h2 class="section-title">Services</h2>
-<p class="section-subtitle">Three things I'm good at and actually enjoy doing.</p>
+<p class="section-subtitle">Three things I am good at and actually enjoy doing.</p>
 <div class="services-grid">
-<div class="panel">
-<div class="project-kicker">Delivery</div>
-<h3>Project Management &amp; Delivery</h3>
-<ul>
-<li>Running projects start to finish so nothing falls through</li>
-<li>Writing SOPs and setting up QA checkpoints that people follow</li>
-<li>Being the reliable second-in-command when founders are stretched thin</li>
-</ul>
-<div class="tag-row"><span class="tag">Project Management</span><span class="tag">SOPs</span><span class="tag">Process Design</span></div>
-</div>
-<div class="panel">
-<div class="project-kicker">Systems</div>
-<h3>Notion Dashboard Optimization</h3>
-<ul>
-<li>Company-wide Notion setup and dashboard cleanup</li>
-<li>Department dashboards, SOP libraries, and KPI systems</li>
-<li>Built so people actually open them, not shelved after handover</li>
-</ul>
-<div class="tag-row"><span class="tag">Notion Systems</span><span class="tag">Operations</span><span class="tag">Documentation</span></div>
-</div>
-<div class="panel">
-<div class="project-kicker">Automation</div>
-<h3>AI + Automation for Agencies & B2B Teams</h3>
-<ul>
-<li>Outreach workflows using AI tools for B2B teams that want to scale without hiring</li>
-<li>Taking the repetitive stuff off your plate so you stop doing it manually</li>
-<li>Cleaning up processes that have been held together with duct tape</li>
-</ul>
-<div class="tag-row"><span class="tag">AI Workflows</span><span class="tag">Automation</span><span class="tag">B2B Outreach</span></div>
-</div>
+<div class="panel"><div class="project-kicker">Delivery</div><h3>Project Management &amp; Delivery</h3><ul><li>Running projects start to finish so nothing falls through</li><li>Writing SOPs and setting up QA checkpoints that people follow</li><li>Being the reliable second-in-command when founders are stretched thin</li></ul><div class="tag-row"><span class="tag">Project Management</span><span class="tag">SOPs</span><span class="tag">Process Design</span></div></div>
+<div class="panel"><div class="project-kicker">Systems</div><h3>Notion Dashboard Optimization</h3><ul><li>Company-wide Notion setup and dashboard cleanup</li><li>Department dashboards, SOP libraries, and KPI systems</li><li>Built so people actually open them, not shelved after handover</li></ul><div class="tag-row"><span class="tag">Notion Systems</span><span class="tag">Operations</span><span class="tag">Documentation</span></div></div>
+<div class="panel"><div class="project-kicker">Automation</div><h3>AI + Automation for Agencies &amp; B2B Teams</h3><ul><li>Outreach workflows using AI tools for B2B teams that want to scale without hiring</li><li>Taking the repetitive stuff off your plate so you stop doing it manually</li><li>Cleaning up processes that have been held together with duct tape</li></ul><div class="tag-row"><span class="tag">AI Workflows</span><span class="tag">Automation</span><span class="tag">B2B Outreach</span></div></div>
 </div>
 </div>
 </section>
@@ -1170,39 +391,17 @@ Scroll
 <p class="section-subtitle">Two projects that show how I actually work.</p>
 <div class="projects-grid">
 <div class="project-card interactive-project float-card" data-project="sava">
-<div class="browser-frame" style="margin-bottom:16px;border:1px solid var(--line);box-shadow:0 12px 28px rgba(15,76,117,0.10);">
-<div class="browser-top" style="background:#eef6fc;border-bottom:1px solid var(--line);">
-<div class="browser-dots"><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span></div>
-<div class="browser-url" style="background:#fff;color:var(--slate);">https://sava-amsterdam.com/</div>
-</div>
-<div class="browser-preview" style="background-image:url('https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/');min-height:260px;">
-<div class="preview-overlay">
-<div class="preview-badge">🌐 Live Website</div>
-<a href="https://www.loom.com/share/3055c23d989b440b89c32c487e5de84e" target="_blank" rel="noopener" class="btn btn-light">🎥 System Walkthrough ↗</a>
-</div>
-</div>
-</div>
+<div class="browser-frame" style="margin-bottom:16px;border:1px solid var(--line);box-shadow:0 12px 28px rgba(15,76,117,0.10);"><div class="browser-top" style="background:#eef6fc;border-bottom:1px solid var(--line);"><div class="browser-dots"><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span></div><div class="browser-url" style="background:#fff;color:var(--slate);">https://sava-amsterdam.com/</div></div><div class="browser-preview" style="background-image:url('https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/');min-height:260px;"><div class="preview-overlay"><div class="preview-badge">Live Website</div><a href="https://www.loom.com/share/3055c23d989b440b89c32c487e5de84e" target="_blank" rel="noopener" class="btn btn-light">System Walkthrough</a></div></div></div>
 <h3>SAVA Amsterdam</h3>
 <p style="margin:0 0 10px;color:var(--blue);font-weight:700;">Full company Notion system</p>
 <p>A company-wide Notion system built for cleaner operations and a workspace the whole team can actually use.</p>
 <div class="tag-row"><span class="tag">E-commerce Ops</span><span class="tag">Company Systems</span></div>
 </div>
 <div class="project-card interactive-project float-card" data-project="whiskey">
-<div class="browser-frame" style="margin-bottom:16px;border:1px solid var(--line);box-shadow:0 12px 28px rgba(15,76,117,0.10);">
-<div class="browser-top" style="background:#eef6fc;border-bottom:1px solid var(--line);">
-<div class="browser-dots"><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span></div>
-<div class="browser-url" style="background:#fff;color:var(--slate);">https://whiskeylibrary.com/</div>
-</div>
-<div class="browser-preview" style="background-image:url('https://image.thum.io/get/width/1400/crop/900/noanimate/https://whiskeylibrary.com/');min-height:260px;">
-<div class="preview-overlay">
-<div class="preview-badge">🌐 Live Website</div>
-<a href="https://www.loom.com/share/f883c45c953848fca179d3bc8724875f" target="_blank" rel="noopener" class="btn btn-light">🎥 System Walkthrough ↗</a>
-</div>
-</div>
-</div>
+<div class="browser-frame" style="margin-bottom:16px;border:1px solid var(--line);box-shadow:0 12px 28px rgba(15,76,117,0.10);"><div class="browser-top" style="background:#eef6fc;border-bottom:1px solid var(--line);"><div class="browser-dots"><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span><span style="background:#cbd5e1;"></span></div><div class="browser-url" style="background:#fff;color:var(--slate);">https://whiskeylibrary.com/</div></div><div class="browser-preview" style="background-image:url('https://image.thum.io/get/width/1400/crop/900/noanimate/https://whiskeylibrary.com/');min-height:260px;"><div class="preview-overlay"><div class="preview-badge">Live Website</div><a href="https://www.loom.com/share/f883c45c953848fca179d3bc8724875f" target="_blank" rel="noopener" class="btn btn-light">System Walkthrough</a></div></div></div>
 <h3>Whiskey Library</h3>
 <p style="margin:0 0 10px;color:var(--blue);font-weight:700;">$10K pipeline in 30 days</p>
-<p>An affiliate pipeline and Notion workflow built to support early-stage growth, visibility, and a more organized affiliate operation.</p>
+<p>An affiliate pipeline and Notion workflow built to support early-stage growth and a more organised affiliate operation.</p>
 <div class="tag-row"><span class="tag">Affiliate Ops</span><span class="tag">Notion Workflow</span></div>
 </div>
 </div>
@@ -1214,141 +413,88 @@ Scroll
 <h2 class="section-title">Ways I Work</h2>
 <p class="section-subtitle">I work part-time or project-based. Rates are always talked through on a call, no guesswork.</p>
 <div class="carousel-shell">
-<button class="carousel-arrow left" type="button" id="pricingPrev" aria-label="Previous">‹</button>
+<button class="carousel-arrow left" type="button" id="pricingPrev" aria-label="Previous">&#8249;</button>
 <div style="position:relative;overflow:hidden;border-radius:24px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:22px;">
 <div id="pricingCarousel" class="auto-carousel" style="display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:none;-ms-overflow-style:none;">
-<div class="panel work-card" data-project="work-hourly" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;">
-<div class="project-kicker">Flexible Support</div>
-<h3>Hourly Support</h3>
-<p>Ongoing support for founders and agencies who need a reliable person in their corner.</p>
-<ul><li>Good for when you need help but don't want to commit to a big scope yet</li><li>Start small, scale up if it works</li></ul>
-<div class="pricing-note">💬 Rate discussed on call</div>
-</div>
-<div class="panel work-card" data-project="work-notion" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;">
-<div class="project-kicker">Systems Build</div>
-<h3>Notion System Projects</h3>
-<p>I build the Notion workspace from scratch or clean up the mess you already have.</p>
-<ul><li>From blank page to working system</li><li>Priced per project, scoped on a call</li></ul>
-<div class="pricing-note">💬 Scoped on call</div>
-</div>
-<div class="panel work-card" data-project="work-retainer" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;">
-<div class="project-kicker">Ongoing Partnership</div>
-<h3>Maintenance & Retainers</h3>
-<p>For clients who want things maintained after the build is done.</p>
-<ul><li>Monthly check-ins and updates so nothing gets stale</li><li>Good if you want someone who already knows your setup</li></ul>
-<div class="pricing-note">💬 Rate discussed on call</div>
-</div>
-<div class="panel work-card" data-project="work-consulting" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;">
-<div class="project-kicker">Strategy</div>
-<h3>Consulting Sessions</h3>
-<p>A focused session where we look at what's broken and figure out how to fix it.</p>
-<ul><li>You leave with a clear action list or SOP, not just notes</li><li>Good if you want to think things through before spending money on a full build</li></ul>
-<div class="pricing-note">💬 Rate discussed on call</div>
+<div class="panel work-card" data-project="work-hourly" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Flexible Support</div><h3>Hourly Support</h3><p>Ongoing support for founders and agencies who need a reliable person in their corner.</p><ul><li>Good for when you need help but do not want to commit to a big scope yet</li><li>Start small, scale up if it works</li></ul><div class="pricing-note">Rate discussed on call</div></div>
+<div class="panel work-card" data-project="work-notion" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Systems Build</div><h3>Notion System Projects</h3><p>I build the Notion workspace from scratch or clean up the mess you already have.</p><ul><li>From blank page to working system</li><li>Priced per project, scoped on a call</li></ul><div class="pricing-note">Scoped on call</div></div>
+<div class="panel work-card" data-project="work-retainer" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Ongoing Partnership</div><h3>Maintenance &amp; Retainers</h3><p>For clients who want things maintained after the build is done.</p><ul><li>Monthly check-ins and updates so nothing gets stale</li><li>Good if you want someone who already knows your setup</li></ul><div class="pricing-note">Rate discussed on call</div></div>
+<div class="panel work-card" data-project="work-consulting" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Strategy</div><h3>Consulting Sessions</h3><p>A focused session where we look at what is broken and figure out how to fix it.</p><ul><li>You leave with a clear action list or SOP, not just notes</li><li>Good if you want to think things through before spending money on a full build</li></ul><div class="pricing-note">Rate discussed on call</div></div>
 </div>
 </div>
+<button class="carousel-arrow right" type="button" id="pricingNext" aria-label="Next">&#8250;</button>
 </div>
-<button class="carousel-arrow right" type="button" id="pricingNext" aria-label="Next">›</button>
-</div>
-<div class="swipe-hint">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-Swipe to see more options
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-</div>
+<div class="swipe-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Swipe to see more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div>
 </div>
 </section>
-
 <section class="slide section reveal scrollable" id="testimonials">
 <div class="container">
 <h2 class="section-title">What Clients Say</h2>
-<p class="section-subtitle">What the people I've worked with actually say.</p>
+<p class="section-subtitle">What the people I have worked with actually say.</p>
 <div class="social-proof-grid" style="margin-bottom:24px;">
 <div class="testi-video-card">
-<div class="testi-video-thumb">
-<div class="testi-play">▶</div>
-<div style="position:absolute;bottom:14px;left:14px;right:14px;z-index:1;">
-<div style="color:rgba(255,255,255,.7);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px;">Video Testimonial</div>
-<div style="color:#fff;font-size:15px;font-weight:700;">Sean Elias. Threecolts / 70K Affiliates</div>
-</div>
-</div>
-<div class="testi-video-body">
-<div class="testi-stars">★★★★★</div>
-<div class="testi-quote">"Jane is really good at getting things done fast."</div>
-<div style="margin-top:12px;">
-<a class="btn btn-secondary" href="./Sean%20Elias-TestimonialVideo.mp4" style="font-size:13px;padding:10px 14px;">▶ Watch Video</a>
-</div>
-</div>
+<div class="testi-video-thumb"><div class="testi-play">&#9654;</div><div style="position:absolute;bottom:14px;left:14px;right:14px;z-index:1;"><div style="color:rgba(255,255,255,.7);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px;">Video Testimonial</div><div style="color:#fff;font-size:15px;font-weight:700;">Sean Elias. Threecolts / 70K Affiliates</div></div></div>
+<div class="testi-video-body"><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="testi-quote">"Jane is really good at getting things done fast."</div><div style="margin-top:12px;"><a class="btn btn-secondary" href="./Sean%20Elias-TestimonialVideo.mp4" style="font-size:13px;padding:10px 14px;">&#9654; Watch Video</a></div></div>
 </div>
 <div class="testi-video-card">
-<div class="testi-video-thumb">
-<div class="testi-play">▶</div>
-<div style="position:absolute;bottom:14px;left:14px;right:14px;z-index:1;">
-<div style="color:rgba(255,255,255,.7);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px;">Video Testimonial</div>
-<div style="color:#fff;font-size:15px;font-weight:700;">Joe Remington. PPC Professor</div>
-</div>
-</div>
-<div class="testi-video-body">
-<div class="testi-stars">★★★★★</div>
-<div class="testi-quote">"Jane is a phenomenal resource for me and my team."</div>
-<div style="margin-top:12px;">
-<a class="btn btn-secondary" href="./Joe-Remington-TestimonialVideo.mp4" style="font-size:13px;padding:10px 14px;">▶ Watch Video</a>
-</div>
-</div>
+<div class="testi-video-thumb"><div class="testi-play">&#9654;</div><div style="position:absolute;bottom:14px;left:14px;right:14px;z-index:1;"><div style="color:rgba(255,255,255,.7);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px;">Video Testimonial</div><div style="color:#fff;font-size:15px;font-weight:700;">Joe Remington. PPC Professor</div></div></div>
+<div class="testi-video-body"><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="testi-quote">"Jane is a phenomenal resource for me and my team."</div><div style="margin-top:12px;"><a class="btn btn-secondary" href="./Joe-Remington-TestimonialVideo.mp4" style="font-size:13px;padding:10px 14px;">&#9654; Watch Video</a></div></div>
 </div>
 </div>
 <h3 style="font-family:'DM Serif Display',serif;font-size:22px;margin:0 0 6px;">Client Feedback</h3>
-<p class="section-subtitle" style="margin-bottom:16px;">Direct messages and posts from clients I've worked with.</p>
+<p class="section-subtitle" style="margin-bottom:16px;">Direct messages and posts from clients I have worked with.</p>
 <div class="feedback-grid">
-<div class="feedback-card">
-<div class="feedback-header">
-<span class="feedback-platform-badge badge-message">💬 Direct Message</span>
-<span class="feedback-label">SAVA Amsterdam. Notion Project</span>
-</div>
-<div class="feedback-img-wrap" onclick="openLightbox('sava-feedback.jpg','SAVA Amsterdam. Client Feedback')">
-<img src="sava-feedback.jpg" alt="Client feedback from SAVA Amsterdam" loading="lazy" />
-<div class="feedback-img-overlay"><span class="feedback-zoom">🔍 Click to enlarge</span></div>
-</div>
-<div class="feedback-caption">Feedback from the SAVA Amsterdam Notion system project</div>
-</div>
-<div class="feedback-card">
-<div class="feedback-header">
-<span class="feedback-platform-badge badge-linkedin">in LinkedIn</span>
-<span class="feedback-label">Yakov. Former Client</span>
-</div>
-<div class="feedback-img-wrap" onclick="openLightbox('yakov-feedback.jpg','Yakov. LinkedIn Post')">
-<img src="yakov-feedback.jpg" alt="LinkedIn feedback from Yakov" loading="lazy" />
-<div class="feedback-img-overlay"><span class="feedback-zoom">🔍 Click to enlarge</span></div>
-</div>
-<div class="feedback-caption">LinkedIn post. <a href="https://www.linkedin.com/posts/jyugtan_virtualassistant-digitalserviceprovider-ugcPost-7190863868208771072-QcKw" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700;">View on LinkedIn ↗</a></div>
-</div>
+<div class="feedback-card"><div class="feedback-header"><span class="feedback-platform-badge badge-message">Direct Message</span><span class="feedback-label">SAVA Amsterdam. Notion Project</span></div><div class="feedback-img-wrap" onclick="openLightbox('sava-feedback.jpg','SAVA Amsterdam Feedback')"><img src="sava-feedback.jpg" alt="Client feedback from SAVA Amsterdam" loading="lazy" /><div class="feedback-img-overlay"><span class="feedback-zoom">Click to enlarge</span></div></div><div class="feedback-caption">Feedback from the SAVA Amsterdam Notion project</div></div>
+<div class="feedback-card"><div class="feedback-header"><span class="feedback-platform-badge badge-linkedin">LinkedIn</span><span class="feedback-label">Yakov. Former Client</span></div><div class="feedback-img-wrap" onclick="openLightbox('yakov-feedback.jpg','Yakov LinkedIn Post')"><img src="yakov-feedback.jpg" alt="LinkedIn feedback from Yakov" loading="lazy" /><div class="feedback-img-overlay"><span class="feedback-zoom">Click to enlarge</span></div></div><div class="feedback-caption">LinkedIn post. <a href="https://www.linkedin.com/posts/jyugtan_virtualassistant-digitalserviceprovider-ugcPost-7190863868208771072-QcKw" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700;">View on LinkedIn</a></div></div>
 </div>
 </div>
 </section>
 
-<section class="slide section reveal scrollable" id="about">
+<section class="slide section reveal scrollable dark-slide" id="about">
 <div class="container">
 <h2 class="section-title">About</h2>
-<p class="section-subtitle">How I got started and what I'm focused on now.</p>
+<p class="section-subtitle">How I got started and what I am focused on now.</p>
 <div class="experience-grid">
-<div class="experience-card">
-<div class="meta">My Story</div>
-<h3>Working remotely since 2021</h3>
+<div class="experience-card"><div class="meta">My Story</div><h3>Working remotely since 2021</h3>
 <p>I started working remotely in 2021. In 2022 I got my first real project with a marketing agency in the US and everything changed from there.</p>
-<p>Since then I've worked directly with around <strong>10 clients</strong>, mostly founders and agency owners. Through their businesses, I've touched <strong>100+ client accounts</strong> across delivery, systems, and ops work.</p>
-<p>Now I focus on working with founders who want things running properly without micromanaging every moving part.</p>
+<p>Since then I have worked directly with around <strong>10 clients</strong>, mostly founders and agency owners. Through their businesses, I have touched <strong>100+ client accounts</strong> across delivery, systems, and ops work.</p>
+<p>Now I focus on working with founders who want things running properly without micromanaging every moving part.</p></div>
+<div class="experience-card"><div class="meta">Current Focus</div><h3>What I am working on now</h3>
+<p>My day-to-day work keeps me sharp across project delivery, operational support, and systems work. That is exactly what I bring to the projects I take on here.</p>
+<p>I take on <strong>project-based and freelance work</strong> when the scope makes sense, whether that is tightening up operations, fixing broken workflows, or building systems people actually use.</p>
+<p>If the scope is right and the timing works, I would love to connect.</p></div>
+<div class="experience-card"><div class="meta">Life Outside the Laptop</div><h3>Cats, travels, and sunsets</h3>
+<p>I have two British Shorthairs. Pochi is my resident cat, a blue blotched smoke who is genuinely emotionally intelligent. He comes when called and always knows when I need a break. Asher is my pure cinnamon newcomer and has fully taken over the energy in the house.</p>
+<p>I travel around the Philippines when I can. This year I took my mom to Sinulog in Cebu and we visited the Temple of Leah. Everyone tells us we look like sisters. We also celebrated her birthday at Escala Tagaytay, infinity pool and lake view included. My current favourite spot on any trip is a window seat. Every time, no exceptions.</p></div>
 </div>
-<div class="experience-card">
-<div class="meta">Current Focus</div>
-<h3>What I'm working on now</h3>
-<p>My day-to-day work keeps me sharp across client relationships, account continuity, and operational support. which is exactly what I bring to the projects I take on here.</p>
-<p>I take on <strong>project-based and freelance work</strong> when the scope makes sense. whether that's tightening up operations, fixing broken workflows, or building systems people actually use.</p>
-<p>If the scope is right and the timing works, I'd love to connect.</p>
+<div class="life-strip-label">A little more of the person behind the work</div>
+<div class="life-photos-grid">
+<div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-cats-pochi.jpeg','Pochi — Blue blotched smoke British Shorthair')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo: Pochi — Blue blotched smoke British Shorthair"><img src="jane-cats-pochi.jpeg" alt="Pochi, blue blotched smoke British Shorthair" loading="lazy" /><div class="life-photo-caption"><strong>Pochi</strong><span>Blue blotched smoke British Shorthair. My resident cat. Knows when I need a break before I do.</span></div></div></div>
+<div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-cats-asher.jpeg','Asher — Pure cinnamon British Shorthair')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo: Asher — Pure cinnamon British Shorthair"><img src="jane-cats-asher.jpeg" alt="Asher, pure cinnamon British Shorthair" loading="lazy" /><div class="life-photo-caption"><strong>Asher</strong><span>Pure cinnamon British Shorthair. The newcomer who walked in and immediately started running things.</span></div></div></div>
+<div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-travel-windowseat.jpeg','Window seat selfie')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo: Window seat selfie"><img src="jane-travel-windowseat.jpeg" alt="Jane in a window seat on a plane" loading="lazy" /><div class="life-photo-caption"><strong>Window seat, always</strong><span>My spot of choice. Booking this for every flight for at least the next five years.</span></div></div></div>
+<div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-sunset.jpeg','Sunset somewhere in the Philippines')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo: Sunset somewhere in the Philippines"><img src="jane-sunset.jpeg" alt="Jane watching a sunset at a pier" loading="lazy" /><div class="life-photo-caption"><strong>Somewhere in the Philippines</strong><span>The kind of view that makes remote work worth it.</span></div></div></div>
+<div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-mom-travelcebu.jpeg','Sinulog trip — Temple of Leah, Cebu')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo: Sinulog trip — Temple of Leah, Cebu"><img src="jane-mom-travelcebu.jpeg" alt="Jane and her mom at Temple of Leah Cebu" loading="lazy" /><div class="life-photo-caption"><strong>Sinulog trip. Temple of Leah, Cebu</strong><span>With mom. Everyone we meet tells us we look like sisters. We take it every time.</span></div></div></div>
+<div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-family.jpeg','Mom and grandma at Escala Tagaytay')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo"><img src="jane-family.jpeg" alt="Jane with her mom and grandma at Escala Tagaytay" loading="lazy" /><div class="life-photo-caption"><strong>For the people who showed up first</strong><span>Mom and grandma at Escala Tagaytay for her 50th. Remote work gave me the freedom to make this happen. Everything I do is for them.</span></div></div></div>
 </div>
-<div class="experience-card">
-<div class="meta">Fun Fact</div>
-<h3>Life outside work</h3>
-<p>I travel around the Philippines whenever I get the chance, mostly beach spots. Sunsets, good conversations, and a cocktail at the end of the day.</p>
-<p>I also have cats and love finding new spots to explore locally. Remote work lets me do both.</p>
-</div>
+
+<div style="margin-top:24px;text-align:center;">
+  <a href="https://www.instagram.com/ljane_hy/" target="_blank" rel="noopener"
+     style="display:inline-flex;align-items:center;gap:10px;
+             padding:11px 22px;border-radius:999px;
+             background:rgba(255,255,255,.07);
+             border:1px solid rgba(255,255,255,.14);
+             color:rgba(255,255,255,.75);
+             font-size:13px;font-weight:700;
+             font-family:'DM Sans',Arial,sans-serif;
+             text-decoration:none;
+             transition:background .2s ease,color .2s ease,border-color .2s ease;">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+    </svg>
+    Follow along — @ljane_hy
+  </a>
 </div>
 </div>
 </section>
@@ -1360,66 +506,47 @@ Swipe to see more options
 <h3>If it sounds like a fit, let's find out.</h3>
 <p>You've seen the work. If you need someone like me on your team, a 30-minute call is the fastest way to know.</p>
 <div class="cta-row" style="justify-content:center;gap:14px;">
-<a class="btn btn-light" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" style="font-size:15px;padding:14px 22px;">☕ Book a discovery call</a>
-<a class="btn" href="mailto:jane@janeyugtan.com" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2);font-size:15px;padding:14px 22px;">📩 Send me an email</a>
+<a class="btn btn-light" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" style="font-size:15px;padding:14px 22px;">&#9749; Book a discovery call</a>
+<a class="btn" href="mailto:jane@janeyugtan.com" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2);font-size:15px;padding:14px 22px;">&#128233; Send me an email</a>
 </div>
 <div class="end-cta-sub">EST hours · Remote · Part-time and project-based</div>
 </div>
 <div class="footer">© 2026 Jane Yugtan. Operations Partner · Project Manager · Systems Designer</div>
 </div>
 </section>
-
-</div><!-- /.deck -->
-
-<!-- Slide navigation: dots + controls -->
+</div>
 <nav class="deck-dots" id="deckDots" aria-label="Slide navigation"></nav>
 <div class="deck-controls" role="group" aria-label="Slide controls">
-<button class="deck-arrow" id="deckPrev" type="button" aria-label="Previous slide">↑</button>
+<button class="deck-arrow" id="deckPrev" type="button">&#8593;</button>
 <span class="deck-counter" id="deckCounter">01 / 09</span>
-<button class="deck-arrow" id="deckNext" type="button" aria-label="Next slide">↓</button>
+<button class="deck-arrow" id="deckNext" type="button">&#8595;</button>
 </div>
-
 <div class="project-modal" id="introVideoModal" aria-hidden="true">
 <div class="project-modal-card" style="background:linear-gradient(180deg,#0b1f33 0%,#0f4c75 100%);max-width:960px;">
-<button class="project-modal-close" id="introVideoModalClose" aria-label="Close intro video">×</button>
-<div style="margin-bottom:18px;">
-<div class="project-modal-kicker">Meet Jane</div>
-<h3 style="margin-bottom:8px;">A quick introduction to my portfolio</h3>
-<p style="margin:0;color:rgba(255,255,255,0.9);">This short video gives a quick overview of who I am, the work I do, and what you'll find in this portfolio.</p>
-</div>
-<div style="position:relative;width:100%;padding-top:56.25%;border-radius:22px;overflow:hidden;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.14);box-shadow:0 20px 42px rgba(5,15,28,0.22);">
-<iframe id="introVideoFrame" src="" title="Jane portfolio introduction video" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0;"></iframe>
-</div>
-</div>
-</div>
-
+<button class="project-modal-close" id="introVideoModalClose">x</button>
+<div style="margin-bottom:18px;"><div class="project-modal-kicker">Meet Jane</div><h3>A quick introduction</h3></div>
+<div style="position:relative;width:100%;padding-top:56.25%;border-radius:22px;overflow:hidden;">
+<iframe id="introVideoFrame" src="" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0;"></iframe>
+</div></div></div>
 <div class="project-modal" id="projectModal" aria-hidden="true">
-<div class="project-modal-card">
-<button class="project-modal-close" id="projectModalClose" aria-label="Close project details">×</button>
-<div class="project-modal-grid" id="projectModalContent"></div>
-</div>
-</div>
-
+<div class="project-modal-card"><button class="project-modal-close" id="projectModalClose">x</button>
+<div class="project-modal-grid" id="projectModalContent"></div></div></div>
 <div class="lightbox" id="lightbox" aria-hidden="true">
-<button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
-<img id="lightboxImg" src="" alt="" />
-</div>
+<button class="lightbox-close" id="lightboxClose">x</button>
+<img id="lightboxImg" src="" alt="" /></div>
 
 <script>
-/* ===== Intro video modal ===== */
-const introVideoModal = document.getElementById('introVideoModal');
-const introVideoModalClose = document.getElementById('introVideoModalClose');
-const openIntroVideoEl = document.getElementById('openIntroVideo');
-const introVideoFrame = document.getElementById('introVideoFrame');
-const introVideoUrl = 'https://www.loom.com/embed/6325ce02a04148188bf5de8a8e26732b?sid=54f70cf0-e26a-4e4c-9abf-9808cce40351';
+const introVideoModal=document.getElementById('introVideoModal');
+const introVideoModalClose=document.getElementById('introVideoModalClose');
+const openIntroVideoEl=document.getElementById('openIntroVideo');
+const introVideoFrame=document.getElementById('introVideoFrame');
+const introVideoUrl='https://www.loom.com/embed/6325ce02a04148188bf5de8a8e26732b?sid=54f70cf0-e26a-4e4c-9abf-9808cce40351';
 function openIntroVideoModal(e){if(e)e.preventDefault();introVideoFrame.src=introVideoUrl;introVideoModal.classList.add('show');introVideoModal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open')}
 function closeIntroVideoModal(){introVideoModal.classList.remove('show');introVideoModal.setAttribute('aria-hidden','true');introVideoFrame.src='';document.body.classList.remove('modal-open')}
 openIntroVideoEl?.addEventListener('click',openIntroVideoModal);
 openIntroVideoEl?.addEventListener('keydown',(e)=>{if(e.key==='Enter'||e.key===' ')openIntroVideoModal(e)});
 introVideoModalClose?.addEventListener('click',closeIntroVideoModal);
 introVideoModal?.addEventListener('click',(e)=>{if(e.target===introVideoModal)closeIntroVideoModal()});
-
-/* ===== Lightbox ===== */
 const lightbox=document.getElementById('lightbox');
 const lightboxImg=document.getElementById('lightboxImg');
 const lightboxClose=document.getElementById('lightboxClose');
@@ -1427,194 +554,72 @@ function openLightbox(src,alt){lightboxImg.src=src;lightboxImg.alt=alt;lightbox.
 function closeLightbox(){lightbox.classList.remove('show');lightbox.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')}
 lightboxClose?.addEventListener('click',closeLightbox);
 lightbox?.addEventListener('click',(e)=>{if(e.target===lightbox)closeLightbox()});
-
-/* ===== Reveal animation per slide ===== */
-const revealObserver=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.classList.add('in-view');revealObserver.unobserve(entry.target)}})},{threshold:0.06,rootMargin:'0px 0px -30px 0px'});
-document.querySelectorAll('.slide:not(.hero)').forEach((s)=>revealObserver.observe(s));
-// Hero is always visible
-const heroSlide=document.querySelector('.slide.hero');if(heroSlide)heroSlide.classList.add('in-view');
-
-/* ===== Count-up KPIs ===== */
-const counterObserver=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(!entry.isIntersecting)return;const el=entry.target;if(el.dataset.animated==='true')return;el.dataset.animated='true';const endValue=parseFloat(el.dataset.countTo||'0');const prefix=el.dataset.prefix||'';const suffix=el.dataset.suffix||'';const duration=1400;const startTime=performance.now();const decimals=Number.isInteger(endValue)?0:1;function tick(now){const progress=Math.min((now-startTime)/duration,1);const eased=1-Math.pow(1-progress,3);el.textContent=`${prefix}${(endValue*eased).toLocaleString(undefined,{minimumFractionDigits:decimals,maximumFractionDigits:decimals})}${suffix}`;if(progress<1)requestAnimationFrame(tick)}requestAnimationFrame(tick);counterObserver.unobserve(el)})},{threshold:0.45});
-document.querySelectorAll('.result-kpi[data-count-to]').forEach((c)=>counterObserver.observe(c));
-
-/* ===== Renewals featured-metric callout ===== */
-const renewalsMetricCard=document.getElementById('renewalsMetricCard'); // removed
-const renewalsCallout=document.getElementById('renewalsCallout');
-const renewalsCalloutClose=document.getElementById('renewalsCalloutClose');
-function toggleRenewalsCallout(forceOpen=null){if(!renewalsCallout)return;const shouldOpen=forceOpen!==null?forceOpen:!renewalsCallout.classList.contains('show');renewalsCallout.classList.toggle('show',shouldOpen);if(renewalsMetricCard)renewalsMetricCard.classList.toggle('active',shouldOpen);if(shouldOpen)renewalsCallout.scrollIntoView({behavior:'smooth',block:'nearest'})}
-// renewalsMetricCard?.addEventListener('click',()=>toggleRenewalsCallout());
-// renewalsCalloutClose?.addEventListener('click',()=>toggleRenewalsCallout(false));
-
-/* ===== Pricing carousel ===== */
+const deckEl=document.getElementById('deck');
+const revealObs=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in-view');revealObs.unobserve(entry.target)}})},{root:deckEl,threshold:0.06,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.slide:not(.hero)').forEach(s=>revealObs.observe(s));
+const heroSl=document.querySelector('.slide.hero');if(heroSl)heroSl.classList.add('in-view');
+function animateKpi(el){if(el.dataset.animated==='true')return;el.dataset.animated='true';const end=parseFloat(el.dataset.countTo||'0');const pre=el.dataset.prefix||'';const suf=el.dataset.suffix||'';const dur=1400;const t0=performance.now();const dec=Number.isInteger(end)?0:1;function tick(now){const p=Math.min((now-t0)/dur,1);const e=1-Math.pow(1-p,3);el.textContent=pre+(end*e).toLocaleString(undefined,{minimumFractionDigits:dec,maximumFractionDigits:dec})+suf;if(p<1)requestAnimationFrame(tick)}requestAnimationFrame(tick)}
 const pricingCarousel=document.getElementById('pricingCarousel');
 let autoCarouselInterval=null;
-function loopCarousel(direction){if(!pricingCarousel)return;const cardWidth=332;const maxScroll=pricingCarousel.scrollWidth-pricingCarousel.clientWidth;if(direction==='next'){pricingCarousel.scrollLeft+cardWidth>=maxScroll-10?pricingCarousel.scrollTo({left:0,behavior:'smooth'}):pricingCarousel.scrollBy({left:cardWidth,behavior:'smooth'})}else{pricingCarousel.scrollLeft<=10?pricingCarousel.scrollTo({left:maxScroll,behavior:'smooth'}):pricingCarousel.scrollBy({left:-cardWidth,behavior:'smooth'})}}
+function loopCarousel(dir){if(!pricingCarousel)return;const w=332;const max=pricingCarousel.scrollWidth-pricingCarousel.clientWidth;if(dir==='next'){pricingCarousel.scrollLeft+w>=max-10?pricingCarousel.scrollTo({left:0,behavior:'smooth'}):pricingCarousel.scrollBy({left:w,behavior:'smooth'})}else{pricingCarousel.scrollLeft<=10?pricingCarousel.scrollTo({left:max,behavior:'smooth'}):pricingCarousel.scrollBy({left:-w,behavior:'smooth'})}}
 function startAutoCarousel(){if(!pricingCarousel)return;stopAutoCarousel();autoCarouselInterval=setInterval(()=>loopCarousel('next'),3200)}
 function stopAutoCarousel(){if(autoCarouselInterval){clearInterval(autoCarouselInterval);autoCarouselInterval=null}}
 document.getElementById('pricingPrev')?.addEventListener('click',()=>loopCarousel('prev'));
 document.getElementById('pricingNext')?.addEventListener('click',()=>loopCarousel('next'));
-pricingCarousel?.addEventListener('mouseenter',stopAutoCarousel);
-pricingCarousel?.addEventListener('mouseleave',startAutoCarousel);
-pricingCarousel?.addEventListener('touchstart',stopAutoCarousel,{passive:true});
-pricingCarousel?.addEventListener('touchend',startAutoCarousel,{passive:true});
+pricingCarousel?.addEventListener('mouseenter',stopAutoCarousel);pricingCarousel?.addEventListener('mouseleave',startAutoCarousel);
+pricingCarousel?.addEventListener('touchstart',stopAutoCarousel,{passive:true});pricingCarousel?.addEventListener('touchend',startAutoCarousel,{passive:true});
 startAutoCarousel();
-
-/* ===== Project / pricing detail modal ===== */
-const projectData={
-'work-hourly':{website:'',preview:'',kicker:'Ways I Work',title:'Hourly Support',summary:'Best for founders and teams who need flexible support across account management, project coordination, operations, or executive support.',stat:'Flexible & part-time',detailTitle:'What this is best for',bullets:['Ongoing support without committing to a full project scope.','Flexible help across operations, delivery, client coordination, and admin-heavy work.','Best fit for agencies and founders who need a reliable right hand.'],tags:['Flexible Support','Operations','Account Management']},
-'work-notion':{website:'',preview:'',kicker:'Ways I Work',title:'Notion System Projects',summary:'Best for teams that need a more structured buildout such as company dashboards, workflows, SOP libraries, or operational systems in Notion.',stat:'Priced per project, scoped on a call',detailTitle:'What this is best for',bullets:['Company-wide Notion workspace organization and system design.','Workflow cleanup, implementation, and better team visibility.','A stronger operating system for growing teams and founders.'],tags:['Notion','Systems Design','Implementation']},
-'work-retainer':{website:'',preview:'',kicker:'Ways I Work',title:'Maintenance & Retainers',summary:'Best for clients who already have systems in place and want ongoing support to maintain, improve, or update them.',stat:'Monthly partnership',detailTitle:'What this is best for',bullets:['Monthly updates and refinements after a project is completed.','Support for teams who want a lighter but ongoing partnership.','Ideal for keeping systems useful as the business grows.'],tags:['Retainer','Optimization','Support']},
-'work-consulting':{website:'',preview:'',kicker:'Ways I Work',title:'Consulting Sessions',summary:'Best for teams that want strategic input, workflow guidance, or a second set of eyes before making bigger operations or systems decisions.',stat:'Per session',detailTitle:'What this is best for',bullets:['A focused strategy session around systems, operations, or process design.','Includes a follow-up SOP guide or action document.','Best for founders who want direction before committing to implementation.'],tags:['Consulting','Strategy','SOP Guide']},
-sava:{website:'https://sava-amsterdam.com/',preview:'https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/',kicker:'Featured Project',title:'SAVA Amsterdam. Company-Wide Notion Dashboard Optimization',summary:'SAVA Amsterdam needed their Notion cleaned up and rebuilt. I restructured the whole workspace so their team could actually use it instead of avoiding it.',stat:'Full company Notion system',detailTitle:'What I focused on',bullets:['Built out department pages for Sales, Support, HR, Supply Chain, and Marketing — all in one place.','Pulled their SOPs, KPIs, and team docs into a workspace that is easy to search and update.','Set up the layout so the founder could see what is happening without having to chase the team.','Built it to last, not just look good on delivery day.'],tags:['E-commerce Ops','Notion Design','Company Systems']},
-whiskey:{website:'https://whiskeylibrary.com/',preview:'https://image.thum.io/get/width/1400/crop/900/noanimate/https://whiskeylibrary.com/',kicker:'Featured Project',title:'Whiskey Library — Affiliate Pipeline & Notion Workflow Build',summary:'Whiskey Library needed an affiliate operation built from scratch. I set up the Notion workflow, found and qualified affiliates, and had a $10K pipeline running inside 30 days.',stat:'$10K pipeline in 30 days',detailTitle:'What I focused on',bullets:['Built the Notion workflow that tracked affiliates, outreach, and progress all in one place.','Found and qualified affiliates, not just collected names.','Set up a clear onboarding process so affiliates did not go cold after signing up.','Turned what was scattered effort into a repeatable, trackable process.'],tags:['Affiliate Ops','Pipeline Build','Notion Workflow']}
-};
-
+const projectData={'work-hourly':{website:'',preview:'',kicker:'Ways I Work',title:'Hourly Support',summary:'Good for founders who need reliable support without committing to a big scope.',stat:'Flexible and part-time',detailTitle:'What this is best for',bullets:['Ongoing support without committing to a full project scope.','Flexible help across operations and coordination.','Best fit for agencies and founders who need a reliable right hand.'],tags:['Flexible Support','Operations','Project Management']},'work-notion':{website:'',preview:'',kicker:'Ways I Work',title:'Notion System Projects',summary:'I build the Notion workspace from scratch or clean up the mess you already have.',stat:'Priced per project',detailTitle:'What this is best for',bullets:['Company-wide Notion workspace organization.','From blank page to working system.','Built so people actually use them.'],tags:['Notion','Systems Design','Implementation']},'work-retainer':{website:'',preview:'',kicker:'Ways I Work',title:'Maintenance and Retainers',summary:'For clients who want things maintained after the build is done.',stat:'Monthly partnership',detailTitle:'What this is best for',bullets:['Monthly updates and refinements.','Good if you want someone who knows your setup.','Keeps systems useful as you grow.'],tags:['Retainer','Optimization','Support']},'work-consulting':{website:'',preview:'',kicker:'Ways I Work',title:'Consulting Sessions',summary:'A focused session where we look at what is broken and figure out how to fix it.',stat:'Per session',detailTitle:'What this is best for',bullets:['Strategy session around systems and operations.','You leave with a clear action list or SOP.','Good before committing to a full build.'],tags:['Consulting','Strategy','SOP Guide']},sava:{website:'https://sava-amsterdam.com/',preview:'https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/',kicker:'Featured Project',title:'SAVA Amsterdam',summary:'SAVA Amsterdam needed their Notion cleaned up and rebuilt. I restructured the whole workspace so their team could actually use it instead of avoiding it.',stat:'Full company Notion system',detailTitle:'What I focused on',bullets:['Built out department pages for Sales, Support, HR, Supply Chain, and Marketing.','Pulled their SOPs, KPIs, and team docs into one searchable workspace.','Set up the layout so the founder could see what is happening without chasing the team.','Built it to last, not just look good on delivery day.'],tags:['E-commerce Ops','Notion Design','Company Systems']},whiskey:{website:'https://whiskeylibrary.com/',preview:'https://image.thum.io/get/width/1400/crop/900/noanimate/https://whiskeylibrary.com/',kicker:'Featured Project',title:'Whiskey Library',summary:'Whiskey Library needed an affiliate operation built from scratch. I set up the Notion workflow, found and qualified affiliates, and had a $10K pipeline running inside 30 days.',stat:'$10K pipeline in 30 days',detailTitle:'What I focused on',bullets:['Built the Notion workflow that tracked affiliates, outreach, and progress.','Found and qualified affiliates, not just collected names.','Set up a clear onboarding process so affiliates did not go cold.','Turned scattered effort into a repeatable, trackable process.'],tags:['Affiliate Ops','Pipeline Build','Notion Workflow']}};
 const projectModal=document.getElementById('projectModal');
 const projectModalContent=document.getElementById('projectModalContent');
 const projectModalClose=document.getElementById('projectModalClose');
-function renderProjectModal(projectKey){
-const project=projectData[projectKey];if(!project)return;
-const tags=project.tags.map(t=>`<span class="tag">${t}</span>`).join('');
-const bullets=project.bullets.map(b=>`<li>${b}</li>`).join('');
-const previewBlock=project.preview&&project.website?`<div class="browser-frame"><div class="browser-top"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-url">${project.website}</div></div><div class="browser-preview" style="background-image:url('${project.preview}');"><div class="preview-overlay"><div class="preview-badge">🌐 Live Website Preview</div><a href="${project.website}" target="_blank" rel="noopener" class="btn btn-light">Visit Live Website ↗</a></div></div></div>`:`<div class="project-modal-panel" style="min-height:320px;display:flex;flex-direction:column;justify-content:center;gap:16px;background:linear-gradient(135deg,rgba(255,255,255,0.10),rgba(255,255,255,0.06));"><div class="project-modal-kicker" style="margin-bottom:0;width:max-content;">Overview</div><div style="font-size:28px;font-weight:800;line-height:1.15;">How I work</div><div style="color:rgba(255,255,255,0.92);">I help turn messy workflows into clear systems with better visibility, cleaner handoffs, and stronger day-to-day usability.</div><span class="preview-badge">Internal Systems / Workflow Case Study</span></div>`;
-projectModalContent.innerHTML=`<div><div class="project-modal-kicker">${project.kicker}</div><h3>${project.title}</h3><p>${project.summary}</p><ul>${bullets}</ul></div><div>${previewBlock}<div class="project-modal-panel" style="margin-top:16px;"><div class="project-modal-stat">${project.stat}</div><p>${project.detailTitle}</p><div class="tag-row">${tags}</div></div></div>`;
-projectModal.classList.add('show');projectModal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');
-}
+function renderProjectModal(k){const p=projectData[k];if(!p)return;const tags=p.tags.map(t=>`<span class="tag">${t}</span>`).join('');const bullets=p.bullets.map(b=>`<li>${b}</li>`).join('');const prev=p.preview&&p.website?`<div class="browser-frame"><div class="browser-top"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-url">${p.website}</div></div><div class="browser-preview" style="background-image:url('${p.preview}');"><div class="preview-overlay"><div class="preview-badge">Live Website</div><a href="${p.website}" target="_blank" rel="noopener" class="btn btn-light">Visit Site</a></div></div></div>`:`<div class="project-modal-panel" style="min-height:180px;display:flex;flex-direction:column;justify-content:center;gap:12px;"><div class="project-modal-kicker">Overview</div><div style="font-size:20px;font-weight:800;">How I work</div></div>`;projectModalContent.innerHTML=`<div><div class="project-modal-kicker">${p.kicker}</div><h3>${p.title}</h3><p>${p.summary}</p><ul>${bullets}</ul></div><div>${prev}<div class="project-modal-panel" style="margin-top:16px;"><div class="project-modal-stat">${p.stat}</div><p>${p.detailTitle}</p><div class="tag-row">${tags}</div></div></div>`;projectModal.classList.add('show');projectModal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open')}
 function closeProjectModal(){projectModal.classList.remove('show');projectModal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')}
 document.querySelectorAll('.interactive-project,.work-card').forEach(card=>{card.addEventListener('click',()=>renderProjectModal(card.dataset.project))});
 projectModalClose?.addEventListener('click',closeProjectModal);
 projectModal?.addEventListener('click',(e)=>{if(e.target===projectModal)closeProjectModal()});
 document.addEventListener('keydown',(e)=>{if(e.key==='Escape'){closeProjectModal();closeIntroVideoModal();closeLightbox()}});
-
-/* ===========================================================
-   SLIDE-DECK NAVIGATION (dots, arrows, counter, progress,
-   keyboard, and top-nav syncing)
-   =========================================================== */
 (function(){
-const deck=document.getElementById('deck');
-const slides=Array.from(deck.querySelectorAll('.slide'));
+const slides=Array.from(deckEl.querySelectorAll('.slide'));
 const dotsWrap=document.getElementById('deckDots');
 const counter=document.getElementById('deckCounter');
 const progressBar=document.getElementById('deckProgressBar');
 const prevBtn=document.getElementById('deckPrev');
 const nextBtn=document.getElementById('deckNext');
 const navLinks=Array.from(document.querySelectorAll('.nav a[data-section]'));
-const total=slides.length;
-let current=0;
-
-const labels={
-'top':'Intro','video-intro':'Video','results':'Results','services':'Services',
-'featured-projects':'Projects','pricing':'Ways I Work','testimonials':'Testimonials',
-'about':'About','contact':'Contact'
-};
-
-// build dots
-slides.forEach((s,i)=>{
-const b=document.createElement('button');
-b.className='deck-dot';
-b.type='button';
-b.dataset.label=labels[s.id]||('Slide '+(i+1));
-b.setAttribute('aria-label','Go to '+(labels[s.id]||('slide '+(i+1))));
-b.addEventListener('click',()=>goTo(i));
-dotsWrap.appendChild(b);
-});
+const total=slides.length;let current=0;
+const labels={'top':'Intro','video-intro':'Video','results':'Results','services':'Services','featured-projects':'Projects','pricing':'Ways I Work','testimonials':'Testimonials','about':'About','contact':'Contact'};
+slides.forEach((s,i)=>{const b=document.createElement('button');b.className='deck-dot';b.type='button';b.dataset.label=labels[s.id]||('Slide '+(i+1));b.setAttribute('aria-label','Go to '+(labels[s.id]||('slide '+(i+1))));b.addEventListener('click',()=>goTo(i));dotsWrap.appendChild(b)});
 const dots=Array.from(dotsWrap.children);
-
 function pad(n){return String(n).padStart(2,'0')}
-
 function setActive(i){
-if(i===current && dots[i] && dots[i].classList.contains('active')) {/* still refresh ui below */}
-// Card-zoom: mark slide in-view for entrance animation
-if(slides[i] && !slides[i].classList.contains('in-view')) slides[i].classList.add('in-view');
-current=i;
-dots.forEach((d,idx)=>d.classList.toggle('active',idx===i));
+if(slides[i]&&!slides[i].classList.contains('in-view'))slides[i].classList.add('in-view');
+if(slides[i]&&slides[i].id==='results'){setTimeout(()=>{slides[i].querySelectorAll('.result-kpi[data-count-to]').forEach(animateKpi)},350)}
+current=i;dots.forEach((d,idx)=>d.classList.toggle('active',idx===i));
 counter.textContent=pad(i+1)+' / '+pad(total);
 progressBar.style.transform='scaleX('+((i+1)/total)+')';
-prevBtn.disabled=(i===0);
-nextBtn.disabled=(i===total-1);
-// sync top nav highlight
-const id=slides[i].id;
-navLinks.forEach(a=>a.classList.toggle('active',a.dataset.section===id));
+prevBtn.disabled=(i===0);nextBtn.disabled=(i===total-1);
+const id=slides[i].id;navLinks.forEach(a=>a.classList.toggle('active',a.dataset.section===id));
 }
-
-function goTo(i){
-i=Math.max(0,Math.min(total-1,i));
-slides[i].scrollIntoView({behavior:'smooth',block:'start'});
-// optimistic update; scroll handler will confirm
-setActive(i);
-}
-
-// determine the active slide from scroll position (works for
-// both the desktop deck-scroller and the mobile window-scroller)
+function goTo(i){i=Math.max(0,Math.min(total-1,i));slides[i].scrollIntoView({behavior:'smooth',block:'start'});setActive(i)}
 let ticking=false;
-function computeActive(){
-const probe=window.innerHeight*0.42;
-let idx=0;
-for(let i=0;i<slides.length;i++){
-if(slides[i].getBoundingClientRect().top<=probe) idx=i;
-}
-if(idx!==current) setActive(idx); else {
-// keep counter/progress fresh even if same index
-counter.textContent=pad(current+1)+' / '+pad(total);
-}
-ticking=false;
-}
+function computeActive(){const probe=window.innerHeight*0.42;let idx=0;for(let i=0;i<slides.length;i++){if(slides[i].getBoundingClientRect().top<=probe)idx=i}if(idx!==current)setActive(idx);else counter.textContent=pad(current+1)+' / '+pad(total);ticking=false}
 function onScroll(){if(!ticking){ticking=true;requestAnimationFrame(computeActive)}}
-deck.addEventListener('scroll',onScroll,{passive:true});
-window.addEventListener('scroll',onScroll,{passive:true});
-window.addEventListener('resize',onScroll,{passive:true});
-
-// arrows
-prevBtn.addEventListener('click',()=>goTo(current-1));
-nextBtn.addEventListener('click',()=>goTo(current+1));
-
-// keyboard navigation (ignore while a modal is open or while typing)
-document.addEventListener('keydown',(e)=>{
-if(document.body.classList.contains('modal-open'))return;
-const tag=(e.target.tagName||'').toLowerCase();
-if(tag==='input'||tag==='textarea')return;
-if(e.key==='ArrowDown'||e.key==='PageDown'){e.preventDefault();goTo(current+1)}
-else if(e.key==='ArrowUp'||e.key==='PageUp'){e.preventDefault();goTo(current-1)}
-else if(e.key==='Home'){e.preventDefault();goTo(0)}
-else if(e.key==='End'){e.preventDefault();goTo(total-1)}
-});
-
-// in-page hash links (brand logo + top nav) drive the deck
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-a.addEventListener('click',(e)=>{
-const id=a.getAttribute('href').slice(1);
-const idx=slides.findIndex(s=>s.id===id);
-if(idx!==-1){e.preventDefault();goTo(idx)}
-});
-});
-
-// init
-setActive(0);
-window.addEventListener('load',computeActive);
+deckEl.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll,{passive:true});
+prevBtn.addEventListener('click',()=>goTo(current-1));nextBtn.addEventListener('click',()=>goTo(current+1));
+document.addEventListener('keydown',(e)=>{if(document.body.classList.contains('modal-open'))return;const tag=(e.target.tagName||'').toLowerCase();if(tag==='input'||tag==='textarea')return;if(e.key==='ArrowDown'||e.key==='PageDown'){e.preventDefault();goTo(current+1)}else if(e.key==='ArrowUp'||e.key==='PageUp'){e.preventDefault();goTo(current-1)}else if(e.key==='Home'){e.preventDefault();goTo(0)}else if(e.key==='End'){e.preventDefault();goTo(total-1)}});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',(e)=>{const id=a.getAttribute('href').slice(1);const idx=slides.findIndex(s=>s.id===id);if(idx!==-1){e.preventDefault();goTo(idx)}})});
+setActive(0);window.addEventListener('load',computeActive);
 })();
-
-// Float CTA: hide on hero slide, show on all others
 (function(){
-  const floatCta = document.querySelector('.float-cta');
-  if (!floatCta) return;
-  const heroSlide = document.getElementById('top');
-  const slideObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.target === heroSlide) {
-        document.body.classList.toggle('on-hero', entry.isIntersecting);
-      }
-    });
-  }, { threshold: 0.4 });
-  if (heroSlide) slideObserver.observe(heroSlide);
+const fc=document.querySelector('.float-cta');if(!fc)return;
+const he=document.getElementById('top');
+const obs=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.target===he)document.body.classList.toggle('on-hero',entry.isIntersecting)})},{threshold:0.4,root:deckEl});
+if(he)obs.observe(he);
 })();
-
 </script>
-
-<!-- Floating persistent CTA -->
-<a class="float-cta" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" aria-label="Book a discovery call with Jane">
-  <span class="float-cta-dot"></span>
-  Book a Call
+<a class="float-cta" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" aria-label="Book a discovery call">
+<span class="float-cta-dot"></span>Book a Call
 </a>
 </body>
 </html>
