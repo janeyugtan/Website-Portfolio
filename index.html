@@ -250,33 +250,11 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 @media(max-width:860px){.life-photos-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:768px){html,body{height:auto}body{display:block;overflow:auto}.deck{overflow:visible;scroll-snap-type:none;flex:none}.slide{min-height:auto;scroll-snap-align:none;scroll-snap-stop:normal;scroll-margin-top:96px;padding:30px 0;justify-content:flex-start}.deck-controls{right:12px;bottom:12px}.scroll-hint{display:none}.slide:not(.hero) .life-photo-card{opacity:1!important;transform:none!important;transition:none!important}}
 @media(max-width:640px){.hero-card{padding:22px;border-radius:22px}.video-thumb img{height:240px}.results-grid{grid-template-columns:1fr}.section-title{font-size:26px}.project-modal-card{padding:24px}.brand-logo{height:42px}.nav{gap:4px}.nav a{padding:6px 8px;font-size:13px}.end-cta{padding:32px 20px}.hook-line{font-size:32px}.hero-hook{margin-bottom:20px}.float-cta{font-size:12px;padding:9px 16px}.float-cta-dot{display:none}.life-photos-grid{grid-template-columns:1fr}}
-
-/* Photo lightbox hint */
-.life-photo-wrap[onclick]::before {
-  content: '⤢';
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 4;
-  background: rgba(9,15,26,.55);
-  color: rgba(255,255,255,.8);
-  font-size: 14px;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity .2s ease;
-  backdrop-filter: blur(4px);
-}
-.life-photo-wrap[onclick]:hover::before {
-  opacity: 1;
-}
+.life-photo-wrap[onclick]::before{content:'⤢';position:absolute;top:10px;right:10px;z-index:4;background:rgba(9,15,26,.55);color:rgba(255,255,255,.8);font-size:14px;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s ease;backdrop-filter:blur(4px)}
+.life-photo-wrap[onclick]:hover::before{opacity:1}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Jane Yugtan","url":"https://janeyugtan.com","image":"https://janeyugtan.github.io/Website-Portfolio/jy-linkedin.jpeg","jobTitle":"Operations Partner, Project Manager, Systems Designer","description":"Jane Yugtan is an Operations Partner for founders and agency owners. Based in the Philippines, working remotely with US clients.","worksFor":{"@type":"Organization","name":"Self-Employed / Freelance"},"knowsAbout":["Project Management","Notion Systems","Workflow Automation","Operations Design","SOP Creation"],"nationality":"Filipino","sameAs":["https://www.linkedin.com/in/jyugtan/"],"contactPoint":{"@type":"ContactPoint","email":"jane@janeyugtan.com","contactType":"Business Inquiries"}}
+{"@context":"https://schema.org","@type":"Person","name":"Jane Yugtan","url":"https://janeyugtan.com","image":"https://janeyugtan.github.io/Website-Portfolio/jy-linkedin.jpeg","jobTitle":"Online Business Manager (OBM), Project Manager, Systems Designer","description":"Jane Yugtan is an Online Business Manager (OBM) for founders and agency owners. Based in the Philippines, working remotely with US and international clients.","worksFor":{"@type":"Organization","name":"Self-Employed / Freelance"},"knowsAbout":["Online Business Manager","OBM","Project Management","Notion Systems","Workflow Automation","Operations Design","SOP Creation"],"nationality":"Filipino","sameAs":["https://www.linkedin.com/in/jyugtan/"],"contactPoint":{"@type":"ContactPoint","email":"jane@janeyugtan.com","contactType":"Business Inquiries"}}
 </script>
 </head>
 <body>
@@ -316,15 +294,15 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div class="hero-card">
 <div class="hero-photo-wrap"><img class="hero-photo" src="jy-linkedin.jpeg" width="200" height="200" alt="Portrait of Jane Yugtan" /></div>
 <div>
-<div class="eyebrow hero-eyebrow">Project Management • Notion Systems • Automation</div>
+<div class="eyebrow hero-eyebrow">OBM &bull; Project Management &bull; Systems &bull; Automation</div>
 <h1>Jane Yugtan</h1>
-<div class="subtitle">Operations Partner · Project Manager · Systems Designer</div>
-<p class="intro">I help founders and agencies get organised, move faster, and stop dropping the ball on delivery. Project management, Notion builds, and workflow automation. No babysitting.</p>
+<div class="subtitle">Online Business Manager (OBM) &middot; Operations Manager &middot; Systems Designer</div>
+<p class="intro">I help founders and agencies get organised, move faster, and stop dropping the ball on delivery. OBM retainers, Notion builds, and workflow automation. No babysitting.</p>
 <div class="cta-row">
 <a class="btn btn-hero-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick call</a>
 <a class="btn btn-hero-light" href="mailto:jane@janeyugtan.com">📩 Email Me</a>
 <a class="btn btn-hero-ghost" href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a class="btn btn-hero-ghost" href="https://www.instagram.com/ljane_hy/" target="_blank" rel="noopener">Instagram ↗</a>
+<a class="btn btn-hero-ghost" href="https://www.instagram.com/ljane_hy/" target="_blank" rel="noopener">Instagram ↗</a>
 </div>
 <div class="hero-jumps">
 <span class="jump-label">Jump to:</span>
@@ -368,7 +346,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div class="result-card"><div class="result-kpi" data-count-to="95" data-suffix="%">95%</div><div class="result-label">Workflow satisfaction improvement</div><div class="result-copy">Improved team experience through clearer systems and processes people actually follow.</div></div>
 <div class="result-card"><div class="result-kpi" data-count-to="30" data-prefix="-" data-suffix="%">-30%</div><div class="result-label">Project delays reduced</div><div class="result-copy">Improved execution through QA gates, clearer process control, and more predictable delivery.</div></div>
 <div class="result-card"><div class="result-kpi">6-10 hrs</div><div class="result-label">CEO time saved weekly</div><div class="result-copy">Structured workflows and automation freed up leadership time each week.</div></div>
-<div class="result-card"><div class="result-kpi" data-count-to="100" data-suffix="+">100+</div><div class="result-label">Client accounts supported</div><div class="result-copy">Supported project delivery and operations across agencies, founders, and the teams they serve.</div></div>
+<div class="result-card"><div class="result-kpi" data-count-to="100" data-suffix="+">100+</div><div class="result-label">Client accounts supported</div><div class="result-copy">Supported delivery and operations across agencies, founders, and Fortune 500-adjacent enterprise client accounts.</div></div>
 </div>
 </div>
 </section>
@@ -376,7 +354,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <section class="slide section reveal" id="services">
 <div class="container">
 <h2 class="section-title">Services</h2>
-<p class="section-subtitle">Three things I am good at and actually enjoy doing.</p>
+<p class="section-subtitle">Three things I do well. Every engagement starts with an audit — no assumptions, no guesswork.</p>
 <div class="services-grid">
 <div class="panel"><div class="project-kicker">Delivery</div><h3>Project Management &amp; Delivery</h3><ul><li>Running projects start to finish so nothing falls through</li><li>Writing SOPs and setting up QA checkpoints that people follow</li><li>Being the reliable second-in-command when founders are stretched thin</li></ul><div class="tag-row"><span class="tag">Project Management</span><span class="tag">SOPs</span><span class="tag">Process Design</span></div></div>
 <div class="panel"><div class="project-kicker">Systems</div><h3>Notion Dashboard Optimization</h3><ul><li>Company-wide Notion setup and dashboard cleanup</li><li>Department dashboards, SOP libraries, and KPI systems</li><li>Built so people actually open them, not shelved after handover</li></ul><div class="tag-row"><span class="tag">Notion Systems</span><span class="tag">Operations</span><span class="tag">Documentation</span></div></div>
@@ -411,15 +389,15 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <section class="slide section reveal" id="pricing">
 <div class="container">
 <h2 class="section-title">Ways I Work</h2>
-<p class="section-subtitle">I work part-time or project-based. Rates are always talked through on a call, no guesswork.</p>
+<p class="section-subtitle">I work on retainers and defined-scope projects. Rates are always discussed on a call — no guesswork.</p>
 <div class="carousel-shell">
 <button class="carousel-arrow left" type="button" id="pricingPrev" aria-label="Previous">&#8249;</button>
 <div style="position:relative;overflow:hidden;border-radius:24px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:22px;">
 <div id="pricingCarousel" class="auto-carousel" style="display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:none;-ms-overflow-style:none;">
-<div class="panel work-card" data-project="work-hourly" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Flexible Support</div><h3>Hourly Support</h3><p>Ongoing support for founders and agencies who need a reliable person in their corner.</p><ul><li>Good for when you need help but do not want to commit to a big scope yet</li><li>Start small, scale up if it works</li></ul><div class="pricing-note">Rate discussed on call</div></div>
+<div class="panel work-card" data-project="work-retainer" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Ongoing Partnership</div><h3>OBM Retainer</h3><p>Ongoing operations management for founders who want a reliable right hand running the backend.</p><ul><li>Monthly ops management, project oversight, and system maintenance</li><li>You focus on the business — I handle what keeps it running</li></ul><div class="pricing-note">Rate discussed on call</div></div>
 <div class="panel work-card" data-project="work-notion" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Systems Build</div><h3>Notion System Projects</h3><p>I build the Notion workspace from scratch or clean up the mess you already have.</p><ul><li>From blank page to working system</li><li>Priced per project, scoped on a call</li></ul><div class="pricing-note">Scoped on call</div></div>
-<div class="panel work-card" data-project="work-retainer" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Ongoing Partnership</div><h3>Maintenance &amp; Retainers</h3><p>For clients who want things maintained after the build is done.</p><ul><li>Monthly check-ins and updates so nothing gets stale</li><li>Good if you want someone who already knows your setup</li></ul><div class="pricing-note">Rate discussed on call</div></div>
 <div class="panel work-card" data-project="work-consulting" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Strategy</div><h3>Consulting Sessions</h3><p>A focused session where we look at what is broken and figure out how to fix it.</p><ul><li>You leave with a clear action list or SOP, not just notes</li><li>Good if you want to think things through before spending money on a full build</li></ul><div class="pricing-note">Rate discussed on call</div></div>
+<div class="panel work-card" data-project="work-hourly" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Flexible Support</div><h3>Hourly Support</h3><p>Ongoing support for founders and agencies who need a reliable person in their corner.</p><ul><li>Good for when you need help but do not want to commit to a big scope yet</li><li>Start small, scale up if it works</li></ul><div class="pricing-note">Rate discussed on call</div></div>
 </div>
 </div>
 <button class="carousel-arrow right" type="button" id="pricingNext" aria-label="Next">&#8250;</button>
@@ -458,10 +436,11 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div class="experience-card"><div class="meta">My Story</div><h3>Working remotely since 2021</h3>
 <p>I started working remotely in 2021. In 2022 I got my first real project with a marketing agency in the US and everything changed from there.</p>
 <p>Since then I have worked directly with around <strong>10 clients</strong>, mostly founders and agency owners. Through their businesses, I have touched <strong>100+ client accounts</strong> across delivery, systems, and ops work.</p>
+<p>This includes enterprise account management at a US-based company serving Fortune 500 clients — work that sharpened how I handle high-volume, high-stakes relationships at scale.</p>
 <p>Now I focus on working with founders who want things running properly without micromanaging every moving part.</p></div>
 <div class="experience-card"><div class="meta">Current Focus</div><h3>What I am working on now</h3>
 <p>My day-to-day work keeps me sharp across project delivery, operational support, and systems work. That is exactly what I bring to the projects I take on here.</p>
-<p>I take on <strong>project-based and freelance work</strong> when the scope makes sense, whether that is tightening up operations, fixing broken workflows, or building systems people actually use.</p>
+<p>I take on <strong>retainer-based and project work</strong> when the scope makes sense, whether that is running ongoing operations, fixing broken workflows, or building systems people actually use.</p>
 <p>If the scope is right and the timing works, I would love to connect.</p></div>
 <div class="experience-card"><div class="meta">Life Outside the Laptop</div><h3>Cats, travels, and sunsets</h3>
 <p>I have two British Shorthairs. Pochi is my resident cat, a blue blotched smoke who is genuinely emotionally intelligent. He comes when called and always knows when I need a break. Asher is my pure cinnamon newcomer and has fully taken over the energy in the house.</p>
@@ -476,23 +455,10 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-mom-travelcebu.jpeg','Sinulog trip — Temple of Leah, Cebu')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo: Sinulog trip — Temple of Leah, Cebu"><img src="jane-mom-travelcebu.jpeg" alt="Jane and her mom at Temple of Leah Cebu" loading="lazy" /><div class="life-photo-caption"><strong>Sinulog trip. Temple of Leah, Cebu</strong><span>With mom. Everyone we meet tells us we look like sisters. We take it every time.</span></div></div></div>
 <div class="life-photo-card"><div class="life-photo-wrap" onclick="openLightbox('jane-family.jpeg','Mom and grandma at Escala Tagaytay')" style="cursor:zoom-in;" role="button" aria-label="Enlarge photo"><img src="jane-family.jpeg" alt="Jane with her mom and grandma at Escala Tagaytay" loading="lazy" /><div class="life-photo-caption"><strong>For the people who showed up first</strong><span>Mom and grandma at Escala Tagaytay for her 50th. Remote work gave me the freedom to make this happen. Everything I do is for them.</span></div></div></div>
 </div>
-
 <div style="margin-top:24px;text-align:center;">
   <a href="https://www.instagram.com/ljane_hy/" target="_blank" rel="noopener"
-     style="display:inline-flex;align-items:center;gap:10px;
-             padding:11px 22px;border-radius:999px;
-             background:rgba(255,255,255,.07);
-             border:1px solid rgba(255,255,255,.14);
-             color:rgba(255,255,255,.75);
-             font-size:13px;font-weight:700;
-             font-family:'DM Sans',Arial,sans-serif;
-             text-decoration:none;
-             transition:background .2s ease,color .2s ease,border-color .2s ease;">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-      <circle cx="12" cy="12" r="4"/>
-      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-    </svg>
+     style="display:inline-flex;align-items:center;gap:10px;padding:11px 22px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.75);font-size:13px;font-weight:700;font-family:'DM Sans',Arial,sans-serif;text-decoration:none;transition:background .2s ease,color .2s ease,border-color .2s ease;">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
     Follow along — @ljane_hy
   </a>
 </div>
@@ -509,9 +475,9 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <a class="btn btn-light" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" style="font-size:15px;padding:14px 22px;">&#9749; Book a discovery call</a>
 <a class="btn" href="mailto:jane@janeyugtan.com" style="background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2);font-size:15px;padding:14px 22px;">&#128233; Send me an email</a>
 </div>
-<div class="end-cta-sub">EST hours · Remote · Part-time and project-based</div>
+<div class="end-cta-sub">EST hours &middot; Remote &middot; Retainer &amp; Project-Based</div>
 </div>
-<div class="footer">© 2026 Jane Yugtan. Operations Partner · Project Manager · Systems Designer</div>
+<div class="footer">&copy; 2026 Jane Yugtan. Online Business Manager (OBM) &middot; Project Manager &middot; Systems Designer</div>
 </div>
 </section>
 </div>
@@ -569,7 +535,13 @@ document.getElementById('pricingNext')?.addEventListener('click',()=>loopCarouse
 pricingCarousel?.addEventListener('mouseenter',stopAutoCarousel);pricingCarousel?.addEventListener('mouseleave',startAutoCarousel);
 pricingCarousel?.addEventListener('touchstart',stopAutoCarousel,{passive:true});pricingCarousel?.addEventListener('touchend',startAutoCarousel,{passive:true});
 startAutoCarousel();
-const projectData={'work-hourly':{website:'',preview:'',kicker:'Ways I Work',title:'Hourly Support',summary:'Good for founders who need reliable support without committing to a big scope.',stat:'Flexible and part-time',detailTitle:'What this is best for',bullets:['Ongoing support without committing to a full project scope.','Flexible help across operations and coordination.','Best fit for agencies and founders who need a reliable right hand.'],tags:['Flexible Support','Operations','Project Management']},'work-notion':{website:'',preview:'',kicker:'Ways I Work',title:'Notion System Projects',summary:'I build the Notion workspace from scratch or clean up the mess you already have.',stat:'Priced per project',detailTitle:'What this is best for',bullets:['Company-wide Notion workspace organization.','From blank page to working system.','Built so people actually use them.'],tags:['Notion','Systems Design','Implementation']},'work-retainer':{website:'',preview:'',kicker:'Ways I Work',title:'Maintenance and Retainers',summary:'For clients who want things maintained after the build is done.',stat:'Monthly partnership',detailTitle:'What this is best for',bullets:['Monthly updates and refinements.','Good if you want someone who knows your setup.','Keeps systems useful as you grow.'],tags:['Retainer','Optimization','Support']},'work-consulting':{website:'',preview:'',kicker:'Ways I Work',title:'Consulting Sessions',summary:'A focused session where we look at what is broken and figure out how to fix it.',stat:'Per session',detailTitle:'What this is best for',bullets:['Strategy session around systems and operations.','You leave with a clear action list or SOP.','Good before committing to a full build.'],tags:['Consulting','Strategy','SOP Guide']},sava:{website:'https://sava-amsterdam.com/',preview:'https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/',kicker:'Featured Project',title:'SAVA Amsterdam',summary:'SAVA Amsterdam needed their Notion cleaned up and rebuilt. I restructured the whole workspace so their team could actually use it instead of avoiding it.',stat:'Full company Notion system',detailTitle:'What I focused on',bullets:['Built out department pages for Sales, Support, HR, Supply Chain, and Marketing.','Pulled their SOPs, KPIs, and team docs into one searchable workspace.','Set up the layout so the founder could see what is happening without chasing the team.','Built it to last, not just look good on delivery day.'],tags:['E-commerce Ops','Notion Design','Company Systems']},whiskey:{website:'https://whiskeylibrary.com/',preview:'https://image.thum.io/get/width/1400/crop/900/noanimate/https://whiskeylibrary.com/',kicker:'Featured Project',title:'Whiskey Library',summary:'Whiskey Library needed an affiliate operation built from scratch. I set up the Notion workflow, found and qualified affiliates, and had a $10K pipeline running inside 30 days.',stat:'$10K pipeline in 30 days',detailTitle:'What I focused on',bullets:['Built the Notion workflow that tracked affiliates, outreach, and progress.','Found and qualified affiliates, not just collected names.','Set up a clear onboarding process so affiliates did not go cold.','Turned scattered effort into a repeatable, trackable process.'],tags:['Affiliate Ops','Pipeline Build','Notion Workflow']}};
+const projectData={
+'work-retainer':{website:'',preview:'',kicker:'Ways I Work',title:'OBM Retainer',summary:'Ongoing operations management for founders who want a reliable right hand running the backend.',stat:'Monthly partnership',detailTitle:'What this is best for',bullets:['Monthly ops management, project oversight, and system maintenance.','You focus on the business — I handle what keeps it running.','The right fit if you want consistent, committed ops support.'],tags:['OBM Retainer','Operations Management','Ongoing Support']},
+'work-notion':{website:'',preview:'',kicker:'Ways I Work',title:'Notion System Projects',summary:'I build the Notion workspace from scratch or clean up the mess you already have.',stat:'Priced per project',detailTitle:'What this is best for',bullets:['Company-wide Notion workspace organisation.','From blank page to working system.','Built so people actually use them.'],tags:['Notion','Systems Design','Implementation']},
+'work-consulting':{website:'',preview:'',kicker:'Ways I Work',title:'Consulting Sessions',summary:'A focused session where we look at what is broken and figure out how to fix it.',stat:'Per session',detailTitle:'What this is best for',bullets:['Strategy session around systems and operations.','You leave with a clear action list or SOP.','Good before committing to a full build.'],tags:['Consulting','Strategy','SOP Guide']},
+'work-hourly':{website:'',preview:'',kicker:'Ways I Work',title:'Hourly Support',summary:'Good for founders who need reliable support without committing to a big scope.',stat:'Flexible and ongoing',detailTitle:'What this is best for',bullets:['Ongoing support without committing to a full project scope.','Flexible help across operations and coordination.','Best fit for agencies and founders who need a reliable right hand.'],tags:['Flexible Support','Operations','Project Management']},
+sava:{website:'https://sava-amsterdam.com/',preview:'https://image.thum.io/get/width/1400/crop/900/noanimate/https://sava-amsterdam.com/',kicker:'Featured Project',title:'SAVA Amsterdam',summary:'SAVA Amsterdam needed their Notion cleaned up and rebuilt. I restructured the whole workspace so their team could actually use it instead of avoiding it.',stat:'Full company Notion system',detailTitle:'What I focused on',bullets:['Built out department pages for Sales, Support, HR, Supply Chain, and Marketing.','Pulled their SOPs, KPIs, and team docs into one searchable workspace.','Set up the layout so the founder could see what is happening without chasing the team.','Built it to last, not just look good on delivery day.'],tags:['E-commerce Ops','Notion Design','Company Systems']},
+whiskey:{website:'https://whiskeylibrary.com/',preview:'https://image.thum.io/get/width/1400/crop/900/noanimate/https://whiskeylibrary.com/',kicker:'Featured Project',title:'Whiskey Library',summary:'Whiskey Library needed an affiliate operation built from scratch. I set up the Notion workflow, found and qualified affiliates, and had a $10K pipeline running inside 30 days.',stat:'$10K pipeline in 30 days',detailTitle:'What I focused on',bullets:['Built the Notion workflow that tracked affiliates, outreach, and progress.','Found and qualified affiliates, not just collected names.','Set up a clear onboarding process so affiliates did not go cold.','Turned scattered effort into a repeatable, trackable process.'],tags:['Affiliate Ops','Pipeline Build','Notion Workflow']}};
 const projectModal=document.getElementById('projectModal');
 const projectModalContent=document.getElementById('projectModalContent');
 const projectModalClose=document.getElementById('projectModalClose');
