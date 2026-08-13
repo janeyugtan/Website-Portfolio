@@ -19,6 +19,7 @@
 <meta name="twitter:title" content="Jane Yugtan | Online Business Manager" />
 <meta name="twitter:description" content="Online Business Manager for founders and agency owners." />
 <meta name="twitter:image" content="https://janeyugtan.com/og-image.png" />
+<link rel="icon" href="favicon.ico" sizes="any" />
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -115,6 +116,8 @@ h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,6vw,52px);line-heig
 .testi-video-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(15,76,117,.14)}
 .testi-video-thumb{position:relative;background:linear-gradient(135deg,#0f4c75,#1d6fa5);height:160px;display:flex;align-items:center;justify-content:center;cursor:pointer;overflow:hidden}
 .testi-video-thumb::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(39,211,242,.15),transparent)}
+.testi-video-thumb.has-preview{background-size:cover;background-position:center}
+.testi-video-thumb.has-preview::before{background:linear-gradient(180deg,rgba(9,26,42,.25) 0%,rgba(9,26,42,.15) 45%,rgba(9,26,42,.88) 100%)}
 .testi-play{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;font-size:28px;color:#fff;position:relative;z-index:1;transition:transform .2s ease,background .2s ease}
 .testi-video-thumb:hover .testi-play{transform:scale(1.1);background:rgba(255,255,255,.28)}.testi-video-body{padding:18px}
 .testi-stars{color:#f59e0b;font-size:14px;margin-bottom:8px;letter-spacing:2px}
@@ -195,7 +198,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 .slide:not(.hero) .experience-card{opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s ease}
 .slide.in-view .experience-card:nth-child(1){opacity:1;transform:none;transition-delay:.24s}.slide.in-view .experience-card:nth-child(2){opacity:1;transform:none;transition-delay:.34s}.slide.in-view .experience-card:nth-child(3){opacity:1;transform:none;transition-delay:.44s}
 .slide:not(.hero) .testi-video-card,.slide:not(.hero) .feedback-card{opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s ease}
-.slide.in-view .testi-video-card:nth-child(1){opacity:1;transform:none;transition-delay:.22s}.slide.in-view .testi-video-card:nth-child(2){opacity:1;transform:none;transition-delay:.34s}.slide.in-view .feedback-card:nth-child(1){opacity:1;transform:none;transition-delay:.28s}.slide.in-view .feedback-card:nth-child(2){opacity:1;transform:none;transition-delay:.40s}
+.slide.in-view .testi-video-card:nth-child(1){opacity:1;transform:none;transition-delay:.22s}.slide.in-view .testi-video-card:nth-child(2){opacity:1;transform:none;transition-delay:.34s}.slide.in-view .feedback-card:nth-child(1){opacity:1;transform:none;transition-delay:.28s}.slide.in-view .feedback-card:nth-child(2){opacity:1;transform:none;transition-delay:.40s}.slide.in-view .feedback-card:nth-child(3){opacity:1;transform:none;transition-delay:.52s}
 @media(max-width:768px){.slide:not(.hero){opacity:0;transform:translateY(24px);filter:none;transition:opacity .55s ease,transform .55s ease}.slide.in-view{opacity:1;transform:none;filter:none}.slide:not(.hero) .section-title,.slide:not(.hero) .section-subtitle,.slide:not(.hero) .results-grid,.slide:not(.hero) .services-grid,.slide:not(.hero) .projects-grid,.slide:not(.hero) .video-card,.slide:not(.hero) .carousel-shell,.slide:not(.hero) .social-proof-grid,.slide:not(.hero) .feedback-grid,.slide:not(.hero) .experience-grid,.slide:not(.hero) .end-cta,.slide:not(.hero) .result-card,.slide:not(.hero) .experience-card,.slide:not(.hero) .testi-video-card,.slide:not(.hero) .feedback-card{opacity:1!important;transform:none!important;transition:none!important}}
 .slide.hero.dark-slide{background:var(--navy)}
 .slide.hero .hero-scroll-track{color:rgba(255,255,255,.18)}
@@ -459,11 +462,11 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <p class="section-subtitle">What the people I have worked with actually say.</p>
 <div class="social-proof-grid" style="margin-bottom:24px;">
 <div class="testi-video-card">
-<div class="testi-video-thumb"><div class="testi-play">&#9654;</div><div style="position:absolute;bottom:14px;left:14px;right:14px;z-index:1;"><div style="color:rgba(255,255,255,.7);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px;">Video Testimonial</div><div style="color:#fff;font-size:15px;font-weight:700;">Sean Elias. Threecolts / 70K Affiliates</div></div></div>
+<div class="testi-video-thumb has-preview" style="background-image:url('preview-sean.png');"><div class="testi-play">&#9654;</div><div style="position:absolute;bottom:14px;left:14px;right:14px;z-index:1;"><div style="color:rgba(255,255,255,.7);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px;">Video Testimonial</div><div style="color:#fff;font-size:15px;font-weight:700;">Sean Elias. Threecolts / 70K Affiliates</div></div></div>
 <div class="testi-video-body"><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="testi-quote">"Jane is really good at getting things done fast."</div><div style="margin-top:12px;"><a class="btn btn-secondary" href="./Sean%20Elias-TestimonialVideo.mp4" style="font-size:13px;padding:10px 14px;">&#9654; Watch Video</a></div></div>
 </div>
 <div class="testi-video-card">
-<div class="testi-video-thumb"><div class="testi-play">&#9654;</div><div style="position:absolute;bottom:14px;left:14px;right:14px;z-index:1;"><div style="color:rgba(255,255,255,.7);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px;">Video Testimonial</div><div style="color:#fff;font-size:15px;font-weight:700;">Joe Remington. PPC Professor</div></div></div>
+<div class="testi-video-thumb has-preview" style="background-image:url('preview-joe.png');"><div class="testi-play">&#9654;</div><div style="position:absolute;bottom:14px;left:14px;right:14px;z-index:1;"><div style="color:rgba(255,255,255,.7);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px;">Video Testimonial</div><div style="color:#fff;font-size:15px;font-weight:700;">Joe Remington. PPC Professor</div></div></div>
 <div class="testi-video-body"><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="testi-quote">"Jane is a phenomenal resource for me and my team."</div><div style="margin-top:12px;"><a class="btn btn-secondary" href="./Joe-Remington-TestimonialVideo.mp4" style="font-size:13px;padding:10px 14px;">&#9654; Watch Video</a></div></div>
 </div>
 </div>
@@ -472,6 +475,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div class="feedback-grid">
 <div class="feedback-card"><div class="feedback-header"><span class="feedback-platform-badge badge-message">Direct Message</span><span class="feedback-label">SAVA Amsterdam. Notion Project</span></div><div class="feedback-img-wrap" onclick="openLightbox('sava-feedback.jpg','SAVA Amsterdam Feedback')"><img src="sava-feedback.jpg" alt="Client feedback from SAVA Amsterdam" loading="lazy" /><div class="feedback-img-overlay"><span class="feedback-zoom">Click to enlarge</span></div></div><div class="feedback-caption">Feedback from the SAVA Amsterdam Notion project</div></div>
 <div class="feedback-card"><div class="feedback-header"><span class="feedback-platform-badge badge-linkedin">LinkedIn</span><span class="feedback-label">Zack Millsaps · Millsaps Productions</span></div><div class="feedback-img-wrap" onclick="openLightbox('zack-feedback.jpg','Zack Millsaps LinkedIn Recommendation')"><img src="zack-feedback.jpg" alt="LinkedIn recommendation from Zack Millsaps" loading="lazy" /><div class="feedback-img-overlay"><span class="feedback-zoom">Click to enlarge</span></div></div><div class="feedback-caption">LinkedIn recommendation. <a href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700;">View on LinkedIn</a></div></div>
+<div class="feedback-card"><div class="feedback-header"><span class="feedback-platform-badge badge-linkedin">LinkedIn</span><span class="feedback-label">Yakov Smart · Investor Attraction Academy</span></div><div class="feedback-img-wrap" onclick="openLightbox('yakov-feedback.jpg','Yakov Smart LinkedIn Recommendation')"><img src="yakov-feedback.jpg" alt="LinkedIn recommendation from Yakov Smart" loading="lazy" /><div class="feedback-img-overlay"><span class="feedback-zoom">Click to enlarge</span></div></div><div class="feedback-caption">LinkedIn recommendation. <a href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700;">View on LinkedIn</a></div></div>
 </div>
 </div>
 </section>
