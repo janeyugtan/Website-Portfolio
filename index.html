@@ -271,6 +271,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <a href="#video-intro" data-section="video-intro">Video</a>
 <a href="#results" data-section="results">Results</a>
 <a href="#services" data-section="services">Services</a>
+<a href="#methodology" data-section="methodology">How I Work</a>
 <a href="#featured-projects" data-section="featured-projects">Projects</a>
 <a href="#pricing" data-section="pricing">Ways I Work</a>
 <a href="#testimonials" data-section="testimonials">Testimonials</a>
@@ -359,6 +360,33 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div class="panel"><div class="project-kicker">Delivery</div><h3>Project Management &amp; Delivery</h3><ul><li>Running projects start to finish so nothing falls through</li><li>Writing SOPs and setting up QA checkpoints that people follow</li><li>Being the reliable second-in-command when founders are stretched thin</li></ul><div class="tag-row"><span class="tag">Project Management</span><span class="tag">SOPs</span><span class="tag">Process Design</span></div></div>
 <div class="panel"><div class="project-kicker">Systems</div><h3>Notion Dashboard Optimization</h3><ul><li>Company-wide Notion setup and dashboard cleanup</li><li>Department dashboards, SOP libraries, and KPI systems</li><li>Built so people actually open them, not shelved after handover</li></ul><div class="tag-row"><span class="tag">Notion Systems</span><span class="tag">Operations</span><span class="tag">Documentation</span></div></div>
 <div class="panel"><div class="project-kicker">Automation</div><h3>AI + Automation for Founders &amp; Agencies</h3><ul><li>Internal workflow automation so repetitive ops work runs itself</li><li>AI-assisted systems for reporting, documentation, and follow-ups</li><li>Cleaning up processes that have been held together with duct tape</li></ul><div class="tag-row"><span class="tag">AI Workflows</span><span class="tag">Automation</span><span class="tag">Process Design</span></div></div>
+</div>
+</div>
+</section>
+
+<section class="slide section reveal dark-slide" id="methodology">
+<div class="container">
+<h2 class="section-title">How I Work</h2>
+<p class="section-subtitle">No templates, no guesswork. Every engagement moves through the same three steps.</p>
+<div class="services-grid">
+<div class="panel" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.10);box-shadow:0 12px 30px rgba(0,0,0,.20);">
+<div style="font-family:'DM Serif Display',serif;font-size:15px;font-weight:700;letter-spacing:.14em;color:var(--cyan);margin-bottom:10px;">01</div>
+<h3 style="color:#fff;">Audit</h3>
+<p style="color:rgba(255,255,255,.75);font-size:15px;line-height:1.65;margin:0;">I map what's actually breaking — the tools, the handoffs, the stuff nobody's said out loud. You leave with a clear action list, whether or not we build together after.</p>
+<div class="tag-row"><span class="tag" style="background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.16);color:#fff;">Diagnose</span></div>
+</div>
+<div class="panel" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.10);box-shadow:0 12px 30px rgba(0,0,0,.20);">
+<div style="font-family:'DM Serif Display',serif;font-size:15px;font-weight:700;letter-spacing:.14em;color:var(--cyan);margin-bottom:10px;">02</div>
+<h3 style="color:#fff;">Build</h3>
+<p style="color:rgba(255,255,255,.75);font-size:15px;line-height:1.65;margin:0;">Systems built around how you actually work, not a generic template — Notion, project workflows, and automation, scoped and priced from what the audit found.</p>
+<div class="tag-row"><span class="tag" style="background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.16);color:#fff;">Implement</span></div>
+</div>
+<div class="panel" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.10);box-shadow:0 12px 30px rgba(0,0,0,.20);">
+<div style="font-family:'DM Serif Display',serif;font-size:15px;font-weight:700;letter-spacing:.14em;color:var(--cyan);margin-bottom:10px;">03</div>
+<h3 style="color:#fff;">Handoff &amp; Support</h3>
+<p style="color:rgba(255,255,255,.75);font-size:15px;line-height:1.65;margin:0;">Trained on the system, not just handed a link. Ongoing support is available once a build is complete, for clients who want the system to stay clean.</p>
+<div class="tag-row"><span class="tag" style="background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.16);color:#fff;">Sustain</span></div>
+</div>
 </div>
 </div>
 </section>
@@ -588,7 +616,7 @@ const prevBtn=document.getElementById('deckPrev');
 const nextBtn=document.getElementById('deckNext');
 const navLinks=Array.from(document.querySelectorAll('.nav a[data-section]'));
 const total=slides.length;let current=0;
-const labels={'top':'Intro','video-intro':'Video','results':'Results','services':'Services','featured-projects':'Projects','pricing':'Ways I Work','testimonials':'Testimonials','about':'About','contact':'Contact'};
+const labels={'top':'Intro','video-intro':'Video','results':'Results','services':'Services','methodology':'How I Work','featured-projects':'Projects','pricing':'Ways I Work','testimonials':'Testimonials','about':'About','contact':'Contact'};
 slides.forEach((s,i)=>{const b=document.createElement('button');b.className='deck-dot';b.type='button';b.dataset.label=labels[s.id]||('Slide '+(i+1));b.setAttribute('aria-label','Go to '+(labels[s.id]||('slide '+(i+1))));b.addEventListener('click',()=>goTo(i));dotsWrap.appendChild(b)});
 const dots=Array.from(dotsWrap.children);
 function pad(n){return String(n).padStart(2,'0')}
