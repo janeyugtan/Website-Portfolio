@@ -96,12 +96,12 @@ h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,6vw,52px);line-heig
 .project-card.interactive-project:hover,.work-card:hover{transform:translateY(-8px) scale(1.01);box-shadow:0 24px 48px rgba(15,76,117,.18);border-color:#bfd9ec}
 .project-card.float-card{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
 .project-card.float-card:hover{transform:translateY(-10px) rotate(-.2deg);box-shadow:0 28px 56px rgba(15,76,117,.18);border-color:#b8d8ec}
-.carousel-shell{position:relative}
-.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:48px;height:48px;border-radius:50%;border:1px solid rgba(15,76,117,.10);background:rgba(255,255,255,.94);box-shadow:0 14px 30px rgba(15,76,117,.16);color:var(--blue);font-size:24px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
-.carousel-arrow:hover{transform:translateY(-50%) scale(1.06);box-shadow:0 18px 36px rgba(15,76,117,.22)}.carousel-arrow.left{left:14px}.carousel-arrow.right{right:14px}
-.auto-carousel{scroll-behavior:smooth}.auto-carousel:hover{cursor:grab}
-.swipe-hint{display:none;text-align:center;color:var(--muted);font-size:13px;font-weight:500;margin-top:10px;gap:6px;align-items:center;justify-content:center}
 .pricing-note{display:inline-flex;align-items:center;gap:8px;background:#eef6fc;border:1px solid #d7e8f5;color:var(--blue);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:700;margin-top:10px}
+.featured-offer{position:relative;scroll-margin-top:24px;border:2px solid var(--blue);background:linear-gradient(180deg,#f7fbff 0%,#ffffff 100%);box-shadow:var(--shadow-lg);padding:26px}
+.featured-offer h3{font-family:'DM Serif Display',serif;font-size:30px;margin:0 0 6px}
+.featured-offer-pill{display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;background:var(--blue);color:#fff;font-size:12px;font-weight:700;letter-spacing:.2px;margin-bottom:12px}
+.featured-offer-lead{color:var(--slate);font-size:16px;margin:0 0 18px;max-width:760px}
+.featured-offer ul{padding-left:18px;margin:0;color:var(--slate)}.featured-offer li{font-size:15px;line-height:1.65}
 .social-proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .testi-video-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;transition:transform .22s ease,box-shadow .22s ease}
 .testi-video-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(15,76,117,.14)}
@@ -128,9 +128,9 @@ h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,6vw,52px);line-heig
 .feedback-img-wrap:hover .feedback-zoom{opacity:1;transform:scale(1)}
 .feedback-caption{padding:12px 18px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
 .footer{text-align:center;color:var(--muted);padding:24px 0 0;font-size:14px}
-.bir-badge{display:inline-flex;flex-direction:column;align-items:center;gap:10px;max-width:100%;margin:0 auto 18px;padding:14px 16px 12px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.bir-badge{display:flex;flex-direction:column;align-items:center;gap:10px;width:fit-content;max-width:100%;margin:0 auto 18px;padding:14px 16px 12px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
 .bir-badge-img{display:block;max-width:100%;cursor:zoom-in;border-radius:8px}
-.bir-badge-img img{display:block;width:484px;max-width:100%;height:auto}
+.bir-badge-img img{display:block;width:auto;max-width:100%;height:auto}
 .bir-badge-caption{font-size:12px;line-height:1.5;color:var(--muted)}
 .bir-badge-caption a{font-weight:700}
 .project-modal{position:fixed;inset:0;background:rgba(9,19,35,.72);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;padding:24px;z-index:999;opacity:0;pointer-events:none;transition:opacity .28s ease}
@@ -187,15 +187,15 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 .slide.in-view .section-title{opacity:1;transform:none}
 .slide:not(.hero) .section-subtitle{opacity:0;transform:translateY(14px);transition:opacity .55s ease .32s,transform .55s ease .32s}
 .slide.in-view .section-subtitle{opacity:1;transform:none}
-.slide:not(.hero) .results-grid,.slide:not(.hero) .services-grid,.slide:not(.hero) .projects-grid,.slide:not(.hero) .video-card,.slide:not(.hero) .carousel-shell,.slide:not(.hero) .social-proof-grid,.slide:not(.hero) .feedback-grid,.slide:not(.hero) .experience-grid,.slide:not(.hero) .end-cta{opacity:0;transform:translateY(24px);transition:opacity .6s ease .38s,transform .6s ease .38s}
-.slide.in-view .results-grid,.slide.in-view .services-grid,.slide.in-view .projects-grid,.slide.in-view .video-card,.slide.in-view .carousel-shell,.slide.in-view .social-proof-grid,.slide.in-view .feedback-grid,.slide.in-view .experience-grid,.slide.in-view .end-cta{opacity:1;transform:none}
+.slide:not(.hero) .results-grid,.slide:not(.hero) .services-grid,.slide:not(.hero) .projects-grid,.slide:not(.hero) .video-card,.slide:not(.hero) .social-proof-grid,.slide:not(.hero) .feedback-grid,.slide:not(.hero) .experience-grid,.slide:not(.hero) .end-cta{opacity:0;transform:translateY(24px);transition:opacity .6s ease .38s,transform .6s ease .38s}
+.slide.in-view .results-grid,.slide.in-view .services-grid,.slide.in-view .projects-grid,.slide.in-view .video-card,.slide.in-view .social-proof-grid,.slide.in-view .feedback-grid,.slide.in-view .experience-grid,.slide.in-view .end-cta{opacity:1;transform:none}
 .slide:not(.hero) .result-card{opacity:0;transform:translateY(20px);transition:opacity .45s ease,transform .45s ease}
 .slide.in-view .result-card:nth-child(1){opacity:1;transform:none;transition-delay:.20s}.slide.in-view .result-card:nth-child(2){opacity:1;transform:none;transition-delay:.26s}.slide.in-view .result-card:nth-child(3){opacity:1;transform:none;transition-delay:.32s}.slide.in-view .result-card:nth-child(4){opacity:1;transform:none;transition-delay:.38s}.slide.in-view .result-card:nth-child(5){opacity:1;transform:none;transition-delay:.44s}.slide.in-view .result-card:nth-child(6){opacity:1;transform:none;transition-delay:.50s}.slide.in-view .result-card:nth-child(7){opacity:1;transform:none;transition-delay:.56s}
 .slide:not(.hero) .experience-card{opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s ease}
 .slide.in-view .experience-card:nth-child(1){opacity:1;transform:none;transition-delay:.24s}.slide.in-view .experience-card:nth-child(2){opacity:1;transform:none;transition-delay:.34s}.slide.in-view .experience-card:nth-child(3){opacity:1;transform:none;transition-delay:.44s}
 .slide:not(.hero) .testi-video-card,.slide:not(.hero) .feedback-card{opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s ease}
 .slide.in-view .testi-video-card:nth-child(1){opacity:1;transform:none;transition-delay:.22s}.slide.in-view .testi-video-card:nth-child(2){opacity:1;transform:none;transition-delay:.34s}.slide.in-view .feedback-card:nth-child(1){opacity:1;transform:none;transition-delay:.28s}.slide.in-view .feedback-card:nth-child(2){opacity:1;transform:none;transition-delay:.40s}.slide.in-view .feedback-card:nth-child(3){opacity:1;transform:none;transition-delay:.52s}
-@media(max-width:768px){.slide:not(.hero){opacity:0;transform:translateY(24px);filter:none;transition:opacity .55s ease,transform .55s ease}.slide.in-view{opacity:1;transform:none;filter:none}.slide:not(.hero) .section-title,.slide:not(.hero) .section-subtitle,.slide:not(.hero) .results-grid,.slide:not(.hero) .services-grid,.slide:not(.hero) .projects-grid,.slide:not(.hero) .video-card,.slide:not(.hero) .carousel-shell,.slide:not(.hero) .social-proof-grid,.slide:not(.hero) .feedback-grid,.slide:not(.hero) .experience-grid,.slide:not(.hero) .end-cta,.slide:not(.hero) .result-card,.slide:not(.hero) .experience-card,.slide:not(.hero) .testi-video-card,.slide:not(.hero) .feedback-card{opacity:1!important;transform:none!important;transition:none!important}}
+@media(max-width:768px){.slide:not(.hero){opacity:0;transform:translateY(24px);filter:none;transition:opacity .55s ease,transform .55s ease}.slide.in-view{opacity:1;transform:none;filter:none}.slide:not(.hero) .section-title,.slide:not(.hero) .section-subtitle,.slide:not(.hero) .results-grid,.slide:not(.hero) .services-grid,.slide:not(.hero) .projects-grid,.slide:not(.hero) .video-card,.slide:not(.hero) .social-proof-grid,.slide:not(.hero) .feedback-grid,.slide:not(.hero) .experience-grid,.slide:not(.hero) .end-cta,.slide:not(.hero) .result-card,.slide:not(.hero) .experience-card,.slide:not(.hero) .testi-video-card,.slide:not(.hero) .feedback-card{opacity:1!important;transform:none!important;transition:none!important}}
 .slide.hero.dark-slide{background:var(--navy)}
 .slide.hero .hero-scroll-track{color:rgba(255,255,255,.18)}
 .hero-hook{position:relative;z-index:1;text-align:center;margin-bottom:32px}
@@ -246,7 +246,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 .life-photo-card:hover::before{opacity:1}
 .slide:not(.hero) .life-photo-card{opacity:0;transform:scale(.92) translateY(20px);transition:opacity .55s ease,transform .55s cubic-bezier(.16,1,.3,1)}
 .slide.in-view .life-photo-card:nth-child(1){opacity:1;transform:none;transition-delay:.18s}.slide.in-view .life-photo-card:nth-child(2){opacity:1;transform:none;transition-delay:.25s}.slide.in-view .life-photo-card:nth-child(3){opacity:1;transform:none;transition-delay:.32s}.slide.in-view .life-photo-card:nth-child(4){opacity:1;transform:none;transition-delay:.39s}.slide.in-view .life-photo-card:nth-child(5){opacity:1;transform:none;transition-delay:.46s}.slide.in-view .life-photo-card:nth-child(6){opacity:1;transform:none;transition-delay:.53s}
-@media(max-width:980px){.hero-card{grid-template-columns:1fr;text-align:center}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.services-grid,.projects-grid,.experience-grid{grid-template-columns:1fr}.social-proof-grid,.feedback-grid{grid-template-columns:1fr}.cta-row{justify-content:center}.topbar-inner{flex-direction:column;align-items:flex-start}.nav{justify-content:flex-start}.carousel-arrow{display:none}.swipe-hint{display:flex}.project-modal-grid{grid-template-columns:1fr}.deck-dots{display:none}.hero-jumps{display:none}}
+@media(max-width:980px){.hero-card{grid-template-columns:1fr;text-align:center}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.services-grid,.projects-grid,.experience-grid{grid-template-columns:1fr}.social-proof-grid,.feedback-grid{grid-template-columns:1fr}.cta-row{justify-content:center}.topbar-inner{flex-direction:column;align-items:flex-start}.nav{justify-content:flex-start}.project-modal-grid{grid-template-columns:1fr}.deck-dots{display:none}.hero-jumps{display:none}}
 @media(max-width:860px){.life-photos-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:768px){html,body{height:auto}body{display:block;overflow:auto}.deck{overflow:visible;scroll-snap-type:none;flex:none}.slide{min-height:auto;scroll-snap-align:none;scroll-snap-stop:normal;scroll-margin-top:96px;padding:30px 0;justify-content:flex-start}.deck-controls{right:12px;bottom:12px}.scroll-hint{display:none}.slide:not(.hero) .life-photo-card{opacity:1!important;transform:none!important;transition:none!important}}
 @media(max-width:640px){.hero-card{padding:22px;border-radius:22px}.video-thumb img{height:240px}.results-grid{grid-template-columns:1fr}.section-title{font-size:26px}.project-modal-card{padding:24px}.brand-logo{height:42px}.nav{gap:4px}.nav a{padding:6px 8px;font-size:13px}.end-cta{padding:32px 20px}.hook-line{font-size:32px}.hero-hook{margin-bottom:20px}.float-cta{font-size:12px;padding:9px 16px}.float-cta-dot{display:none}.life-photos-grid{grid-template-columns:1fr}}
@@ -463,43 +463,34 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 </div>
 </section>
 
-<section class="slide section reveal" id="pricing">
+<section class="slide section reveal scrollable" id="pricing">
 <div class="container">
 <h2 class="section-title">Ways I Work</h2>
 <p class="section-subtitle">Every engagement starts with a discovery call and a paid audit. I scope and price from what the audit finds, never from a template. One build engagement at a time.</p>
-<div class="carousel-shell">
-<button class="carousel-arrow left" type="button" id="pricingPrev" aria-label="Previous">&#8249;</button>
-<div style="position:relative;overflow:hidden;border-radius:24px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:22px;">
-<div id="pricingCarousel" class="auto-carousel" style="display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:none;-ms-overflow-style:none;">
-<div class="panel work-card" data-project="work-retainer" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Ongoing Partnership</div><h3>OBM Retainer</h3><p>Ongoing operations management for founders who want a reliable right hand running the backend.</p><ul><li>Monthly ops management, project oversight, and system maintenance</li><li>You focus on the business — I handle what keeps it running</li></ul><div class="pricing-note">Scoped after the audit</div></div>
-<div class="panel work-card" data-project="work-notion" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Systems Build</div><h3>Notion System Projects</h3><p>I build the Notion workspace from scratch or clean up the mess you already have.</p><ul><li>From blank page to working system</li><li>Fixed fee, scoped from the audit</li></ul><div class="pricing-note">Scoped after the audit</div></div>
-<div class="panel work-card" data-project="work-consulting" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Strategy</div><h3>Operations Audit</h3><p>Where every engagement starts. I map what is actually breaking before anyone talks about a build.</p><ul><li>You leave with a clear action list, whether or not we work together after</li><li>Rolls into the build scope if we move forward</li></ul><div class="pricing-note">Paid engagement</div></div>
-<div class="panel work-card" data-project="work-hourly" style="min-width:320px;scroll-snap-align:start;flex:0 0 320px;"><div class="project-kicker">Post-Build Support</div><h3>Hourly Support</h3><p>Ongoing support for clients whose systems I have already built.</p><ul><li>Data hygiene, workspace upkeep, and capacity checks after handover</li><li>Available once a build is complete, not as a starting point</li></ul><div class="pricing-note">Scoped after the audit</div></div>
+<div class="panel featured-offer" id="obm-retainer">
+<div class="featured-offer-pill">Main offer &middot; Ongoing partnership</div>
+<h3>OBM Retainer</h3>
+<p class="featured-offer-lead">A reliable right hand running the backend, every month, so you can run the business instead of chasing it.</p>
+<div class="services-grid">
+<div><div class="project-kicker">Who it's for</div><ul><li>You're the bottleneck: projects, follow-ups, and status updates all run through you</li><li>Your tools and docs are scattered, and nothing is the single source of truth</li><li>You want things running properly without micromanaging every moving part</li></ul></div>
+<div><div class="project-kicker">What's included</div><ul><li>Monthly operations management and project oversight</li><li>Notion and system upkeep, so the workspace stays clean</li><li>SOPs and QA checkpoints people actually follow</li><li>Workflow automation for the repetitive work</li></ul></div>
+<div><div class="project-kicker">How we start</div><ul><li><strong>Discovery call:</strong> 30 minutes to see if we're a fit</li><li><strong>Paid audit:</strong> I map what's breaking and you get a clear action list</li><li><strong>Retainer:</strong> scoped and priced from what the audit finds, never from a template</li></ul></div>
+</div>
+<div class="cta-row" style="margin-top:20px;">
+<a class="btn btn-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">&#9749; Book a discovery call</a>
+<a class="btn btn-light" href="mailto:jane@janeyugtan.com">&#128233; Email me</a>
 </div>
 </div>
-<button class="carousel-arrow right" type="button" id="pricingNext" aria-label="Next">&#8250;</button>
+<h3 style="font-family:'DM Serif Display',serif;font-size:22px;margin:32px 0 14px;">Other ways to work with me</h3>
+<div class="services-grid">
+<div class="panel work-card" data-project="work-consulting"><div class="project-kicker">Strategy</div><h3>Operations Audit</h3><p>Where every engagement starts. I map what is actually breaking before anyone talks about a build.</p><ul><li>You leave with a clear action list, whether or not we work together after</li><li>Rolls into the build scope if we move forward</li></ul><div class="pricing-note">Paid engagement</div></div>
+<div class="panel work-card" data-project="work-notion"><div class="project-kicker">Systems Build</div><h3>Notion System Projects</h3><p>I build the Notion workspace from scratch or clean up the mess you already have.</p><ul><li>From blank page to working system</li><li>Fixed fee, scoped from the audit</li></ul><div class="pricing-note">Scoped after the audit</div></div>
+<div class="panel work-card" data-project="work-hourly"><div class="project-kicker">Post-Build Support</div><h3>Hourly Support</h3><p>Ongoing support for clients whose systems I have already built.</p><ul><li>Data hygiene, workspace upkeep, and capacity checks after handover</li><li>Available once a build is complete, not as a starting point</li></ul><div class="pricing-note">Scoped after the audit</div></div>
 </div>
-<div class="swipe-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Swipe to see more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></div>
 <div style="margin-top:24px;text-align:center;padding:22px;background:#eef6fc;border:1px solid #d7e8f5;border-radius:20px;">
 <p style="margin:0 0 6px;color:var(--navy);font-size:15px;font-weight:700;">Not ready for a full build?</p>
 <p style="margin:0 0 12px;color:var(--slate);font-size:14px;">Smaller scoped work runs through Fiverr. Full builds and OBM retainers start with a discovery call and audit.</p>
 <a class="btn btn-light" href="https://www.fiverr.com/s/Ay9W1da" target="_blank" rel="noopener" style="font-size:13px;padding:10px 18px;">Smaller scoped work on Fiverr ↗</a>
-</div>
-</div>
-</section>
-
-<section class="slide section reveal" id="obm-retainer">
-<div class="container">
-<h2 class="section-title">OBM Retainer</h2>
-<p class="section-subtitle">A reliable right hand running the backend, every month, so you can run the business instead of chasing it.</p>
-<div class="services-grid">
-<div class="panel"><div class="project-kicker">Who it's for</div><h3>Founders &amp; agency owners</h3><ul><li>You're the bottleneck: projects, follow-ups, and status updates all run through you</li><li>Your tools and docs are scattered, and nothing is the single source of truth</li><li>You want things running properly without micromanaging every moving part</li></ul></div>
-<div class="panel"><div class="project-kicker">What's included</div><h3>Ongoing ops management</h3><ul><li>Monthly operations management and project oversight</li><li>Notion and system upkeep, so the workspace stays clean</li><li>SOPs and QA checkpoints people actually follow</li><li>Workflow automation for the repetitive work</li></ul></div>
-<div class="panel"><div class="project-kicker">How we start</div><h3>Call, audit, retainer</h3><ul><li><strong>Discovery call:</strong> 30 minutes to see if we're a fit</li><li><strong>Paid audit:</strong> I map what's breaking and you get a clear action list</li><li><strong>Retainer:</strong> scoped and priced from what the audit finds, never from a template</li></ul></div>
-</div>
-<div class="cta-row" style="justify-content:center;margin-top:24px;">
-<a class="btn btn-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">&#9749; Book a discovery call</a>
-<a class="btn btn-light" href="mailto:jane@janeyugtan.com">&#128233; Email me</a>
 </div>
 </div>
 </section>
@@ -578,7 +569,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 </div>
 <div class="footer">
 <div class="bir-badge">
-<a class="bir-badge-img" href="bir-registration-seal.png" onclick="openLightbox('bir-registration-seal.png','BIR Registration Seal Badge');return false;" aria-label="Enlarge BIR Registration Seal Badge to scan"><img src="bir-registration-seal.png" width="484" height="157" alt="BIR Registration Seal Badge: Registered 2024, Bureau of Internal Revenue, RSN 026RC20240000002775, with QR code for verification" loading="lazy" /></a>
+<a class="bir-badge-img" href="BIR%20Seal%20Badge.png" onclick="openLightbox('BIR%20Seal%20Badge.png','BIR Registration Seal Badge');return false;" aria-label="Enlarge BIR Registration Seal Badge to scan"><img src="BIR%20Seal%20Badge.png" width="484" height="157" alt="BIR Registration Seal Badge: Registered 2024, Bureau of Internal Revenue, RSN 026RC20240000002775, with QR code for verification" loading="lazy" /></a>
 <div class="bir-badge-caption">Registered with the Bureau of Internal Revenue (BIR) &middot; RSN 026RC20240000002775<br />Scan the QR code or <a href="https://verify.bir.gov.ph/correspondence/f839feac198f45eea59e1276ca48ba98" target="_blank" rel="noopener">verify with BIR &#8599;</a></div>
 </div>
 <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:12px;font-size:13px;">
@@ -595,7 +586,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <nav class="deck-dots" id="deckDots" aria-label="Slide navigation"></nav>
 <div class="deck-controls" role="group" aria-label="Slide controls">
 <button class="deck-arrow" id="deckPrev" type="button">&#8593;</button>
-<span class="deck-counter" id="deckCounter">01 / 11</span>
+<span class="deck-counter" id="deckCounter">01 / 10</span>
 <button class="deck-arrow" id="deckNext" type="button">&#8595;</button>
 </div>
 <div class="project-modal" id="introVideoModal" aria-hidden="true">
@@ -636,18 +627,7 @@ const revealObs=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(
 document.querySelectorAll('.slide:not(.hero)').forEach(s=>revealObs.observe(s));
 const heroSl=document.querySelector('.slide.hero');if(heroSl)heroSl.classList.add('in-view');
 function animateKpi(el){if(el.dataset.animated==='true')return;el.dataset.animated='true';const end=parseFloat(el.dataset.countTo||'0');const pre=el.dataset.prefix||'';const suf=el.dataset.suffix||'';const dur=1400;const t0=performance.now();const dec=Number.isInteger(end)?0:1;function tick(now){const p=Math.min((now-t0)/dur,1);const e=1-Math.pow(1-p,3);el.textContent=pre+(end*e).toLocaleString(undefined,{minimumFractionDigits:dec,maximumFractionDigits:dec})+suf;if(p<1)requestAnimationFrame(tick)}requestAnimationFrame(tick)}
-const pricingCarousel=document.getElementById('pricingCarousel');
-let autoCarouselInterval=null;
-function loopCarousel(dir){if(!pricingCarousel)return;const w=332;const max=pricingCarousel.scrollWidth-pricingCarousel.clientWidth;if(dir==='next'){pricingCarousel.scrollLeft+w>=max-10?pricingCarousel.scrollTo({left:0,behavior:'smooth'}):pricingCarousel.scrollBy({left:w,behavior:'smooth'})}else{pricingCarousel.scrollLeft<=10?pricingCarousel.scrollTo({left:max,behavior:'smooth'}):pricingCarousel.scrollBy({left:-w,behavior:'smooth'})}}
-function startAutoCarousel(){if(!pricingCarousel)return;stopAutoCarousel();autoCarouselInterval=setInterval(()=>loopCarousel('next'),3200)}
-function stopAutoCarousel(){if(autoCarouselInterval){clearInterval(autoCarouselInterval);autoCarouselInterval=null}}
-document.getElementById('pricingPrev')?.addEventListener('click',()=>loopCarousel('prev'));
-document.getElementById('pricingNext')?.addEventListener('click',()=>loopCarousel('next'));
-pricingCarousel?.addEventListener('mouseenter',stopAutoCarousel);pricingCarousel?.addEventListener('mouseleave',startAutoCarousel);
-pricingCarousel?.addEventListener('touchstart',stopAutoCarousel,{passive:true});pricingCarousel?.addEventListener('touchend',startAutoCarousel,{passive:true});
-startAutoCarousel();
 const projectData={
-'work-retainer':{website:'',preview:'',kicker:'Ways I Work',title:'OBM Retainer',summary:'Ongoing operations management for founders who want a reliable right hand running the backend.',stat:'Monthly partnership',detailTitle:'What this is best for',bullets:['Monthly ops management, project oversight, and system maintenance.','You focus on the business — I handle what keeps it running.','The right fit if you want consistent, committed ops support.','Scope and rate are set after the audit, never from a template.'],tags:['OBM Retainer','Operations Management','Ongoing Support']},
 'work-notion':{website:'',preview:'',kicker:'Ways I Work',title:'Notion System Projects',summary:'I build the Notion workspace from scratch or clean up the mess you already have.',stat:'Fixed fee per build',detailTitle:'What this is best for',bullets:['Company-wide Notion workspace organisation.','From blank page to working system.','Built so people actually use them.','One build engagement at a time, scoped and priced from the audit.'],tags:['Notion','Systems Design','Implementation']},
 'work-consulting':{website:'',preview:'',kicker:'Ways I Work',title:'Operations Audit',summary:'Where every engagement starts. I map what is actually breaking before anyone talks about a build.',stat:'The starting point',detailTitle:'What this is best for',bullets:['A structured look at your systems, workflows, and where things stall.','You leave with a clear action list, whether or not we work together after.','Rolls into the build scope if we move forward.'],tags:['Audit','Strategy','Diagnostics']},
 'work-hourly':{website:'',preview:'',kicker:'Ways I Work',title:'Hourly Support',summary:'Ongoing support for clients whose systems I have already built.',stat:'Post-handover only',detailTitle:'What this is best for',bullets:['Data hygiene, workspace upkeep, and contractor capacity checks.','Keeps a delivered system from drifting back into clutter.','Available after a build is complete, not as a starting point.'],tags:['Post-Build Support','Operations','Maintenance']},
@@ -671,7 +651,7 @@ const prevBtn=document.getElementById('deckPrev');
 const nextBtn=document.getElementById('deckNext');
 const navLinks=Array.from(document.querySelectorAll('.nav a[data-section]'));
 const total=slides.length;let current=0;
-const labels={'top':'Intro','video-intro':'Video','results':'Results','services':'Services','methodology':'How I Work','featured-projects':'Projects','pricing':'Ways I Work','obm-retainer':'OBM Retainer','testimonials':'Testimonials','about':'About','contact':'Contact'};
+const labels={'top':'Intro','video-intro':'Video','results':'Results','services':'Services','methodology':'How I Work','featured-projects':'Projects','pricing':'Ways I Work','testimonials':'Testimonials','about':'About','contact':'Contact'};
 slides.forEach((s,i)=>{const b=document.createElement('button');b.className='deck-dot';b.type='button';b.dataset.label=labels[s.id]||('Slide '+(i+1));b.setAttribute('aria-label','Go to '+(labels[s.id]||('slide '+(i+1))));b.addEventListener('click',()=>goTo(i));dotsWrap.appendChild(b)});
 const dots=Array.from(dotsWrap.children);
 function pad(n){return String(n).padStart(2,'0')}
@@ -692,7 +672,8 @@ deckEl.addEventListener('scroll',onScroll,{passive:true});window.addEventListene
 prevBtn.addEventListener('click',()=>goTo(current-1));nextBtn.addEventListener('click',()=>goTo(current+1));
 document.addEventListener('keydown',(e)=>{if(document.body.classList.contains('modal-open'))return;const tag=(e.target.tagName||'').toLowerCase();if(tag==='input'||tag==='textarea')return;if(e.key==='ArrowDown'||e.key==='PageDown'){e.preventDefault();goTo(current+1)}else if(e.key==='ArrowUp'||e.key==='PageUp'){e.preventDefault();goTo(current-1)}else if(e.key==='Home'){e.preventDefault();goTo(0)}else if(e.key==='End'){e.preventDefault();goTo(total-1)}});
 document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',(e)=>{const id=a.getAttribute('href').slice(1);const idx=slides.findIndex(s=>s.id===id);if(idx!==-1){e.preventDefault();goTo(idx)}})});
-setActive(0);window.addEventListener('load',computeActive);
+function goToHashTarget(){const id=location.hash.slice(1);const t=id&&document.getElementById(id);if(!t||!deckEl.contains(t)||t.classList.contains('slide'))return;const s=t.closest('.slide');if(s){s.style.transition='none';s.classList.add('in-view');void s.offsetHeight}t.scrollIntoView({block:'start'});if(s)requestAnimationFrame(()=>{s.style.transition=''})}
+setActive(0);window.addEventListener('load',()=>{goToHashTarget();computeActive()});
 })();
 (function(){
 const fc=document.querySelector('.float-cta');if(!fc)return;
