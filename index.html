@@ -128,6 +128,11 @@ h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,6vw,52px);line-heig
 .feedback-img-wrap:hover .feedback-zoom{opacity:1;transform:scale(1)}
 .feedback-caption{padding:12px 18px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
 .footer{text-align:center;color:var(--muted);padding:24px 0 0;font-size:14px}
+.bir-badge{display:inline-flex;flex-direction:column;align-items:center;gap:10px;max-width:100%;margin:0 auto 18px;padding:14px 16px 12px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.bir-badge-img{display:block;max-width:100%;cursor:zoom-in;border-radius:8px}
+.bir-badge-img img{display:block;width:484px;max-width:100%;height:auto}
+.bir-badge-caption{font-size:12px;line-height:1.5;color:var(--muted)}
+.bir-badge-caption a{font-weight:700}
 .project-modal{position:fixed;inset:0;background:rgba(9,19,35,.72);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;padding:24px;z-index:999;opacity:0;pointer-events:none;transition:opacity .28s ease}
 .project-modal.show{opacity:1;pointer-events:auto}
 .project-modal-card{width:min(980px,100%);max-height:90vh;overflow:auto;border-radius:28px;background:linear-gradient(180deg,#0f4c75 0%,#0c3c5d 100%);color:white;box-shadow:0 30px 80px rgba(5,15,28,.35);transform:scale(.92);transition:transform .28s ease;position:relative;padding:34px}
@@ -255,7 +260,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <body>
 <div class="availability-bar">
 <a href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" class="avail-link">
-<span><span class="avail-dot"></span>Currently booked through September &middot; Next build opening: October 2026 &middot; Book a discovery call</span>
+<span><span class="avail-dot"></span>Taking on new clients &middot; Book a discovery call to see if we&rsquo;re a fit</span>
 </a>
 </div>
 <div class="topbar">
@@ -482,6 +487,22 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 </div>
 </div>
 </section>
+
+<section class="slide section reveal" id="obm-retainer">
+<div class="container">
+<h2 class="section-title">OBM Retainer</h2>
+<p class="section-subtitle">A reliable right hand running the backend, every month, so you can run the business instead of chasing it.</p>
+<div class="services-grid">
+<div class="panel"><div class="project-kicker">Who it's for</div><h3>Founders &amp; agency owners</h3><ul><li>You're the bottleneck: projects, follow-ups, and status updates all run through you</li><li>Your tools and docs are scattered, and nothing is the single source of truth</li><li>You want things running properly without micromanaging every moving part</li></ul></div>
+<div class="panel"><div class="project-kicker">What's included</div><h3>Ongoing ops management</h3><ul><li>Monthly operations management and project oversight</li><li>Notion and system upkeep, so the workspace stays clean</li><li>SOPs and QA checkpoints people actually follow</li><li>Workflow automation for the repetitive work</li></ul></div>
+<div class="panel"><div class="project-kicker">How we start</div><h3>Call, audit, retainer</h3><ul><li><strong>Discovery call:</strong> 30 minutes to see if we're a fit</li><li><strong>Paid audit:</strong> I map what's breaking and you get a clear action list</li><li><strong>Retainer:</strong> scoped and priced from what the audit finds, never from a template</li></ul></div>
+</div>
+<div class="cta-row" style="justify-content:center;margin-top:24px;">
+<a class="btn btn-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">&#9749; Book a discovery call</a>
+<a class="btn btn-light" href="mailto:jane@janeyugtan.com">&#128233; Email me</a>
+</div>
+</div>
+</section>
 <section class="slide section reveal scrollable" id="testimonials">
 <div class="container">
 <h2 class="section-title">What Clients Say</h2>
@@ -545,9 +566,9 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <section class="slide section reveal" id="contact">
 <div class="container">
 <div class="end-cta">
-<div class="end-cta-eyebrow"><span class="avail-dot"></span> Next build opening: October 2026</div>
+<div class="end-cta-eyebrow"><span class="avail-dot"></span> Book a discovery call to see if we&rsquo;re a fit</div>
 <h3>If it sounds like a fit, let's find out.</h3>
-<p>You've seen the work. I take on one build at a time and I'm booked through September, so if October is on your radar, a 30-minute call is the place to start. If your timeline is tighter, I keep a short waitlist.</p>
+<p>You've seen the work. I take on one build at a time, so the work gets my full attention. A 30-minute call is the place to start.</p>
 <p style="font-size:13px;color:rgba(255,255,255,.65);margin:0 0 22px;">You'll be asked a few quick questions when you book, so we make the most of the call.</p>
 <div class="cta-row" style="justify-content:center;gap:14px;">
 <a class="btn btn-light" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" style="font-size:15px;padding:14px 22px;">&#9749; Book a discovery call</a>
@@ -556,6 +577,10 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div class="end-cta-sub">EST hours &middot; Remote &middot; Retainer &amp; Project-Based</div>
 </div>
 <div class="footer">
+<div class="bir-badge">
+<a class="bir-badge-img" href="bir-registration-seal.png" onclick="openLightbox('bir-registration-seal.png','BIR Registration Seal Badge');return false;" aria-label="Enlarge BIR Registration Seal Badge to scan"><img src="bir-registration-seal.png" width="484" height="157" alt="BIR Registration Seal Badge: Registered 2024, Bureau of Internal Revenue, RSN 026RC20240000002775, with QR code for verification" loading="lazy" /></a>
+<div class="bir-badge-caption">Registered with the Bureau of Internal Revenue (BIR) &middot; RSN 026RC20240000002775<br />Scan the QR code or <a href="https://verify.bir.gov.ph/correspondence/f839feac198f45eea59e1276ca48ba98" target="_blank" rel="noopener">verify with BIR &#8599;</a></div>
+</div>
 <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:12px;font-size:13px;">
 <a href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener" style="color:var(--muted);">LinkedIn</a>
 <a href="https://www.instagram.com/ljane_hy/" target="_blank" rel="noopener" style="color:var(--muted);">Instagram</a>
@@ -570,7 +595,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <nav class="deck-dots" id="deckDots" aria-label="Slide navigation"></nav>
 <div class="deck-controls" role="group" aria-label="Slide controls">
 <button class="deck-arrow" id="deckPrev" type="button">&#8593;</button>
-<span class="deck-counter" id="deckCounter">01 / 10</span>
+<span class="deck-counter" id="deckCounter">01 / 11</span>
 <button class="deck-arrow" id="deckNext" type="button">&#8595;</button>
 </div>
 <div class="project-modal" id="introVideoModal" aria-hidden="true">
@@ -646,7 +671,7 @@ const prevBtn=document.getElementById('deckPrev');
 const nextBtn=document.getElementById('deckNext');
 const navLinks=Array.from(document.querySelectorAll('.nav a[data-section]'));
 const total=slides.length;let current=0;
-const labels={'top':'Intro','video-intro':'Video','results':'Results','services':'Services','methodology':'How I Work','featured-projects':'Projects','pricing':'Ways I Work','testimonials':'Testimonials','about':'About','contact':'Contact'};
+const labels={'top':'Intro','video-intro':'Video','results':'Results','services':'Services','methodology':'How I Work','featured-projects':'Projects','pricing':'Ways I Work','obm-retainer':'OBM Retainer','testimonials':'Testimonials','about':'About','contact':'Contact'};
 slides.forEach((s,i)=>{const b=document.createElement('button');b.className='deck-dot';b.type='button';b.dataset.label=labels[s.id]||('Slide '+(i+1));b.setAttribute('aria-label','Go to '+(labels[s.id]||('slide '+(i+1))));b.addEventListener('click',()=>goTo(i));dotsWrap.appendChild(b)});
 const dots=Array.from(dotsWrap.children);
 function pad(n){return String(n).padStart(2,'0')}
@@ -677,7 +702,7 @@ if(he)obs.observe(he);
 })();
 </script>
 <a class="float-cta" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" aria-label="Book a discovery call">
-<span class="float-cta-dot"></span>October opening &middot; Book a call
+<span class="float-cta-dot"></span>Book a discovery call
 </a>
 </body>
 </html>
