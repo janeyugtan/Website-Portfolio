@@ -9,7 +9,7 @@ Static HTML/CSS/JS — no build step, no dependencies. The homepage lives entire
 ## Structure
 
 - `index.html` — the homepage (markup, styles, and interaction JS)
-- `blog/` — the blog: `blog/index.html` lists posts, one HTML file per post. Each page carries a copy of the homepage header and footer, so update them there too if the homepage nav or footer changes. Add each new post to `sitemap.xml`.
+- `blog/` — the blog: `blog/index.html` lists posts. Each post is a folder with an `index.html` inside (e.g. `blog/my-post-title/index.html`), so its address is `janeyugtan.com/blog/my-post-title/` with no `.html`. Each page carries a copy of the homepage header and footer, so update them there too if the homepage nav or footer changes. Add each new post to `sitemap.xml`.
 - `robots.txt`, `sitemap.xml` — SEO
 - `favicon.ico`, `favicon-*.png`, `apple-touch-icon.png`, `android-chrome-*.png`, `site.webmanifest` — favicon set
 - Images, logos, and video files referenced by `index.html`
