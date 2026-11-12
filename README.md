@@ -1,14 +1,15 @@
 # Jane Yugtan — Portfolio Site
 
-Source for [janeyugtan.com](https://janeyugtan.com), a single-page portfolio site for Jane Yugtan, an Online Business Manager and systems designer.
+Source for [janeyugtan.com](https://janeyugtan.com), a portfolio site (single-page homepage plus a blog) for Jane Yugtan, an Online Business Manager and systems designer.
 
 ## Stack
 
-Static HTML/CSS/JS — no build step, no dependencies. Everything lives in `index.html`. Hosted on GitHub Pages, with the custom domain configured via `CNAME`.
+Static HTML/CSS/JS — no build step, no dependencies. The homepage lives entirely in `index.html`. Hosted on GitHub Pages, with the custom domain configured via `CNAME`.
 
 ## Structure
 
-- `index.html` — the entire site (markup, styles, and interaction JS)
+- `index.html` — the homepage (markup, styles, and interaction JS)
+- `blog/` — the blog: `blog/index.html` lists posts, one HTML file per post. Each page carries a copy of the homepage header and footer, so update them there too if the homepage nav or footer changes. Add each new post to `sitemap.xml`.
 - `robots.txt`, `sitemap.xml` — SEO
 - `favicon.ico`, `favicon-*.png`, `apple-touch-icon.png`, `android-chrome-*.png`, `site.webmanifest` — favicon set
 - Images, logos, and video files referenced by `index.html`
