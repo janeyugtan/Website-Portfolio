@@ -281,6 +281,33 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 .slide.in-view .reels-grid{opacity:1;transform:none}
 @media(max-width:980px){.role-ladder{grid-template-columns:1fr}}
 @media(max-width:640px){.reels-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:8px;justify-content:flex-start}.reel-card{flex:0 0 72%;scroll-snap-align:center}}
+
+/* Hero trust ticks */
+.hero-trust{display:flex;flex-wrap:wrap;gap:8px 18px;margin:16px 0 0;padding:0;list-style:none;font-size:13px;font-weight:700;color:rgba(255,255,255,.78)}
+.hero-trust li{display:inline-flex;align-items:center;gap:7px}
+.hero-trust li::before{content:"\2713";display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:var(--cyan);color:var(--navy);font-size:11px;font-weight:800}
+/* Written testimonial card in the video row */
+.reel-card .reel-img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;cursor:zoom-in;border:0;padding:0;background:none}
+.reel-card .reel-img img{display:block;width:100%;height:100%;object-fit:cover}
+.reel-more{font-size:13px;font-weight:700;margin-top:8px;display:inline-block;background:none;border:0;padding:0;color:var(--blue);cursor:pointer;font-family:inherit}
+/* First 90 days */
+.ninety{margin:32px 0 0}
+.ninety-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.ninety-step{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+.ninety-when{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
+.ninety-step h4{margin:0 0 6px;font-size:17px;color:var(--navy)}
+.ninety-step p{margin:0;font-size:14px;line-height:1.6;color:var(--slate)}
+/* FAQ */
+.faq{margin:32px 0 0;max-width:860px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 2px;font-weight:700;color:var(--navy);font-size:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:0 0 28px;height:28px;border-radius:50%;background:#eef6fc;color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0 0 16px;padding:0 2px;color:var(--slate);font-size:15px;line-height:1.65}
+.section-h3{font-family:'DM Serif Display',serif;font-size:22px;margin:0 0 6px}
+@media(max-width:980px){.ninety-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.ninety-grid{grid-template-columns:1fr}.hero-trust{justify-content:center}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Jane Yugtan","url":"https://janeyugtan.com","image":"https://janeyugtan.com/jy-linkedin.jpeg","jobTitle":"Online Business Manager (OBM) and Fractional Growth Leader","description":"Jane Yugtan is an Online Business Manager (OBM) and fractional growth leader for founders and agency owners. She leads operations, project delivery, and teams so businesses can scale. Based in the Philippines, working remotely with US and international clients.","worksFor":{"@type":"Organization","name":"Self-Employed / Freelance"},"knowsAbout":["Online Business Manager","OBM","Fractional Leadership","Team Leadership","Business Scaling","Project Management","Notion Systems","Workflow Automation","Operations Design","SOP Creation"],"nationality":"Filipino","sameAs":["https://www.linkedin.com/in/jyugtan/","https://www.instagram.com/ljane_hy/","https://www.fiverr.com/s/Ay9W1da"],"contactPoint":{"@type":"ContactPoint","email":"jane@janeyugtan.com","contactType":"Business Inquiries"}}
@@ -335,6 +362,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <a class="btn btn-hero-ghost" href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener">LinkedIn ↗</a>
 <a class="btn btn-hero-ghost" href="https://www.instagram.com/ljane_hy/" target="_blank" rel="noopener">Instagram ↗</a>
 </div>
+<ul class="hero-trust"><li>5 years running ops remotely</li><li>10+ founders &amp; agencies</li><li>5&#9733; client video reviews</li></ul>
 <div class="hero-jumps">
 <span class="jump-label">Jump to:</span>
 <a class="jump-link" href="#results">Results</a>
@@ -518,6 +546,16 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <a class="btn btn-light" href="mailto:jane@janeyugtan.com">&#128233; Email me</a>
 </div>
 </div>
+<div class="ninety">
+<h3 class="section-h3">Your first 90 days on a retainer</h3>
+<p class="section-subtitle" style="margin-bottom:16px;">What changes, and when. Exact steps depend on what the audit finds.</p>
+<div class="ninety-grid">
+<div class="ninety-step"><div class="ninety-when">Weeks 1&ndash;2</div><h4>Audit</h4><p>I map how work actually moves through your business, talk to the team, and pinpoint what&rsquo;s slowing delivery.</p></div>
+<div class="ninety-step"><div class="ninety-when">Weeks 3&ndash;6</div><h4>Take over the core</h4><p>Your most important process is documented and handed to me. The team gets one source of truth and one point of contact.</p></div>
+<div class="ninety-step"><div class="ninety-when">Weeks 7&ndash;10</div><h4>Systems &amp; automation</h4><p>The next processes follow, repetitive work gets automated, and deadlines start landing on time.</p></div>
+<div class="ninety-step"><div class="ninety-when">Weeks 11&ndash;13</div><h4>Plan the next quarter</h4><p>We review what moved, then agree what to scale next, with clear owners and deadlines.</p></div>
+</div>
+</div>
 <h3 style="font-family:'DM Serif Display',serif;font-size:22px;margin:32px 0 14px;">Other ways to work with me</h3>
 <div class="services-grid">
 <div class="panel work-card" data-project="work-consulting"><div class="project-kicker">Strategy</div><h3>Operations Audit</h3><p>Where every engagement starts. I map what is actually breaking before anyone talks about a build.</p><ul><li>You leave with a clear action list, whether or not we work together after</li><li>Rolls into the build scope if we move forward</li></ul><div class="pricing-note">Paid engagement</div></div>
@@ -529,6 +567,14 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <p style="margin:0 0 12px;color:var(--slate);font-size:14px;">Smaller scoped work runs through Fiverr. Full builds and OBM retainers start with a discovery call and audit.</p>
 <a class="btn btn-light" href="https://www.fiverr.com/s/Ay9W1da" target="_blank" rel="noopener" style="font-size:13px;padding:10px 18px;">Smaller scoped work on Fiverr ↗</a>
 </div>
+<div class="faq">
+<h3 class="section-h3">Fair questions</h3>
+<details><summary>How is an OBM different from a VA?</summary><p>A VA does the tasks you assign. An OBM decides what needs doing, who does it, and makes sure it ships, so you stop being the one who assigns and follows up on everything. If you have a clear list of tasks to hand off, a VA is the right hire. <a href="/blog/signs-your-agency-needs-an-obm-not-a-va/">Read: Signs your agency needs an OBM, not a VA</a></p></details>
+<details><summary>What does &ldquo;fractional growth leader&rdquo; mean?</summary><p>You get senior operations and delivery leadership part-time, on a monthly retainer, instead of hiring a full-time operations executive. I own the outcomes with you: deadlines met, the team on track, and systems that hold up as you scale.</p></details>
+<details><summary>Do you manage my team?</summary><p>Yes. I run day-to-day delivery with your team and contractors: clear owners, deadlines, and follow-through, with one point of contact so questions stop landing on you.</p></details>
+<details><summary>How do we start?</summary><p>A 30-minute discovery call to see if we&rsquo;re a fit, then a paid audit. The retainer is scoped and priced from what the audit finds, never from a template.</p></details>
+<details><summary>What if I only need a Notion build?</summary><p>That&rsquo;s a fixed-fee Notion System Project, scoped from the audit. Smaller scoped work runs through my <a href="https://www.fiverr.com/s/Ay9W1da" target="_blank" rel="noopener">Fiverr</a>.</p></details>
+</div>
 </div>
 </section>
 <section class="slide section reveal scrollable" id="testimonials">
@@ -538,13 +584,13 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div class="reels-grid">
 <div class="reel-card"><video controls playsinline preload="none" poster="testimonial-sean-poster.jpg" width="540" height="960" aria-label="Video testimonial from Sean Elias"><source src="Sean%20Elias-TestimonialVideo.mp4" type="video/mp4" /></video><div class="reel-body"><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testi-quote">&ldquo;Jane is really good at getting things done fast.&rdquo;</p><div class="reel-who"><strong>Sean Elias</strong> &middot; Founder &amp; Lead Affiliate Strategist, 70K Affiliates</div></div></div>
 <div class="reel-card"><video controls playsinline preload="none" poster="testimonial-joe-poster.jpg" width="540" height="960" aria-label="Video testimonial from Joe Remington"><source src="Joe-Remington-TestimonialVideo.mp4" type="video/mp4" /></video><div class="reel-body"><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testi-quote">&ldquo;Jane is a phenomenal resource for me and my team.&rdquo;</p><div class="reel-who"><strong>Joe Remington</strong> &middot; Founder, PPC Professor</div></div></div>
+<div class="reel-card"><button type="button" class="reel-img" onclick="openLightbox('yakov-feedback.jpg','Yakov Smart LinkedIn recommendation')" aria-label="Enlarge Yakov Smart's LinkedIn recommendation"><img src="yakov-feedback.jpg" alt="LinkedIn recommendation from Yakov Smart" loading="lazy" width="1290" height="860" /></button><div class="reel-body"><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testi-quote">&ldquo;She&rsquo;s highly versatile, completes projects on time and demonstrates high attention to detail.&rdquo;</p><div class="reel-who"><strong>Yakov Smart</strong> &middot; Founder, Investor Attraction Academy &middot; LinkedIn recommendation</div><button type="button" class="reel-more" onclick="openLightbox('yakov-feedback.jpg','Yakov Smart LinkedIn recommendation')">Read the full recommendation &rarr;</button></div></div>
 </div>
 <h3 style="font-family:'DM Serif Display',serif;font-size:22px;margin:0 0 6px;">Client Feedback</h3>
 <p class="section-subtitle" style="margin-bottom:16px;">Messages and LinkedIn recommendations from the projects I&rsquo;ve led.</p>
 <div class="feedback-grid">
 <div class="feedback-card"><div class="feedback-header"><span class="feedback-platform-badge badge-message">Direct Message</span><span class="feedback-label">SAVA Amsterdam. Notion Project</span></div><div class="feedback-img-wrap" onclick="openLightbox('sava-feedback.jpg','SAVA Amsterdam Feedback')"><img src="sava-feedback.jpg" alt="Client feedback from SAVA Amsterdam" loading="lazy" /><div class="feedback-img-overlay"><span class="feedback-zoom">Click to enlarge</span></div></div><div class="feedback-caption">Feedback from the SAVA Amsterdam Notion project</div></div>
 <div class="feedback-card"><div class="feedback-header"><span class="feedback-platform-badge badge-linkedin">LinkedIn</span><span class="feedback-label">Zack Millsaps · Millsaps Productions</span></div><div class="feedback-img-wrap" onclick="openLightbox('zack-feedback.jpg','Zack Millsaps LinkedIn Recommendation')"><img src="zack-feedback.jpg" alt="LinkedIn recommendation from Zack Millsaps" loading="lazy" /><div class="feedback-img-overlay"><span class="feedback-zoom">Click to enlarge</span></div></div><div class="feedback-caption">LinkedIn recommendation. <a href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700;">View on LinkedIn</a></div></div>
-<div class="feedback-card"><div class="feedback-header"><span class="feedback-platform-badge badge-linkedin">LinkedIn</span><span class="feedback-label">Yakov Smart · Investor Attraction Academy</span></div><div class="feedback-img-wrap" onclick="openLightbox('yakov-feedback.jpg','Yakov Smart LinkedIn Recommendation')"><img src="yakov-feedback.jpg" alt="LinkedIn recommendation from Yakov Smart" loading="lazy" /><div class="feedback-img-overlay"><span class="feedback-zoom">Click to enlarge</span></div></div><div class="feedback-caption">LinkedIn recommendation. <a href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700;">View on LinkedIn</a></div></div>
 </div>
 </div>
 </section>
