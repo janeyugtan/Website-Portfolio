@@ -8,13 +8,19 @@
   </url>
   <url>
     <loc>https://janeyugtan.com/blog/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://janeyugtan.com/blog/signs-your-agency-needs-an-obm-not-a-va/</loc>
     <lastmod>2026-11-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://janeyugtan.com/blog/how-my-obm-business-started/</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
