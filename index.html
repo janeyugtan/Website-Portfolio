@@ -26,7 +26,7 @@
 <link rel="manifest" href="site.webmanifest" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;1,9..40,400&family=DM+Serif+Display:ital@0;1&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
 <style>
 :root{--navy:#091a2a;--navy-2:#10293f;--blue:#0f4c75;--blue-2:#1d6fa5;--cyan:#27d3f2;--slate:#334155;--muted:#64748b;--line:#e6eef7;--white:#ffffff;--shadow:0 12px 30px rgba(15,76,117,.10);--shadow-lg:0 24px 60px rgba(9,26,42,.16);--radius:20px;--radius-lg:28px;--max:1180px;}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
@@ -225,7 +225,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 .float-cta{position:fixed;bottom:24px;left:24px;z-index:600;display:inline-flex;align-items:center;gap:8px;padding:11px 20px;background:var(--navy);color:#fff;font-size:13px;font-weight:700;font-family:'DM Sans',Arial,sans-serif;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(9,26,42,.28);transition:transform .18s ease,box-shadow .18s ease,background .18s ease,opacity .3s ease;border:1px solid rgba(255,255,255,.10)}
 .float-cta:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(9,26,42,.36);background:var(--blue);color:#fff}
 .float-cta-dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex-shrink:0;animation:pulse 2s ease-in-out infinite}
-.on-hero .float-cta{opacity:0;pointer-events:none}
+.on-hero .float-cta,.on-contact .float-cta{opacity:0;pointer-events:none}
 .slide.dark-slide .experience-card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.10);box-shadow:0 12px 30px rgba(0,0,0,.20)}
 .slide.dark-slide .experience-card h3{color:#fff}
 .slide.dark-slide .experience-card p,.slide.dark-slide .experience-card strong{color:rgba(255,255,255,.80)}
@@ -308,6 +308,83 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 .section-h3{font-family:'DM Serif Display',serif;font-size:22px;margin:0 0 6px}
 @media(max-width:980px){.ninety-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.ninety-grid{grid-template-columns:1fr}.hero-trust{justify-content:center}}
+
+/* ===== Inspired-by-Garrett additions, in Jane's brand ===== */
+.hand-note{font-family:'Caveat',cursive;font-weight:700;font-size:26px;line-height:1.1;color:var(--blue-2);margin:12px 0 0;rotate:-2deg;transform-origin:left center}
+.dark-slide .hand-note{color:var(--cyan)}
+/* Services as scroll chapters */
+.chapters{position:relative;margin-top:6px}
+.chapter-nav{position:sticky;top:0;z-index:6;display:flex;align-items:center;gap:20px;padding:14px 0 12px;margin-bottom:4px;background:linear-gradient(180deg,#f8fbff 75%,rgba(248,251,255,0));font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#94a3b8}
+.chapter-nav span{display:inline-flex;align-items:center;gap:8px;transition:color .3s ease}
+.chapter-nav span::before{content:"";width:8px;height:8px;border-radius:50%;background:#cbd5e1;transition:background .3s ease,box-shadow .3s ease}
+.chapter-nav span.on{color:var(--navy)}
+.chapter-nav span.on::before{background:var(--cyan);box-shadow:0 0 0 4px rgba(39,211,242,.18)}
+.chapter-bar{display:block;flex:0 0 120px;height:2px;background:var(--line);position:relative;overflow:hidden}
+.chapter-bar b{position:absolute;inset:0 auto 0 0;width:33.33%;background:linear-gradient(90deg,var(--blue),var(--cyan));transition:width .45s ease}
+.chapter{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:44px;align-items:center;padding:40px 0;border-top:1px solid var(--line)}
+.chapter-label{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+.chapter-title{margin:8px 0 0;font-family:'DM Sans',Arial,sans-serif;font-weight:800;line-height:.88;letter-spacing:-.045em;text-transform:uppercase}
+.chapter-title .to{display:block;font-size:clamp(40px,5.2vw,76px);color:transparent;-webkit-text-stroke:2px var(--navy)}
+.chapter-title .verb{display:block;font-size:clamp(52px,7.6vw,112px);color:var(--navy)}
+.chapter-body ul{margin:0;padding-left:18px;color:var(--slate)}
+.chapter-body li{font-size:16px;line-height:1.65;margin-bottom:4px}
+.sticky-note{position:relative;margin:26px 0 0 8px;max-width:340px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:22px 22px 18px;box-shadow:0 18px 40px rgba(15,76,117,.14);rotate:1.5deg}
+.chapter:nth-child(odd) .sticky-note{rotate:-1.5deg}
+.sticky-note::before{content:"";position:absolute;top:-12px;left:50%;width:96px;height:26px;margin-left:-48px;background:rgba(190,226,245,.8);box-shadow:0 1px 3px rgba(0,0,0,.08);rotate:-2deg}
+.note-kpi{font-size:44px;font-weight:800;line-height:1;color:var(--blue);letter-spacing:-.02em}
+.note-label{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);margin:8px 0 6px}
+.sticky-note p{margin:0;font-size:14px;line-height:1.55;color:var(--slate)}
+.chapters.anim .chapter .verb,.chapters.anim .chapter .to,.chapters.anim .chapter .sticky-note,.chapters.anim .chapter .hand-note{transition:opacity .6s ease,transform .7s cubic-bezier(.16,1,.3,1)}
+.chapters.anim .chapter:not(.ch-in) .to{opacity:0;transform:translateX(-28px)}
+.chapters.anim .chapter:not(.ch-in) .verb{opacity:0;transform:translateX(-48px)}
+.chapters.anim .chapter:not(.ch-in) .sticky-note{opacity:0;transform:translateY(26px)}
+.chapters.anim .chapter:not(.ch-in) .hand-note{opacity:0}
+.chapters.anim .chapter.ch-in .verb{transition-delay:.08s}.chapters.anim .chapter.ch-in .sticky-note{transition-delay:.2s}.chapters.anim .chapter.ch-in .hand-note{transition-delay:.45s}
+/* About: taped polaroids */
+.life-photos-grid{gap:26px 22px;padding-top:12px}
+.life-photo-card{overflow:visible;background:#fff;border-radius:4px;padding:10px 10px 0;box-shadow:0 14px 34px rgba(0,0,0,.4);rotate:-1.6deg;transition:rotate .35s ease,transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s ease}
+.life-photo-card:nth-child(2n){rotate:1.4deg}.life-photo-card:nth-child(3n){rotate:-.6deg}
+.life-photo-card:hover{rotate:0deg}
+.life-photo-card::before{top:-12px;left:50%;right:auto;width:92px;height:26px;margin-left:-46px;background:rgba(190,226,245,.75);box-shadow:0 1px 3px rgba(0,0,0,.15);opacity:1;rotate:-3deg;z-index:5}
+.life-photo-card:nth-child(2n)::before{rotate:2deg}
+.life-photo-wrap{border-radius:2px}
+.life-photo-wrap::after{display:none}
+.life-photo-caption{position:static;padding:10px 4px 14px;transform:none}
+.life-photo-card:hover .life-photo-caption{transform:none}
+.life-photo-caption strong{font-family:'Caveat',cursive;font-size:23px;font-weight:700;color:var(--navy);margin-bottom:2px;line-height:1.1}
+.life-photo-caption span{color:#475569}
+/* Big name sign-off */
+.signoff{margin:64px 0 6px;overflow:hidden}
+.signoff-line{font-family:'DM Serif Display',serif;font-style:italic;font-size:clamp(34px,5vw,64px);line-height:1;color:var(--blue-2);margin:0}
+.signoff-name{font-family:'DM Sans',Arial,sans-serif;font-weight:800;font-size:clamp(60px,12.5vw,176px);line-height:.92;letter-spacing:-.055em;color:var(--navy);margin:10px 0 0;white-space:nowrap}
+.signoff-name span{color:var(--cyan)}
+/* "Say hi" panel */
+.sayhi-overlay{position:fixed;inset:0;z-index:1090;background:rgba(9,26,42,.45);backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .3s ease}
+.sayhi-overlay.show{opacity:1;pointer-events:auto}
+.sayhi{position:fixed;top:0;right:0;z-index:1100;height:100%;width:min(460px,100%);overflow-y:auto;background:radial-gradient(circle at 90% 6%,rgba(39,211,242,.16),transparent 40%),#091a2a;color:#fff;padding:26px 32px 32px;box-shadow:-30px 0 80px rgba(0,0,0,.35);transform:translateX(100%);visibility:hidden;transition:transform .4s cubic-bezier(.16,1,.3,1),visibility 0s linear .4s}
+.sayhi.open{transform:none;visibility:visible;transition:transform .4s cubic-bezier(.16,1,.3,1),visibility 0s}
+.sayhi-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+.sayhi-kicker{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan)}
+.sayhi-close{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;border-radius:999px;padding:8px 14px;font:700 12px 'DM Sans',Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.sayhi-close:hover{background:rgba(255,255,255,.16)}
+.sayhi-who{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.sayhi-who img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--cyan)}
+.sayhi-who strong{display:block;font-size:17px}
+.sayhi-who span{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.sayhi-title{font-family:'DM Sans',Arial,sans-serif;font-weight:800;font-size:44px;line-height:.98;letter-spacing:-.03em;text-transform:uppercase;margin:0 0 6px}
+.sayhi-title em{display:block;font-family:'DM Serif Display',serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;color:var(--cyan);font-size:46px;margin-top:6px}
+.sayhi-copy{color:rgba(255,255,255,.75);font-size:16px;line-height:1.6;margin:16px 0 22px}
+.sayhi-actions{display:flex;flex-direction:column;gap:12px}
+.sayhi-actions .btn{justify-content:center;font-size:15px;padding:14px 18px}
+.sayhi-primary{background:var(--cyan);color:var(--navy)}
+.sayhi-ghost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.2)}
+.sayhi-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.sayhi-links a{color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:700}
+.sayhi-links a:hover{border-color:var(--cyan);color:#fff}
+.sayhi-foot{margin:26px 0 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;color:rgba(255,255,255,.55)}
+@media(max-width:860px){.chapter{grid-template-columns:1fr;gap:18px;padding:30px 0}.sticky-note{max-width:none}}
+@media(max-width:640px){.chapter-nav{gap:12px;font-size:11px}.chapter-bar{display:none}.sayhi{padding:22px 22px 28px}.sayhi-title{font-size:36px}.sayhi-title em{font-size:38px}.hand-note{font-size:23px}}
+@media(prefers-reduced-motion:reduce){.chapters.anim .chapter .to,.chapters.anim .chapter .verb,.chapters.anim .chapter .sticky-note,.chapters.anim .chapter .hand-note{opacity:1!important;transform:none!important;transition:none!important}.sayhi,.sayhi-overlay{transition:none}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Jane Yugtan","url":"https://janeyugtan.com","image":"https://janeyugtan.com/jy-linkedin.jpeg","jobTitle":"Online Business Manager (OBM) and Fractional Growth Leader","description":"Jane Yugtan is an Online Business Manager (OBM) and fractional growth leader for founders and agency owners. She leads operations, project delivery, and teams so businesses can scale. Based in the Philippines, working remotely with US and international clients.","worksFor":{"@type":"Organization","name":"Self-Employed / Freelance"},"knowsAbout":["Online Business Manager","OBM","Fractional Leadership","Team Leadership","Business Scaling","Project Management","Notion Systems","Workflow Automation","Operations Design","SOP Creation"],"nationality":"Filipino","sameAs":["https://www.linkedin.com/in/jyugtan/","https://www.instagram.com/ljane_hy/","https://www.fiverr.com/s/Ay9W1da"],"contactPoint":{"@type":"ContactPoint","email":"jane@janeyugtan.com","contactType":"Business Inquiries"}}
@@ -333,7 +410,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <a href="#about" data-section="about">About</a>
 <a href="/blog/">Blog</a>
 </nav>
-<a class="btn btn-primary nav-cta" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" style="font-size:13px;padding:9px 16px;border-radius:10px;white-space:nowrap;">☕ Book a Call</a>
+<a class="btn btn-primary nav-cta" id="sayHiOpen" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" aria-haspopup="dialog" aria-controls="sayHi" style="font-size:13px;padding:9px 16px;border-radius:10px;white-space:nowrap;">Say hi 👋</a>
 </div>
 <div class="deck-progress"><div class="deck-progress-bar" id="deckProgressBar"></div></div>
 </div>
@@ -410,7 +487,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 </div>
 </section>
 
-<section class="slide section reveal" id="services">
+<section class="slide section reveal scrollable" id="services">
 <div class="container">
 <h2 class="section-title">Services</h2>
 <p class="section-subtitle">Not a VA waiting for tasks. A fractional leader who owns the outcome with you.</p>
@@ -420,10 +497,20 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div class="role-step is-now"><div class="role-when">What I do now</div><h4>Fractional Growth Leader</h4><p>Owns delivery and growth outcomes alongside you, part-time, without a full-time executive hire.</p></div>
 </div>
 <p class="role-ladder-note">Not sure which one you need? <a href="/blog/signs-your-agency-needs-an-obm-not-a-va/">Read: Signs your agency needs an OBM, not a VA &rarr;</a></p>
-<div class="services-grid">
-<div class="panel"><div class="project-kicker">Lead</div><h3>Operations &amp; Delivery Leadership</h3><ul><li>Owning projects start to finish so deliverables ship on time</li><li>Leading the team with clear owners, deadlines, and follow-through</li><li>Being the second-in-command who handles it while you&rsquo;re away</li></ul><div class="tag-row"><span class="tag">Operations</span><span class="tag">Team Leadership</span><span class="tag">Project Delivery</span></div></div>
-<div class="panel"><div class="project-kicker">Systems</div><h3>Systems That Scale</h3><ul><li>One source of truth in Notion: dashboards, SOP libraries, and KPIs</li><li>SOPs and QA checkpoints people actually follow</li><li>Built so the team opens them every day, not shelved after handover</li></ul><div class="tag-row"><span class="tag">Notion Systems</span><span class="tag">SOPs</span><span class="tag">KPIs</span></div></div>
-<div class="panel"><div class="project-kicker">Grow</div><h3>Growth, Clients &amp; Automation</h3><ul><li>Managing account health and client relationships to keep and grow revenue</li><li>Building growth workflows, like a $10K affiliate pipeline in 30 days</li><li>AI and automation so the team spends time on growth, not admin</li></ul><div class="tag-row"><span class="tag">Client Retention</span><span class="tag">Growth Ops</span><span class="tag">AI + Automation</span></div></div>
+<div class="chapters">
+<div class="chapter-nav" aria-hidden="true"><span class="on">Organize</span><span>Lead</span><span>Scale</span><i class="chapter-bar"><b></b></i></div>
+<div class="chapter" id="ch-organize">
+<div class="chapter-head"><div class="chapter-label">01 / 03 &middot; Systems</div><h3 class="chapter-title"><span class="to">To</span><span class="verb">organize</span></h3><p class="hand-note">one source of truth, finally &#8599;</p></div>
+<div class="chapter-body"><ul><li>One source of truth in Notion: dashboards, SOP libraries, and KPIs</li><li>SOPs and QA checkpoints people actually follow</li><li>Built so the team opens them every day, not shelved after handover</li></ul><div class="sticky-note"><div class="note-kpi">-87%</div><div class="note-label">Onboarding time</div><p>From about 3 days to 4 hours, through clearer systems and automation.</p></div></div>
+</div>
+<div class="chapter" id="ch-lead">
+<div class="chapter-head"><div class="chapter-label">02 / 03 &middot; Operations &amp; delivery</div><h3 class="chapter-title"><span class="to">To</span><span class="verb">lead</span></h3><p class="hand-note">no more chasing deadlines &#8599;</p></div>
+<div class="chapter-body"><ul><li>Owning projects start to finish so deliverables ship on time</li><li>Leading the team with clear owners, deadlines, and follow-through</li><li>Being the second-in-command who handles it while you&rsquo;re away</li></ul><div class="sticky-note"><div class="note-kpi">-30%</div><div class="note-label">Project delays</div><p>More predictable delivery through QA gates and clearer process control.</p></div></div>
+</div>
+<div class="chapter" id="ch-scale">
+<div class="chapter-head"><div class="chapter-label">03 / 03 &middot; Growth &amp; clients</div><h3 class="chapter-title"><span class="to">To</span><span class="verb">scale</span></h3><p class="hand-note">growth, not admin &#8599;</p></div>
+<div class="chapter-body"><ul><li>Managing account health and client relationships to keep and grow revenue</li><li>Building growth workflows, like a $10K affiliate pipeline in 30 days</li><li>AI and automation so the team spends time on growth, not admin</li></ul><div class="sticky-note"><div class="note-kpi">6 figures</div><div class="note-label">Net revenue generated (USD)</div><p>For clients, by managing account health and client relationships.</p></div></div>
+</div>
 </div>
 </div>
 </section>
@@ -606,7 +693,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <li><span class="dot"></span><span><strong>2021 &middot; Virtual Assistant.</strong> Taking tasks off founders&rsquo; plates.</span></li>
 <li><span class="dot"></span><span><strong>2022 onward &middot; OBM &amp; Project Manager.</strong> Around <strong>10 direct clients</strong> and <strong>100+ client accounts</strong> across delivery, systems, and ops.</span></li>
 <li class="now"><span class="dot"></span><span><strong>Now &middot; Fractional Growth Leader.</strong> Owning operations and delivery with founders, so their teams hit deadlines and the business can scale.</span></li>
-</ul></div>
+</ul><p class="hand-note">from tasks &rarr; to outcomes &#10003;</p></div>
 <div class="experience-card"><div class="meta">Current Focus</div><h3>What I am working on now</h3>
 <p>My day-to-day work keeps me sharp across project delivery, operational support, and systems work. That is exactly what I bring to the projects I take on here.</p>
 <p>I take on <strong>one build engagement at a time</strong>, alongside ongoing OBM retainers. That is deliberate — it is how the work stays good.</p>
@@ -647,6 +734,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 </div>
 <div class="end-cta-sub">EST hours &middot; Remote &middot; Retainer &amp; Project-Based</div>
 </div>
+<div class="signoff"><p class="signoff-line">Let&rsquo;s run it.</p><p class="signoff-name">jane yugtan<span>.</span></p></div>
 <div class="footer">
 <div class="bir-badge">
 <a class="bir-badge-img" href="BIR%20Seal%20Badge.png" onclick="openLightbox('BIR%20Seal%20Badge.png','BIR Registration Seal Badge');return false;" aria-label="Enlarge BIR Registration Seal Badge to scan"><img src="BIR%20Seal%20Badge.png" width="484" height="157" alt="BIR Registration Seal Badge: Registered 2024, Bureau of Internal Revenue, RSN 026RC20240000002775, with QR code for verification" loading="lazy" /></a>
@@ -762,10 +850,43 @@ function goToHashTarget(){const id=location.hash.slice(1);const t=id&&document.g
 setActive(0);window.addEventListener('load',()=>{goToHashTarget();computeActive()});
 })();
 (function(){
-const fc=document.querySelector('.float-cta');if(!fc)return;
 const he=document.getElementById('top');
-const obs=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.target===he)document.body.classList.toggle('on-hero',entry.isIntersecting)})},{threshold:0.4,root:deckEl});
+const obs=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.target===he)document.body.classList.toggle('on-hero',entry.isIntersecting)})},{threshold:0.4,root:getComputedStyle(deckEl).overflowY!=='visible'?deckEl:null});
 if(he)obs.observe(he);
+const ce=document.getElementById('contact');if(ce){new IntersectionObserver(es=>{es.forEach(en=>document.body.classList.toggle('on-contact',en.isIntersecting))},{threshold:0.25,root:getComputedStyle(deckEl).overflowY!=='visible'?deckEl:null}).observe(ce)}
+})();
+</script>
+<div class="sayhi-overlay" id="sayHiOverlay"></div>
+<aside class="sayhi" id="sayHi" role="dialog" aria-modal="true" aria-labelledby="sayHiTitle" aria-hidden="true">
+<div class="sayhi-top"><span class="sayhi-kicker">Contact // Say hi</span><button type="button" class="sayhi-close" id="sayHiClose">Close &#10005;</button></div>
+<div class="sayhi-who"><img src="jy-linkedin.jpeg" alt="" width="56" height="56" loading="lazy" /><div><strong>Jane Yugtan</strong><span>OBM &middot; Fractional Growth Leader</span></div></div>
+<h2 class="sayhi-title" id="sayHiTitle">Got a messy backend? <em>Let&rsquo;s run it.</em></h2>
+<p class="sayhi-copy">Book a 30-minute discovery call to see if we&rsquo;re a fit, or send me a note.</p>
+<div class="sayhi-actions"><a class="btn sayhi-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">&#9749; Book a discovery call</a><a class="btn sayhi-ghost" href="mailto:jane@janeyugtan.com">&#128233; Email me</a></div>
+<div class="sayhi-links"><a href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener">LinkedIn &#8599;</a><a href="https://www.instagram.com/ljane_hy/" target="_blank" rel="noopener">Instagram &#8599;</a><a href="https://www.threads.com/@ljane_hy" target="_blank" rel="noopener">Threads &#8599;</a><a href="https://www.fiverr.com/s/Ay9W1da" target="_blank" rel="noopener">Fiverr &#8599;</a></div>
+<p class="sayhi-foot">EST hours &middot; Remote &middot; Retainer &amp; Project-Based</p>
+</aside>
+<script>
+(function(){
+const panel=document.getElementById('sayHi'),overlay=document.getElementById('sayHiOverlay'),openBtn=document.getElementById('sayHiOpen'),closeBtn=document.getElementById('sayHiClose');
+if(!panel||!openBtn)return;let lastFocus=null;
+function focusables(){return [...panel.querySelectorAll('a[href],button')]}
+function open(e){if(e)e.preventDefault();lastFocus=document.activeElement;panel.classList.add('open');overlay.classList.add('show');panel.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');setTimeout(()=>closeBtn.focus(),60)}
+function close(){if(!panel.classList.contains('open'))return;panel.classList.remove('open');overlay.classList.remove('show');panel.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open');if(lastFocus)lastFocus.focus()}
+openBtn.addEventListener('click',open);closeBtn.addEventListener('click',close);overlay.addEventListener('click',close);
+document.addEventListener('keydown',e=>{if(!panel.classList.contains('open'))return;if(e.key==='Escape'){close();return}if(e.key==='Tab'){const f=focusables();const first=f[0],last=f[f.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
+})();
+(function(){
+const wrap=document.querySelector('.chapters');if(!wrap||!('IntersectionObserver' in window))return;
+const chs=[...wrap.querySelectorAll('.chapter')],tabs=[...wrap.querySelectorAll('.chapter-nav span')],bar=wrap.querySelector('.chapter-bar b');
+const deck=document.getElementById('deck');const root=deck&&getComputedStyle(deck).overflowY!=='visible'?deck:null;
+wrap.classList.add('anim');
+const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('ch-in');io.unobserve(en.target)}})},{root,threshold:0.3});
+chs.forEach(c=>io.observe(c));
+let cur=-1,tick=false;
+function track(){tick=false;const probe=(root?root.getBoundingClientRect().top+root.clientHeight*0.5:innerHeight*0.5);let i=0;chs.forEach((c,k)=>{if(c.getBoundingClientRect().top<=probe)i=k});if(i===cur)return;cur=i;tabs.forEach((t,k)=>t.classList.toggle('on',k===i));if(bar)bar.style.width=((i+1)/chs.length*100)+'%'}
+function onScroll(){if(!tick){tick=true;requestAnimationFrame(track)}}
+(root||window).addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll,{passive:true});track();
 })();
 </script>
 <a class="float-cta" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" aria-label="Book a discovery call">
