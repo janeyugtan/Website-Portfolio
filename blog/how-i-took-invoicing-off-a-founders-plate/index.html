@@ -159,7 +159,29 @@
   .sayhi-foot{margin:26px 0 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;color:rgba(255,255,255,.55)}
   @media(max-width:640px){.sayhi{padding:22px 22px 28px}.sayhi-title{font-size:36px}.sayhi-title em{font-size:38px}}
   @media(prefers-reduced-motion:reduce){.sayhi,.sayhi-overlay{transition:none}}
-</style>
+
+  /* Dropdown menus */
+  .nav{align-items:center}
+  .nav-item{position:relative;display:flex;align-items:center}
+  .nav-caret{all:unset;cursor:pointer;width:22px;height:30px;margin-left:-8px;display:inline-flex;align-items:center;justify-content:center;border-radius:6px;color:var(--muted)}
+  .nav-caret::before{content:"";width:6px;height:6px;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+  .nav-item.open .nav-caret::before{transform:translateY(1px) rotate(-135deg)}
+  .nav-caret:hover{color:var(--blue)}.nav-caret:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+  .subnav{position:absolute;top:100%;left:-6px;z-index:300;min-width:270px;padding:8px;margin-top:8px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 22px 50px rgba(9,26,42,.16);display:grid;gap:2px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s ease,transform .18s ease,visibility 0s linear .18s;text-align:left}
+  .subnav::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}
+  .nav-item.open .subnav{opacity:1;visibility:visible;transform:none;transition:opacity .18s ease,transform .18s ease,visibility 0s}
+  @media(hover:hover) and (pointer:fine){.nav-item:hover .subnav{opacity:1;visibility:visible;transform:none;transition:opacity .18s ease,transform .18s ease,visibility 0s}.nav-item:hover .nav-caret::before{transform:translateY(1px) rotate(-135deg)}}
+  .nav .subnav a{display:block;padding:9px 12px;border-radius:10px;color:var(--navy);font-weight:600;font-size:14px;line-height:1.3;white-space:normal;text-decoration:none;transform:none}
+  .nav .subnav a span{display:block;font-weight:400;font-size:12.5px;color:var(--muted);margin-top:2px}
+  .nav .subnav a span:empty{display:none}
+  .nav .subnav a:hover,.nav .subnav a:focus-visible{background:#eef6fc;color:var(--blue);transform:none}
+  .subnav-row{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin-top:4px;padding:8px 6px 4px 12px;border-top:1px solid var(--line);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .subnav-row span{margin-right:4px}
+  .nav .subnav .subnav-row a{display:inline-block;padding:5px 10px;font-size:12.5px;letter-spacing:0;text-transform:none;border-radius:999px;background:#f4f8fc}
+  .nav-item[data-menu="blog"] .subnav{left:auto;right:-6px;min-width:300px}
+  @media(max-width:980px){.nav-item[data-menu="blog"] .subnav{left:-6px;right:auto}}
+  @media(max-width:640px){.nav-item{position:static}.subnav{left:12px!important;right:12px!important;min-width:0;margin-top:0;top:calc(100% - 6px)}}
+  </style>
 </head>
 <body>
 
@@ -172,10 +194,10 @@
 <div class="topbar-inner">
 <div class="brand"><a href="/" aria-label="Jane Yugtan home"><img src="/own-website-logo.png" alt="Jane Yugtan logo" class="brand-logo"></a></div>
 <nav class="nav" id="mainNav" aria-label="Main">
-<a href="/#services">Services</a>
-<a href="/#results">Work</a>
-<a href="/#about">About</a>
-<a href="/blog/" class="active">Blog</a>
+<div class="nav-item" data-menu="services"><a href="/#services" class="top">Services</a><button type="button" class="nav-caret" aria-expanded="false" aria-controls="sub-services" aria-label="Show Services menu"></button><div class="subnav" id="sub-services"><a href="/#services"><b>Services</b><span>Organize, lead, scale</span></a><a href="/#methodology"><b>How I Work</b><span>Audit, build, sustain</span></a><a href="/#pricing"><b>Ways I Work</b><span>Fractional OBM retainer and builds</span></a><a href="/#first-90-days"><b>Your first 90 days</b><span>What changes, week by week</span></a><a href="/#faq"><b>Fair questions</b><span>OBM vs. VA, how we start</span></a></div></div>
+<div class="nav-item" data-menu="work"><a href="/#results" class="top">Work</a><button type="button" class="nav-caret" aria-expanded="false" aria-controls="sub-work" aria-label="Show Work menu"></button><div class="subnav" id="sub-work"><a href="/#results"><b>Results</b><span>Real numbers at a glance</span></a><a href="/#featured-projects"><b>Projects</b><span>Walkthroughs and live case studies</span></a><a href="/#testimonials"><b>Testimonials</b><span>What clients say</span></a><div class="subnav-row"><span>Case studies</span><a href="/#proj-sava">SAVA</a><a href="/#proj-millsaps">Millsaps</a><a href="/#proj-melanson">Melanson</a></div></div></div>
+<div class="nav-item" data-menu="about"><a href="/#about" class="top">About</a><button type="button" class="nav-caret" aria-expanded="false" aria-controls="sub-about" aria-label="Show About menu"></button><div class="subnav" id="sub-about"><a href="/#video-intro"><b>Meet Jane</b><span>A 2-minute hello</span></a><a href="/#about"><b>About me</b><span>My story, and life outside the laptop</span></a></div></div>
+<div class="nav-item" data-menu="blog"><a href="/blog/" class="top active" aria-current="page">Blog</a><button type="button" class="nav-caret" aria-expanded="false" aria-controls="sub-blog" aria-label="Show Blog menu"></button><div class="subnav" id="sub-blog"><a href="/blog/how-i-took-invoicing-off-a-founders-plate/"><b>How I took invoicing off a founder&rsquo;s plate with AI</b><span></span></a><a href="/blog/how-my-obm-business-started/"><b>How my OBM business started</b><span></span></a><a href="/blog/signs-your-agency-needs-an-obm-not-a-va/"><b>Signs your agency needs an OBM, not a VA</b><span></span></a><a href="/blog/"><b>All posts &rarr;</b><span></span></a></div></div>
 </nav>
 <a class="btn btn-primary nav-cta" id="sayHiOpen" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" aria-haspopup="dialog" aria-controls="sayHi" style="font-size:13px;padding:9px 16px;border-radius:10px;white-space:nowrap;">Say hi 👋</a>
 </div>
@@ -284,6 +306,19 @@ function open(e){if(e)e.preventDefault();lastFocus=document.activeElement;panel.
 function close(){if(!panel.classList.contains('open'))return;panel.classList.remove('open');overlay.classList.remove('show');panel.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open');if(lastFocus)lastFocus.focus()}
 openBtn.addEventListener('click',open);closeBtn.addEventListener('click',close);overlay.addEventListener('click',close);
 document.addEventListener('keydown',e=>{if(!panel.classList.contains('open'))return;if(e.key==='Escape'){close();return}if(e.key==='Tab'){const f=[...panel.querySelectorAll('a[href],button')];const first=f[0],last=f[f.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
+})();
+</script>
+<script>
+(function(){
+const items=[...document.querySelectorAll('#mainNav .nav-item')];if(!items.length)return;
+function closeAll(except){items.forEach(it=>{if(it!==except){it.classList.remove('open');const b=it.querySelector('.nav-caret');if(b)b.setAttribute('aria-expanded','false')}})}
+items.forEach(it=>{const b=it.querySelector('.nav-caret');b.addEventListener('click',e=>{e.stopPropagation();const open=!it.classList.contains('open');closeAll(it);it.classList.toggle('open',open);b.setAttribute('aria-expanded',open?'true':'false');if(open){const f=it.querySelector('.subnav a');if(f&&e.detail===0)f.focus()}});
+ it.querySelectorAll('.subnav a').forEach(a=>a.addEventListener('click',()=>{closeAll();if(document.activeElement)document.activeElement.blur()}))});
+document.addEventListener('click',e=>{if(!e.target.closest('#mainNav'))closeAll()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){const o=items.find(it=>it.classList.contains('open'));if(o){closeAll();o.querySelector('.nav-caret').focus()}}});
+const deck=document.getElementById('deck');
+if(deck){document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href').slice(1);const t=id&&document.getElementById(id);if(!t||t.classList.contains('slide')||!deck.contains(t))return;e.preventDefault();const s=t.closest('.slide');if(s){s.style.transition='none';s.classList.add('in-view');void s.offsetHeight;requestAnimationFrame(()=>{s.style.transition=''})}
+ const go=()=>t.scrollIntoView({behavior:'smooth',block:'start'});go();setTimeout(()=>{if(Math.abs(t.getBoundingClientRect().top-(deck.getBoundingClientRect().top+(parseFloat(getComputedStyle(t).scrollMarginTop)||0)))>6)go()},900)}))}
 })();
 </script>
 </body>
