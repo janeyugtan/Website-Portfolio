@@ -385,6 +385,65 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 @media(max-width:860px){.chapter{grid-template-columns:1fr;gap:18px;padding:30px 0}.sticky-note{max-width:none}}
 @media(max-width:640px){.chapter-nav{gap:12px;font-size:11px}.chapter-bar{display:none}.sayhi{padding:22px 22px 28px}.sayhi-title{font-size:36px}.sayhi-title em{font-size:38px}.hand-note{font-size:23px}}
 @media(prefers-reduced-motion:reduce){.chapters.anim .chapter .to,.chapters.anim .chapter .verb,.chapters.anim .chapter .sticky-note,.chapters.anim .chapter .hand-note{opacity:1!important;transform:none!important;transition:none!important}.sayhi,.sayhi-overlay{transition:none}}
+
+/* ===== Site-wide editorial motion (round 2) ===== */
+.section-title{font-family:'DM Sans',Arial,sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(40px,5.4vw,78px);line-height:.92;letter-spacing:-.04em;margin:0 0 14px}
+.slide:not(.hero) .section-title::before{content:counter(slide-num,decimal-leading-zero) " //";letter-spacing:.2em;margin-bottom:12px}
+.section-subtitle{font-family:'DM Serif Display',serif;font-style:italic;font-size:clamp(19px,1.9vw,23px);line-height:1.35;color:var(--blue-2)}
+.slide.dark-slide:not(.hero) .section-subtitle{color:rgba(127,227,245,.85)}
+.tape{position:absolute;top:-12px;left:50%;width:92px;height:25px;margin-left:-46px;background:rgba(190,226,245,.82);box-shadow:0 1px 3px rgba(0,0,0,.12);rotate:-2.5deg;z-index:4;pointer-events:none}
+.tape.r{rotate:2deg}
+.taped{position:relative;overflow:visible!important}
+.tilt-l{rotate:-1.1deg}.tilt-r{rotate:1deg}
+.tilt-l:hover,.tilt-r:hover{rotate:0deg}
+.dark-slide .hand-note{color:var(--cyan)}
+.hand-note.center{text-align:center;transform-origin:center}
+/* clickable trackers */
+.chapter-nav button{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:6px 2px;color:#94a3b8;transition:color .3s ease}
+.chapter-nav button::before{content:"";width:8px;height:8px;border-radius:50%;background:#cbd5e1;transition:background .3s ease,box-shadow .3s ease}
+.chapter-nav button:hover{color:var(--blue)}
+.chapter-nav button.on{color:var(--navy)}
+.chapter-nav button.on::before{background:var(--cyan);box-shadow:0 0 0 4px rgba(39,211,242,.18)}
+.chapter-nav button:focus-visible{outline:2px solid var(--cyan);outline-offset:4px;border-radius:6px}
+.dark-slide .chapter-nav{background:linear-gradient(180deg,#0a1c2e 75%,rgba(10,28,46,0))}
+.dark-slide .chapter-nav button{color:rgba(255,255,255,.45)}
+.dark-slide .chapter-nav button::before{background:rgba(255,255,255,.3)}
+.dark-slide .chapter-nav button:hover,.dark-slide .chapter-nav button.on{color:#fff}
+.dark-slide .chapter-bar{background:rgba(255,255,255,.15)}
+.dark-slide .chapter{border-top-color:rgba(255,255,255,.1)}
+.dark-slide .chapter-label{color:var(--cyan)}
+.dark-slide .chapter-title .to{-webkit-text-stroke-color:#fff}
+.dark-slide .chapter-title .verb{color:#fff}
+.dark-slide .chapter-body ul{color:rgba(255,255,255,.78)}
+.sticky-note .note-word{font-family:'Caveat',cursive;font-weight:700;font-size:34px;line-height:1;color:var(--blue)}
+/* video */
+.video-card.taped .video-thumb{border-radius:var(--radius) var(--radius) 0 0;overflow:hidden}
+/* results: tilted cards */
+.results-grid .result-card:nth-child(odd){rotate:-.8deg}.results-grid .result-card:nth-child(even){rotate:.8deg}
+.results-grid .result-card:hover{rotate:0deg}
+/* projects */
+.proj-anchor{scroll-margin-top:80px}
+.proj-name{font-family:'DM Sans',Arial,sans-serif!important;font-weight:800;text-transform:uppercase;letter-spacing:-.035em;line-height:.95}
+.project-card .proj-name{font-size:clamp(26px,2.6vw,36px);margin:4px 0 8px}
+.panel .proj-name{font-size:clamp(32px,4.4vw,60px);margin:4px 0 10px!important}
+.proj-stats>div{background:#fff!important;border:1px solid var(--line);border-radius:6px!important;box-shadow:0 10px 22px rgba(15,76,117,.10);rotate:-1.2deg}
+.proj-stats>div:nth-child(2){rotate:1deg}.proj-stats>div:nth-child(3){rotate:-.5deg}
+.project-card.taped>a{border-radius:12px}
+/* testimonials */
+.reel-card.taped video{border-radius:var(--radius) var(--radius) 0 0}
+.reel-card.taped .reel-img{border-radius:var(--radius) var(--radius) 0 0;overflow:hidden}
+.feedback-grid .feedback-card:nth-child(odd){rotate:-.6deg}.feedback-grid .feedback-card:nth-child(even){rotate:.6deg}
+/* blog section */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px 26px;margin:26px 0 26px}
+.blog-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:6px;padding:26px 24px 22px;box-shadow:0 18px 40px rgba(15,76,117,.12);color:var(--navy);text-decoration:none;transition:rotate .3s ease,box-shadow .3s ease}
+.blog-card:hover{box-shadow:0 24px 50px rgba(15,76,117,.18)}
+.blog-card time{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.blog-card h3{font-family:'DM Sans',Arial,sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-.03em;line-height:1;font-size:clamp(24px,2.4vw,32px);margin:10px 0 10px}
+.blog-card p{margin:0 0 16px;color:var(--slate);font-size:15px;line-height:1.6}
+.blog-card .read{margin-top:auto;font-weight:800;color:var(--blue)}
+.blog-card .read::after{content:" \2192"}
+@media(max-width:640px){.reels-grid{padding-top:16px}.section-title{font-size:40px}.tilt-l,.tilt-r,.results-grid .result-card,.feedback-grid .feedback-card{rotate:0deg}}
+@media(prefers-reduced-motion:reduce){[data-drift],[data-drift-x]{translate:none!important}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Jane Yugtan","url":"https://janeyugtan.com","image":"https://janeyugtan.com/jy-linkedin.jpeg","jobTitle":"Online Business Manager (OBM) and Fractional Growth Leader","description":"Jane Yugtan is an Online Business Manager (OBM) and fractional growth leader for founders and agency owners. She leads operations, project delivery, and teams so businesses can scale. Based in the Philippines, working remotely with US and international clients.","worksFor":{"@type":"Organization","name":"Self-Employed / Freelance"},"knowsAbout":["Online Business Manager","OBM","Fractional Leadership","Team Leadership","Business Scaling","Project Management","Notion Systems","Workflow Automation","Operations Design","SOP Creation"],"nationality":"Filipino","sameAs":["https://www.linkedin.com/in/jyugtan/","https://www.instagram.com/jane.yugtan/","https://www.threads.com/@ljane_hy","https://www.facebook.com/jane.hernandez.285545"],"contactPoint":{"@type":"ContactPoint","email":"jane@janeyugtan.com","contactType":"Business Inquiries"}}
@@ -400,15 +459,10 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div class="topbar-inner">
 <div class="brand"><a href="#top" aria-label="Jane Yugtan home"><img src="own-website-logo.png" alt="Jane Yugtan logo" class="brand-logo"></a></div>
 <nav class="nav" id="mainNav">
-<a href="#video-intro" data-section="video-intro">Video</a>
-<a href="#results" data-section="results">Results</a>
 <a href="#services" data-section="services">Services</a>
-<a href="#methodology" data-section="methodology">How I Work</a>
-<a href="#featured-projects" data-section="featured-projects">Projects</a>
-<a href="#pricing" data-section="pricing">Ways I Work</a>
-<a href="#testimonials" data-section="testimonials">Testimonials</a>
+<a href="#results" data-section="work">Work</a>
 <a href="#about" data-section="about">About</a>
-<a href="/blog/">Blog</a>
+<a href="#blog" data-section="blog">Blog</a>
 </nav>
 <a class="btn btn-primary nav-cta" id="sayHiOpen" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" aria-haspopup="dialog" aria-controls="sayHi" style="font-size:13px;padding:9px 16px;border-radius:10px;white-space:nowrap;">Say hi 👋</a>
 </div>
@@ -436,27 +490,20 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div class="cta-row">
 <a class="btn btn-hero-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">☕ Book a quick call</a>
 <a class="btn btn-hero-light" href="mailto:jane@janeyugtan.com">📩 Email Me</a>
-<a class="btn btn-hero-ghost" href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener">LinkedIn ↗</a>
-<a class="btn btn-hero-ghost" href="https://www.instagram.com/jane.yugtan/" target="_blank" rel="noopener">Instagram ↗</a>
 </div>
 <ul class="hero-trust"><li>5 years running ops remotely</li><li>10+ founders &amp; agencies</li><li>5&#9733; client video reviews</li></ul>
-<div class="hero-jumps">
-<span class="jump-label">Jump to:</span>
-<a class="jump-link" href="#results">Results</a>
-<a class="jump-link" href="#featured-projects">Projects</a>
-<a class="jump-link" href="#pricing">Ways I Work</a>
-<a class="jump-link" href="#testimonials">Testimonials</a>
-</div>
 </div>
 </div>
 </div>
 <div class="scroll-hint" aria-hidden="true">Scroll<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></div>
 </section>
+
 <section class="slide section reveal" id="video-intro">
 <div class="container">
 <h2 class="section-title">Meet Jane</h2>
 <p class="section-subtitle">A quick walk-through of who I am, the type of work I do, and what you will find here.</p>
-<div class="video-card">
+<p class="hand-note center" style="margin:0 0 18px;">a 2-minute hello, press play &darr;</p>
+<div class="video-card taped tilt-l" data-drift="18"><i class="tape" aria-hidden="true"></i>
 <div class="video-thumb" id="openIntroVideo" role="button" tabindex="0" aria-label="Watch Jane introduction video">
 <img src="intro-cover.jpg" alt="Jane Yugtan introduction video cover" width="780" height="360" />
 <div class="play-button">&#9654;</div>
@@ -466,23 +513,6 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <h3>A quick intro to my work</h3>
 <p>In this short video, I walk through my background, the work I do across project management, systems design, and operations, and what you can expect to see in this portfolio.</p>
 </div>
-</div>
-</div>
-</section>
-
-<section class="slide section reveal scrollable dark-slide" id="results">
-<div class="container">
-<h2 class="section-title">Results at a Glance</h2>
-<p class="section-subtitle">Real numbers from five years of running operations, delivery, and client relationships for founders and agencies.</p>
-<div class="results-grid">
-<div class="result-card"><div class="result-kpi">6 figures</div><div class="result-label">Net revenue generated (USD)</div><div class="result-copy">Generated for clients by managing account health and client relationships, not just tasks.</div></div>
-<div class="result-card"><div class="result-kpi" data-count-to="10" data-suffix="+">10+</div><div class="result-label">Clients directly served</div><div class="result-copy">Direct work with founders and agency owners across industries. Mostly US-based, fully remote.</div></div>
-<div class="result-card"><div class="result-kpi" data-count-to="100" data-suffix="+">100+</div><div class="result-label">Client accounts supported</div><div class="result-copy">Supported delivery and operations across agencies and founder-led businesses, end to end.</div></div>
-<div class="result-card"><div class="result-kpi" data-count-to="10" data-prefix="$" data-suffix="K">$10K</div><div class="result-label">Affiliate pipeline in 30 days</div><div class="result-copy">Built a qualified affiliate pipeline and supporting workflow for Whiskey Library in the first 30 days.</div></div>
-<div class="result-card"><div class="result-kpi" data-count-to="87" data-prefix="-" data-suffix="%">-87%</div><div class="result-label">Onboarding time reduced</div><div class="result-copy">Reduced onboarding from about 3 days to 4 hours through clearer systems and automation.</div></div>
-<div class="result-card"><div class="result-kpi" data-count-to="95" data-suffix="%">95%</div><div class="result-label">Workflow satisfaction improvement</div><div class="result-copy">Improved team experience through clearer systems and processes people actually follow.</div></div>
-<div class="result-card"><div class="result-kpi" data-count-to="30" data-prefix="-" data-suffix="%">-30%</div><div class="result-label">Project delays reduced</div><div class="result-copy">Improved execution through QA gates, clearer process control, and more predictable delivery.</div></div>
-<div class="result-card"><div class="result-kpi">6-10 hrs</div><div class="result-label">CEO time saved weekly</div><div class="result-copy">Structured workflows and automation freed up leadership time each week.</div></div>
 </div>
 </div>
 </section>
@@ -498,70 +528,130 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 </div>
 <p class="role-ladder-note">Not sure which one you need? <a href="/blog/signs-your-agency-needs-an-obm-not-a-va/">Read: Signs your agency needs an OBM, not a VA &rarr;</a></p>
 <div class="chapters">
-<div class="chapter-nav" aria-hidden="true"><span class="on">Organize</span><span>Lead</span><span>Scale</span><i class="chapter-bar"><b></b></i></div>
+<nav class="chapter-nav tracker" aria-label="Services"><button type="button" class="on" data-target="ch-organize">Organize</button><button type="button" data-target="ch-lead">Lead</button><button type="button" data-target="ch-scale">Scale</button><i class="chapter-bar"><b></b></i></nav>
 <div class="chapter" id="ch-organize">
-<div class="chapter-head"><div class="chapter-label">01 / 03 &middot; Systems</div><h3 class="chapter-title"><span class="to">To</span><span class="verb">organize</span></h3><p class="hand-note">one source of truth, finally &#8599;</p></div>
-<div class="chapter-body"><ul><li>One source of truth in Notion: dashboards, SOP libraries, and KPIs</li><li>SOPs and QA checkpoints people actually follow</li><li>Built so the team opens them every day, not shelved after handover</li></ul><div class="sticky-note"><div class="note-kpi">-87%</div><div class="note-label">Onboarding time</div><p>From about 3 days to 4 hours, through clearer systems and automation.</p></div></div>
+<div class="chapter-head"><div class="chapter-label">01 / 03 &middot; Systems</div><h3 class="chapter-title"><span class="to" data-drift-x="-30">To</span><span class="verb" data-drift-x="70">organize</span></h3><p class="hand-note">one source of truth, finally &#8599;</p></div>
+<div class="chapter-body"><ul><li>One source of truth in Notion: dashboards, SOP libraries, and KPIs</li><li>SOPs and QA checkpoints people actually follow</li><li>Built so the team opens them every day, not shelved after handover</li></ul><div class="sticky-note" data-drift="26"><div class="note-kpi">-87%</div><div class="note-label">Onboarding time</div><p>From about 3 days to 4 hours, through clearer systems and automation.</p></div></div>
 </div>
 <div class="chapter" id="ch-lead">
-<div class="chapter-head"><div class="chapter-label">02 / 03 &middot; Operations &amp; delivery</div><h3 class="chapter-title"><span class="to">To</span><span class="verb">lead</span></h3><p class="hand-note">no more chasing deadlines &#8599;</p></div>
-<div class="chapter-body"><ul><li>Owning projects start to finish so deliverables ship on time</li><li>Leading the team with clear owners, deadlines, and follow-through</li><li>Being the second-in-command who handles it while you&rsquo;re away</li></ul><div class="sticky-note"><div class="note-kpi">-30%</div><div class="note-label">Project delays</div><p>More predictable delivery through QA gates and clearer process control.</p></div></div>
+<div class="chapter-head"><div class="chapter-label">02 / 03 &middot; Operations &amp; delivery</div><h3 class="chapter-title"><span class="to" data-drift-x="-30">To</span><span class="verb" data-drift-x="70">lead</span></h3><p class="hand-note">no more chasing deadlines &#8599;</p></div>
+<div class="chapter-body"><ul><li>Owning projects start to finish so deliverables ship on time</li><li>Leading the team with clear owners, deadlines, and follow-through</li><li>Being the second-in-command who handles it while you&rsquo;re away</li></ul><div class="sticky-note" data-drift="26"><div class="note-kpi">-30%</div><div class="note-label">Project delays</div><p>More predictable delivery through QA gates and clearer process control.</p></div></div>
 </div>
 <div class="chapter" id="ch-scale">
-<div class="chapter-head"><div class="chapter-label">03 / 03 &middot; Growth &amp; clients</div><h3 class="chapter-title"><span class="to">To</span><span class="verb">scale</span></h3><p class="hand-note">growth, not admin &#8599;</p></div>
-<div class="chapter-body"><ul><li>Managing account health and client relationships to keep and grow revenue</li><li>Building growth workflows, like a $10K affiliate pipeline in 30 days</li><li>AI and automation so the team spends time on growth, not admin</li></ul><div class="sticky-note"><div class="note-kpi">6 figures</div><div class="note-label">Net revenue generated (USD)</div><p>For clients, by managing account health and client relationships.</p></div></div>
+<div class="chapter-head"><div class="chapter-label">03 / 03 &middot; Growth &amp; clients</div><h3 class="chapter-title"><span class="to" data-drift-x="-30">To</span><span class="verb" data-drift-x="70">scale</span></h3><p class="hand-note">growth, not admin &#8599;</p></div>
+<div class="chapter-body"><ul><li>Managing account health and client relationships to keep and grow revenue</li><li>Building growth workflows, like a $10K affiliate pipeline in 30 days</li><li>AI and automation so the team spends time on growth, not admin</li></ul><div class="sticky-note" data-drift="26"><div class="note-kpi">6 figures</div><div class="note-label">Net revenue generated (USD)</div><p>For clients, by managing account health and client relationships.</p></div></div>
 </div>
 </div>
 </div>
 </section>
 
-<section class="slide section reveal dark-slide" id="methodology">
+<section class="slide section reveal scrollable dark-slide" id="methodology">
 <div class="container">
 <h2 class="section-title">How I Work</h2>
 <p class="section-subtitle">No templates, no guesswork. Every engagement moves through the same three steps.</p>
-<div class="services-grid">
-<div class="panel" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.10);box-shadow:0 12px 30px rgba(0,0,0,.20);">
-<div style="font-family:'DM Serif Display',serif;font-size:15px;font-weight:700;letter-spacing:.14em;color:var(--cyan);margin-bottom:10px;">01</div>
-<h3 style="color:#fff;">Audit</h3>
-<p style="color:rgba(255,255,255,.75);font-size:15px;line-height:1.65;margin:0;">I map what's actually breaking — the tools, the handoffs, the stuff nobody's said out loud. You leave with a clear action list, whether or not we build together after.</p>
-<div class="tag-row"><span class="tag" style="background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.16);color:#fff;">Diagnose</span></div>
+<div class="chapters">
+<nav class="chapter-nav tracker" aria-label="How I work"><button type="button" class="on" data-target="ch-audit">Audit</button><button type="button" data-target="ch-build">Build</button><button type="button" data-target="ch-sustain">Sustain</button><i class="chapter-bar"><b></b></i></nav>
+<div class="chapter" id="ch-audit">
+<div class="chapter-head"><div class="chapter-label">01 / 03 &middot; Diagnose</div><h3 class="chapter-title"><span class="to" data-drift-x="-30">To</span><span class="verb" data-drift-x="70">audit</span></h3><p class="hand-note">nothing gets assumed &#8599;</p></div>
+<div class="chapter-body"><ul><li>I map what&rsquo;s actually breaking: the tools, the handoffs, and the things nobody&rsquo;s said out loud</li><li>A paid engagement, so we start from facts, not guesses</li></ul><div class="sticky-note" data-drift="26"><div class="note-word">Action list</div><div class="note-label">What you leave with</div><p>A clear action list, whether or not we build together after.</p></div></div>
 </div>
-<div class="panel" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.10);box-shadow:0 12px 30px rgba(0,0,0,.20);">
-<div style="font-family:'DM Serif Display',serif;font-size:15px;font-weight:700;letter-spacing:.14em;color:var(--cyan);margin-bottom:10px;">02</div>
-<h3 style="color:#fff;">Build</h3>
-<p style="color:rgba(255,255,255,.75);font-size:15px;line-height:1.65;margin:0;">Systems built around how you actually work, not a generic template — Notion, project workflows, and automation, scoped and priced from what the audit found.</p>
-<div class="tag-row"><span class="tag" style="background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.16);color:#fff;">Implement</span></div>
+<div class="chapter" id="ch-build">
+<div class="chapter-head"><div class="chapter-label">02 / 03 &middot; Implement</div><h3 class="chapter-title"><span class="to" data-drift-x="-30">To</span><span class="verb" data-drift-x="70">build</span></h3><p class="hand-note">built around you &#8599;</p></div>
+<div class="chapter-body"><ul><li>Systems built around how you actually work, not a generic template</li><li>Notion, project workflows, and automation</li><li>Scoped and priced from what the audit found</li></ul><div class="sticky-note" data-drift="26"><div class="note-word">Your system</div><div class="note-label">What you get</div><p>A workspace your team actually opens every day.</p></div></div>
 </div>
-<div class="panel" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.10);box-shadow:0 12px 30px rgba(0,0,0,.20);">
-<div style="font-family:'DM Serif Display',serif;font-size:15px;font-weight:700;letter-spacing:.14em;color:var(--cyan);margin-bottom:10px;">03</div>
-<h3 style="color:#fff;">Handoff &amp; Support</h3>
-<p style="color:rgba(255,255,255,.75);font-size:15px;line-height:1.65;margin:0;">Trained on the system, not just handed a link. Ongoing support is available once a build is complete, for clients who want the system to stay clean.</p>
-<div class="tag-row"><span class="tag" style="background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.16);color:#fff;">Sustain</span></div>
+<div class="chapter" id="ch-sustain">
+<div class="chapter-head"><div class="chapter-label">03 / 03 &middot; Handoff &amp; support</div><h3 class="chapter-title"><span class="to" data-drift-x="-30">To</span><span class="verb" data-drift-x="70">sustain</span></h3><p class="hand-note">it stays clean &#8599;</p></div>
+<div class="chapter-body"><ul><li>Trained on the system, not just handed a link</li><li>Ongoing support once a build is complete, for clients who want the system to stay clean</li></ul><div class="sticky-note" data-drift="26"><div class="note-word">Trained team</div><div class="note-label">What stays behind</div><p>A team that knows how to run the system, with support when you need it.</p></div></div>
 </div>
 </div>
 </div>
 </section>
 
-<section class="slide section reveal" id="featured-projects">
+<section class="slide section reveal scrollable" id="pricing">
+<div class="container">
+<h2 class="section-title">Ways I Work</h2>
+<p class="section-subtitle">Every engagement starts with a discovery call and a paid audit. I scope and price from what the audit finds, never from a template. One build engagement at a time.</p>
+<div class="panel featured-offer taped" id="obm-retainer"><i class="tape" aria-hidden="true"></i>
+<div class="featured-offer-pill">Main offer &middot; Ongoing partnership</div>
+<h3>Fractional OBM Retainer</h3>
+<p class="featured-offer-lead">Your part-time operations and growth lead, every month: running the backend, leading the team to deliver on time, and keeping the business scaling while you focus on growth.</p>
+<div class="services-grid">
+<div><div class="project-kicker">Who it's for</div><ul><li>You're the bottleneck: projects, follow-ups, and status updates all run through you</li><li>Your tools and docs are scattered, and nothing is the single source of truth</li><li>You want things running properly without micromanaging every moving part</li></ul></div>
+<div><div class="project-kicker">What's included</div><ul><li>Monthly operations leadership and project oversight</li><li>Team leadership: owners, deadlines, and follow-through</li><li>Notion and system upkeep, so the workspace stays clean</li><li>SOPs and QA checkpoints people actually follow</li><li>Workflow automation for the repetitive work</li></ul></div>
+<div><div class="project-kicker">How we start</div><ul><li><strong>Discovery call:</strong> 30 minutes to see if we're a fit</li><li><strong>Paid audit:</strong> I map what's breaking and you get a clear action list</li><li><strong>Retainer:</strong> scoped and priced from what the audit finds, never from a template</li></ul></div>
+</div>
+<div class="cta-row" style="margin-top:20px;">
+<a class="btn btn-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">&#9749; Book a discovery call</a>
+<a class="btn btn-light" href="mailto:jane@janeyugtan.com">&#128233; Email me</a>
+</div>
+</div>
+<div class="ninety">
+<h3 class="section-h3">Your first 90 days on a retainer</h3>
+<p class="section-subtitle" style="margin-bottom:6px;">What changes, and when. Exact steps depend on what the audit finds.</p>
+<p class="hand-note" style="margin:0 0 26px;">week by week &darr;</p>
+<div class="ninety-grid">
+<div class="ninety-step taped tilt-l" data-drift="-10"><i class="tape" aria-hidden="true"></i><div class="ninety-when">Weeks 1&ndash;2</div><h4>Audit</h4><p>I map how work actually moves through your business, talk to the team, and pinpoint what&rsquo;s slowing delivery.</p></div>
+<div class="ninety-step taped tilt-r" data-drift="10"><i class="tape r" aria-hidden="true"></i><div class="ninety-when">Weeks 3&ndash;6</div><h4>Take over the core</h4><p>Your most important process is documented and handed to me. The team gets one source of truth and one point of contact.</p></div>
+<div class="ninety-step taped tilt-l" data-drift="-10"><i class="tape" aria-hidden="true"></i><div class="ninety-when">Weeks 7&ndash;10</div><h4>Systems &amp; automation</h4><p>The next processes follow, repetitive work gets automated, and deadlines start landing on time.</p></div>
+<div class="ninety-step taped tilt-r" data-drift="10"><i class="tape r" aria-hidden="true"></i><div class="ninety-when">Weeks 11&ndash;13</div><h4>Plan the next quarter</h4><p>We review what moved, then agree what to scale next, with clear owners and deadlines.</p></div>
+</div>
+</div>
+<h3 style="font-family:'DM Serif Display',serif;font-size:22px;margin:32px 0 14px;">Other ways to work with me</h3>
+<div class="services-grid">
+<div class="panel work-card tilt-l" data-project="work-consulting"><div class="project-kicker">Strategy</div><h3>Operations Audit</h3><p>Where every engagement starts. I map what is actually breaking before anyone talks about a build.</p><ul><li>You leave with a clear action list, whether or not we work together after</li><li>Rolls into the build scope if we move forward</li></ul><div class="pricing-note">Paid engagement</div></div>
+<div class="panel work-card tilt-r" data-project="work-notion"><div class="project-kicker">Systems Build</div><h3>Notion System Projects</h3><p>I build the Notion workspace from scratch or clean up the mess you already have.</p><ul><li>From blank page to working system</li><li>Fixed fee, scoped from the audit</li></ul><div class="pricing-note">Scoped after the audit</div></div>
+<div class="panel work-card tilt-l" data-project="work-hourly"><div class="project-kicker">Post-Build Support</div><h3>Hourly Support</h3><p>Ongoing support for clients whose systems I have already built.</p><ul><li>Data hygiene, workspace upkeep, and capacity checks after handover</li><li>Available once a build is complete, not as a starting point</li></ul><div class="pricing-note">Scoped after the audit</div></div>
+</div>
+<div class="faq">
+<h3 class="section-h3">Fair questions</h3>
+<details><summary>How is an OBM different from a VA?</summary><p>A VA does the tasks you assign. An OBM decides what needs doing, who does it, and makes sure it ships, so you stop being the one who assigns and follows up on everything. If you have a clear list of tasks to hand off, a VA is the right hire. <a href="/blog/signs-your-agency-needs-an-obm-not-a-va/">Read: Signs your agency needs an OBM, not a VA</a></p></details>
+<details><summary>What does &ldquo;fractional growth leader&rdquo; mean?</summary><p>You get senior operations and delivery leadership part-time, on a monthly retainer, instead of hiring a full-time operations executive. I own the outcomes with you: deadlines met, the team on track, and systems that hold up as you scale.</p></details>
+<details><summary>Do you manage my team?</summary><p>Yes. I run day-to-day delivery with your team and contractors: clear owners, deadlines, and follow-through, with one point of contact so questions stop landing on you.</p></details>
+<details><summary>How do we start?</summary><p>A 30-minute discovery call to see if we&rsquo;re a fit, then a paid audit. The retainer is scoped and priced from what the audit finds, never from a template.</p></details>
+<details><summary>What if I only need a Notion build?</summary><p>That&rsquo;s a fixed-fee Notion System Project, scoped from the audit.</p></details>
+</div>
+</div>
+</section>
+
+<section class="slide section reveal scrollable dark-slide" id="results">
+<div class="container">
+<h2 class="section-title">Results at a Glance</h2>
+<p class="section-subtitle">Real numbers from five years of running operations, delivery, and client relationships for founders and agencies.</p>
+<p class="hand-note" style="margin:-6px 0 18px;">real numbers, real clients &#10003;</p>
+<div class="results-grid">
+<div class="result-card"><div class="result-kpi">6 figures</div><div class="result-label">Net revenue generated (USD)</div><div class="result-copy">Generated for clients by managing account health and client relationships, not just tasks.</div></div>
+<div class="result-card"><div class="result-kpi" data-count-to="10" data-suffix="+">10+</div><div class="result-label">Clients directly served</div><div class="result-copy">Direct work with founders and agency owners across industries. Mostly US-based, fully remote.</div></div>
+<div class="result-card"><div class="result-kpi" data-count-to="100" data-suffix="+">100+</div><div class="result-label">Client accounts supported</div><div class="result-copy">Supported delivery and operations across agencies and founder-led businesses, end to end.</div></div>
+<div class="result-card"><div class="result-kpi" data-count-to="10" data-prefix="$" data-suffix="K">$10K</div><div class="result-label">Affiliate pipeline in 30 days</div><div class="result-copy">Built a qualified affiliate pipeline and supporting workflow for Whiskey Library in the first 30 days.</div></div>
+<div class="result-card"><div class="result-kpi" data-count-to="87" data-prefix="-" data-suffix="%">-87%</div><div class="result-label">Onboarding time reduced</div><div class="result-copy">Reduced onboarding from about 3 days to 4 hours through clearer systems and automation.</div></div>
+<div class="result-card"><div class="result-kpi" data-count-to="95" data-suffix="%">95%</div><div class="result-label">Workflow satisfaction improvement</div><div class="result-copy">Improved team experience through clearer systems and processes people actually follow.</div></div>
+<div class="result-card"><div class="result-kpi" data-count-to="30" data-prefix="-" data-suffix="%">-30%</div><div class="result-label">Project delays reduced</div><div class="result-copy">Improved execution through QA gates, clearer process control, and more predictable delivery.</div></div>
+<div class="result-card"><div class="result-kpi">6-10 hrs</div><div class="result-label">CEO time saved weekly</div><div class="result-copy">Structured workflows and automation freed up leadership time each week.</div></div>
+</div>
+</div>
+</section>
+
+<section class="slide section reveal scrollable" id="featured-projects">
 <div class="container">
 <h2 class="section-title">Featured Projects</h2>
 <p class="section-subtitle">Client walkthroughs on video, plus two systems you can explore live below.</p>
-<h3 style="font-family:'DM Serif Display',serif;font-size:18px;margin:0 0 14px;color:var(--slate);">Client Walkthroughs</h3>
+<nav class="chapter-nav tracker" aria-label="Projects"><button type="button" class="on" data-target="proj-walkthroughs">Walkthroughs</button><button type="button" data-target="proj-millsaps">Millsaps</button><button type="button" data-target="proj-melanson">Melanson</button><i class="chapter-bar"><b></b></i></nav>
+<div id="proj-walkthroughs" class="proj-anchor"><h3 class="section-h3" style="margin:18px 0 4px;">Client walkthroughs</h3><p class="hand-note" style="margin:0 0 26px;">press play, real client builds &darr;</p></div>
 <div class="projects-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
-<div class="project-card interactive-project float-card" data-project="sava">
+<div class="project-card interactive-project float-card taped tilt-l" data-project="sava" data-drift="16"><i class="tape" aria-hidden="true"></i>
 <a href="https://www.loom.com/share/3055c23d989b440b89c32c487e5de84e" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="margin-bottom:16px;border-radius:16px;box-shadow:0 12px 28px rgba(15,76,117,0.10);height:160px;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#0f4c75,#1d6fa5);color:#fff;font-weight:700;font-size:14px;text-decoration:none;">
 <span style="font-size:26px;">&#9654;</span> Watch Walkthrough
 </a>
-<h3>SAVA Amsterdam</h3>
+<h3 class="proj-name">SAVA Amsterdam</h3>
 <p style="margin:0 0 10px;color:var(--blue);font-weight:700;">Full company Notion system</p>
 <p>A company-wide Notion system built for cleaner operations and a workspace the whole team can actually use.</p>
 <div class="tag-row"><span class="tag">E-commerce Ops</span><span class="tag">Company Systems</span></div>
 </div>
-<div class="project-card interactive-project float-card" data-project="whiskey">
+<div class="project-card interactive-project float-card taped tilt-r" data-project="whiskey" data-drift="-16"><i class="tape r" aria-hidden="true"></i>
 <a href="https://www.loom.com/share/f883c45c953848fca179d3bc8724875f" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="margin-bottom:16px;border-radius:16px;box-shadow:0 12px 28px rgba(15,76,117,0.10);height:160px;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#0f4c75,#1d6fa5);color:#fff;font-weight:700;font-size:14px;text-decoration:none;">
 <span style="font-size:26px;">&#9654;</span> Watch Walkthrough
 </a>
-<h3>Whiskey Library</h3>
+<h3 class="proj-name">Whiskey Library</h3>
 <p style="margin:0 0 10px;color:var(--blue);font-weight:700;">$10K pipeline in 30 days</p>
 <p>An affiliate pipeline and Notion workflow built to support early-stage growth and a more organised affiliate operation.</p>
 <div class="tag-row"><span class="tag">Affiliate Ops</span><span class="tag">Notion Workflow</span></div>
@@ -571,12 +661,12 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <h3 style="font-family:'DM Serif Display',serif;font-size:18px;margin:0 0 6px;color:var(--slate);">Live System Mockups</h3>
 <p class="section-subtitle" style="margin-bottom:22px;">No click required — these are the actual Notion-built dashboards, rendered live and scrollable.</p>
 <div style="display:grid;gap:28px;">
-<div class="panel" style="padding:0;overflow:hidden;">
+<div class="panel taped proj-anchor" id="proj-millsaps" style="padding:0;"><i class="tape" aria-hidden="true"></i>
 <div style="padding:22px 22px 16px;">
-<p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">Featured Project</p>
-<h3 style="margin:0 0 4px;">Millsaps Productions</h3>
+<p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">Featured Project &middot; Video production</p>
+<h3 class="proj-name" style="margin:0 0 4px;" data-drift-x="40">Millsaps Productions</h3>
 <p style="margin:0 0 14px;color:var(--slate);font-size:14px;">A commercial video studio had every project status living in one person's head — no shared source of truth, no automated handoffs between director, editors, and clients, and no reliable way to catch a stalled deliverable before it reached the client. I built a Notion HQ and Slack automation layer around how the founder actually works.</p>
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px;">
+<div class="proj-stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px;">
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">6 wks</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Engagement</div></div>
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">11+ days</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Stall caught by system</div></div>
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">6-figure</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Deal closed mid-engagement</div></div>
@@ -591,12 +681,12 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <a class="btn btn-light" href="millsaps-case-study.pdf" target="_blank" rel="noopener" style="font-size:13px;padding:10px 18px;">&#128196; View Case Study (PDF)</a>
 </div>
 </div>
-<div class="panel" style="padding:0;overflow:hidden;">
+<div class="panel taped proj-anchor" id="proj-melanson" style="padding:0;"><i class="tape r" aria-hidden="true"></i>
 <div style="padding:22px 22px 16px;">
-<p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">Featured Project</p>
-<h3 style="margin:0 0 4px;">Melanson Design</h3>
+<p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">Featured Project &middot; Design consultancy</p>
+<h3 class="proj-name" style="margin:0 0 4px;" data-drift-x="-40">Melanson Design</h3>
 <p style="margin:0 0 14px;color:var(--slate);font-size:14px;">A design consultancy had cash spread across accounts with no clear read on what was actually available, and invoices that got hard to track once a client moved past payment one of several. I built an Operations HQ in Notion around Profit First allocation and a full invoice tracker, so the numbers report themselves.</p>
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px;">
+<div class="proj-stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px;">
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">6</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Profit First accounts tracked</div></div>
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">12-pay</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Plans tracked to the payment #</div></div>
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">0</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Manual reports needed</div></div>
@@ -615,58 +705,15 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 </div>
 </section>
 
-<section class="slide section reveal scrollable" id="pricing">
-<div class="container">
-<h2 class="section-title">Ways I Work</h2>
-<p class="section-subtitle">Every engagement starts with a discovery call and a paid audit. I scope and price from what the audit finds, never from a template. One build engagement at a time.</p>
-<div class="panel featured-offer" id="obm-retainer">
-<div class="featured-offer-pill">Main offer &middot; Ongoing partnership</div>
-<h3>Fractional OBM Retainer</h3>
-<p class="featured-offer-lead">Your part-time operations and growth lead, every month: running the backend, leading the team to deliver on time, and keeping the business scaling while you focus on growth.</p>
-<div class="services-grid">
-<div><div class="project-kicker">Who it's for</div><ul><li>You're the bottleneck: projects, follow-ups, and status updates all run through you</li><li>Your tools and docs are scattered, and nothing is the single source of truth</li><li>You want things running properly without micromanaging every moving part</li></ul></div>
-<div><div class="project-kicker">What's included</div><ul><li>Monthly operations leadership and project oversight</li><li>Team leadership: owners, deadlines, and follow-through</li><li>Notion and system upkeep, so the workspace stays clean</li><li>SOPs and QA checkpoints people actually follow</li><li>Workflow automation for the repetitive work</li></ul></div>
-<div><div class="project-kicker">How we start</div><ul><li><strong>Discovery call:</strong> 30 minutes to see if we're a fit</li><li><strong>Paid audit:</strong> I map what's breaking and you get a clear action list</li><li><strong>Retainer:</strong> scoped and priced from what the audit finds, never from a template</li></ul></div>
-</div>
-<div class="cta-row" style="margin-top:20px;">
-<a class="btn btn-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">&#9749; Book a discovery call</a>
-<a class="btn btn-light" href="mailto:jane@janeyugtan.com">&#128233; Email me</a>
-</div>
-</div>
-<div class="ninety">
-<h3 class="section-h3">Your first 90 days on a retainer</h3>
-<p class="section-subtitle" style="margin-bottom:16px;">What changes, and when. Exact steps depend on what the audit finds.</p>
-<div class="ninety-grid">
-<div class="ninety-step"><div class="ninety-when">Weeks 1&ndash;2</div><h4>Audit</h4><p>I map how work actually moves through your business, talk to the team, and pinpoint what&rsquo;s slowing delivery.</p></div>
-<div class="ninety-step"><div class="ninety-when">Weeks 3&ndash;6</div><h4>Take over the core</h4><p>Your most important process is documented and handed to me. The team gets one source of truth and one point of contact.</p></div>
-<div class="ninety-step"><div class="ninety-when">Weeks 7&ndash;10</div><h4>Systems &amp; automation</h4><p>The next processes follow, repetitive work gets automated, and deadlines start landing on time.</p></div>
-<div class="ninety-step"><div class="ninety-when">Weeks 11&ndash;13</div><h4>Plan the next quarter</h4><p>We review what moved, then agree what to scale next, with clear owners and deadlines.</p></div>
-</div>
-</div>
-<h3 style="font-family:'DM Serif Display',serif;font-size:22px;margin:32px 0 14px;">Other ways to work with me</h3>
-<div class="services-grid">
-<div class="panel work-card" data-project="work-consulting"><div class="project-kicker">Strategy</div><h3>Operations Audit</h3><p>Where every engagement starts. I map what is actually breaking before anyone talks about a build.</p><ul><li>You leave with a clear action list, whether or not we work together after</li><li>Rolls into the build scope if we move forward</li></ul><div class="pricing-note">Paid engagement</div></div>
-<div class="panel work-card" data-project="work-notion"><div class="project-kicker">Systems Build</div><h3>Notion System Projects</h3><p>I build the Notion workspace from scratch or clean up the mess you already have.</p><ul><li>From blank page to working system</li><li>Fixed fee, scoped from the audit</li></ul><div class="pricing-note">Scoped after the audit</div></div>
-<div class="panel work-card" data-project="work-hourly"><div class="project-kicker">Post-Build Support</div><h3>Hourly Support</h3><p>Ongoing support for clients whose systems I have already built.</p><ul><li>Data hygiene, workspace upkeep, and capacity checks after handover</li><li>Available once a build is complete, not as a starting point</li></ul><div class="pricing-note">Scoped after the audit</div></div>
-</div>
-<div class="faq">
-<h3 class="section-h3">Fair questions</h3>
-<details><summary>How is an OBM different from a VA?</summary><p>A VA does the tasks you assign. An OBM decides what needs doing, who does it, and makes sure it ships, so you stop being the one who assigns and follows up on everything. If you have a clear list of tasks to hand off, a VA is the right hire. <a href="/blog/signs-your-agency-needs-an-obm-not-a-va/">Read: Signs your agency needs an OBM, not a VA</a></p></details>
-<details><summary>What does &ldquo;fractional growth leader&rdquo; mean?</summary><p>You get senior operations and delivery leadership part-time, on a monthly retainer, instead of hiring a full-time operations executive. I own the outcomes with you: deadlines met, the team on track, and systems that hold up as you scale.</p></details>
-<details><summary>Do you manage my team?</summary><p>Yes. I run day-to-day delivery with your team and contractors: clear owners, deadlines, and follow-through, with one point of contact so questions stop landing on you.</p></details>
-<details><summary>How do we start?</summary><p>A 30-minute discovery call to see if we&rsquo;re a fit, then a paid audit. The retainer is scoped and priced from what the audit finds, never from a template.</p></details>
-<details><summary>What if I only need a Notion build?</summary><p>That&rsquo;s a fixed-fee Notion System Project, scoped from the audit.</p></details>
-</div>
-</div>
-</section>
 <section class="slide section reveal scrollable" id="testimonials">
 <div class="container">
 <h2 class="section-title">What Clients Say</h2>
 <p class="section-subtitle">Founders and agency owners on what it&rsquo;s like having me run delivery and the team. Press play to watch here.</p>
+<p class="hand-note" style="margin:-4px 0 30px;">hear it from them &darr;</p>
 <div class="reels-grid">
-<div class="reel-card"><video controls playsinline preload="none" poster="testimonial-sean-poster.jpg" width="540" height="960" aria-label="Video testimonial from Sean Elias"><source src="Sean%20Elias-TestimonialVideo.mp4" type="video/mp4" /></video><div class="reel-body"><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testi-quote">&ldquo;Jane is really good at getting things done fast.&rdquo;</p><div class="reel-who"><strong>Sean Elias</strong> &middot; Founder &amp; Lead Affiliate Strategist, 70K Affiliates</div></div></div>
-<div class="reel-card"><video controls playsinline preload="none" poster="testimonial-joe-poster.jpg" width="540" height="960" aria-label="Video testimonial from Joe Remington"><source src="Joe-Remington-TestimonialVideo.mp4" type="video/mp4" /></video><div class="reel-body"><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testi-quote">&ldquo;Jane is a phenomenal resource for me and my team.&rdquo;</p><div class="reel-who"><strong>Joe Remington</strong> &middot; Founder, PPC Professor</div></div></div>
-<div class="reel-card"><button type="button" class="reel-img" onclick="openLightbox('yakov-feedback.jpg','Yakov Smart LinkedIn recommendation')" aria-label="Enlarge Yakov Smart's LinkedIn recommendation"><img src="yakov-feedback.jpg" alt="LinkedIn recommendation from Yakov Smart" loading="lazy" width="1290" height="860" /></button><div class="reel-body"><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testi-quote">&ldquo;She&rsquo;s highly versatile, completes projects on time and demonstrates high attention to detail.&rdquo;</p><div class="reel-who"><strong>Yakov Smart</strong> &middot; Founder, Investor Attraction Academy &middot; LinkedIn recommendation</div><button type="button" class="reel-more" onclick="openLightbox('yakov-feedback.jpg','Yakov Smart LinkedIn recommendation')">Read the full recommendation &rarr;</button></div></div>
+<div class="reel-card taped tilt-l" data-drift="14"><i class="tape" aria-hidden="true"></i><video controls playsinline preload="none" poster="testimonial-sean-poster.jpg" width="540" height="960" aria-label="Video testimonial from Sean Elias"><source src="Sean%20Elias-TestimonialVideo.mp4" type="video/mp4" /></video><div class="reel-body"><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testi-quote">&ldquo;Jane is really good at getting things done fast.&rdquo;</p><div class="reel-who"><strong>Sean Elias</strong> &middot; Founder &amp; Lead Affiliate Strategist, 70K Affiliates</div></div></div>
+<div class="reel-card taped tilt-r" data-drift="-14"><i class="tape r" aria-hidden="true"></i><video controls playsinline preload="none" poster="testimonial-joe-poster.jpg" width="540" height="960" aria-label="Video testimonial from Joe Remington"><source src="Joe-Remington-TestimonialVideo.mp4" type="video/mp4" /></video><div class="reel-body"><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testi-quote">&ldquo;Jane is a phenomenal resource for me and my team.&rdquo;</p><div class="reel-who"><strong>Joe Remington</strong> &middot; Founder, PPC Professor</div></div></div>
+<div class="reel-card taped tilt-l" data-drift="14"><i class="tape" aria-hidden="true"></i><button type="button" class="reel-img" onclick="openLightbox('yakov-feedback.jpg','Yakov Smart LinkedIn recommendation')" aria-label="Enlarge Yakov Smart's LinkedIn recommendation"><img src="yakov-feedback.jpg" alt="LinkedIn recommendation from Yakov Smart" loading="lazy" width="1290" height="860" /></button><div class="reel-body"><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testi-quote">&ldquo;She&rsquo;s highly versatile, completes projects on time and demonstrates high attention to detail.&rdquo;</p><div class="reel-who"><strong>Yakov Smart</strong> &middot; Founder, Investor Attraction Academy &middot; LinkedIn recommendation</div><button type="button" class="reel-more" onclick="openLightbox('yakov-feedback.jpg','Yakov Smart LinkedIn recommendation')">Read the full recommendation &rarr;</button></div></div>
 </div>
 <h3 style="font-family:'DM Serif Display',serif;font-size:22px;margin:0 0 6px;">Client Feedback</h3>
 <p class="section-subtitle" style="margin-bottom:16px;">Messages and LinkedIn recommendations from the projects I&rsquo;ve led.</p>
@@ -713,6 +760,19 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
     Follow along — @ljane_hy
   </a>
 </div>
+</div>
+</section>
+
+<section class="slide section reveal" id="blog">
+<div class="container">
+<h2 class="section-title">From the Blog</h2>
+<p class="section-subtitle">Notes on operations, delivery, and growing from VA to OBM.</p>
+<p class="hand-note">fresh from my desk &#9998;</p>
+<div class="blog-grid">
+<a class="blog-card taped tilt-l" data-drift="12" href="/blog/how-my-obm-business-started/"><i class="tape" aria-hidden="true"></i><time datetime="2026-11-19">November 19, 2026</time><h3>How my OBM business started</h3><p>One portfolio, four clients, and the moment my OBM offer finally took shape.</p><span class="read">Read the post</span></a>
+<a class="blog-card taped tilt-r" data-drift="-12" href="/blog/signs-your-agency-needs-an-obm-not-a-va/"><i class="tape r" aria-hidden="true"></i><time datetime="2026-11-12">November 12, 2026</time><h3>Signs your agency needs an OBM, not a VA</h3><p>Three core mistakes founders and agency owners make when they hire a VA but actually need an OBM.</p><span class="read">Read the post</span></a>
+</div>
+<a class="btn btn-light" href="/blog/">All posts &rarr;</a>
 </div>
 </section>
 
@@ -816,7 +876,7 @@ const prevBtn=document.getElementById('deckPrev');
 const nextBtn=document.getElementById('deckNext');
 const navLinks=Array.from(document.querySelectorAll('.nav a[data-section]'));
 const total=slides.length;let current=0;
-const labels={'top':'Intro','video-intro':'Video','results':'Results','services':'Services','methodology':'How I Work','featured-projects':'Projects','pricing':'Ways I Work','testimonials':'Testimonials','about':'About','contact':'Contact'};
+const labels={'top':'Intro','video-intro':'Video','results':'Results','services':'Services','methodology':'How I Work','featured-projects':'Projects','pricing':'Ways I Work','testimonials':'Testimonials','about':'About','blog':'Blog','contact':'Contact'};
 slides.forEach((s,i)=>{const b=document.createElement('button');b.className='deck-dot';b.type='button';b.dataset.label=labels[s.id]||('Slide '+(i+1));b.setAttribute('aria-label','Go to '+(labels[s.id]||('slide '+(i+1))));b.addEventListener('click',()=>goTo(i));dotsWrap.appendChild(b)});
 const dots=Array.from(dotsWrap.children);
 function pad(n){return String(n).padStart(2,'0')}
@@ -827,13 +887,14 @@ current=i;dots.forEach((d,idx)=>d.classList.toggle('active',idx===i));
 counter.textContent=pad(i+1)+' / '+pad(total);
 progressBar.style.transform='scaleX('+((i+1)/total)+')';
 prevBtn.disabled=(i===0);nextBtn.disabled=(i===total-1);
-const id=slides[i].id;navLinks.forEach(a=>a.classList.toggle('active',a.dataset.section===id));
+const id=slides[i].id;const grp={'services':'services','methodology':'services','pricing':'services','results':'work','featured-projects':'work','testimonials':'work','about':'about','blog':'blog'}[id];navLinks.forEach(a=>a.classList.toggle('active',a.dataset.section===grp));
 }
 function deckScrolls(){return getComputedStyle(deckEl).overflowY!=='visible'}
 let settleTimer=null;
 function settleOn(s){clearTimeout(settleTimer);const until=Date.now()+3000;const fix=()=>{if(Math.abs(deckEl.scrollTop-s.offsetTop)>2)deckEl.scrollTo({top:s.offsetTop,behavior:'smooth'});if(Date.now()<until)settleTimer=setTimeout(fix,350)};settleTimer=setTimeout(fix,650)}
 ['wheel','touchstart','mousedown','keydown'].forEach(ev=>window.addEventListener(ev,()=>clearTimeout(settleTimer),{capture:true,passive:true}));
-function goTo(i,instant){i=Math.max(0,Math.min(total-1,i));const s=slides[i];setActive(i);if(deckScrolls()){deckEl.scrollTo({top:s.offsetTop,behavior:instant?'auto':'smooth'});settleOn(s)}else{s.scrollIntoView({behavior:instant?'auto':'smooth',block:'start'})}}
+function goTo(i,instant){i=Math.max(0,Math.min(total-1,i));const s=slides[i];setActive(i);if(deckScrolls()){deckEl.scrollTo({top:s.offsetTop,behavior:instant?'auto':'smooth'});settleOn(s)}else{s.scrollIntoView({behavior:instant?'auto':'smooth',block:'start'});settleWin(s)}}
+function settleWin(s){clearTimeout(settleTimer);const until=Date.now()+4000;let lastY=-1;const fix=()=>{const y=window.scrollY;if(y!==lastY){lastY=y}else{const m=parseFloat(getComputedStyle(s).scrollMarginTop)||0;if(Math.abs(s.getBoundingClientRect().top-m)>4){s.scrollIntoView({behavior:'smooth',block:'start'});lastY=-1}}if(Date.now()<until)settleTimer=setTimeout(fix,250)};settleTimer=setTimeout(fix,400)}
 let ticking=false;
 function computeActive(){const probe=window.innerHeight*0.42;let idx=0;for(let i=0;i<slides.length;i++){if(slides[i].getBoundingClientRect().top<=probe)idx=i}if(idx!==current)setActive(idx);else counter.textContent=pad(current+1)+' / '+pad(total);ticking=false}
 function onScroll(){if(!ticking){ticking=true;requestAnimationFrame(computeActive)}}
@@ -873,16 +934,26 @@ openBtn.addEventListener('click',open);closeBtn.addEventListener('click',close);
 document.addEventListener('keydown',e=>{if(!panel.classList.contains('open'))return;if(e.key==='Escape'){close();return}if(e.key==='Tab'){const f=focusables();const first=f[0],last=f[f.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
 })();
 (function(){
-const wrap=document.querySelector('.chapters');if(!wrap||!('IntersectionObserver' in window))return;
-const chs=[...wrap.querySelectorAll('.chapter')],tabs=[...wrap.querySelectorAll('.chapter-nav span')],bar=wrap.querySelector('.chapter-bar b');
-const deck=document.getElementById('deck');const root=deck&&getComputedStyle(deck).overflowY!=='visible'?deck:null;
-wrap.classList.add('anim');
-const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('ch-in');io.unobserve(en.target)}})},{root,threshold:0.3});
-chs.forEach(c=>io.observe(c));
-let cur=-1,tick=false;
-function track(){tick=false;const probe=(root?root.getBoundingClientRect().top+root.clientHeight*0.5:innerHeight*0.5);let i=0;chs.forEach((c,k)=>{if(c.getBoundingClientRect().top<=probe)i=k});if(i===cur)return;cur=i;tabs.forEach((t,k)=>t.classList.toggle('on',k===i));if(bar)bar.style.width=((i+1)/chs.length*100)+'%'}
-function onScroll(){if(!tick){tick=true;requestAnimationFrame(track)}}
-(root||window).addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll,{passive:true});track();
+const deck=document.getElementById('deck');
+function rootEl(){return deck&&getComputedStyle(deck).overflowY!=='visible'?deck:null}
+const reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+const root0=rootEl();
+if('IntersectionObserver' in window){
+ document.querySelectorAll('.chapters').forEach(w=>w.classList.add('anim'));
+ const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('ch-in');io.unobserve(en.target)}}),{root:root0,threshold:0.25});
+ document.querySelectorAll('.chapter').forEach(c=>io.observe(c));
+}
+const trackers=[...document.querySelectorAll('.tracker')].map(nav=>{const btns=[...nav.querySelectorAll('button[data-target]')];return{nav,btns,targets:btns.map(b=>document.getElementById(b.dataset.target)),bar:nav.querySelector('.chapter-bar b'),cur:-1}});
+function scrollToEl(el,offset){const r=rootEl();const beh=reduce?'auto':'smooth';if(r){r.scrollTo({top:r.scrollTop+el.getBoundingClientRect().top-r.getBoundingClientRect().top-offset,behavior:beh})}else{window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-offset,behavior:beh})}}
+trackers.forEach(t=>t.btns.forEach((b,i)=>b.addEventListener('click',()=>{const el=t.targets[i];if(el)scrollToEl(el,t.nav.offsetHeight+12)})));
+const drifters=reduce?[]:[...document.querySelectorAll('[data-drift],[data-drift-x]')].map(el=>({el,y:+(el.dataset.drift||0),x:+(el.dataset.driftX||0),ox:0,oy:0}));
+let ticking=false;
+function update(){ticking=false;const r=rootEl();const vt=r?r.getBoundingClientRect().top:0;const vh=r?r.clientHeight:window.innerHeight;const probe=vt+vh*0.5;
+ trackers.forEach(t=>{let i=0;t.targets.forEach((el,k)=>{if(el&&el.getBoundingClientRect().top<=probe)i=k});if(i===t.cur)return;t.cur=i;t.btns.forEach((b,k)=>{b.classList.toggle('on',k===i);if(k===i)b.setAttribute('aria-current','true');else b.removeAttribute('aria-current')});if(t.bar)t.bar.style.width=((i+1)/t.btns.length*100)+'%'});
+ drifters.forEach(d=>{const rc=d.el.getBoundingClientRect();const top=rc.top-d.oy;if(top+rc.height<vt-300||top>vt+vh+300)return;let c=(top+rc.height/2-(vt+vh/2))/vh;c=Math.max(-1,Math.min(1,c));d.oy=-c*d.y;d.ox=c*d.x;d.el.style.translate=d.ox.toFixed(1)+'px '+d.oy.toFixed(1)+'px'});
+}
+function onScroll(){if(!ticking){ticking=true;requestAnimationFrame(update)}}
+if(deck)deck.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll,{passive:true});update();
 })();
 </script>
 <a class="float-cta" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" aria-label="Book a discovery call">
