@@ -3,210 +3,168 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Production Pipeline HQ — Case Study Mockup</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --vellum:#F7F6F1;
-  --rule:#D8D5CA;
-  --ink:#16160F;
-  --graphite:#6B6A61;
-  --signal:#E8D31E;
-  --steel:#4A5A6A;
-  --good:#3F7A5E;
-  --warn:#B5562C;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-  background:var(--vellum);
-  color:var(--ink);
-  font-family:'Archivo',system-ui,sans-serif;
-  font-size:15px;
-  line-height:1.5;
-  padding:48px 32px 80px;
-}
-.sheet{max-width:1080px;margin:0 auto}
-
-.masthead{
-  display:flex;align-items:baseline;justify-content:space-between;
-  gap:24px;padding-bottom:18px;border-bottom:2px solid var(--ink);
-}
-.masthead h1{font-size:30px;font-weight:700;letter-spacing:-0.02em}
-.masthead .meta{font-family:'Roboto Mono',monospace;font-size:12px;color:var(--graphite)}
-
-section{margin-top:44px}
-.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:20px}
-.sec-head h2{font-size:19px;font-weight:600;letter-spacing:-0.01em}
-.sec-head p{font-size:13.5px;color:var(--graphite);max-width:56ch}
-
-/* pipeline buckets */
-.buckets{display:grid;gap:2px;background:var(--rule);border:1px solid var(--rule)}
-.bucket{
-  background:var(--vellum);display:grid;
-  grid-template-columns:150px 1fr 108px;
-  align-items:center;gap:18px;padding:13px 16px;
-}
-.bucket .name{font-weight:500;font-size:14px}
-.bucket .name span{display:block;font-size:11.5px;color:var(--graphite);font-weight:400}
-.track{position:relative;height:9px;background:#E5E3DA}
-.fill{position:absolute;inset:0 auto 0 0;background:var(--steel)}
-.fill.is-signal{background:var(--signal)}
-.fill.is-low{background:var(--warn)}
-.threshold{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--ink)}
-.amt{font-family:'Roboto Mono',monospace;font-size:14px;text-align:right;font-weight:500}
-.sub{font-family:'Roboto Mono',monospace;font-size:11px;color:var(--graphite);text-align:right;display:block}
-
-.two-up{display:grid;grid-template-columns:1fr 1fr;gap:36px}
-@media(max-width:820px){.two-up{grid-template-columns:1fr}.bucket{grid-template-columns:120px 1fr 92px;gap:12px}}
-
-.chart{border:1px solid var(--rule);padding:20px 18px 14px;background:#FCFBF7}
-.chart h3{font-size:14px;font-weight:600;margin-bottom:16px}
-.cols{display:flex;align-items:flex-end;gap:14px;height:168px;padding-bottom:8px;border-bottom:1px solid var(--rule)}
-.col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:7px;height:100%}
-.col .bar{width:100%;background:var(--steel);min-height:3px}
-.col:nth-child(5) .bar{background:var(--signal)}
-.col .val{font-family:'Roboto Mono',monospace;font-size:11px;color:var(--graphite)}
-.xaxis{display:flex;gap:14px;margin-top:8px}
-.xaxis span{flex:1;text-align:center;font-size:11.5px;color:var(--graphite)}
-
-.donut-wrap{display:flex;align-items:center;gap:22px}
-.legend{display:grid;gap:9px;font-size:13px}
-.legend div{display:flex;align-items:center;gap:9px}
-.dot{width:10px;height:10px;flex:none}
-.legend .n{font-family:'Roboto Mono',monospace;font-size:12px;color:var(--graphite);margin-left:auto}
-
-table{width:100%;border-collapse:collapse;font-size:13.5px}
-th{
-  text-align:left;font-weight:600;font-size:12.5px;color:var(--graphite);
-  padding:0 12px 9px;border-bottom:1px solid var(--ink);
-}
-th:last-child,td:last-child{text-align:right}
-td{padding:11px 12px;border-bottom:1px solid var(--rule)}
-td.num{font-family:'Roboto Mono',monospace}
-.tag{display:inline-block;padding:2px 8px;font-size:11.5px;font-weight:500;border:1px solid}
-.tag.review{color:var(--steel);border-color:var(--steel)}
-.tag.approved{color:var(--good);border-color:var(--good)}
-.tag.due{color:var(--warn);border-color:var(--warn);background:#FBF0E9}
-.tag.prog{color:var(--graphite);border-color:var(--graphite)}
-
-.flow{display:flex;align-items:stretch;gap:0;border:1px solid var(--rule);background:#FCFBF7}
-.flow .step{flex:1;padding:16px 14px;position:relative}
-.flow .step:not(:last-child){border-right:1px dashed var(--rule)}
-.flow .step h4{font-size:13px;font-weight:600;margin-bottom:4px}
-.flow .step p{font-size:11.5px;color:var(--graphite);line-height:1.4}
-.flow .step .k{font-family:'Roboto Mono',monospace;font-size:10.5px;color:var(--signal-text,#8a7a10);display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em}
-
-.foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--rule);font-size:12px;color:var(--graphite)}
-</style>
+<title>Production Pipeline HQ — Live Case Study Mockup | Jane Yugtan</title>
+<meta name="description" content="Live mockup of the Notion + Slack production pipeline Jane Yugtan built for a commercial video studio. Illustrative data.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="cs-notion.css">
 </head>
 <body>
-<div class="sheet">
+<div class="chrome"><div class="crumbs">🎬 <span>Studio workspace</span> / <b>Production Pipeline HQ</b></div><div class="chrome-r"><span class="live">Live mockup</span></div></div>
+<div class="cover" aria-hidden="true"></div>
+<main class="page">
+<div class="icon" aria-hidden="true">🎬</div>
+<h1 class="title">Production Pipeline HQ</h1>
+<p class="sub">Commercial video studio &middot; 6-week build &middot; Notion + Slack automation &middot; designed by Jane Yugtan</p>
 
-  <div class="masthead">
-    <h1>Production Pipeline HQ</h1>
-    <div class="meta">Commercial video studio &nbsp;/&nbsp; period ending 10 Jul</div>
-  </div>
-
-  <section>
-    <div class="sec-head">
-      <h2>Where every project stands</h2>
-      <p>Live counts across the pipeline, refreshed from the daily check-in rather than a weekly manual review. The founder's own bottleneck — status living in his head — is what this replaced.</p>
-    </div>
-    <div class="buckets">
-      <div class="bucket">
-        <div class="name">Active<span>All open engagements</span></div>
-        <div class="track"><div class="fill" style="width:78%"></div></div>
-        <div><span class="amt">14</span></div>
-      </div>
-      <div class="bucket">
-        <div class="name">In editing<span>Assigned, in progress</span></div>
-        <div class="track"><div class="fill is-signal" style="width:58%"></div></div>
-        <div><span class="amt">9</span></div>
-      </div>
-      <div class="bucket">
-        <div class="name">Awaiting founder<span>Needs review or reply</span></div>
-        <div class="track"><div class="fill" style="width:20%"></div></div>
-        <div><span class="amt">3</span></div>
-      </div>
-      <div class="bucket">
-        <div class="name">Stalled<span>No movement 5+ days</span></div>
-        <div class="track"><div class="fill is-low" style="width:7%"></div></div>
-        <div><span class="amt">1</span><span class="sub">flagged, being chased</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="two-up">
-    <div class="chart">
-      <h3>Deliverables moved to client review, last five weeks</h3>
-      <div class="cols">
-        <div class="col"><span class="val">4</span><div class="bar" style="height:24%"></div></div>
-        <div class="col"><span class="val">6</span><div class="bar" style="height:36%"></div></div>
-        <div class="col"><span class="val">5</span><div class="bar" style="height:30%"></div></div>
-        <div class="col"><span class="val">9</span><div class="bar" style="height:54%"></div></div>
-        <div class="col"><span class="val">13</span><div class="bar" style="height:82%"></div></div>
-      </div>
-      <div class="xaxis"><span>Wk 1</span><span>Wk 2</span><span>Wk 3</span><span>Wk 4</span><span>Wk 5</span></div>
-    </div>
-
-    <div class="chart">
-      <h3>Active pipeline by engagement type</h3>
-      <div class="donut-wrap">
-        <svg width="140" height="140" viewBox="0 0 42 42" role="img" aria-label="Pipeline split: prime 57 percent, subcontract 29 percent, new business 14 percent">
-          <circle cx="21" cy="21" r="15.9" fill="none" stroke="#E5E3DA" stroke-width="7"/>
-          <circle cx="21" cy="21" r="15.9" fill="none" stroke="#4A5A6A" stroke-width="7"
-                  stroke-dasharray="57 43" stroke-dashoffset="25"/>
-          <circle cx="21" cy="21" r="15.9" fill="none" stroke="#E8D31E" stroke-width="7"
-                  stroke-dasharray="29 71" stroke-dashoffset="68"/>
-          <circle cx="21" cy="21" r="15.9" fill="none" stroke="#B5562C" stroke-width="7"
-                  stroke-dasharray="14 86" stroke-dashoffset="39"/>
-        </svg>
-        <div class="legend">
-          <div><span class="dot" style="background:#4A5A6A"></span>Prime (direct client)<span class="n">57%</span></div>
-          <div><span class="dot" style="background:#E8D31E"></span>Subcontract<span class="n">29%</span></div>
-          <div><span class="dot" style="background:#B5562C"></span>New business, scoping<span class="n">14%</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="sec-head">
-      <h2>How a deliverable actually moves</h2>
-      <p>The review-round logic every project follows, documented once and reused on every asset instead of re-explained per project.</p>
-    </div>
-    <div class="flow">
-      <div class="step"><span class="k">01</span><h4>Internal review</h4><p>Editor uploads a cut. Reviewed in-house only, the client never sees this round.</p></div>
-      <div class="step"><span class="k">02</span><h4>Promoted to WIP1</h4><p>Approved internally, renamed, sent to the client with a stated feedback window.</p></div>
-      <div class="step"><span class="k">03</span><h4>Client review</h4><p>Feedback logged against a due date. Silence past that date triggers a nudge, not a guess.</p></div>
-      <div class="step"><span class="k">04</span><h4>Revise → WIP2</h4><p>New cut stacks as a version on the same link. Nothing re-sent from scratch.</p></div>
-      <div class="step"><span class="k">05</span><h4>Approved &amp; delivered</h4><p>Downloads enabled only at final. Status flips automatically, no manual report needed.</p></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="sec-head">
-      <h2>Deliverables tracker</h2>
-      <p>Every asset tied to its project, round, and due date, so no one has to hold pipeline status in memory.</p>
-    </div>
-    <table>
-      <thead>
-        <tr><th>Deliverable</th><th>Project</th><th>Round</th><th>Editor</th><th>Status</th><th>Feedback by</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Brand hero cut</td><td>Northline Outdoor</td><td class="num">WIP2</td><td>R. Alvarez</td><td><span class="tag review">Client review</span></td><td class="num">Jul 17</td></tr>
-        <tr><td>Founder interview edit</td><td>Cedar &amp; Finch</td><td class="num">Final</td><td>J. Okafor</td><td><span class="tag approved">Approved</span></td><td class="num">—</td></tr>
-        <tr><td>Product launch teaser</td><td>Highwater Supply</td><td class="num">IR1</td><td>J. Okafor</td><td><span class="tag prog">In progress</span></td><td class="num">Jul 21</td></tr>
-        <tr><td>Testimonial short</td><td>Meridian Wellness</td><td class="num">WIP1</td><td>R. Alvarez</td><td><span class="tag due">No response 6d</span></td><td class="num">Jul 15</td></tr>
-        <tr><td>Recap reel :30</td><td>Northline Outdoor</td><td class="num">WIP1</td><td>J. Okafor</td><td><span class="tag review">Client review</span></td><td class="num">Jul 24</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <p class="foot">Illustrative mockup. Structure reflects the system as built for a commercial video production studio; all client, project, and editor names are invented for portfolio use.</p>
-
+<div class="callout red reveal"><span class="ci">🔴</span><div><b>Needs attention</b> — live counters, refreshed from the daily check-in. Anything stalled or awaiting the founder needs a decision today.</div></div>
+<div class="stats reveal">
+  <div class="stat"><div class="n" data-count="14">0</div><div class="l">Active engagements</div></div>
+  <div class="stat"><div class="n" data-count="9">0</div><div class="l">In editing</div></div>
+  <div class="stat"><div class="n" data-count="3">0</div><div class="l">Awaiting founder</div></div>
+  <div class="stat warn"><div class="n" data-count="1">0</div><div class="l">Stalled, being chased</div></div>
 </div>
+
+<h2 class="h">How a deliverable moves</h2>
+<p class="desc">The review-round logic every asset follows, documented once. Watch cards move: every status change posts to Slack on its own.</p>
+<div class="db reveal">
+  <div class="db-head"><div class="db-title">Deliverables pipeline</div><span class="new">New</span></div>
+  <div class="board" id="pipe">
+    <div class="col" id="st0"><div class="col-h"><span class="pill gray">Internal review</span><span data-count-of="st0">1</span></div><div class="cards">
+      <div class="card" id="c4" data-asset="Launch teaser" data-client="Highwater Supply">Launch teaser<small>Highwater Supply &middot; J. Okafor</small></div>
+    </div></div>
+    <div class="col blue" id="st1"><div class="col-h"><span class="pill blue">WIP1 sent</span><span data-count-of="st1">1</span></div><div class="cards">
+      <div class="card" id="c2" data-asset="Recap reel :30" data-client="Northline Outdoor">Recap reel :30<small>Northline Outdoor &middot; J. Okafor</small></div>
+    </div></div>
+    <div class="col yellow" id="st2"><div class="col-h"><span class="pill yellow">Client review</span><span data-count-of="st2">2</span></div><div class="cards">
+      <div class="card" id="c1" data-asset="Brand hero cut" data-client="Northline Outdoor">Brand hero cut<small>Northline Outdoor &middot; R. Alvarez</small></div>
+      <div class="card alert" id="c5">Testimonial short<small>Meridian Wellness &middot; no reply 11 days</small></div>
+    </div></div>
+    <div class="col purple" id="st3"><div class="col-h"><span class="pill purple">Revise &rarr; WIP2</span><span data-count-of="st3">0</span></div><div class="cards"></div></div>
+    <div class="col green" id="st4"><div class="col-h"><span class="pill green">Approved &amp; delivered</span><span data-count-of="st4">1</span></div><div class="cards">
+      <div class="card" id="c3" data-asset="Founder interview" data-client="Cedar &amp; Finch">Founder interview<small>Cedar &amp; Finch &middot; J. Okafor</small></div>
+    </div></div>
+  </div>
+</div>
+
+<div class="cols" style="margin-top:22px">
+  <div>
+    <h3 class="h">Slack automation</h3>
+    <p class="desc">Notion fires, Slack posts. No one has to remember to report a status.</p>
+    <div class="feed reveal" id="feed"><div class="feed-h"><span class="hash">#</span>deliverables <span style="margin-left:auto;font-weight:400;color:var(--ink-3);font-size:12px">auto-posted</span></div><div class="feed-b"></div></div>
+  </div>
+  <div>
+    <h3 class="h">Daily check-in rhythm</h3>
+    <p class="desc">Async in Slack. Zero extra meetings. Feeds the counters above.</p>
+    <div class="callout blue reveal"><span class="ci">☀️</span><div><b>Morning plan</b><br>What ships today, what's blocked, who's waiting on whom.</div></div>
+    <div class="callout green reveal"><span class="ci">🌙</span><div><b>End-of-day recap</b><br>What moved, what didn't, and anything the founder needs to decide.</div></div>
+    <div class="callout yellow reveal"><span class="ci">🧭</span><div><b>Weekly founder view</b><br>Stalled watchlist + capacity check, read in five minutes.</div></div>
+  </div>
+</div>
+
+<h2 class="h">Stalled watchlist</h2>
+<p class="desc">Named projects, why they stalled, and whose court the ball is in. The system caught a client deliverable after 11+ days of silence, before it became a relationship problem.</p>
+<div class="scroll-x reveal"><table class="tbl">
+  <thead><tr><th>Project</th><th>Why it stalled</th><th>Ball in court</th><th style="text-align:right">Days quiet</th></tr></thead>
+  <tbody>
+    <tr class="hl" id="stallRow"><td class="pg">Testimonial short</td><td>No client feedback on WIP1</td><td><span class="pill orange">Client</span></td><td class="num"><b data-count="11">0</b></td></tr>
+    <tr><td class="pg">Spring catalog shoot</td><td>Waiting on location permit</td><td><span class="pill purple">Producer</span></td><td class="num">4</td></tr>
+    <tr><td class="pg">Duplicate: Recap reel</td><td>Two records for one project, merged</td><td><span class="pill green">Resolved</span></td><td class="num">0</td></tr>
+  </tbody>
+</table></div>
+
+<h2 class="h">Pipeline at a glance</h2>
+<div class="cols">
+  <div class="chart" data-go>
+    <div class="chart-t"><span>Deliverables moved to client review</span><span>last 5 weeks</span></div>
+    <div class="bars">
+      <div class="bar"><span>4</span><i data-h="31" style="background:#9fc5e8"></i></div>
+      <div class="bar"><span>6</span><i data-h="46" style="background:#9fc5e8"></i></div>
+      <div class="bar"><span>5</span><i data-h="38" style="background:#9fc5e8"></i></div>
+      <div class="bar"><span>9</span><i data-h="69" style="background:#5aa0d8"></i></div>
+      <div class="bar"><span>13</span><i data-h="100" style="background:#2383e2"></i></div>
+    </div>
+    <div class="bar-l"><span>Wk 1</span><span>Wk 2</span><span>Wk 3</span><span>Wk 4</span><span>Wk 5</span></div>
+  </div>
+  <div class="chart" data-views data-auto="4200">
+    <div class="chart-t"><span class="tabs" role="tablist"><button class="tab on" data-view="v-mix" role="tab">Pipeline mix</button><button class="tab" data-view="v-cap" role="tab">Editor capacity</button></span></div>
+    <div class="view" id="v-mix"><div class="hbars">
+      <div class="hbar"><span>Prime (direct)</span><div class="tr"><i data-w="57" style="background:#2383e2"></i></div><b>57%</b></div>
+      <div class="hbar"><span>Subcontract</span><div class="tr"><i data-w="29" style="background:#5aa0d8"></i></div><b>29%</b></div>
+      <div class="hbar"><span>New business</span><div class="tr"><i data-w="14" style="background:#27d3f2"></i></div><b>14%</b></div>
+    </div></div>
+    <div class="view" id="v-cap"><div class="hbars">
+      <div class="hbar"><span>R. Alvarez</span><div class="tr"><i data-w="92" style="background:#eb5757"></i></div><b>6</b></div>
+      <div class="hbar"><span>J. Okafor</span><div class="tr"><i data-w="70" style="background:#f2994a"></i></div><b>5</b></div>
+      <div class="hbar"><span>M. Chen</span><div class="tr"><i data-w="28" style="background:#27ae60"></i></div><b>2</b></div>
+    </div><p class="desc" style="margin:10px 0 0">Capacity gap surfaced before the deadline, not after.</p></div>
+  </div>
+</div>
+
+<h2 class="h">Deliverables tracker</h2>
+<div class="db reveal">
+  <div class="db-head"><div class="db-title">Deliverables</div><span class="new">New</span></div>
+  <div class="scroll-x"><table class="tbl">
+    <thead><tr><th>Deliverable</th><th>Project</th><th>Round</th><th>Editor</th><th>Status</th><th>Feedback by</th></tr></thead>
+    <tbody>
+      <tr><td class="pg">Brand hero cut</td><td>Northline Outdoor</td><td>WIP2</td><td>R. Alvarez</td><td><span class="pill yellow">Client review</span></td><td>Jul 17</td></tr>
+      <tr><td class="pg">Founder interview edit</td><td>Cedar &amp; Finch</td><td>Final</td><td>J. Okafor</td><td><span class="pill green">Approved</span></td><td>—</td></tr>
+      <tr><td class="pg">Launch teaser</td><td>Highwater Supply</td><td>IR1</td><td>J. Okafor</td><td><span class="pill blue">In progress</span></td><td>Jul 21</td></tr>
+      <tr><td class="pg">Testimonial short</td><td>Meridian Wellness</td><td>WIP1</td><td>R. Alvarez</td><td><span class="pill red">No response 11d</span></td><td>Jul 15</td></tr>
+      <tr><td class="pg">Recap reel :30</td><td>Northline Outdoor</td><td>WIP1</td><td>J. Okafor</td><td><span class="pill yellow">Client review</span></td><td>Jul 24</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<h2 class="h">Department hub</h2>
+<p class="desc">SOPs, contractors, resources, and templates by function, so nothing lives in someone's memory.</p>
+<div class="gallery reveal">
+  <div class="gcard"><div class="gimg">📘</div><div class="gt">SOP library</div></div>
+  <div class="gcard"><div class="gimg">🧑‍💻</div><div class="gt">Contractor directory</div></div>
+  <div class="gcard"><div class="gimg">🗂️</div><div class="gt">Client resources</div></div>
+  <div class="gcard"><div class="gimg">🧩</div><div class="gt">Templates</div></div>
+</div>
+
+<p class="foot">Illustrative mockup. Structure and automations reflect the system as built for a commercial video production studio; all client, project, and editor names and all numbers are invented for portfolio use.</p>
+</main>
+<script src="cs-notion.js"></script>
+<script>
+(function(){
+  var stages = ['st0','st1','st2','st3','st4'];
+  var movers = ['c4','c2','c1'], k = 0, mins = 9*60+2, stallTick = 0;
+  function clock(){ mins += 7 + Math.floor(Math.random()*9); var h = Math.floor(mins/60)%24, m = mins%60, ap = h>=12?'PM':'AM'; return ((h+11)%12+1)+':'+(m<10?'0':'')+m+' '+ap; }
+  var say = {
+    st0:'📥 New cut of <b>{a}</b> uploaded for internal review.',
+    st1:'🎬 <b>{a}</b> promoted to WIP1 and sent to {c}. Feedback window: 3 days.',
+    st2:'👀 <b>{a}</b> is in client review. Nudge scheduled if no reply by Friday.',
+    st3:'✏️ Client notes logged. <b>{a}</b> moved to Revise &rarr; WIP2.',
+    st4:'✅ <b>{a}</b> approved. Downloads enabled, status updated automatically.'
+  };
+  var feedBox = document.getElementById('feed'), body = feedBox.querySelector('.feed-b');
+  function post(text, warn){
+    var d = document.createElement('div'); d.className = 'msg' + (warn ? ' warn' : '');
+    d.innerHTML = '<div class="av">' + (warn ? '⚠️' : '⚡') + '</div><div><b>Notion &rarr; Slack</b><time>' + clock() + '</time><p>' + text + '</p></div>';
+    body.appendChild(d); while(body.children.length > 4) body.removeChild(body.firstChild);
+  }
+  function tick(){
+    stallTick++;
+    if(stallTick % 4 === 0){
+      var c5 = document.getElementById('c5'); c5.classList.remove('alert'); void c5.offsetWidth; c5.classList.add('alert');
+      post('Testimonial short has had no client reply for <b>11 days</b>. Added to the Stalled watchlist, ball in client&rsquo;s court.', true);
+      var row = document.getElementById('stallRow'); row.classList.remove('hl'); void row.offsetWidth; row.classList.add('hl');
+      return;
+    }
+    var card = document.getElementById(movers[k % movers.length]); k++;
+    var from = stages.indexOf(card.closest('.col').id), to = (from + 1) % stages.length;
+    CS.moveCard(card, document.getElementById(stages[to]), {top: to === 2});
+    post(say[stages[to]].replace('{a}', card.dataset.asset).replace('{c}', card.dataset.client));
+  }
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){
+    post(say.st2.replace('{a}','Brand hero cut')); post(say.st4.replace('{a}','Founder interview'));
+    post('Testimonial short has had no client reply for <b>11 days</b>. Added to the Stalled watchlist.', true);
+  } else {
+    CS.loop(document.getElementById('pipe'), 2600, tick);
+  }
+})();
+</script>
 </body>
 </html>
