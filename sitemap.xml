@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://janeyugtan.com/blog/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -21,6 +21,12 @@
   <url>
     <loc>https://janeyugtan.com/blog/how-my-obm-business-started/</loc>
     <lastmod>2026-11-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://janeyugtan.com/blog/how-i-took-invoicing-off-a-founders-plate/</loc>
+    <lastmod>2026-12-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>

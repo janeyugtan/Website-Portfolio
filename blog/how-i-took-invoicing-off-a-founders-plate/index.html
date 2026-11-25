@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How I took invoicing off a founder’s plate with AI | Jane Yugtan</title>
+<meta name="description" content="A design consultancy founder spent up to half his day on invoices. Here is the system and the Claude, Mercury, and QuickBooks automation that turned it into a few hours a week.">
+<link rel="canonical" href="https://janeyugtan.com/blog/how-i-took-invoicing-off-a-founders-plate/">
+<meta name="author" content="Jane Yugtan">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How I took invoicing off a founder’s plate with AI">
+<meta property="og:description" content="Up to half a day of invoicing, down to a few hours a week, with a human still in the loop.">
+<meta property="og:url" content="https://janeyugtan.com/blog/how-i-took-invoicing-off-a-founders-plate/">
+<meta property="og:site_name" content="Jane Yugtan">
+<meta property="article:published_time" content="2026-12-01">
+<meta property="og:image" content="https://janeyugtan.com/blog/how-i-took-invoicing-off-a-founders-plate/cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How I took invoicing off a founder’s plate with AI">
+<meta name="twitter:description" content="Up to half a day of invoicing, down to a few hours a week, with a human still in the loop.">
+<meta name="twitter:image" content="https://janeyugtan.com/blog/how-i-took-invoicing-off-a-founders-plate/cover.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"How I took invoicing off a founder’s plate with AI","author":{"@type":"Person","name":"Jane Yugtan","url":"https://janeyugtan.com"},"datePublished":"2026-12-01","dateModified":"2026-12-01","image":"https://janeyugtan.com/blog/how-i-took-invoicing-off-a-founders-plate/cover.jpg","publisher":{"@type":"Person","name":"Jane Yugtan","url":"https://janeyugtan.com"},"mainEntityOfPage":"https://janeyugtan.com/blog/how-i-took-invoicing-off-a-founders-plate/"}
+</script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#091a2a; --navy-2:#10293f; --blue:#0f4c75; --blue-2:#1d6fa5;
+    --cyan:#27d3f2; --slate:#334155; --muted:#64748b; --line:#e6eef7; --white:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--white);color:var(--slate);
+    font:400 1.0625rem/1.75 "DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+  a{color:var(--blue-2)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:2px}
+
+  .post-head{background:linear-gradient(var(--navy),var(--navy-2));color:var(--white);}
+  .post-head .wrap{max-width:46rem;margin:0 auto;padding:4.5rem 1.5rem 4rem}
+  .back{color:#9fb3c8;text-decoration:none;font-size:.9rem}
+  .back:hover{color:var(--cyan)}
+  h1{font-family:"DM Serif Display",Georgia,serif;font-weight:400;
+    font-size:clamp(2.4rem,6vw,3.75rem);line-height:1.05;letter-spacing:-.01em;margin:1.25rem 0 1.5rem;max-width:16ch}
+  .byline{color:#9fb3c8;font-size:.95rem;margin:0;display:flex;flex-wrap:wrap;gap:.25rem 1.25rem}
+
+  article{max-width:46rem;margin:0 auto;padding:3.5rem 1.5rem 2rem}
+  article p{margin:0 0 1.35rem;max-width:65ch}
+  .lede{font-size:1.2rem;line-height:1.7;color:var(--navy-2)}
+
+  .mistakes{list-style:none;margin:3rem 0;padding:0;counter-reset:m}
+  .mistakes>li{counter-increment:m;position:relative;padding:2.25rem 0 1rem 4.75rem;border-top:1px solid var(--line)}
+  .mistakes>li::before{content:counter(m);position:absolute;left:0;top:1.6rem;
+    font-family:"DM Serif Display",Georgia,serif;font-size:4rem;line-height:1;color:var(--cyan);
+    -webkit-text-stroke:1px var(--blue)}
+  .mistakes h2{font-family:"DM Serif Display",Georgia,serif;font-weight:400;color:var(--navy);
+    font-size:1.65rem;line-height:1.25;margin:0 0 1rem}
+
+  article h2{font-family:"DM Serif Display",Georgia,serif;font-weight:400;color:var(--navy);font-size:1.75rem;line-height:1.25;margin:2.75rem 0 1rem}
+  .glance{margin:2.5rem 0;padding:1.75rem 1.75rem .5rem;border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,#f7fbff,#fff)}
+  .glance-title{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:0 0 1.25rem}
+  .glance ol{list-style:none;margin:0;padding:0;position:relative}
+  .glance ol::before{content:"";position:absolute;left:7px;top:6px;bottom:1.5rem;width:2px;background:var(--line)}
+  .glance li{position:relative;padding:0 0 1.35rem 2.1rem}
+  .glance li::before{content:"";position:absolute;left:0;top:.35rem;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--blue-2)}
+  .glance li.now::before{background:var(--cyan);border-color:var(--blue)}
+  .glance strong{display:block;color:var(--navy);font-size:1.02rem}
+  .glance span{color:var(--muted);font-size:.95rem;line-height:1.6}
+  .pull{font-family:"DM Serif Display",Georgia,serif;font-size:1.7rem;line-height:1.3;color:var(--navy);margin:2.25rem 0;padding-left:1.25rem;border-left:4px solid var(--cyan);max-width:30ch}
+
+  .close{border-top:1px solid var(--line);padding-top:2.25rem}
+
+  .cta{background:var(--navy);color:var(--white);margin:3rem 0 0;padding:2.5rem 2rem;border-radius:14px;
+    border-left:6px solid var(--cyan)}
+  .cta p{color:#d5e1ec;margin:0 0 1.5rem;font-size:1.15rem;max-width:40ch}
+  .btn{display:inline-block;background:var(--cyan);color:var(--navy);font-weight:700;text-decoration:none;
+    padding:.85rem 1.4rem;border-radius:8px}
+  .btn:hover{background:var(--white)}
+
+  .author{display:flex;gap:1rem;align-items:center;margin:3rem 0 4rem;padding-top:2rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+  .author strong{color:var(--navy);display:block;font-size:1rem}
+
+  @media (max-width:600px){
+    .mistakes>li{padding-left:0;padding-top:4.75rem}
+    .mistakes>li::before{top:1.4rem}
+    .cta{padding:2rem 1.4rem}
+  }
+
+  /* ===== Site header + footer, copied from the homepage (index.html) so the blog matches the rest of the site ===== */
+  :root{--shadow:0 12px 30px rgba(15,76,117,.10);--radius:20px;--max:1180px}
+  body.modal-open{overflow:hidden}
+  .availability-bar,.topbar,.footer{line-height:1.6}
+  .availability-bar a,.topbar a{text-decoration:none}
+  .availability-bar{background:linear-gradient(90deg,#0f4c75,#1d6fa5);color:#fff;text-align:center;padding:10px 16px;font-size:14px;font-weight:700;letter-spacing:.2px}
+  .availability-bar span{display:inline-flex;align-items:center;gap:8px}
+  .avail-dot{width:9px;height:9px;border-radius:50%;background:#27d3f2;display:inline-block;animation:pulse 2s ease-in-out infinite}
+  .avail-link{color:inherit;text-decoration:none;display:block;transition:opacity .18s ease}.avail-link:hover{opacity:.88}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.3)}}
+  .topbar{position:relative;top:auto;z-index:100;background:rgba(255,255,255,.84);backdrop-filter:blur(16px);border-bottom:1px solid rgba(230,238,247,.9)}
+  .topbar-inner{width:min(var(--max),calc(100% - 32px));margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+  .brand{display:flex;align-items:center;white-space:nowrap}.brand a{display:inline-flex;align-items:center}
+  .brand-logo{height:54px;width:auto;display:block;filter:drop-shadow(0 6px 16px rgba(15,76,117,.18))}
+  .nav{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;font-size:14px}
+  .nav a{color:var(--muted);font-weight:500;padding:7px 12px;border-radius:999px;transition:background .2s ease,color .2s ease,transform .2s ease}
+  .nav a:hover{background:#eef6fc;color:var(--blue);transform:translateY(-1px)}.nav a.active{background:#eef6fc;color:var(--blue);font-weight:700}
+  .topbar .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:14px;font-weight:700;border:1px solid transparent;font-family:'DM Sans',Arial,sans-serif;transition:transform .18s ease,box-shadow .18s ease;cursor:pointer}
+  .topbar .btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(15,76,117,.14)}
+  .topbar .btn-primary{background:var(--navy);color:#fff}
+  .nav-cta{margin-left:4px;background:var(--navy)!important;color:#fff!important;border-color:transparent!important}
+  .nav-cta:hover{background:var(--blue)!important;transform:translateY(-1px)}
+  .site-footer{width:min(var(--max),calc(100% - 32px));margin:0 auto;padding:8px 0 40px;border-top:1px solid var(--line)}
+  .footer{text-align:center;color:var(--muted);padding:24px 0 0;font-size:14px}
+  .footer a{color:var(--blue);text-decoration:none}
+  .bir-badge{display:flex;flex-direction:column;align-items:center;gap:10px;width:fit-content;max-width:100%;margin:0 auto 18px;padding:14px 16px 12px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+  .bir-badge-img{display:block;max-width:100%;cursor:zoom-in;border-radius:8px}
+  .bir-badge-img img{display:block;width:auto;max-width:100%;height:auto}
+  .bir-badge-caption{font-size:12px;line-height:1.5;color:var(--muted)}
+  .bir-badge-caption a{font-weight:700}
+  .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:24px;z-index:1000;opacity:0;pointer-events:none;transition:opacity .22s ease}
+  .lightbox.show{opacity:1;pointer-events:auto}
+  .lightbox img{max-width:min(900px,100%);max-height:85vh;border-radius:16px;box-shadow:0 30px 80px rgba(0,0,0,.5);transform:scale(.94);transition:transform .22s ease}
+  .lightbox.show img{transform:scale(1)}
+  .lightbox-close{position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+  @media(max-width:980px){.topbar-inner{flex-direction:column;align-items:flex-start}.nav{justify-content:flex-start}}
+  @media(max-width:640px){.nav-cta{display:none}.brand-logo{height:42px}.nav{gap:4px}.nav a{padding:6px 8px;font-size:13px}}
+
+  /* "Say hi" panel, same as the homepage (own button classes so the post's .btn style can't leak in) */
+  .sayhi-overlay{position:fixed;inset:0;z-index:1090;background:rgba(9,26,42,.45);backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .3s ease}
+  .sayhi-overlay.show{opacity:1;pointer-events:auto}
+  .sayhi{position:fixed;top:0;right:0;z-index:1100;height:100%;width:min(460px,100%);overflow-y:auto;background:radial-gradient(circle at 90% 6%,rgba(39,211,242,.16),transparent 40%),#091a2a;color:#fff;padding:26px 32px 32px;box-shadow:-30px 0 80px rgba(0,0,0,.35);transform:translateX(100%);visibility:hidden;transition:transform .4s cubic-bezier(.16,1,.3,1),visibility 0s linear .4s;font-family:'DM Sans',Arial,sans-serif;line-height:1.6}
+  .sayhi.open{transform:none;visibility:visible;transition:transform .4s cubic-bezier(.16,1,.3,1),visibility 0s}
+  .sayhi a{text-decoration:none}
+  .sayhi-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+  .sayhi-kicker{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan)}
+  .sayhi-close{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;border-radius:999px;padding:8px 14px;font:700 12px 'DM Sans',Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+  .sayhi-close:hover{background:rgba(255,255,255,.16)}
+  .sayhi-who{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+  .sayhi-who img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--cyan)}
+  .sayhi-who strong{display:block;font-size:17px}
+  .sayhi-who span{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+  .sayhi-title{font-family:'DM Sans',Arial,sans-serif;font-weight:800;font-size:44px;line-height:.98;letter-spacing:-.03em;text-transform:uppercase;margin:0 0 6px;max-width:none}
+  .sayhi-title em{display:block;font-family:'DM Serif Display',serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;color:var(--cyan);font-size:46px;margin-top:6px}
+  .sayhi-copy{color:rgba(255,255,255,.75);font-size:16px;line-height:1.6;margin:16px 0 22px}
+  .sayhi-actions{display:flex;flex-direction:column;gap:12px}
+  .sayhi-btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 18px;border-radius:14px;font-weight:700;font-size:15px;border:1px solid transparent;transition:transform .18s ease,box-shadow .18s ease}
+  .sayhi-btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,.25)}
+  .sayhi-primary{background:var(--cyan);color:var(--navy)}
+  .sayhi-ghost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.2)}
+  .sayhi-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .sayhi-links a{color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:700}
+  .sayhi-links a:hover{border-color:var(--cyan);color:#fff}
+  .sayhi-foot{margin:26px 0 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;color:rgba(255,255,255,.55)}
+  @media(max-width:640px){.sayhi{padding:22px 22px 28px}.sayhi-title{font-size:36px}.sayhi-title em{font-size:38px}}
+  @media(prefers-reduced-motion:reduce){.sayhi,.sayhi-overlay{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="availability-bar">
+<a href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" class="avail-link">
+<span><span class="avail-dot"></span>Taking on new clients &middot; Book a discovery call to see if we&rsquo;re a fit</span>
+</a>
+</div>
+<div class="topbar">
+<div class="topbar-inner">
+<div class="brand"><a href="/" aria-label="Jane Yugtan home"><img src="/own-website-logo.png" alt="Jane Yugtan logo" class="brand-logo"></a></div>
+<nav class="nav" id="mainNav" aria-label="Main">
+<a href="/#services">Services</a>
+<a href="/#results">Work</a>
+<a href="/#about">About</a>
+<a href="/blog/" class="active">Blog</a>
+</nav>
+<a class="btn btn-primary nav-cta" id="sayHiOpen" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener" aria-haspopup="dialog" aria-controls="sayHi" style="font-size:13px;padding:9px 16px;border-radius:10px;white-space:nowrap;">Say hi 👋</a>
+</div>
+</div>
+
+<header class="post-head">
+  <div class="wrap">
+    <a class="back" href="/blog/">Back to blog</a>
+    <h1>How I took invoicing off a founder&rsquo;s plate with AI</h1>
+    <p class="byline"><span>By Jane Yugtan</span><time datetime="2026-12-01">December 1, 2026</time><span>4 min read</span></p>
+  </div>
+</header>
+
+<main>
+<article>
+  <p class="lede">A founder I work with was spending up to half of his day on invoices.</p>
+
+  <h2>The problem</h2>
+  <p>He runs a design consultancy. Every invoice meant opening the design file, re-typing the numbers into QuickBooks, then updating a spreadsheet. Client names in QuickBooks didn&rsquo;t always match the business name, so an invoice could land on the wrong customer.</p>
+  <p>And once an invoice went quiet, stalled, or past due, chasing it was easy to forget, because he was already busy making the next one.</p>
+
+  <h2>First, the system</h2>
+  <p>Before any AI, I built the foundation in Notion:</p>
+  <div class="glance" role="group" aria-label="The foundation">
+    <p class="glance-title">The foundation</p>
+    <ol>
+      <li><strong>One invoicing tracker</strong><span>Every invoice linked to its client, project, and proposal.</span></li>
+      <li><strong>An invoice schedule</strong><span>Retainers and milestone payments on one timeline, so nothing is invoiced late or twice.</span></li>
+      <li class="now"><strong>A QuickBooks map</strong><span>Each business matched to the right customer record, with its own invoice number sequence.</span></li>
+    </ol>
+  </div>
+  <p class="pull">AI is only as good as the system it works in.</p>
+  <p>If the data is messy, automation just makes the mess faster. So the system came first.</p>
+
+  <h2>Then, the automation</h2>
+  <p>Now Claude does the legwork. It reads the invoice schedule, builds the invoice in Mercury with the right invoice number, memo, and itemized breakdown, sets the due date and payment methods, copies the founder, and schedules the send with automatic reminders.</p>
+  <p>On the QuickBooks side, transactions are categorized as they come in, client payments are matched to their invoices, and transfers between the founder&rsquo;s own accounts are excluded so nothing gets counted twice.</p>
+  <p>I stay in the loop. I review every invoice before it goes out, and I make the judgment calls, like which overdue invoice needs a personal follow-up instead of another reminder.</p>
+
+  <h2>The result</h2>
+  <p>Invoicing went from up to half of the founder&rsquo;s day to a few hours a week. Overdue invoices get reminders automatically instead of being forgotten. And he has his time back for design work and his clients.</p>
+
+  <h2>If you&rsquo;re still doing this yourself</h2>
+  <p>Three places to start:</p>
+  <p><strong>1. Write your invoicing steps down once.</strong> If it only lives in your head, nobody can take it off your plate, person or tool.</p>
+  <p><strong>2. Get one source of truth for who owes what.</strong> One tracker, linked to your clients and projects, beats three tools that almost agree.</p>
+  <p><strong>3. Automate the repeatable parts, and keep a person on the judgment calls.</strong> That&rsquo;s where an OBM earns their keep.</p>
+
+  <aside class="cta" aria-label="Book a discovery call">
+    <p>If invoicing is eating your week, let&rsquo;s talk about building the system, and running it with you.</p>
+    <a class="btn" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">Book a discovery call</a>
+  </aside>
+
+  <div class="author">
+    <div><strong>Jane Yugtan</strong>Online Business Manager and fractional growth leader for founders and agency owners.</div>
+  </div>
+</article>
+</main>
+
+<footer class="site-footer">
+<div class="footer">
+<div class="bir-badge">
+<a class="bir-badge-img" href="/BIR%20Seal%20Badge.png" onclick="openLightbox('/BIR%20Seal%20Badge.png','BIR Registration Seal Badge');return false;" aria-label="Enlarge BIR Registration Seal Badge to scan"><img src="/BIR%20Seal%20Badge.png" width="484" height="157" alt="BIR Registration Seal Badge: Registered 2024, Bureau of Internal Revenue, RSN 026RC20240000002775, with QR code for verification" loading="lazy" /></a>
+<div class="bir-badge-caption">Registered with the Bureau of Internal Revenue (BIR) &middot; RSN 026RC20240000002775<br />Scan the QR code or <a href="https://verify.bir.gov.ph/correspondence/f839feac198f45eea59e1276ca48ba98" target="_blank" rel="noopener">verify with BIR &#8599;</a></div>
+</div>
+<div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:12px;font-size:13px;">
+<a href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener" style="color:var(--muted);">LinkedIn</a>
+<a href="https://www.instagram.com/jane.yugtan/" target="_blank" rel="noopener" style="color:var(--muted);">Instagram</a>
+<a href="https://www.threads.com/@ljane_hy" target="_blank" rel="noopener" style="color:var(--muted);">Threads</a>
+<a href="https://www.facebook.com/jane.hernandez.285545" target="_blank" rel="noopener" style="color:var(--muted);">Facebook</a>
+<a href="mailto:jane@janeyugtan.com" style="color:var(--muted);">Email</a>
+</div>
+&copy; 2026 Jane Yugtan. Online Business Manager (OBM) &middot; Fractional Growth Leader &middot; Project Manager. All rights reserved.
+</div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+<button class="lightbox-close" id="lightboxClose" aria-label="Close">x</button>
+<img id="lightboxImg" src="" alt="" /></div>
+<script>
+const lightbox=document.getElementById('lightbox');
+const lightboxImg=document.getElementById('lightboxImg');
+const lightboxClose=document.getElementById('lightboxClose');
+function openLightbox(src,alt){lightboxImg.src=src;lightboxImg.alt=alt;lightbox.classList.add('show');lightbox.setAttribute('aria-hidden','false');document.body.classList.add('modal-open')}
+function closeLightbox(){lightbox.classList.remove('show');lightbox.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')}
+lightboxClose.addEventListener('click',closeLightbox);
+lightbox.addEventListener('click',(e)=>{if(e.target===lightbox)closeLightbox()});
+document.addEventListener('keydown',(e)=>{if(e.key==='Escape')closeLightbox()});
+</script>
+
+<div class="sayhi-overlay" id="sayHiOverlay"></div>
+<aside class="sayhi" id="sayHi" role="dialog" aria-modal="true" aria-labelledby="sayHiTitle" aria-hidden="true">
+<div class="sayhi-top"><span class="sayhi-kicker">Contact // Say hi</span><button type="button" class="sayhi-close" id="sayHiClose">Close &#10005;</button></div>
+<div class="sayhi-who"><img src="/jy-linkedin.jpeg" alt="" width="56" height="56" loading="lazy" /><div><strong>Jane Yugtan</strong><span>OBM &middot; Fractional Growth Leader</span></div></div>
+<h2 class="sayhi-title" id="sayHiTitle">Got a messy backend? <em>Let&rsquo;s run it.</em></h2>
+<p class="sayhi-copy">Book a 30-minute discovery call to see if we&rsquo;re a fit, or send me a note.</p>
+<div class="sayhi-actions"><a class="sayhi-btn sayhi-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">&#9749; Book a discovery call</a><a class="sayhi-btn sayhi-ghost" href="mailto:jane@janeyugtan.com">&#128233; Email me</a></div>
+<div class="sayhi-links"><a href="https://www.linkedin.com/in/jyugtan/" target="_blank" rel="noopener">LinkedIn &#8599;</a><a href="https://www.instagram.com/jane.yugtan/" target="_blank" rel="noopener">Instagram &#8599;</a><a href="https://www.threads.com/@ljane_hy" target="_blank" rel="noopener">Threads &#8599;</a><a href="https://www.facebook.com/jane.hernandez.285545" target="_blank" rel="noopener">Facebook &#8599;</a></div>
+<p class="sayhi-foot">EST hours &middot; Remote &middot; Retainer &amp; Project-Based</p>
+</aside>
+<script>
+(function(){
+const panel=document.getElementById('sayHi'),overlay=document.getElementById('sayHiOverlay'),openBtn=document.getElementById('sayHiOpen'),closeBtn=document.getElementById('sayHiClose');
+if(!panel||!openBtn)return;let lastFocus=null;
+function open(e){if(e)e.preventDefault();lastFocus=document.activeElement;panel.classList.add('open');overlay.classList.add('show');panel.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');setTimeout(()=>closeBtn.focus(),60)}
+function close(){if(!panel.classList.contains('open'))return;panel.classList.remove('open');overlay.classList.remove('show');panel.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open');if(lastFocus)lastFocus.focus()}
+openBtn.addEventListener('click',open);closeBtn.addEventListener('click',close);overlay.addEventListener('click',close);
+document.addEventListener('keydown',e=>{if(!panel.classList.contains('open'))return;if(e.key==='Escape'){close();return}if(e.key==='Tab'){const f=[...panel.querySelectorAll('a[href],button')];const first=f[0],last=f[f.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
+})();
+</script>
+</body>
+</html>
