@@ -634,8 +634,8 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <section class="slide section reveal scrollable" id="featured-projects">
 <div class="container">
 <h2 class="section-title">Featured Projects</h2>
-<p class="section-subtitle">Client walkthroughs on video, plus two systems you can explore live below.</p>
-<nav class="chapter-nav tracker" aria-label="Projects"><button type="button" class="on" data-target="proj-walkthroughs">Walkthroughs</button><button type="button" data-target="proj-millsaps">Millsaps</button><button type="button" data-target="proj-melanson">Melanson</button><i class="chapter-bar"><b></b></i></nav>
+<p class="section-subtitle">Client walkthroughs on video, plus three systems you can explore live below.</p>
+<nav class="chapter-nav tracker" aria-label="Projects"><button type="button" class="on" data-target="proj-walkthroughs">Walkthroughs</button><button type="button" data-target="proj-sava">SAVA</button><button type="button" data-target="proj-millsaps">Millsaps</button><button type="button" data-target="proj-melanson">Melanson</button><i class="chapter-bar"><b></b></i></nav>
 <div id="proj-walkthroughs" class="proj-anchor"><h3 class="section-h3" style="margin:18px 0 4px;">Client walkthroughs</h3><p class="hand-note" style="margin:0 0 26px;">press play, real client builds &darr;</p></div>
 <div class="projects-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
 <div class="project-card interactive-project float-card taped tilt-l" data-project="sava" data-drift="16"><i class="tape" aria-hidden="true"></i>
@@ -659,12 +659,32 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 </div>
 <div style="margin-top:48px;">
 <h3 style="font-family:'DM Serif Display',serif;font-size:18px;margin:0 0 6px;color:var(--slate);">Live System Mockups</h3>
-<p class="section-subtitle" style="margin-bottom:22px;">No click required — these are the actual Notion-built dashboards, rendered live and scrollable.</p>
+<p class="section-subtitle" style="margin-bottom:22px;">Live, moving mockups of the Notion systems I built, with invented data. Scroll inside each one.</p>
 <div style="display:grid;gap:28px;">
-<div class="panel taped proj-anchor" id="proj-millsaps" style="padding:0;"><i class="tape" aria-hidden="true"></i>
+<div class="panel taped proj-anchor" id="proj-sava" style="padding:0;"><i class="tape" aria-hidden="true"></i>
+<div style="padding:22px 22px 16px;">
+<p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">Featured Project &middot; E-commerce brand</p>
+<h3 class="proj-name" style="margin:0 0 4px;" data-drift-x="40">SAVA Amsterdam</h3>
+<p style="margin:0 0 14px;color:var(--slate);font-size:14px;">The team&rsquo;s Notion was scattered, so people avoided it. I rebuilt it as one company HQ: a department hub for Support, Supply Chain, Paid Marketing, Sales, SOPs, and HR; one task centre with table, status, assignee, and calendar views; and a marketing calendar every team plans around. The goal: anyone finds what they need in under 30 seconds.</p>
+<div class="proj-stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px;">
+<div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">6</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Department hubs</div></div>
+<div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">&lt;30s</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Find-anything goal</div></div>
+<div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">1</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Task centre, every team</div></div>
+</div>
+<div class="tag-row"><span class="tag">E-commerce Ops</span><span class="tag">Company Systems</span><span class="tag">Notion Systems</span></div>
+</div>
+<div style="border-top:1px solid var(--line);background:#fff;">
+<iframe src="sava-case-study.html" title="SAVA Amsterdam live case study mockup" loading="lazy" style="width:100%;height:680px;border:0;display:block;"></iframe>
+</div>
+<div style="padding:16px 22px;text-align:center;border-top:1px solid var(--line);display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+<a class="btn btn-secondary" href="sava-case-study.html" target="_blank" rel="noopener" style="font-size:13px;padding:10px 18px;">&#8599; Open full case study in a new tab</a>
+<a class="btn btn-light" href="https://www.loom.com/share/3055c23d989b440b89c32c487e5de84e" target="_blank" rel="noopener" style="font-size:13px;padding:10px 18px;">&#9654; Watch walkthrough</a>
+</div>
+</div>
+<div class="panel taped proj-anchor" id="proj-millsaps" style="padding:0;"><i class="tape r" aria-hidden="true"></i>
 <div style="padding:22px 22px 16px;">
 <p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">Featured Project &middot; Video production</p>
-<h3 class="proj-name" style="margin:0 0 4px;" data-drift-x="40">Millsaps Productions</h3>
+<h3 class="proj-name" style="margin:0 0 4px;" data-drift-x="-40">Millsaps Productions</h3>
 <p style="margin:0 0 14px;color:var(--slate);font-size:14px;">A commercial video studio had every project status living in one person's head — no shared source of truth, no automated handoffs between director, editors, and clients, and no reliable way to catch a stalled deliverable before it reached the client. I built a Notion HQ and Slack automation layer around how the founder actually works.</p>
 <div class="proj-stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px;">
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">6 wks</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Engagement</div></div>
@@ -673,28 +693,28 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 </div>
 <div class="tag-row"><span class="tag">Project Management</span><span class="tag">Notion Systems</span><span class="tag">Slack Automation</span></div>
 </div>
-<div style="border-top:1px solid var(--line);background:#F7F6F1;height:640px;overflow:auto;-webkit-overflow-scrolling:touch;">
-<iframe src="millsaps-case-study.html" title="Millsaps Productions live case study" loading="lazy" style="width:100%;height:1550px;border:0;display:block;"></iframe>
+<div style="border-top:1px solid var(--line);background:#fff;">
+<iframe src="millsaps-case-study.html" title="Millsaps Productions live case study mockup" loading="lazy" style="width:100%;height:680px;border:0;display:block;"></iframe>
 </div>
 <div style="padding:16px 22px;text-align:center;border-top:1px solid var(--line);display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
 <a class="btn btn-secondary" href="millsaps-case-study.html" target="_blank" rel="noopener" style="font-size:13px;padding:10px 18px;">&#8599; Open full case study in a new tab</a>
 <a class="btn btn-light" href="millsaps-case-study.pdf" target="_blank" rel="noopener" style="font-size:13px;padding:10px 18px;">&#128196; View Case Study (PDF)</a>
 </div>
 </div>
-<div class="panel taped proj-anchor" id="proj-melanson" style="padding:0;"><i class="tape r" aria-hidden="true"></i>
+<div class="panel taped proj-anchor" id="proj-melanson" style="padding:0;"><i class="tape" aria-hidden="true"></i>
 <div style="padding:22px 22px 16px;">
-<p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">Featured Project &middot; Design consultancy</p>
-<h3 class="proj-name" style="margin:0 0 4px;" data-drift-x="-40">Melanson Design</h3>
-<p style="margin:0 0 14px;color:var(--slate);font-size:14px;">A design consultancy had cash spread across accounts with no clear read on what was actually available, and invoices that got hard to track once a client moved past payment one of several. I built an Operations HQ in Notion around Profit First allocation and a full invoice tracker, so the numbers report themselves.</p>
+<p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">Ongoing OBM partnership &middot; Design consultancy</p>
+<h3 class="proj-name" style="margin:0 0 4px;" data-drift-x="40">Melanson Design</h3>
+<p style="margin:0 0 14px;color:var(--slate);font-size:14px;">A design consultancy was re-typing the same numbers into four tools, and invoices got hard to track once a client moved past payment one of several. As their OBM, I built an Operations HQ in Notion connected to QuickBooks, Mercury, Slack, and Typeform: invoicing, QuickBooks customer matching, contractor pay runs, project status, and client priority in one place.</p>
 <div class="proj-stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px;">
-<div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">6</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Profit First accounts tracked</div></div>
-<div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">12-pay</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Plans tracked to the payment #</div></div>
+<div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">5 tools</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Connected to one HQ</div></div>
+<div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">1st &amp; 15th</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Contractor pay runs, tracked</div></div>
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">0</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Manual reports needed</div></div>
 </div>
-<div class="tag-row"><span class="tag">Financial Ops</span><span class="tag">Notion Systems</span><span class="tag">Invoice Tracking</span></div>
+<div class="tag-row"><span class="tag">Financial Ops</span><span class="tag">QuickBooks + Mercury</span><span class="tag">Slack + Typeform</span><span class="tag">Notion Systems</span></div>
 </div>
-<div style="border-top:1px solid var(--line);background:#F7F6F1;height:640px;overflow:auto;-webkit-overflow-scrolling:touch;">
-<iframe src="melanson-case-study.html" title="Melanson Design live case study" loading="lazy" style="width:100%;height:1550px;border:0;display:block;"></iframe>
+<div style="border-top:1px solid var(--line);background:#fff;">
+<iframe src="melanson-case-study.html" title="Melanson Design live case study mockup" loading="lazy" style="width:100%;height:680px;border:0;display:block;"></iframe>
 </div>
 <div style="padding:16px 22px;text-align:center;border-top:1px solid var(--line);">
 <a class="btn btn-secondary" href="melanson-case-study.html" target="_blank" rel="noopener" style="font-size:13px;padding:10px 18px;">&#8599; Open full case study in a new tab</a>

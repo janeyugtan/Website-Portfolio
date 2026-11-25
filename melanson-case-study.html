@@ -3,204 +3,228 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Operations Dashboard — Case Study Mockup</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --vellum:#F7F6F1;
-  --rule:#D8D5CA;
-  --ink:#16160F;
-  --graphite:#6B6A61;
-  --signal:#E8D31E;
-  --steel:#4A5A6A;
-  --good:#3F7A5E;
-  --warn:#B5562C;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-  background:var(--vellum);
-  color:var(--ink);
-  font-family:'Archivo',system-ui,sans-serif;
-  font-size:15px;
-  line-height:1.5;
-  padding:48px 32px 80px;
-}
-.sheet{max-width:1080px;margin:0 auto}
-
-/* header */
-.masthead{
-  display:flex;align-items:baseline;justify-content:space-between;
-  gap:24px;padding-bottom:18px;border-bottom:2px solid var(--ink);
-}
-.masthead h1{font-size:30px;font-weight:700;letter-spacing:-0.02em}
-.masthead .meta{font-family:'Roboto Mono',monospace;font-size:12px;color:var(--graphite)}
-
-/* section */
-section{margin-top:44px}
-.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:20px}
-.sec-head h2{font-size:19px;font-weight:600;letter-spacing:-0.01em}
-.sec-head p{font-size:13.5px;color:var(--graphite);max-width:52ch}
-
-/* profit first bars */
-.buckets{display:grid;gap:2px;background:var(--rule);border:1px solid var(--rule)}
-.bucket{
-  background:var(--vellum);display:grid;
-  grid-template-columns:150px 1fr 108px;
-  align-items:center;gap:18px;padding:13px 16px;
-}
-.bucket .name{font-weight:500;font-size:14px}
-.bucket .name span{display:block;font-size:11.5px;color:var(--graphite);font-weight:400}
-.track{position:relative;height:9px;background:#E5E3DA}
-.fill{position:absolute;inset:0 auto 0 0;background:var(--steel)}
-.fill.is-signal{background:var(--signal)}
-.fill.is-low{background:var(--warn)}
-.threshold{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--ink)}
-.amt{font-family:'Roboto Mono',monospace;font-size:14px;text-align:right;font-weight:500}
-.sub{font-family:'Roboto Mono',monospace;font-size:11px;color:var(--graphite);text-align:right;display:block}
-
-/* two-up */
-.two-up{display:grid;grid-template-columns:1fr 1fr;gap:36px}
-@media(max-width:820px){.two-up{grid-template-columns:1fr}.bucket{grid-template-columns:120px 1fr 92px;gap:12px}}
-
-/* bar chart */
-.chart{border:1px solid var(--rule);padding:20px 18px 14px;background:#FCFBF7}
-.chart h3{font-size:14px;font-weight:600;margin-bottom:16px}
-.cols{display:flex;align-items:flex-end;gap:14px;height:168px;padding-bottom:8px;border-bottom:1px solid var(--rule)}
-.col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:7px;height:100%}
-.col .bar{width:100%;background:var(--steel);min-height:3px}
-.col:nth-child(4) .bar{background:var(--signal)}
-.col .val{font-family:'Roboto Mono',monospace;font-size:11px;color:var(--graphite)}
-.xaxis{display:flex;gap:14px;margin-top:8px}
-.xaxis span{flex:1;text-align:center;font-size:11.5px;color:var(--graphite)}
-
-/* donut */
-.donut-wrap{display:flex;align-items:center;gap:22px}
-.legend{display:grid;gap:9px;font-size:13px}
-.legend div{display:flex;align-items:center;gap:9px}
-.dot{width:10px;height:10px;flex:none}
-.legend .n{font-family:'Roboto Mono',monospace;font-size:12px;color:var(--graphite);margin-left:auto}
-
-/* table */
-table{width:100%;border-collapse:collapse;font-size:13.5px}
-th{
-  text-align:left;font-weight:600;font-size:12.5px;color:var(--graphite);
-  padding:0 12px 9px;border-bottom:1px solid var(--ink);
-}
-th:last-child,td:last-child{text-align:right}
-td{padding:11px 12px;border-bottom:1px solid var(--rule)}
-td.num{font-family:'Roboto Mono',monospace}
-.tag{display:inline-block;padding:2px 8px;font-size:11.5px;font-weight:500;border:1px solid}
-.tag.sent{color:var(--steel);border-color:var(--steel)}
-.tag.paid{color:var(--good);border-color:var(--good)}
-.tag.due{color:var(--warn);border-color:var(--warn);background:#FBF0E9}
-
-.foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--rule);font-size:12px;color:var(--graphite)}
-</style>
+<title>Operations HQ — Live Case Study Mockup | Jane Yugtan</title>
+<meta name="description" content="Live mockup of the Notion operations HQ Jane Yugtan built for a design consultancy, connected to QuickBooks, Mercury, Slack, and Typeform. Illustrative data.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="cs-notion.css">
 </head>
 <body>
-<div class="sheet">
+<div class="chrome"><div class="crumbs">🧭 <span>Design consultancy</span> / <b>Operations HQ</b></div><div class="chrome-r"><span class="live">Live mockup</span></div></div>
+<div class="cover" aria-hidden="true" style="background:linear-gradient(120deg,#2b593f,#3f7a5e 50%,#27d3f2)"></div>
+<main class="page">
+<div class="icon" aria-hidden="true">🧭</div>
+<h1 class="title">Operations HQ</h1>
+<p class="sub">Design consultancy &middot; ongoing OBM partnership &middot; Notion + QuickBooks + Mercury + Slack + Typeform &middot; designed by Jane Yugtan</p>
 
-  <div class="masthead">
-    <h1>Operations HQ</h1>
-    <div class="meta">Design consultancy &nbsp;/&nbsp; period ending 31 Mar</div>
+<div class="callout blue reveal"><span class="ci">🔗</span><div><b>One source of truth, connected.</b> Intake, projects, invoices, payments, and team updates all meet here, so the founder stops re-typing the same numbers into four tools.</div></div>
+
+<div class="flow reveal" id="flow" style="margin-top:14px">
+  <div class="flow-row">
+    <div class="node" id="n-tf"><span class="ni">📝</span><b>Typeform</b><small>Client intake</small></div>
+    <div class="wire" id="w1"><i></i></div>
+    <div class="node hub" id="n-no"><span class="ni">🧭</span><b>Notion HQ</b><small>Projects &amp; invoices</small></div>
+    <div class="wire" id="w2"><i></i></div>
+    <div class="node" id="n-qb"><span class="ni">📗</span><b>QuickBooks</b><small>Customers &amp; invoice #s</small></div>
+    <div class="wire" id="w3"><i></i></div>
+    <div class="node" id="n-me"><span class="ni">🏦</span><b>Mercury</b><small>Payments in &amp; out</small></div>
+    <div class="wire" id="w4"><i></i></div>
+    <div class="node" id="n-sl"><span class="ni">💬</span><b>Slack</b><small>Updates</small></div>
   </div>
-
-  <section>
-    <div class="sec-head">
-      <h2>Cash position</h2>
-      <p>Profit First allocation across six accounts. Vertical marks show the minimum each account holds before funds move on.</p>
-    </div>
-    <div class="buckets">
-      <div class="bucket">
-        <div class="name">Income<span>Deposits clear here first</span></div>
-        <div class="track"><div class="fill" style="width:72%"></div></div>
-        <div><span class="amt">$38,400</span></div>
-      </div>
-      <div class="bucket">
-        <div class="name">Owner's comp<span>Minimum $12,000</span></div>
-        <div class="track"><div class="fill is-signal" style="width:88%"></div><div class="threshold" style="left:62%"></div></div>
-        <div><span class="amt">$17,050</span><span class="sub">+$5,050 over</span></div>
-      </div>
-      <div class="bucket">
-        <div class="name">Operating<span>Minimum $8,000</span></div>
-        <div class="track"><div class="fill" style="width:54%"></div><div class="threshold" style="left:44%"></div></div>
-        <div><span class="amt">$9,820</span><span class="sub">+$1,820 over</span></div>
-      </div>
-      <div class="bucket">
-        <div class="name">Contractor payable<span>Scheduled out 15th</span></div>
-        <div class="track"><div class="fill" style="width:41%"></div></div>
-        <div><span class="amt">$7,340</span></div>
-      </div>
-      <div class="bucket">
-        <div class="name">Tax reserve<span>Held at 22%</span></div>
-        <div class="track"><div class="fill" style="width:63%"></div></div>
-        <div><span class="amt">$11,290</span></div>
-      </div>
-      <div class="bucket">
-        <div class="name">Profit<span>Quarterly distribution</span></div>
-        <div class="track"><div class="fill is-low" style="width:19%"></div></div>
-        <div><span class="amt">$3,400</span><span class="sub">post-distribution</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="two-up">
-    <div class="chart">
-      <h3>Invoiced, last five months</h3>
-      <div class="cols">
-        <div class="col"><span class="val">28.4k</span><div class="bar" style="height:56%"></div></div>
-        <div class="col"><span class="val">31.2k</span><div class="bar" style="height:62%"></div></div>
-        <div class="col"><span class="val">24.9k</span><div class="bar" style="height:49%"></div></div>
-        <div class="col"><span class="val">42.6k</span><div class="bar" style="height:85%"></div></div>
-        <div class="col"><span class="val">36.1k</span><div class="bar" style="height:72%"></div></div>
-      </div>
-      <div class="xaxis"><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span></div>
-    </div>
-
-    <div class="chart">
-      <h3>Revenue mix by engagement type</h3>
-      <div class="donut-wrap">
-        <svg width="140" height="140" viewBox="0 0 42 42" role="img" aria-label="Revenue split: retainers 46 percent, project work 33 percent, production oversight 21 percent">
-          <circle cx="21" cy="21" r="15.9" fill="none" stroke="#E5E3DA" stroke-width="7"/>
-          <circle cx="21" cy="21" r="15.9" fill="none" stroke="#4A5A6A" stroke-width="7"
-                  stroke-dasharray="46 54" stroke-dashoffset="25"/>
-          <circle cx="21" cy="21" r="15.9" fill="none" stroke="#E8D31E" stroke-width="7"
-                  stroke-dasharray="33 67" stroke-dashoffset="79"/>
-          <circle cx="21" cy="21" r="15.9" fill="none" stroke="#B5562C" stroke-width="7"
-                  stroke-dasharray="21 79" stroke-dashoffset="46"/>
-        </svg>
-        <div class="legend">
-          <div><span class="dot" style="background:#4A5A6A"></span>Monthly retainers<span class="n">46%</span></div>
-          <div><span class="dot" style="background:#E8D31E"></span>Project milestones<span class="n">33%</span></div>
-          <div><span class="dot" style="background:#B5562C"></span>Production oversight<span class="n">21%</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="sec-head">
-      <h2>Invoice tracker</h2>
-      <p>Every invoice tied back to its client, project, and payment number, so no one has to remember which payment of six they're on.</p>
-    </div>
-    <table>
-      <thead>
-        <tr><th>Invoice</th><th>Client</th><th>Payment</th><th>Terms</th><th>Status</th><th>Amount</th></tr>
-      </thead>
-      <tbody>
-        <tr><td class="num">15031</td><td>Northwind Outdoor</td><td>7 of 12</td><td>Net 15</td><td><span class="tag paid">Paid</span></td><td class="num">$10,000.00</td></tr>
-        <tr><td class="num">20014</td><td>Harbor &amp; Hale</td><td>3 of 6</td><td>Net 15</td><td><span class="tag sent">Sent</span></td><td class="num">$1,565.55</td></tr>
-        <tr><td class="num">22008</td><td>Fieldcraft Tools</td><td>—</td><td>Net 30</td><td><span class="tag due">Past due</span></td><td class="num">$5,343.50</td></tr>
-        <tr><td class="num">25004</td><td>Trailhead Supply</td><td>2 of 11</td><td>Net 30</td><td><span class="tag paid">Paid</span></td><td class="num">$6,441.67</td></tr>
-        <tr><td class="num">26001</td><td>Meridian Medical</td><td>1 of 1</td><td>Net 15</td><td><span class="tag sent">Sent</span></td><td class="num">$3,465.00</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <p class="foot">Illustrative mockup. Structure reflects the system as built; all figures, client names, and invoice numbers are invented for portfolio use.</p>
-
+  <div class="flow-log" aria-live="polite"></div>
 </div>
+
+<h2 class="h">Money coming in</h2>
+<p class="desc">The invoicing tracker replaced a three-touch process (design file &rarr; QuickBooks &rarr; spreadsheet). Every invoice links to its client, project, and proposal.</p>
+<div class="chart" data-views data-auto="4500">
+  <div class="chart-t"><span class="tabs" role="tablist"><button class="tab on" data-view="m-status" role="tab">By status</button><button class="tab" data-view="m-inv" role="tab">By invoice</button><button class="tab" data-view="m-mix" role="tab">Revenue mix</button></span><span>Invoicing tracker</span></div>
+  <div class="view" id="m-status"><div class="donut-wrap">
+    <div class="donut"><svg viewBox="0 0 130 130"><circle cx="65" cy="65" r="52" stroke="#f1f1ef"/><circle class="seg" data-v="9" cx="65" cy="65" r="52" stroke="#4dab9a"/><circle class="seg" data-v="2" cx="65" cy="65" r="52" stroke="#529cca"/><circle class="seg" data-v="2" cx="65" cy="65" r="52" stroke="#c4c4c2"/><circle class="seg" data-v="1" cx="65" cy="65" r="52" stroke="#e16f64"/></svg><div class="mid"><b data-count="14">0</b><span>Invoices</span></div></div>
+    <div class="legend"><span><i style="background:#4dab9a"></i>Paid &middot; 9</span><span><i style="background:#529cca"></i>Sent &middot; 2</span><span><i style="background:#c4c4c2"></i>Draft &middot; 2</span><span><i style="background:#e16f64"></i>Overdue &middot; 1</span></div>
+  </div></div>
+  <div class="view" id="m-inv"><div class="bars">
+    <div class="bar"><span>$10K</span><i data-h="100" style="background:#529cca"></i></div>
+    <div class="bar"><span>$1.6K</span><i data-h="16" style="background:#e9b44c"></i></div>
+    <div class="bar"><span>$6.4K</span><i data-h="64" style="background:#4dab9a"></i></div>
+    <div class="bar"><span>$8.2K</span><i data-h="82" style="background:#9a6dd7"></i></div>
+    <div class="bar"><span>$5.3K</span><i data-h="53" style="background:#e16f64"></i></div>
+    <div class="bar"><span>$3.5K</span><i data-h="35" style="background:#e9b44c"></i></div>
+    <div class="bar"><span>$2.1K</span><i data-h="21" style="background:#4dab9a"></i></div>
+  </div><div class="bar-l"><span>15031</span><span>20014</span><span>25004</span><span>15032</span><span>22008</span><span>26001</span><span>20015</span></div></div>
+  <div class="view" id="m-mix"><div class="hbars">
+    <div class="hbar"><span>Monthly retainers</span><div class="tr"><i data-w="46" style="background:#4dab9a"></i></div><b>46%</b></div>
+    <div class="hbar"><span>Project milestones</span><div class="tr"><i data-w="33" style="background:#529cca"></i></div><b>33%</b></div>
+    <div class="hbar"><span>Production oversight</span><div class="tr"><i data-w="21" style="background:#9a6dd7"></i></div><b>21%</b></div>
+  </div></div>
+</div>
+
+<h3 class="h">QuickBooks customer mapping &amp; invoice numbering</h3>
+<p class="desc">Business names don't always match the customer record in QuickBooks. This maps the two and tracks each client's own invoice number sequence, so invoices never land on the wrong customer.</p>
+<div class="scroll-x reveal"><table class="tbl" id="qbo">
+  <thead><tr><th>Business name</th><th>QuickBooks customer</th><th>Next invoice #</th><th>Match</th></tr></thead>
+  <tbody>
+    <tr><td class="pg">Northwind Outdoor</td><td>N. Harlow</td><td class="num">15032</td><td><span class="pill gray">Checking</span></td></tr>
+    <tr><td class="pg">Harbor &amp; Hale</td><td>Harbor Hale LLC</td><td class="num">20015</td><td><span class="pill gray">Checking</span></td></tr>
+    <tr><td class="pg">Trailhead Supply</td><td>T. Supply Co.</td><td class="num">25005</td><td><span class="pill gray">Checking</span></td></tr>
+    <tr><td class="pg">Fieldcraft Tools</td><td>Fieldcraft</td><td class="num">22009</td><td><span class="pill gray">Checking</span></td></tr>
+  </tbody>
+</table></div>
+
+<h3 class="h">Invoice schedule</h3>
+<p class="desc">Retainers and milestone payments on one timeline, so nothing is invoiced late or twice.</p>
+<div class="tl" data-go>
+  <div class="tl-head"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span></div>
+  <div class="tl-body">
+    <div class="tl-today" id="today"></div>
+    <div class="tl-row"><div class="tl-item" style="left:0;width:100%;background:var(--p-green);color:var(--t-green)">Monthly retainer &middot; Northwind Outdoor &middot; 12 payments</div></div>
+    <div class="tl-row"><div class="tl-item" style="left:16.6%;width:50%;background:var(--p-blue);color:var(--t-blue);transition-delay:.15s">Milestones 1&ndash;6 &middot; Harbor &amp; Hale</div></div>
+    <div class="tl-row"><div class="tl-item" style="left:41.6%;width:41.6%;background:var(--p-purple);color:var(--t-purple);transition-delay:.3s">Production oversight &middot; Trailhead Supply</div></div>
+    <div class="tl-row"><div class="tl-item" style="left:75%;width:25%;background:var(--p-yellow);color:var(--t-yellow);transition-delay:.45s">Phase 3 &middot; Fieldcraft</div></div>
+  </div>
+</div>
+
+<h2 class="h">Projects &amp; tasks</h2>
+<div class="callout red reveal"><span class="ci">🔴</span><div><b>Needs attention</b> — projects grouped live by status. Anything awaiting the founder or stalled needs a decision from him.</div></div>
+<div class="db reveal">
+  <div class="db-head"><div class="db-title">Projects per client</div><span class="new">New</span></div>
+  <div class="board" id="proj">
+    <div class="col green" id="p-on"><div class="col-h"><span class="pill green">On track</span><span data-count-of="p-on">4</span></div><div class="cards">
+      <div class="card" id="pc1">Trail pack v2<small>Northwind Outdoor &middot; Development</small></div>
+      <div class="card">Kettle lid redesign<small>Harbor &amp; Hale &middot; Concept</small></div>
+      <div class="card">Cooler handle<small>Trailhead Supply &middot; Development</small></div>
+      <div class="card">Packaging refresh<small>Fieldcraft &middot; Concept</small></div>
+    </div></div>
+    <div class="col yellow" id="p-wait"><div class="col-h"><span class="pill yellow">Awaiting founder</span><span data-count-of="p-wait">1</span></div><div class="cards">
+      <div class="card">Bike rack sourcing<small>Northwind Outdoor &middot; approve vendor</small></div>
+    </div></div>
+    <div class="col red" id="p-stall"><div class="col-h"><span class="pill red">Stalled</span><span data-count-of="p-stall">1</span></div><div class="cards">
+      <div class="card alert">Bottle cap tooling<small>Harbor &amp; Hale &middot; waiting on samples</small></div>
+    </div></div>
+  </div>
+</div>
+
+<div class="cols" style="margin-top:22px">
+  <div class="chart" data-go>
+    <div class="chart-t"><span>Workload by contractor</span><span>hours this month</span></div>
+    <div class="hbars">
+      <div class="hbar"><span>A. Reyes</span><div class="tr"><i data-w="94" style="background:#e16f64"></i></div><b>34h</b></div>
+      <div class="hbar"><span>D. Park</span><div class="tr"><i data-w="61" style="background:#e9b44c"></i></div><b>22h</b></div>
+      <div class="hbar"><span>S. Ito</span><div class="tr"><i data-w="25" style="background:#4dab9a"></i></div><b>9h</b></div>
+    </div>
+    <p class="desc" style="margin:10px 0 0">Surfaces capacity gaps before deadlines, not after.</p>
+  </div>
+  <div class="chart" data-go>
+    <div class="chart-t"><span>Cash position</span><span>Profit First accounts</span></div>
+    <div class="hbars">
+      <div class="hbar"><span>Owner's comp</span><div class="tr"><i data-w="100" style="background:#4dab9a"></i></div><b>$17K</b></div>
+      <div class="hbar"><span>Tax reserve</span><div class="tr"><i data-w="66" style="background:#9a6dd7"></i></div><b>$11K</b></div>
+      <div class="hbar"><span>Operating</span><div class="tr"><i data-w="58" style="background:#529cca"></i></div><b>$9.8K</b></div>
+      <div class="hbar"><span>Profit</span><div class="tr"><i data-w="20" style="background:#e9b44c"></i></div><b>$3.4K</b></div>
+    </div>
+    <p class="desc" style="margin:10px 0 0">Each account against the minimum it holds before funds move on.</p>
+  </div>
+</div>
+
+<h3 class="h">Client priority</h3>
+<p class="desc">Every client ranked by how much they matter to the business right now, so attention goes where it's owed first.</p>
+<div class="scroll-x reveal"><table class="tbl">
+  <thead><tr><th>Client</th><th>Contact platform</th><th>Priority</th></tr></thead>
+  <tbody>
+    <tr><td class="pg">Northwind Outdoor</td><td><span class="pill purple">Slack</span></td><td><span class="pill red">1 &ndash; Top</span></td></tr>
+    <tr><td class="pg">Harbor &amp; Hale</td><td><span class="pill purple">Slack</span></td><td><span class="pill orange">2 &ndash; Active</span></td></tr>
+    <tr><td class="pg">Trailhead Supply</td><td><span class="pill gray">Email</span></td><td><span class="pill orange">2 &ndash; Active</span></td></tr>
+    <tr><td class="pg">Fieldcraft Tools</td><td><span class="pill gray">Other</span></td><td><span class="pill gray">3 &ndash; Occasional</span></td></tr>
+  </tbody>
+</table></div>
+
+<h2 class="h">Money going out</h2>
+<h3 class="h">Contractor payments</h3>
+<p class="desc">Contractor bills paid through Mercury on the 1st and 15th. One row per project, so each project's contractor costs add up against its budget.</p>
+<div class="scroll-x reveal"><table class="tbl" id="pay">
+  <thead><tr><th>Payment</th><th>Contractor</th><th style="text-align:right">Amount</th><th style="text-align:right">Hours</th><th>Pay run</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td class="pg">INV-041 &middot; Trail pack v2</td><td>A. Reyes</td><td class="num">$1,840.00</td><td class="num">23.0</td><td>Dec 1</td><td><span class="pill gray">Received</span></td></tr>
+    <tr><td class="pg">INV-017 &middot; Kettle lid</td><td>D. Park</td><td class="num">$965.50</td><td class="num">12.5</td><td>Dec 1</td><td><span class="pill gray">Received</span></td></tr>
+    <tr><td class="pg">INV-009 &middot; Cooler handle</td><td>S. Ito</td><td class="num">$412.00</td><td class="num">5.2</td><td>Dec 15</td><td><span class="pill gray">Received</span></td></tr>
+  </tbody>
+</table></div>
+
+<h3 class="h">Sales commissions</h3>
+<p class="desc">Referral fees from suppliers, checked against what actually arrived in Mercury, with the difference flagged automatically.</p>
+<div class="scroll-x reveal"><table class="tbl" id="comm">
+  <thead><tr><th>Statement</th><th style="text-align:right">Supplier says</th><th style="text-align:right">Arrived in Mercury</th><th style="text-align:right">Difference</th></tr></thead>
+  <tbody>
+    <tr><td class="pg">Supplier A &middot; October</td><td class="num">$4,250.00</td><td class="num">$4,250.00</td><td class="num"><span class="pill gray">Checking</span></td></tr>
+    <tr><td class="pg">Supplier B &middot; October</td><td class="num">$1,180.00</td><td class="num">$1,137.50</td><td class="num"><span class="pill gray">Checking</span></td></tr>
+  </tbody>
+</table></div>
+
+<h2 class="h">Operations</h2>
+<p class="desc">Department hub: reference resources, SOPs, templates, and the team directory, everything that isn't a live tracker but is worth having close by.</p>
+<div class="gallery reveal">
+  <div class="gcard"><div class="gimg">📝</div><div class="gt">Typeform intake summary</div></div>
+  <div class="gcard"><div class="gimg">🎨</div><div class="gt">Brand &amp; project assets</div></div>
+  <div class="gcard"><div class="gimg">📗</div><div class="gt">QuickBooks invoice matching SOP</div></div>
+  <div class="gcard"><div class="gimg">📚</div><div class="gt">SOP library</div></div>
+  <div class="gcard"><div class="gimg">👥</div><div class="gt">Contractor directory</div></div>
+  <div class="gcard"><div class="gimg">🧾</div><div class="gt">Out-of-pocket expenses</div></div>
+  <div class="gcard"><div class="gimg">📅</div><div class="gt">Invoice schedule</div></div>
+  <div class="gcard"><div class="gimg">🗒️</div><div class="gt">Meeting notes &amp; decisions</div></div>
+</div>
+
+<p class="foot">Illustrative mockup. Structure, integrations, and workflows reflect the system as built for a design consultancy; all client, contractor, and supplier names, invoice numbers, and amounts are invented for portfolio use.</p>
+</main>
+<script src="cs-notion.js"></script>
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  CS.flow(document.getElementById('flow'), [
+    {path:['n-tf','w1','n-no'], log:'📝 New client intake in <b>Typeform</b> creates the client and project in Notion.'},
+    {path:['n-no','w2','n-qb'], log:'🧾 Invoice logged in Notion, matched to the right <b>QuickBooks</b> customer and invoice number.'},
+    {path:['n-qb','w3','n-me'], log:'🏦 Payment lands in <b>Mercury</b>. The invoice flips to Paid, no manual update.'},
+    {path:['n-me','w4','n-sl'], log:'💬 Contractor pay run scheduled for the 15th. Update posted to <b>Slack</b>.'}
+  ], 3400);
+
+  // QuickBooks mapping: rows check off one by one
+  var qrows = [].slice.call(document.querySelectorAll('#qbo tbody tr'));
+  function setPill(td, cls, txt){ var p = td.querySelector('.pill'); p.className = 'pill ' + cls; p.textContent = txt; p.classList.add('flash'); }
+  var qi = 0;
+  function qtick(){
+    if(qi >= qrows.length){ qrows.forEach(function(r){ setPill(r.cells[3], 'gray', 'Checking'); }); qi = 0; return; }
+    qrows.forEach(function(r){ r.classList.remove('hl'); });
+    qrows[qi].classList.add('hl'); setPill(qrows[qi].cells[3], 'green', 'Matched ✓'); qi++;
+  }
+
+  // contractor payments: Received -> Scheduled -> Paid
+  var prow = [].slice.call(document.querySelectorAll('#pay tbody tr')), ps = 0;
+  var states = [['gray','Received'],['yellow','Scheduled'],['green','Paid']];
+  function ptick(){ var r = prow[ps % prow.length], s = Math.floor(ps / prow.length) % 3; ps++; setPill(r.cells[5], states[(s+1)%3][0], states[(s+1)%3][1]); }
+
+  // commissions: compare and flag
+  var crow = [].slice.call(document.querySelectorAll('#comm tbody tr')), cs = 0;
+  function ctick(){
+    var r = crow[cs % 2], phase = Math.floor(cs / 2) % 2; cs++;
+    if(phase === 1){ setPill(r.cells[3], 'gray', 'Checking'); return; }
+    if(r === crow[0]) setPill(r.cells[3], 'green', '$0.00 ✓'); else setPill(r.cells[3], 'red', '−$42.50 flag');
+  }
+
+  // projects: one card slips to Stalled, then gets unblocked
+  var pc = document.getElementById('pc1'), stalled = false;
+  function btick(){
+    if(!stalled){ CS.moveCard(pc, document.getElementById('p-stall')); pc.classList.add('alert'); pc.querySelector('small').textContent = 'Northwind Outdoor · needs a decision'; }
+    else { pc.classList.remove('alert'); CS.moveCard(pc, document.getElementById('p-on'), {top:true}); pc.querySelector('small').textContent = 'Northwind Outdoor · unblocked, back on track'; }
+    stalled = !stalled;
+  }
+
+  // invoice timeline: today marker glides to the current month
+  var today = document.getElementById('today');
+  CS.inView(today.parentNode, function(v){ if(v) today.style.left = '87%'; }, true);
+
+  if(reduce){ qrows.forEach(function(r){ setPill(r.cells[3], 'green', 'Matched ✓'); }); ptick(); ctick(); cs = 1; ctick(); return; }
+  CS.loop(document.getElementById('qbo'), 1300, qtick);
+  CS.loop(document.getElementById('pay'), 1500, ptick);
+  CS.loop(document.getElementById('comm'), 1600, ctick);
+  CS.loop(document.getElementById('proj'), 3200, btick);
+})();
+</script>
 </body>
 </html>

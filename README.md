@@ -14,6 +14,7 @@ Static HTML/CSS/JS — no build step, no dependencies. The homepage lives entire
 - `favicon.ico`, `favicon-*.png`, `apple-touch-icon.png`, `android-chrome-*.png`, `site.webmanifest` — favicon set
 - Images, logos, and video files referenced by `index.html`
 - `millsaps-case-study.pdf` — downloadable case study linked from the Millsaps Productions project card
+- `sava-case-study.html`, `millsaps-case-study.html`, `melanson-case-study.html` — live, animated Notion-style case-study mockups (invented data), embedded in the Projects section; they share `cs-notion.css` and `cs-notion.js`
 
 ## Local preview
 
