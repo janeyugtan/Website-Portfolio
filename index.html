@@ -444,6 +444,13 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 .blog-card .read::after{content:" \2192"}
 @media(max-width:640px){.reels-grid{padding-top:16px}.section-title{font-size:40px}.tilt-l,.tilt-r,.results-grid .result-card,.feedback-grid .feedback-card{rotate:0deg}}
 @media(prefers-reduced-motion:reduce){[data-drift],[data-drift-x]{translate:none!important}}
+
+.proj-results{list-style:none;margin:0 0 14px;padding:12px 14px;display:grid;gap:6px;background:#f3faf5;border:1px solid #cfe6d5;border-radius:12px}
+.proj-results .lbl{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#2b593f}
+.proj-results li{display:flex;gap:8px;font-size:13.5px;line-height:1.5;color:var(--slate)}
+.proj-results li:not(.lbl)::before{content:"\2713";flex:0 0 18px;height:18px;margin-top:1px;border-radius:50%;background:#4dab9a;color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.engage-tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.06em;border-radius:999px;padding:3px 9px;margin-left:6px;vertical-align:1px}
+.engage-tag.build{background:#e7f3f8;color:#1d5c8a}.engage-tag.partner{background:#edf3ec;color:#2b593f}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Jane Yugtan","url":"https://janeyugtan.com","image":"https://janeyugtan.com/jy-linkedin.jpeg","jobTitle":"Online Business Manager (OBM) and Fractional Growth Leader","description":"Jane Yugtan is an Online Business Manager (OBM) and fractional growth leader for founders and agency owners. She leads operations, project delivery, and teams so businesses can scale. Based in the Philippines, working remotely with US and international clients.","worksFor":{"@type":"Organization","name":"Self-Employed / Freelance"},"knowsAbout":["Online Business Manager","OBM","Fractional Leadership","Team Leadership","Business Scaling","Project Management","Notion Systems","Workflow Automation","Operations Design","SOP Creation"],"nationality":"Filipino","sameAs":["https://www.linkedin.com/in/jyugtan/","https://www.instagram.com/jane.yugtan/","https://www.threads.com/@ljane_hy","https://www.facebook.com/jane.hernandez.285545"],"contactPoint":{"@type":"ContactPoint","email":"jane@janeyugtan.com","contactType":"Business Inquiries"}}
@@ -663,7 +670,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div style="display:grid;gap:28px;">
 <div class="panel taped proj-anchor" id="proj-sava" style="padding:0;"><i class="tape" aria-hidden="true"></i>
 <div style="padding:22px 22px 16px;">
-<p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">Featured Project &middot; E-commerce brand</p>
+<p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">E-commerce brand <span class="engage-tag build">Project build</span></p>
 <h3 class="proj-name" style="margin:0 0 4px;" data-drift-x="40">SAVA Amsterdam</h3>
 <p style="margin:0 0 14px;color:var(--slate);font-size:14px;">The team&rsquo;s Notion was scattered, so people avoided it. I rebuilt it as one company HQ: a department hub for Support, Supply Chain, Paid Marketing, Sales, SOPs, and HR; one task centre with table, status, assignee, and calendar views; and a marketing calendar every team plans around. The goal: anyone finds what they need in under 30 seconds.</p>
 <div class="proj-stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px;">
@@ -671,6 +678,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">&lt;30s</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Find-anything goal</div></div>
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">1</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Task centre, every team</div></div>
 </div>
+<ul class="proj-results"><li class="lbl">Results</li><li>Six department hubs in one company HQ, all built the same way</li><li>SOPs, KPIs, and team docs in one searchable workspace</li><li>Founders see what&rsquo;s happening without chasing the team</li></ul>
 <div class="tag-row"><span class="tag">E-commerce Ops</span><span class="tag">Company Systems</span><span class="tag">Notion Systems</span></div>
 </div>
 <div style="border-top:1px solid var(--line);background:#fff;">
@@ -683,7 +691,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 </div>
 <div class="panel taped proj-anchor" id="proj-millsaps" style="padding:0;"><i class="tape r" aria-hidden="true"></i>
 <div style="padding:22px 22px 16px;">
-<p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">Featured Project &middot; Video production</p>
+<p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">Video production <span class="engage-tag build">Project build &middot; 6 weeks</span></p>
 <h3 class="proj-name" style="margin:0 0 4px;" data-drift-x="-40">Millsaps Productions</h3>
 <p style="margin:0 0 14px;color:var(--slate);font-size:14px;">A commercial video studio had every project status living in one person's head — no shared source of truth, no automated handoffs between director, editors, and clients, and no reliable way to catch a stalled deliverable before it reached the client. I built a Notion HQ and Slack automation layer around how the founder actually works.</p>
 <div class="proj-stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px;">
@@ -691,6 +699,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">11+ days</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Stall caught by system</div></div>
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">6-figure</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Deal closed mid-engagement</div></div>
 </div>
+<ul class="proj-results"><li class="lbl">Results</li><li>Caught a stalled client deliverable after 11+ days, before it hurt the relationship</li><li>Status changes post to Slack on their own; daily async check-ins replaced status meetings</li><li>Studio closed a new six-figure client mid-build without added chaos</li></ul>
 <div class="tag-row"><span class="tag">Project Management</span><span class="tag">Notion Systems</span><span class="tag">Slack Automation</span></div>
 </div>
 <div style="border-top:1px solid var(--line);background:#fff;">
@@ -703,7 +712,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 </div>
 <div class="panel taped proj-anchor" id="proj-melanson" style="padding:0;"><i class="tape" aria-hidden="true"></i>
 <div style="padding:22px 22px 16px;">
-<p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">Ongoing OBM partnership &middot; Design consultancy</p>
+<p style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 6px;">Design consultancy <span class="engage-tag partner">Build + ongoing OBM partnership</span></p>
 <h3 class="proj-name" style="margin:0 0 4px;" data-drift-x="40">Melanson Design</h3>
 <p style="margin:0 0 14px;color:var(--slate);font-size:14px;">A design consultancy was re-typing the same numbers into four tools, and invoices got hard to track once a client moved past payment one of several. As their OBM, I built an Operations HQ in Notion connected to QuickBooks, Mercury, Slack, and Typeform: invoicing, QuickBooks customer matching, contractor pay runs, project status, and client priority in one place.</p>
 <div class="proj-stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px;">
@@ -711,6 +720,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">1st &amp; 15th</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Contractor pay runs, tracked</div></div>
 <div style="background:#eef6fc;border-radius:12px;padding:10px 8px;text-align:center;"><div style="font-size:18px;font-weight:800;color:var(--blue);">0</div><div style="font-size:10px;color:var(--muted);margin-top:2px;">Manual reports needed</div></div>
 </div>
+<ul class="proj-results"><li class="lbl">Results</li><li>One invoicing tracker replaced a three-touch process</li><li>Invoices matched to the right QuickBooks customer; contractor pay runs on the 1st and 15th</li><li>The build became an ongoing OBM partnership</li></ul>
 <div class="tag-row"><span class="tag">Financial Ops</span><span class="tag">QuickBooks + Mercury</span><span class="tag">Slack + Typeform</span><span class="tag">Notion Systems</span></div>
 </div>
 <div style="border-top:1px solid var(--line);background:#fff;">

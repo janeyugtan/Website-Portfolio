@@ -210,3 +210,22 @@ hr.div{border:0;border-top:1px solid var(--line);margin:34px 0 0}
 details.callout{display:block}
 details.callout summary{margin-bottom:2px}
 .board{grid-auto-columns:minmax(150px,1fr)}
+
+/* results + engagement type + closing invitation */
+.engage{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:650;letter-spacing:.02em;border-radius:999px;padding:4px 11px;margin:0 0 14px}
+.engage.build{background:#e7f3f8;color:#1d5c8a}.engage.partner{background:#edf3ec;color:#2b593f}
+.results-box{border:1px solid #cfe6d5;background:linear-gradient(180deg,#f3faf5,#fff);border-radius:10px;padding:18px 20px;margin:6px 0 4px}
+.results-box h2{font-size:15px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#2b593f;margin:0 0 10px}
+.results-box ul{list-style:none;display:grid;gap:8px;font-size:14.5px}
+.results-box li{display:flex;gap:10px;align-items:flex-start}
+.results-box li::before{content:"\2713";flex:0 0 20px;height:20px;border-radius:50%;background:#4dab9a;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.results-box blockquote{margin:14px 0 0;padding:10px 14px;border-left:3px solid #4dab9a;background:#fff;border-radius:0 6px 6px 0;font-size:14px;color:var(--ink)}
+.results-box blockquote cite{display:block;margin-top:4px;font-style:normal;font-size:12px;color:var(--ink-2)}
+.invite{margin-top:40px;border-radius:12px;padding:24px;background:linear-gradient(135deg,#091a2a,#0f4c75 60%,#1d6fa5);color:#fff}
+.invite h2{font-size:22px;font-weight:700;margin:0 0 8px;letter-spacing:-.01em}
+.invite p{color:rgba(255,255,255,.82);font-size:14.5px;margin:0 0 6px;max-width:62ch}
+.invite .ways{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0 16px}
+.invite .way{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:8px;padding:12px 14px;font-size:13.5px}
+.invite .way b{display:block;font-size:14px;margin-bottom:2px}
+.invite a.cta{display:inline-flex;align-items:center;gap:8px;background:#27d3f2;color:#091a2a;font-weight:700;text-decoration:none;border-radius:8px;padding:11px 18px;font-size:14.5px}
+@media(max-width:720px){.invite .ways{grid-template-columns:1fr}}
