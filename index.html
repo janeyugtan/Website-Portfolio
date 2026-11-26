@@ -462,7 +462,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 .subnav{position:absolute;top:100%;left:-6px;z-index:300;min-width:270px;padding:8px;margin-top:8px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 22px 50px rgba(9,26,42,.16);display:grid;gap:2px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s ease,transform .18s ease,visibility 0s linear .18s;text-align:left}
 .subnav::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}
 .nav-item.open .subnav{opacity:1;visibility:visible;transform:none;transition:opacity .18s ease,transform .18s ease,visibility 0s}
-@media(hover:hover) and (pointer:fine){.nav-item:hover .subnav{opacity:1;visibility:visible;transform:none;transition:opacity .18s ease,transform .18s ease,visibility 0s}.nav-item:hover .nav-caret::before{transform:translateY(1px) rotate(-135deg)}}
+@media(hover:hover) and (pointer:fine){.nav-item:hover .subnav{opacity:1;visibility:visible;transform:none;transition:opacity .18s ease,transform .18s ease,visibility 0s}.nav-item:hover .nav-caret::before{transform:translateY(1px) rotate(-135deg)}.nav-item.hold-closed .subnav{opacity:0;visibility:hidden;transition:none}.nav-item.hold-closed .nav-caret::before{transform:translateY(-2px) rotate(45deg)}}
 .nav .subnav a{display:block;padding:9px 12px;border-radius:10px;color:var(--navy);font-weight:600;font-size:14px;line-height:1.3;white-space:normal;text-decoration:none;transform:none}
 .nav .subnav a span{display:block;font-weight:400;font-size:12.5px;color:var(--muted);margin-top:2px}
 .nav .subnav a span:empty{display:none}
@@ -473,6 +473,27 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 .nav-item[data-menu="blog"] .subnav{left:auto;right:-6px;min-width:300px}
 @media(max-width:980px){.nav-item[data-menu="blog"] .subnav{left:-6px;right:auto}}
 @media(max-width:640px){.nav-item{position:static}.subnav{left:12px!important;right:12px!important;min-width:0;margin-top:0;top:calc(100% - 6px)}}
+
+/* Cost vs. savings */
+.roi{margin-top:22px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:18px;align-items:stretch}
+.roi-card{border:1px solid var(--line);border-radius:18px;padding:20px 22px;background:#fff}
+.roi-card.price{background:linear-gradient(160deg,#091a2a,#0f4c75 70%,#1d6fa5);color:#fff;border-color:transparent}
+.roi-k{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:8px}
+.roi-card.price .roi-k{color:var(--cyan)}
+.roi-price{font-family:'DM Sans',Arial,sans-serif;font-weight:800;font-size:44px;letter-spacing:-.03em;line-height:1}
+.roi-price small{font-size:17px;font-weight:600;letter-spacing:0;opacity:.8}
+.roi-card.price p{margin:10px 0 0;color:rgba(255,255,255,.82);font-size:14.5px;line-height:1.6}
+.roi-card.price .hand-note{color:var(--cyan);margin-top:12px}
+.roi-in{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:6px 0 14px}
+.roi-in label{font-size:12.5px;font-weight:700;color:var(--slate);display:grid;gap:6px}
+.roi-in input{font:700 20px 'DM Sans',Arial,sans-serif;color:var(--navy);border:1px solid #d7e8f5;border-radius:12px;padding:10px 12px;width:100%;background:#f7fbff}
+.roi-in input:focus{outline:2px solid var(--cyan);outline-offset:1px}
+.roi-out{border-top:1px dashed var(--line);padding-top:12px;font-size:14.5px;color:var(--slate);line-height:1.6}
+.roi-out b{font-size:26px;color:var(--navy);font-weight:800;letter-spacing:-.02em}
+.roi-verdict{margin-top:8px;font-weight:700;color:#2b593f}
+.roi-verdict.low{color:var(--blue)}
+.roi-proof{grid-column:1/-1;font-size:13.5px;color:var(--slate);background:#f3faf5;border:1px solid #cfe6d5;border-radius:12px;padding:10px 14px}
+@media(max-width:860px){.roi{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Jane Yugtan","url":"https://janeyugtan.com","image":"https://janeyugtan.com/jy-linkedin.jpeg","jobTitle":"Online Business Manager (OBM) and Fractional Growth Leader","description":"Jane Yugtan is an Online Business Manager (OBM) and fractional growth leader for founders and agency owners. She leads operations, project delivery, and teams so businesses can scale. Based in the Philippines, working remotely with US and international clients.","worksFor":{"@type":"Organization","name":"Self-Employed / Freelance"},"knowsAbout":["Online Business Manager","OBM","Fractional Leadership","Team Leadership","Business Scaling","Project Management","Notion Systems","Workflow Automation","Operations Design","SOP Creation"],"nationality":"Filipino","sameAs":["https://www.linkedin.com/in/jyugtan/","https://www.instagram.com/jane.yugtan/","https://www.threads.com/@ljane_hy","https://www.facebook.com/jane.hernandez.285545"],"contactPoint":{"@type":"ContactPoint","email":"jane@janeyugtan.com","contactType":"Business Inquiries"}}
@@ -488,7 +509,7 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div class="topbar-inner">
 <div class="brand"><a href="#top" aria-label="Jane Yugtan home"><img src="own-website-logo.png" alt="Jane Yugtan logo" class="brand-logo"></a></div>
 <nav class="nav" id="mainNav" aria-label="Main">
-<div class="nav-item" data-menu="services"><a href="#services" data-section="services" class="top">Services</a><button type="button" class="nav-caret" aria-expanded="false" aria-controls="sub-services" aria-label="Show Services menu"></button><div class="subnav" id="sub-services"><a href="#services"><b>Services</b><span>Organize, lead, scale</span></a><a href="#methodology"><b>How I Work</b><span>Audit, build, sustain</span></a><a href="#pricing"><b>Ways I Work</b><span>Fractional OBM retainer and builds</span></a><a href="#first-90-days"><b>Your first 90 days</b><span>What changes, week by week</span></a><a href="#faq"><b>Fair questions</b><span>OBM vs. VA, how we start</span></a></div></div>
+<div class="nav-item" data-menu="services"><a href="#services" data-section="services" class="top">Services</a><button type="button" class="nav-caret" aria-expanded="false" aria-controls="sub-services" aria-label="Show Services menu"></button><div class="subnav" id="sub-services"><a href="#services"><b>Services</b><span>Organize, lead, scale</span></a><a href="#methodology"><b>How I Work</b><span>Audit, build, sustain</span></a><a href="#pricing"><b>Ways I Work</b><span>Fractional OBM retainer and builds</span></a><a href="#cost-vs-savings"><b>What it&rsquo;s costing you</b><span>Try your own numbers</span></a><a href="#first-90-days"><b>Your first 90 days</b><span>What changes, week by week</span></a><a href="#faq"><b>Fair questions</b><span>OBM vs. VA, how we start</span></a></div></div>
 <div class="nav-item" data-menu="work"><a href="#results" data-section="work" class="top">Work</a><button type="button" class="nav-caret" aria-expanded="false" aria-controls="sub-work" aria-label="Show Work menu"></button><div class="subnav" id="sub-work"><a href="#results"><b>Results</b><span>Real numbers at a glance</span></a><a href="#featured-projects"><b>Projects</b><span>Walkthroughs and live case studies</span></a><a href="#testimonials"><b>Testimonials</b><span>What clients say</span></a><div class="subnav-row"><span>Case studies</span><a href="#proj-sava">SAVA</a><a href="#proj-millsaps">Millsaps</a><a href="#proj-melanson">Melanson</a></div></div></div>
 <div class="nav-item" data-menu="about"><a href="#about" data-section="about" class="top">About</a><button type="button" class="nav-caret" aria-expanded="false" aria-controls="sub-about" aria-label="Show About menu"></button><div class="subnav" id="sub-about"><a href="#video-intro"><b>Meet Jane</b><span>A 2-minute hello</span></a><a href="#about"><b>About me</b><span>My story, and life outside the laptop</span></a></div></div>
 <div class="nav-item" data-menu="blog"><a href="#blog" data-section="blog" class="top">Blog</a><button type="button" class="nav-caret" aria-expanded="false" aria-controls="sub-blog" aria-label="Show Blog menu"></button><div class="subnav" id="sub-blog"><a href="/blog/how-i-took-invoicing-off-a-founders-plate/"><b>How I took invoicing off a founder&rsquo;s plate with AI</b><span></span></a><a href="/blog/how-my-obm-business-started/"><b>How my OBM business started</b><span></span></a><a href="/blog/signs-your-agency-needs-an-obm-not-a-va/"><b>Signs your agency needs an OBM, not a VA</b><span></span></a><a href="/blog/"><b>All posts &rarr;</b><span></span></a></div></div>
@@ -609,6 +630,33 @@ body{display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 <div><div class="project-kicker">What's included</div><ul><li>Monthly operations leadership and project oversight</li><li>Team leadership: owners, deadlines, and follow-through</li><li>Notion and system upkeep, so the workspace stays clean</li><li>SOPs and QA checkpoints people actually follow</li><li>Workflow automation for the repetitive work</li></ul></div>
 <div><div class="project-kicker">How we start</div><ul><li><strong>Discovery call:</strong> 30 minutes to see if we're a fit</li><li><strong>Paid audit:</strong> I map what's breaking and you get a clear action list</li><li><strong>Retainer:</strong> scoped and priced from what the audit finds, never from a template</li></ul></div>
 </div>
+<div class="roi proj-anchor" id="cost-vs-savings">
+<div class="roi-card">
+<div class="roi-k">What it&rsquo;s costing you</div>
+<p style="margin:0 0 10px;color:var(--slate);font-size:14.5px;">Try your own numbers: the hours you lose each week to invoicing, follow-ups, and chasing status, and what an hour of your time is worth.</p>
+<div class="roi-in">
+<label>Hours lost a week<input type="number" id="roiHours" min="0" max="80" step="1" value="4" inputmode="numeric"></label>
+<label>Your hour is worth ($)<input type="number" id="roiRate" min="0" max="5000" step="10" value="100" inputmode="numeric"></label>
+</div>
+<div class="roi-out" aria-live="polite">That&rsquo;s about <b id="roiCost">$1,733</b> a month of your time, spent on work someone else could run.<div class="roi-verdict" id="roiVerdict"></div></div>
+</div>
+<div class="roi-card price">
+<div class="roi-k">What I did for one founder</div>
+<div class="roi-price" style="font-size:34px;">&frac12; day &rarr; a few hours <small>a week</small></div>
+<p>A design consultancy founder was spending up to half a day on invoicing. I built one invoicing tracker and schedule, matched every client to the right QuickBooks record, then added Claude to build and schedule each invoice for my review. Overdue invoices now get reminders on their own.</p>
+<p class="hand-note">his time back for design work and clients &#10003;</p>
+</div>
+<div class="roi-proof"><strong>See the full story:</strong> <a href="#proj-melanson">the live case study</a> &middot; <a href="/blog/how-i-took-invoicing-off-a-founders-plate/">the blog post &rarr;</a></div>
+</div>
+<script>
+(function(){
+var h=document.getElementById('roiHours'),r=document.getElementById('roiRate'),c=document.getElementById('roiCost'),v=document.getElementById('roiVerdict');if(!h)return;
+function calc(){var hrs=Math.max(0,+h.value||0),rate=Math.max(0,+r.value||0),cost=Math.round(hrs*rate*52/12);
+c.textContent='$'+cost.toLocaleString('en-US');
+v.className='roi-verdict';v.textContent=hrs>0?'About '+Math.round(hrs*52/12)+' hours a month you could hand off and spend on growth.':'';}
+h.addEventListener('input',calc);r.addEventListener('input',calc);calc();
+})();
+</script>
 <div class="cta-row" style="margin-top:20px;">
 <a class="btn btn-primary" href="https://calendly.com/jyugtan/discovery-call-with-jane" target="_blank" rel="noopener">&#9749; Book a discovery call</a>
 <a class="btn btn-light" href="mailto:jane@janeyugtan.com">&#128233; Email me</a>
@@ -1014,7 +1062,7 @@ if(deck)deck.addEventListener('scroll',onScroll,{passive:true});window.addEventL
 const items=[...document.querySelectorAll('#mainNav .nav-item')];if(!items.length)return;
 function closeAll(except){items.forEach(it=>{if(it!==except){it.classList.remove('open');const b=it.querySelector('.nav-caret');if(b)b.setAttribute('aria-expanded','false')}})}
 items.forEach(it=>{const b=it.querySelector('.nav-caret');b.addEventListener('click',e=>{e.stopPropagation();const open=!it.classList.contains('open');closeAll(it);it.classList.toggle('open',open);b.setAttribute('aria-expanded',open?'true':'false');if(open){const f=it.querySelector('.subnav a');if(f&&e.detail===0)f.focus()}});
- it.querySelectorAll('.subnav a').forEach(a=>a.addEventListener('click',()=>{closeAll();if(document.activeElement)document.activeElement.blur()}))});
+ it.querySelectorAll('.subnav a').forEach(a=>a.addEventListener('click',()=>{closeAll();it.classList.add('hold-closed');if(document.activeElement)document.activeElement.blur()}));it.addEventListener('mouseleave',()=>it.classList.remove('hold-closed'))});
 document.addEventListener('click',e=>{if(!e.target.closest('#mainNav'))closeAll()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){const o=items.find(it=>it.classList.contains('open'));if(o){closeAll();o.querySelector('.nav-caret').focus()}}});
 const deck=document.getElementById('deck');
