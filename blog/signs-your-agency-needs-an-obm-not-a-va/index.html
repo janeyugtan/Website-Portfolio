@@ -167,6 +167,19 @@
   .nav-item[data-menu="blog"] .subnav{left:auto;right:-6px;min-width:300px}
   @media(max-width:980px){.nav-item[data-menu="blog"] .subnav{left:-6px;right:auto}}
   @media(max-width:640px){.nav-item{position:static}.subnav{left:12px!important;right:12px!important;min-width:0;margin-top:0;top:calc(100% - 6px)}}
+  
+  /* Sticky main navigation on every page and screen size */
+  :root{--hdr-m:0px}
+  .topbar{position:sticky;top:0}
+  @media(max-width:980px){
+   .topbar-inner{display:grid;grid-template-columns:auto 1fr auto;grid-template-areas:"brand . cta" "nav nav nav";align-items:center;gap:4px 12px;padding:8px 0 6px}
+   .brand{grid-area:brand}
+   .nav-cta{grid-area:cta;display:inline-flex!important;margin-left:0}
+   .nav{grid-area:nav;justify-content:space-between;flex-wrap:nowrap;width:100%}
+   .brand-logo{height:40px}
+   .nav-item[data-menu="blog"] .subnav{left:auto;right:-6px}
+  }
+  @media(max-width:400px){.nav a.top{padding:6px 6px;font-size:13px}.nav-caret{width:18px;margin-left:-6px}}
   </style>
 </head>
 <body>
